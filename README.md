@@ -12,21 +12,21 @@ From **admission applications and academic management** to **hostel services, gr
 
 ## 🚀 Project Highlights
 
-✨ Full-Stack Web Application
-🤖 Integrated AI-Powered College Query Assistant
-👨‍🎓 Student Portal
-👨‍💼 Multi-Role Admin Panel
-📝 Online Admission System
-📚 Academic Management
-🏨 Hostel Management
-🎟️ Event Booking & QR Tickets
-💳 Online Payment Integration
-📢 Notice & Notification System
-⚠️ Grievance Management
-🏆 Sports & Gym Booking
-🔍 Smart Search & Information Access
-📊 Analytics Support
-🔐 Authentication & Role-Based Access Control
+- ✨ **Full-Stack Web Application**
+- 🤖 **Integrated AI-Powered College Query Assistant**
+- 👨‍🎓 **Student Portal**
+- 👨‍💼 **Multi-Role Admin Panel**
+- 📝 **Online Admission System**
+- 📚 **Academic Management**
+- 🏨 **Hostel Management**
+- 🎟️ **Event Booking & QR Tickets**
+- 💳 **Online Payment Integration**
+- 📢 **Notice & Notification System**
+- ⚠️ **Grievance Management**
+- 🏆 **Sports & Gym Booking**
+- 🔍 **Smart Search & Information Access**
+- 📊 **Analytics Support**
+- 🔐 **Authentication & Role-Based Access Control**
 
 ---
 
