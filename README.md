@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎓 CollegeGPT
 
 ## Smart College Management & Student Service Platform
@@ -13,21 +12,21 @@ From **admission applications and academic management** to **hostel services, gr
 
 ## 🚀 Project Highlights
 
-- ✨ **Full-Stack Web Application**
-- 🤖 **Integrated AI-Powered College Query Assistant**
-- 👨‍🎓 **Student Portal**
-- 👨‍💼 **Multi-Role Admin Panel**
-- 📝 **Online Admission System**
-- 📚 **Academic Management**
-- 🏨 **Hostel Management**
-- 🎟️ **Event Booking & QR Tickets**
-- 💳 **Online Payment Integration**
-- 📢 **Notice & Notification System**
-- ⚠️ **Grievance Management**
-- 🏆 **Sports & Gym Booking**
-- 🔍 **Smart Search & Information Access**
-- 📊 **Analytics Support**
-- 🔐 **Authentication & Role-Based Access Control**
+✨ Full-Stack Web Application
+🤖 Integrated AI-Powered College Query Assistant
+👨‍🎓 Student Portal
+👨‍💼 Multi-Role Admin Panel
+📝 Online Admission System
+📚 Academic Management
+🏨 Hostel Management
+🎟️ Event Booking & QR Tickets
+💳 Online Payment Integration
+📢 Notice & Notification System
+⚠️ Grievance Management
+🏆 Sports & Gym Booking
+🔍 Smart Search & Information Access
+📊 Analytics Support
+🔐 Authentication & Role-Based Access Control
 
 ---
 
@@ -740,76 +739,11 @@ source venv/bin/activate
 ---
 
 ## 3️⃣ Install Dependencies
-=======
-# Campus Genius — Parul University
-
-AI-powered university platform: an existing RAG chatbot, a public information site for
-prospective students, and a full student portal — all in one Flask app.
-
-Built as a final-year project, developed in phases on top of an existing chatbot that
-was kept completely unmodified throughout.
-
----
-
-## What's in here
-
-### 1. The Chatbot (pre-existing, untouched)
-Greeting detection → spell correction → structured data lookups → BGE embeddings →
-FAISS vector search → cross-encoder re-ranking → Groq LLM generation → response caching.
-Every file under this system was left byte-for-byte identical to how it was handed over —
-verified by diff after every single change made anywhere else in the project.
-
-### 2. Public Site — "Explore University" (no login required)
-- Fee Calculator, Eligibility Checker, Scholarship Checker
-- Course Comparison (real data, not placeholders)
-- Admission process + online application + tracking by reference ID
-- Hostel Information (all real hostel/room records), Transport, Campus Tour, Gallery
-- Site-wide quick search
-- Contact / enquiry form
-- Downloadable brochure (auto-generated from the same real data as the rest of the site)
-
-### 3. Student Portal (login required)
-- Notices board (with expiry dates, target audience, PDF attachments)
-- Event ticket booking — **real Razorpay payment integration**, movie-ticket-style
-  confirmation with QR code, "My Bookings" page
-- Extra course registration, Sports/Gym slot booking
-- Hostel transfer requests, Grievance/complaint desk (both with status tracking)
-- Academic records (attendance/timetable/results)
-- In-app notifications (bell icon) for status changes
-- Forgot-password (security question based)
-
-### 4. Admin Panel — multi-role
-Six real roles (Super Admin, Admission Admin, Hostel Admin, Grievance Admin, Academic
-Admin, Student Services Admin), each scoped to only the sections they need. Manages
-every piece of content above: notices, events/courses/facilities, hostel requests,
-grievances, academic records, transport routes, gallery, applications, and other admin
-accounts.
-
----
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Backend | Python, Flask |
-| Database | SQLite |
-| Auth | Flask-Login (students), custom session-based roles (admin) |
-| Chatbot | BAAI/bge-base-en-v1.5, FAISS, cross-encoder/ms-marco-MiniLM-L-6-v2, Groq |
-| Payments | Razorpay (test mode) |
-| Security | CSRF protection, rate limiting, bcrypt-style password hashing, gzip compression |
-
----
-
-## Quick Start
-
-See **SETUP_GUIDE.md** for full step-by-step instructions. Short version:
->>>>>>> 38f1e4a (Upload complete CollegeGPT project)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-<<<<<<< HEAD
 ---
 
 # 🔐 Environment Variables
@@ -1132,31 +1066,3 @@ You may use this project as a reference for learning and educational purposes.
 🎓 Smart Management • 🤖 Intelligent Assistance • 👨‍🎓 Better Student Experience
 
 </div>
-=======
-Create a `.env` file in the project root (see `.env.example`):
-
-```
-GROQ_API_KEY=your_key_here
-```
-
-Then:
-
-```bash
-cd backend
-python app.py
-```
-
-Open `http://127.0.0.1:5000`.
-
-Default admin login: **`superadmin`** / **`admin123`** at `/admin/login` — change this
-password after your first login (Manage Admins tab, or create a fresh account and
-deactivate the default one).
-
----
-
-## Documentation
-
-- **SETUP_GUIDE.md** — full installation & configuration walkthrough
-- **ADMIN_GUIDE.md** — how to use every admin panel section
-- **PROJECT_STRUCTURE.md** — file-by-file map of the codebase
->>>>>>> 38f1e4a (Upload complete CollegeGPT project)
