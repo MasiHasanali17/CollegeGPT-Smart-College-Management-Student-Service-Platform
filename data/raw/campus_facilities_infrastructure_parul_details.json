@@ -1,0 +1,103 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is primarily generated for this academic project, written to be realistic and scale-consistent with a 50,000+ student, multi-faculty university. A few facts (marked verified_by_user) were already established as real earlier in this project — library timing, gym/swimming pool existence and subscription fees, and the on-campus hospital. A few facility details (marked sourced_from_prior_research, e.g. specific lab names) come from earlier self-flagged-uncertain research collected for this project and are repeated here for consistency, not re-verified. None of the generated or prior-research content should be treated as officially confirmed university information.",
+    "data_types": {
+      "verified_by_user": "Real data confirmed directly by the project owner",
+      "sourced_from_prior_research": "Specific facility/lab names from earlier project research that were originally self-flagged as unverified",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "campus_facilities_and_infrastructure": {
+
+    "library": {
+      "data_type": "verified_by_user + generated_for_project",
+      "number_of_libraries": "The university operates a Central Library along with dedicated faculty-specific libraries/reading rooms in major faculties (e.g. a Medical Library at the Faculty of Medicine, a Law Library at the Faculty of Law), consistent with the scale of a 25+ faculty university. (generated)",
+      "collection_size": "The library collection includes an estimated 2,00,000+ books and subscriptions to 300+ national and international journals across disciplines. (generated)",
+      "timings": "9:00 AM to 8:00 PM daily. (verified)",
+      "digital_resources": "Access to the National Digital Library of India (NDLI), DELNET inter-library network, and e-journal subscriptions, supported in part by the university's Springer Nature partnership referenced elsewhere in the knowledge base. (generated)",
+      "study_rooms": "Dedicated silent study zones for individual study, along with separate bookable group discussion rooms for project/assignment work. (generated)",
+      "borrowing_limits_and_fines": "Undergraduate students may typically borrow up to 3 books for 14 days; postgraduate/research students up to 5 books for 21 days. A late return fine (commonly a small per-day, per-book charge) applies beyond the due date. (generated)",
+      "silent_zones": "The Central Library maintains designated silent study zones separate from group discussion areas to accommodate different study preferences. (generated)"
+    },
+
+    "food_courts_and_canteens": {
+      "data_type": "generated_for_project",
+      "number_and_location": "Multiple food courts and canteens are spread across campus zones, including locations near the hostels, central academic block, and faculty-specific areas (e.g. a dedicated canteen near the Faculty of Engineering and Technology), consistent with the scale of a 50,000+ student campus.",
+      "veg_non_veg_availability": "Most food courts offer a mix of vegetarian and non-vegetarian options; hostel mess dining itself is strictly vegetarian (as already documented), while campus food courts/canteens outside the hostel mess offer broader choices including non-vegetarian items.",
+      "timing": "Food courts are generally open from 8:00 AM to 9:00 PM, with core canteens near hostels open slightly later to accommodate evening/night snacking.",
+      "price_range": "Approximately ₹40-₹150 per meal/snack item depending on the outlet and item, keeping options accessible for a large student population.",
+      "outlets_present": "A mix of university-run canteens and branded/franchise food outlets (common categories include a multi-cuisine food court, a fast-food/quick-bite outlet, a bakery/cafe-style outlet, and a South Indian/North Indian meal counter)."
+    },
+
+    "gym": {
+      "data_type": "verified_by_user + generated_for_project",
+      "description": "A modern gymnasium/fitness centre with an aerobics arena, offering strength training and cardio equipment. (verified)",
+      "subscription_fee": "An additional subscription charge of ₹7,500 applies for gym usage. (verified)",
+      "timing": "Typically open from 6:00 AM to 9:00 PM, with separate time slots for different user groups where required. (generated)",
+      "trainer_availability": "Certified fitness trainers are available during peak hours (commonly early morning and evening) to guide students on equipment usage and basic fitness plans. (generated)"
+    },
+
+    "swimming_pool": {
+      "data_type": "verified_by_user + generated_for_project",
+      "availability": "The university has swimming pool facilities for student fitness and recreation. (verified)",
+      "subscription_fee": "An additional subscription charge of ₹3,500 applies for swimming pool usage. (verified)",
+      "timing": "Typically open from 6:00 AM to 6:00 PM, often with separate time slots for beginners/lesson batches versus free swim. (generated)",
+      "safety_rules": "Use of the pool typically requires appropriate swimwear, a mandatory shower before entry, and adherence to lifeguard instructions at all times; students with certain medical conditions may need prior clearance. (generated)",
+      "swimming_lessons": "Basic swimming lessons are generally available for beginners as part of the subscription, often coordinated through the sports department. (generated)"
+    },
+
+    "wifi_campus_wide": {
+      "data_type": "generated_for_project",
+      "coverage": "Wi-Fi coverage extends across academic blocks, library, hostels, and common outdoor areas, supporting the university's day-to-day digital learning needs.",
+      "speed_and_access": "Shared high-speed broadband is provisioned per building/zone, sufficient for browsing, research, video-based learning, and video-call classes/meetings.",
+      "login_and_registration": "Students receive Wi-Fi login credentials linked to their student ID/ERP account at the time of admission/orientation, with periodic password reset options through the student portal."
+    },
+
+    "auditoriums_and_seminar_halls": {
+      "data_type": "generated_for_project",
+      "capacity": "The university has multiple auditoriums and seminar halls of varying capacity, ranging from smaller seminar halls (100-300 seats) to large auditoriums (1,000+ seats) suitable for convocations, cultural fests, and major events.",
+      "booking_process": "Student clubs/societies and department coordinators can request auditorium/seminar hall bookings through the Dean of Student Affairs office or the respective faculty administration, typically requiring advance notice for larger events."
+    },
+
+    "smart_classrooms_and_labs": {
+      "data_type": "sourced_from_prior_research + generated_for_project",
+      "smart_classrooms": "Smart classrooms equipped with digital projectors/smart boards and audio-visual systems are used across most faculties for lecture delivery. (generated)",
+      "advanced_computing_labs": "University-linked sources describe '8 Advanced Computing Labs' covering Apple devices, AI/ML, IoT, Nanotechnology, Extended Reality & Gaming, Network Architecture, Cloud Computing, and Cyber Security. (sourced from prior research, originally self-flagged as unverified)",
+      "practical_learning_facilities": "Related sources also describe '6 Practical Learning Facilities' including a Pragya Simulation Centre, a Mock Aircraft cabin, a Moot Court, a Fabrication Lab, a Film & Journalism Studio, and a Forensic Science Lab. (sourced from prior research, originally self-flagged as unverified)",
+      "nsdc_certification_labs": "A cluster of labs referred to as 'Lakshya 2047' reportedly includes an NSDC Lab Ecosystem with certification-aligned labs (Apple, AR/VR, ABB, NVIDIA, Cisco, AWS, VLSI, ANSYS, Adobe, Autodesk) and an AICTE AVPL/IDEA Lab Zone covering drone training, fabrication, and material synthesis. (sourced from prior research, originally self-flagged as unverified; consistent with the add-on industry certifications already listed in academic_details_parul.json)",
+      "department_wise_labs": "Each engineering/science department additionally maintains its own core subject labs (e.g. Electronics Lab, Chemistry Lab, Physics Lab, Microbiology Lab) required for the respective curriculum. (generated)"
+    },
+
+    "power_backup_coverage": {
+      "data_type": "generated_for_project",
+      "coverage": "Power backup (generator/UPS-based) covers critical infrastructure including hostels, library, computer labs, hospital, and academic blocks, ensuring minimal disruption during power outages.",
+      "note": "Full-capacity backup for high-load equipment (e.g. gym equipment, some lab machinery) may be limited compared to lighting/networking/computing loads."
+    },
+
+    "cctv_and_security_coverage": {
+      "data_type": "generated_for_project",
+      "coverage": "CCTV surveillance is maintained across campus common areas, academic blocks, hostel common areas (as already documented), parking zones, and main entry/exit points.",
+      "security_personnel": "24/7 security personnel are posted at main gates and patrol key campus zones, coordinating with hostel wardens and the anti-ragging committee as needed.",
+      "id_card_access": "Access to certain buildings/labs during off-hours may require student ID card verification at security checkpoints."
+    },
+
+    "convenience_stores_and_shops": {
+      "data_type": "generated_for_project",
+      "convenience_stores": "General convenience/grocery stores are available near hostel zones for daily essentials.",
+      "stationery_and_photocopy": "Stationery and photocopy/printing shops are available near academic blocks and the library, commonly used for assignment printing and book photocopying.",
+      "salon": "On-campus salon/grooming services are available, typically located near the hostel zones."
+    },
+
+    "atm_and_bank_branch": {
+      "data_type": "generated_for_project",
+      "availability": "An on-campus bank branch and multiple ATMs (of the university's primary banking partner and possibly others) are available for students, reducing the need to travel off-campus for basic banking needs.",
+      "services": "Typical on-campus branch services include student account opening assistance, scholarship/loan disbursement support, and standard banking transactions."
+    }
+  }
+}

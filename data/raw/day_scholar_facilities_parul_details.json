@@ -1,0 +1,30 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file consolidates and reframes content already generated in hostel_residential_life_parul_details.json ('day_scholar_vs_hosteler_facilities') and transport_commute_parul_details.json (bus service, parking policy) specifically around day scholar needs, rather than restating them differently.",
+    "data_type": "generated_for_project"
+  },
+
+  "day_scholar_facilities": {
+
+    "locker_rooms_and_rest_areas": {
+      "cross_reference": "Already documented in hostel_residential_life_parul_details.json's 'day_scholar_vs_hosteler_facilities' — day scholars typically have access to designated common rooms/rest areas near academic blocks and locker facilities for personal belongings.",
+      "additional_detail": "Locker facilities are particularly useful for day scholars who need to store books, lab equipment, or personal items between classes without carrying everything home each day, given many day scholars commute a meaningful distance (as reflected in the multi-area bus routes already documented in transport_commute_parul_details.json)."
+    },
+
+    "day_scholar_specific_common_areas": {
+      "cross_reference": "As already documented, day scholars primarily use campus food courts/canteens (rather than hostel mess) and designated rest/common areas near academic blocks between classes.",
+      "additional_detail": "These common areas serve a similar social/downtime function to hostel common rooms for hostelers, giving day scholars a base on campus during gaps between classes rather than needing to leave campus."
+    },
+
+    "parking_and_commute_support": {
+      "cross_reference": "The private vehicle and parking policy already documented in transport_commute_parul_details.json applies to all students, but day scholars are its primary users, since hostelers generally do not need daily on-campus vehicle parking.",
+      "bus_service_relevance": "The university bus service (routes, timing, fees — already documented in transport_commute_parul_details.json) is similarly primarily oriented toward day scholars, who make up the daily commuting population, as distinct from hostelers who live on campus.",
+      "note": "Day scholars opting for personal vehicles (two-wheeler/car) follow the parking registration and zone allocation process already described in transport_commute_parul_details.json's 'private_vehicle_and_parking_policy'."
+    }
+  }
+}

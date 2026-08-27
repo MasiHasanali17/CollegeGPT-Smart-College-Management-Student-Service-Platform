@@ -1,0 +1,181 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0041",
+      "category": "Admissions",
+      "question": "Can I update my personal information after submitting my admission application?",
+      "alternate_questions": [
+        "Edit admission application",
+        "Change my application details",
+        "Update personal details after applying"
+      ],
+      "keywords": [
+        "update",
+        "application",
+        "details",
+        "personal information"
+      ],
+      "answer": "If you need to correct or update information submitted in your application, contact the admission office as early as possible. Changes are subject to verification and university procedures.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0042",
+      "category": "Admissions",
+      "question": "Can I apply for admission if my original documents are not available yet?",
+      "alternate_questions": [
+        "Admission without original documents",
+        "Temporary documents for admission",
+        "Can provisional documents be accepted?"
+      ],
+      "keywords": [
+        "documents",
+        "original",
+        "provisional",
+        "admission"
+      ],
+      "answer": "Students may begin the admission process using the documents permitted by the university. Original documents must be produced whenever verification is required.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0043",
+      "category": "Admissions",
+      "question": "Can I get admission through the university admission office directly?",
+      "alternate_questions": [
+        "Direct admission",
+        "Admission office process",
+        "Offline admission"
+      ],
+      "keywords": [
+        "direct admission",
+        "offline",
+        "admission office"
+      ],
+      "answer": "Yes. Students may visit the university admission office for guidance and complete the admission process according to the applicable university procedures.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0044",
+      "category": "Admissions",
+      "question": "Will I receive updates about my admission application?",
+      "alternate_questions": [
+        "Application notifications",
+        "Admission updates",
+        "Status notifications"
+      ],
+      "keywords": [
+        "notification",
+        "status",
+        "updates",
+        "application"
+      ],
+      "answer": "Yes. The university communicates important admission updates through its official communication channels during the admission process.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0045",
+      "category": "Admissions",
+      "question": "Can I seek admission assistance if I am from another state?",
+      "alternate_questions": [
+        "Out-of-state admission",
+        "Admission for students from other states",
+        "Non-local admission support"
+      ],
+      "keywords": [
+        "other state",
+        "admission",
+        "support"
+      ],
+      "answer": "Yes. Students from any state can contact the admission office for guidance regarding eligibility, documentation, accommodation, and the admission process.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0046",
+      "category": "Admissions",
+      "question": "Can my admission be rejected?",
+      "alternate_questions": [
+        "Admission rejection",
+        "Why would admission be rejected?",
+        "Application rejection"
+      ],
+      "keywords": [
+        "rejection",
+        "eligibility",
+        "application"
+      ],
+      "answer": "Applications may not be approved if eligibility requirements are not met, required documents are incomplete, or admission conditions are not fulfilled.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0047",
+      "category": "Admissions",
+      "question": "How can I contact the admission office if I need immediate help?",
+      "alternate_questions": [
+        "Admission office contact",
+        "Admission support number",
+        "Need urgent admission help"
+      ],
+      "keywords": [
+        "contact",
+        "helpline",
+        "support",
+        "admission office"
+      ],
+      "answer": "Students can contact the admission office through the university's official phone numbers, email, or by visiting the campus during office hours.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0048",
+      "category": "Admissions",
+      "question": "Can I postpone my admission to the next academic session?",
+      "alternate_questions": [
+        "Defer admission",
+        "Admission deferral",
+        "Postpone joining"
+      ],
+      "keywords": [
+        "defer",
+        "postpone",
+        "admission"
+      ],
+      "answer": "Admission deferral requests are handled according to the university's academic and admission policies. Students should contact the admission office for guidance.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0049",
+      "category": "Admissions",
+      "question": "What should I do after my admission is confirmed?",
+      "alternate_questions": [
+        "Next steps after admission",
+        "After admission confirmation",
+        "What happens after enrollment?"
+      ],
+      "keywords": [
+        "confirmation",
+        "enrollment",
+        "orientation",
+        "ERP"
+      ],
+      "answer": "After admission confirmation, students should complete any remaining formalities, activate university services as instructed, participate in orientation activities, and follow the academic schedule released by the university.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0050",
+      "category": "Admissions",
+      "question": "Where can I get official information about admissions at Parul University?",
+      "alternate_questions": [
+        "Official admission information",
+        "Admission details",
+        "Where can I get admission help?",
+        "Admission enquiry"
+      ],
+      "keywords": [
+        "official",
+        "admission",
+        "information",
+        "help"
+      ],
+      "answer": "Students should always refer to the official university admission office and official communication channels for the latest admission procedures, eligibility criteria, important dates, and required documentation.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

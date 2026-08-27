@@ -1,0 +1,73 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The anti-ragging section uses the real, web-verified National Anti-Ragging Helpline (1800-180-5522), which is a genuine UGC-mandated resource under the UGC Regulations on Curbing the Menace of Ragging in Higher Educational Institutions, 2009 — a legal requirement for ALL Indian higher education institutions, not a Parul-specific policy choice. The ICC/harassment section is based on the real legal framework of the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH Act) and related UGC regulations, which similarly apply to all Indian higher education institutions by law. These are marked verified_general_knowledge since they reflect genuine, well-established Indian law rather than Parul-specific claims. Sections on code of conduct, dress code, exam malpractice, ID card rules, and general disciplinary structure are generated for this academic project to be realistic, since no Parul-specific policy documents were available.",
+    "data_types": {
+      "verified_general_knowledge": "Genuine Indian law/regulation that applies to all higher education institutions, not fabricated",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project, no confirmed Parul-specific source"
+    }
+  },
+
+  "rules_discipline_and_grievance": {
+
+    "code_of_conduct": {
+      "data_type": "generated_for_project",
+      "general_expectations": "Students are expected to maintain academic integrity, treat faculty/staff/peers with respect, avoid disruptive behavior in classes and common areas, and comply with campus safety and security protocols.",
+      "prohibited_conduct": "Prohibited conduct typically includes harassment of any kind, substance abuse on campus, damage to university property, and any activity that endangers the safety of others."
+    },
+
+    "dress_code": {
+      "data_type": "generated_for_project",
+      "general_campus": "There is generally no strict uniform requirement for most undergraduate/postgraduate programs; students are expected to dress in a manner considered appropriately modest and presentable for an academic environment.",
+      "lab_specific_requirements": "Programs involving lab or clinical work (Engineering labs, Pharmacy, Nursing, Medicine, Applied Sciences) require appropriate protective attire (lab coats, closed-toe shoes, safety gear as relevant) during lab/clinical sessions, consistent with standard safety practice.",
+      "professional_program_expectations": "Management, Hotel Management, and Law programs may have more explicit formal/business-casual dress expectations, particularly during placement-related activities (interviews, PPTs) and industry visits."
+    },
+
+    "anti_ragging_policy_and_complaint_process": {
+      "data_type": "verified_general_knowledge",
+      "legal_basis": "As with all Indian higher education institutions, Parul University is legally required to comply with the UGC Regulations on Curbing the Menace of Ragging in Higher Educational Institutions, 2009. Ragging is a criminal offense under these regulations, and offenders can face punitive action including suspension, expulsion, and criminal prosecution.",
+      "mandatory_structures": "The university is required to maintain an Anti-Ragging Committee (ARC) and Anti-Ragging Squad (ARS), and to collect a mandatory online anti-ragging affidavit from every student and their parent/guardian at the start of each academic year, as mandated nationally.",
+      "national_helpline": "Students in distress due to ragging can call the National Anti-Ragging Helpline: 1800-180-5522 (24x7 toll-free, available in 12 languages) or email helpline@antiragging.in. This is a real, government-run national resource, not a Parul-specific number.",
+      "on_campus_reporting": "Ragging incidents can also be reported directly to the on-campus Anti-Ragging Committee, hostel wardens (already documented in hostel_residential_life_parul_details.json), or the Dean of Student Affairs office."
+    },
+
+    "grievance_redressal_committee_and_process": {
+      "data_type": "generated_for_project",
+      "structure": "Consistent with standard UGC student grievance requirements applicable to Indian higher education institutions, the university maintains a Grievance Redressal Committee, typically headed by a senior faculty member/Dean, to address academic and non-academic student grievances not resolved through informal channels (class representative, faculty, department).",
+      "process": "Students can typically submit grievances through the student ERP portal or in writing to the committee; the committee is expected to acknowledge and address grievances within a defined timeframe (commonly a few weeks), escalating to university leadership if unresolved.",
+      "cross_reference": "This complements the more general student feedback mechanism already documented in student_governance_representation_parul_details.json."
+    },
+
+    "internal_complaints_committee_icc": {
+      "data_type": "verified_general_knowledge",
+      "legal_basis": "Under the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH Act) and corresponding UGC regulations, all Indian higher education institutions are legally required to constitute an Internal Complaints Committee (ICC) to address complaints of sexual harassment involving students and staff.",
+      "composition_requirement": "By law, the ICC must include a woman presiding officer, other members with relevant experience, and at least one external member (typically from an NGO or an individual familiar with harassment issues) to ensure impartiality.",
+      "confidentiality": "Confidentiality of the complainant, respondent, and witnesses is a legal requirement under the POSH Act (Section 16) — details of a complaint and proceedings cannot be publicly disclosed, protecting all parties during the process.",
+      "process_overview": "Complaints can generally be submitted in writing to the ICC; the committee is legally required to complete its inquiry within a defined timeframe (commonly 90 days under the Act) and recommend appropriate action based on findings."
+    },
+
+    "exam_malpractice_and_unfair_means_policy": {
+      "data_type": "generated_for_project",
+      "definition": "Unfair means typically includes copying, possession of unauthorized material during an exam, impersonation, and any attempt to gain an unfair advantage during assessment.",
+      "consequences": "Consequences are typically tiered by severity: cancellation of that specific exam paper for minor first-time offenses, debarment from appearing in exams for a defined period (commonly one semester to one year) for more serious or repeated offenses, and in severe cases (e.g. impersonation), the matter may be escalated to formal disciplinary/expulsion proceedings.",
+      "process": "Suspected unfair means cases are typically reported by exam invigilators, reviewed by an examination malpractice committee, and the student is given an opportunity to respond before a final decision is made."
+    },
+
+    "id_card_rules_and_replacement": {
+      "data_type": "generated_for_project",
+      "usage_rules": "Students are required to carry their university ID card at all times on campus, as it is used for library access, exam hall entry, hostel access, and general identification at security checkpoints.",
+      "replacement_process": "Lost or damaged ID cards can typically be replaced by submitting a written request (and, for lost cards, sometimes a police complaint/FIR copy for security reasons) to the student services office, along with a nominal replacement fee, with a new card issued within a specified processing window (commonly 1-2 weeks)."
+    },
+
+    "disciplinary_action_policy": {
+      "data_type": "generated_for_project",
+      "escalation_structure": "Consistent with the hostel-level disciplinary structure already documented in hostel_residential_life_parul_details.json, campus-wide disciplinary action generally follows an escalating pattern: verbal warning, written warning (with parental notification for serious cases), fine or restriction of privileges, and in serious/repeated cases, suspension or expulsion.",
+      "suspension_criteria": "Suspension is typically reserved for serious violations — ragging, harassment, exam malpractice in aggravated form, substance abuse, violence, or repeated disciplinary violations despite prior warnings — decided through a formal disciplinary committee process rather than a single individual's discretion.",
+      "right_to_respond": "Students facing disciplinary action are generally given an opportunity to present their side before a final decision is made, consistent with standard due-process practice at Indian universities."
+    }
+  }
+}

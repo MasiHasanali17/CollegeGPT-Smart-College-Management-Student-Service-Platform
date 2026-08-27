@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div style="background:#f8fafc;min-height:85vh;padding:80px 20px;font-family:'Inter',system-ui,-apple-system,sans-serif;">
+
+    <div style="max-width:400px;margin:0 auto;background:white;border-radius:16px;padding:36px;box-shadow:0 10px 30px rgba(15,23,42,0.08);">
+
+        <h2 style="margin-top:0;">Staff Admin Login</h2>
+        <p style="color:#64748b;font-size:13.5px;">Sign in with your admin account.</p>
+
+        <form method="POST" action="{{ url_for('admin_login', next=request.args.get('next', '')) }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <label style="display:block;font-weight:700;font-size:13px;margin:16px 0 6px;">Username</label>
+            <input type="text" name="username" required
+                style="width:100%;padding:12px 14px;border-radius:8px;border:1px solid #e2e8f0;">
+
+            <label style="display:block;font-weight:700;font-size:13px;margin:16px 0 6px;">Password</label>
+            <input type="password" name="password" required
+                style="width:100%;padding:12px 14px;border-radius:8px;border:1px solid #e2e8f0;">
+
+            <button type="submit"
+                style="width:100%;padding:13px;margin-top:22px;border:none;border-radius:8px;background:#7c3aed;color:white;font-weight:700;cursor:pointer;">
+                Login
+            </button>
+        </form>
+
+        <p style="color:#94a3b8;font-size:12px;margin-top:20px;">
+            First time setup? Default super admin: <code>superadmin</code> / <code>admin123</code> — change this password after logging in.
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

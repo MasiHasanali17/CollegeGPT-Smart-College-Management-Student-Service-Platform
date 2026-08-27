@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0326",
+      "category": "Sports",
+      "question": "Are professional coaches available for sports training?",
+      "alternate_questions": [
+        "Sports coaching",
+        "Professional coaches",
+        "Sports trainers"
+      ],
+      "keywords": ["coach", "sports", "training"],
+      "answer": "Yes. Qualified coaches and trainers are available for various sports depending on the facilities and university sports programs.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0327",
+      "category": "Sports",
+      "question": "Can beginners participate in sports activities?",
+      "alternate_questions": [
+        "Sports for beginners",
+        "New to sports",
+        "Can anyone join sports?"
+      ],
+      "keywords": ["beginners", "sports"],
+      "answer": "Yes. Students of all skill levels are encouraged to participate in sports and recreational activities.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0328",
+      "category": "Sports",
+      "question": "Does the university have a gymnasium?",
+      "alternate_questions": [
+        "University gym",
+        "Fitness center",
+        "Gym facility"
+      ],
+      "keywords": ["gym", "fitness"],
+      "answer": "Yes. The university provides fitness and gymnasium facilities for students, subject to applicable rules and timings.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0329",
+      "category": "Sports",
+      "question": "Are gym facilities free for students?",
+      "alternate_questions": [
+        "Gym charges",
+        "Free gym access",
+        "Fitness membership"
+      ],
+      "keywords": ["gym", "fees"],
+      "answer": "Access to gym facilities is governed by university policies. Students should check with the sports department for any applicable conditions.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0330",
+      "category": "Sports",
+      "question": "Are separate sports facilities available for boys and girls?",
+      "alternate_questions": [
+        "Separate sports facilities",
+        "Girls sports",
+        "Boys sports"
+      ],
+      "keywords": ["sports", "facilities"],
+      "answer": "Sports facilities are provided in accordance with university policies to ensure safe and inclusive participation for all students.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0331",
+      "category": "Sports",
+      "question": "Can hostel students use sports facilities after class hours?",
+      "alternate_questions": [
+        "Hosteller sports",
+        "Evening sports",
+        "Sports after classes"
+      ],
+      "keywords": ["hostel", "sports"],
+      "answer": "Yes. Hostel students may use sports facilities during the approved operating hours and according to university regulations.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0332",
+      "category": "Sports",
+      "question": "Does the university organize inter-college sports competitions?",
+      "alternate_questions": [
+        "Intercollege sports",
+        "University tournaments",
+        "Sports competitions"
+      ],
+      "keywords": ["competition", "sports"],
+      "answer": "Yes. Students may participate in inter-college and university-level sports competitions through official selection processes.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0333",
+      "category": "Sports",
+      "question": "Can students represent the university in national tournaments?",
+      "alternate_questions": [
+        "National sports",
+        "Represent university",
+        "Sports team selection"
+      ],
+      "keywords": ["national", "sports"],
+      "answer": "Eligible students selected through university trials may represent the university in state, national, and other competitions.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0334",
+      "category": "Sports",
+      "question": "Does Parul University provide sports scholarships?",
+      "alternate_questions": [
+        "Scholarship for athletes",
+        "Sports scholarship",
+        "Athlete scholarship"
+      ],
+      "keywords": ["sports", "scholarship"],
+      "answer": "Sports scholarships may be available according to the university's scholarship policies and eligibility criteria.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0335",
+      "category": "Sports",
+      "question": "How can I register for sports events?",
+      "alternate_questions": [
+        "Sports registration",
+        "Register sports",
+        "Join sports event"
+      ],
+      "keywords": ["registration", "sports"],
+      "answer": "Students can register through the sports department or according to announcements issued for specific events.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0336",
+      "category": "Sports",
+      "question": "Does the university have indoor sports facilities?",
+      "alternate_questions": [
+        "Indoor games",
+        "Indoor sports",
+        "Sports hall"
+      ],
+      "keywords": ["indoor", "sports"],
+      "answer": "Yes. Indoor sports facilities are available for students depending on facility schedules and availability.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0337",
+      "category": "Sports",
+      "question": "Are outdoor sports grounds available?",
+      "alternate_questions": [
+        "Sports ground",
+        "Outdoor games",
+        "Playground"
+      ],
+      "keywords": ["ground", "sports"],
+      "answer": "Yes. The campus has outdoor sports grounds for various games and athletic activities.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0338",
+      "category": "Sports",
+      "question": "Can students practice sports daily?",
+      "alternate_questions": [
+        "Daily sports practice",
+        "Practice schedule",
+        "Sports timing"
+      ],
+      "keywords": ["practice", "sports"],
+      "answer": "Yes. Students may use sports facilities during approved timings while following university regulations.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0339",
+      "category": "Sports",
+      "question": "Does the university celebrate International Yoga Day?",
+      "alternate_questions": [
+        "Yoga Day",
+        "Yoga activities",
+        "Wellness events"
+      ],
+      "keywords": ["yoga", "wellness"],
+      "answer": "The university organizes wellness and fitness-related activities, including Yoga Day celebrations where applicable.",
+      "source": "wellness_sustainability.json"
+    },
+    {
+      "id": "faq_0340",
+      "category": "Sports",
+      "question": "Is first aid available during sports events?",
+      "alternate_questions": [
+        "Sports medical support",
+        "Emergency during sports",
+        "Sports first aid"
+      ],
+      "keywords": ["sports", "medical", "first aid"],
+      "answer": "Yes. Basic medical assistance and emergency support are available during officially organized sports events.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0341",
+      "category": "Sports",
+      "question": "Can students bring their own sports equipment?",
+      "alternate_questions": [
+        "Personal sports equipment",
+        "Own sports kit",
+        "Sports gear"
+      ],
+      "keywords": ["equipment", "sports"],
+      "answer": "Students may use personal sports equipment where permitted and in accordance with university rules.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0342",
+      "category": "Sports",
+      "question": "Does the university provide sports equipment?",
+      "alternate_questions": [
+        "Sports kit",
+        "Equipment provided",
+        "Sports accessories"
+      ],
+      "keywords": ["equipment", "sports"],
+      "answer": "Yes. Sports equipment is available for eligible students according to the sports department's policies.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0343",
+      "category": "Sports",
+      "question": "Can day scholars participate in sports activities?",
+      "alternate_questions": [
+        "Day scholar sports",
+        "Sports for commuters",
+        "Sports participation"
+      ],
+      "keywords": ["day scholar", "sports"],
+      "answer": "Yes. Day scholars are encouraged to participate in sports activities during the approved timings.",
+      "source": "day_scholar_facilities.json"
+    },
+    {
+      "id": "faq_0344",
+      "category": "Sports",
+      "question": "Are certificates awarded for sports achievements?",
+      "alternate_questions": [
+        "Sports certificate",
+        "Participation certificate",
+        "Sports awards"
+      ],
+      "keywords": ["certificate", "sports"],
+      "answer": "Yes. Students participating in official sports competitions may receive certificates or awards according to university policies.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0345",
+      "category": "Sports",
+      "question": "Whom should I contact regarding sports facilities?",
+      "alternate_questions": [
+        "Sports office",
+        "Sports department contact",
+        "Sports coordinator"
+      ],
+      "keywords": ["sports", "contact"],
+      "answer": "Students should contact the university's sports department or designated sports coordinator for assistance with sports-related queries.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0346",
+      "category": "Student Clubs & Societies",
+      "question": "Does Parul University have student clubs?",
+      "alternate_questions": [
+        "Student clubs",
+        "University clubs",
+        "Campus societies"
+      ],
+      "keywords": ["clubs", "societies"],
+      "answer": "Yes. The university has various student clubs and societies that promote technical, cultural, literary, social, and leadership activities.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0347",
+      "category": "Student Clubs & Societies",
+      "question": "How can I join a student club?",
+      "alternate_questions": [
+        "Club registration",
+        "Join society",
+        "Club membership"
+      ],
+      "keywords": ["club", "membership"],
+      "answer": "Students can join clubs by registering during membership drives or by contacting the respective club coordinators.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0348",
+      "category": "Student Clubs & Societies",
+      "question": "Can I join more than one club?",
+      "alternate_questions": [
+        "Multiple clubs",
+        "Join many societies",
+        "Club participation"
+      ],
+      "keywords": ["clubs", "membership"],
+      "answer": "Yes. Students may participate in multiple clubs provided they can manage their academic and extracurricular commitments.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0349",
+      "category": "Student Clubs & Societies",
+      "question": "Are there technical clubs at the university?",
+      "alternate_questions": [
+        "Technical society",
+        "Coding club",
+        "Engineering clubs"
+      ],
+      "keywords": ["technical club", "coding"],
+      "answer": "Yes. Technical clubs organize coding competitions, workshops, seminars, and innovation activities for students.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0350",
+      "category": "Student Clubs & Societies",
+      "question": "Are there cultural clubs at Parul University?",
+      "alternate_questions": [
+        "Cultural society",
+        "Dance club",
+        "Music club"
+      ],
+      "keywords": ["cultural", "clubs"],
+      "answer": "Yes. The university offers cultural clubs for music, dance, drama, fine arts, photography, and various creative activities.",
+      "source": "clubs_societies.json"
+    }
+  ]
+}

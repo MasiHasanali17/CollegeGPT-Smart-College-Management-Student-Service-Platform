@@ -1,0 +1,44 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is based on the real legal framework of the Rights of Persons with Disabilities (RPwD) Act, 2016, verified via web search. IMPORTANT NUANCE: the Act's mandatory 5% higher-education seat reservation (Section 32) legally applies specifically to GOVERNMENT and GOVERNMENT-AIDED institutions. Parul University is a private, self-financed university, so this exact reservation mandate does not automatically apply to it the same way it would to a government college — this is stated honestly below rather than overclaiming a blanket legal mandate. Physical accessibility facilities, exam accommodation specifics, and the Equal Opportunity Cell's day-to-day operations are generated for this academic project, since no Parul-specific policy documents were available; UGC Equal Opportunity Cell regulations, however, do apply broadly across UGC-recognized universities including private ones.",
+    "data_types": {
+      "verified_via_web_search": "Real, government-confirmed legal framework (RPwD Act, 2016)",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project, no confirmed Parul-specific source"
+    }
+  },
+
+  "accessibility_and_inclusion": {
+
+    "facilities_for_differently_abled_students": {
+      "data_type": "generated_for_project",
+      "general_expectation": "Given the university's scale and modern campus infrastructure (already documented in campus_facilities_infrastructure_parul_details.json), reasonable accessibility provisions — ramps, elevators in multi-story academic and hostel buildings, and accessible washrooms — would be expected as part of standard institutional building compliance.",
+      "disclaimer": "Specific details (e.g. which exact buildings have full accessibility retrofits) could not be independently verified and are not claimed here with false precision."
+    },
+
+    "special_exam_arrangements": {
+      "data_type": "generated_for_project",
+      "extra_time": "Consistent with widely-followed Indian examination accommodation norms (commonly one-third additional time, i.e. 20 minutes per hour) for candidates with benchmark disabilities, similar provisions would reasonably be expected for university examinations, following patterns established across most Indian exam-conducting bodies (CBSE, UGC, various entrance exam authorities) after relevant Supreme Court/disability-rights guidance.",
+      "scribe_facility": "A scribe (writer) facility is similarly a widely-followed accommodation for eligible candidates unable to write independently, generally requestable through the examination department with appropriate disability certification.",
+      "disclaimer": "These reflect the general pattern followed by most Indian educational institutions rather than a confirmed Parul-specific examination accommodation policy document."
+    },
+
+    "reservation_and_admission_support_for_pwd_category": {
+      "data_type": "verified_via_web_search",
+      "legal_framework": "Under Section 32 of the Rights of Persons with Disabilities (RPwD) Act, 2016, a minimum 5% seat reservation is mandated for persons with 'benchmark disabilities' (certified at 40% or more of a specified disability) — but this mandate specifically applies to GOVERNMENT and GOVERNMENT-AIDED higher education institutions.",
+      "private_university_nuance": "Parul University, being a private, self-financed institution, is not subject to the same hard legal reservation mandate that applies to government/government-aided colleges. Private institutions are encouraged, but not uniformly legally required, to adopt equivalent inclusive admission practices — actual practice should be confirmed directly with the admissions office rather than assumed to exactly mirror the government-institution mandate.",
+      "age_relaxation": "The RPwD Act also provides for an upper age relaxation of 5 years for admission to higher education institutions for persons with benchmark disabilities — this provision's applicability to a private university would similarly need direct confirmation."
+    },
+
+    "equal_opportunity_cell": {
+      "data_type": "generated_for_project",
+      "regulatory_basis": "UGC regulations call for higher education institutions (including private universities recognized by UGC) to maintain an Equal Opportunity Cell, intended to address the needs of disadvantaged groups, including students with disabilities, and to promote an inclusive campus environment.",
+      "typical_functions": "Such a cell typically handles disability-related admission queries, coordinates reasonable accommodation requests (exam arrangements, accessible seating/housing), and serves as a point of contact for students facing disability-related difficulties on campus.",
+      "disclaimer": "Day-to-day operational specifics of Parul University's Equal Opportunity Cell could not be independently confirmed for this project."
+    }
+  }
+}

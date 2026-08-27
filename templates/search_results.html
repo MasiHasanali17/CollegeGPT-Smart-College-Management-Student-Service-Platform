@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+:root { --brand-purple: #7c3aed; --brand-dark: #0f172a; }
+
+.sr-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--brand-dark);
+    min-height: 75vh;
+}
+
+.sr-hero {
+    background: #f8fafc;
+    padding: 50px 20px 30px;
+    text-align: center;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.sr-hero h1 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.sr-hero p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.sr-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+.sr-section {
+    margin-bottom: 34px;
+}
+
+.sr-section h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+.sr-result {
+    display: block;
+    padding: 14px 18px;
+    border: 1px solid #eef2f7;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--brand-dark);
+    font-size: 14.5px;
+    font-weight: 600;
+    transition: border-color 0.2s ease;
+}
+
+.sr-result:hover {
+    border-color: var(--brand-purple);
+}
+
+.sr-result .sub {
+    display: block;
+    font-weight: 400;
+    color: #64748b;
+    font-size: 12.5px;
+    margin-top: 4px;
+}
+
+.sr-empty {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8fafc;
+    border-radius: 16px;
+    color: #64748b;
+}
+
+.sr-empty a {
+    color: var(--brand-purple);
+    font-weight: 700;
+}
+</style>
+
+<div class="sr-page">
+
+    <div class="sr-hero">
+        <h1>Search Results</h1>
+        {% if results.query %}
+        <p>Showing quick-navigation results for "<strong>{{ results.query }}</strong>"</p>
+        {% else %}
+        <p>Type something in the search box above to get started.</p>
+        {% endif %}
+    </div>
+
+    <div class="sr-wrap">
+
+        {% set has_results = results.pages or results.courses or results.notices or results.hostels %}
+
+        {% if results.query and not has_results %}
+        <div class="sr-empty">
+            <p>No quick matches for "{{ results.query }}".</p>
+            <p>Try asking <a href="/chatbot">Campus AI</a> instead — it can answer detailed questions in natural language.</p>
+        </div>
+        {% endif %}
+
+        {% if results.pages %}
+        <div class="sr-section">
+            <h3>Pages</h3>
+            {% for p in results.pages %}
+            <a class="sr-result" href="{{ p.url }}">{{ p.title }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if results.courses %}
+        <div class="sr-section">
+            <h3>Courses</h3>
+            {% for c in results.courses %}
+            <a class="sr-result" href="/courses">{{ c }}<span class="sub">View in Courses</span></a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if results.notices %}
+        <div class="sr-section">
+            <h3>Notices</h3>
+            {% for n in results.notices %}
+            <a class="sr-result" href="/portal/notices">{{ n.title }}<span class="sub">{{ n.category }}</span></a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if results.hostels %}
+        <div class="sr-section">
+            <h3>Hostels</h3>
+            {% for h in results.hostels %}
+            <a class="sr-result" href="/hostel-info">{{ h }}<span class="sub">View in Hostel Information</span></a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

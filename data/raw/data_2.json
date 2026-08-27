@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0276",
+      "category": "Internships",
+      "question": "Does Parul University help students get internships?",
+      "alternate_questions": [
+        "Internship support",
+        "Internship assistance",
+        "Summer internship"
+      ],
+      "keywords": ["internship", "career", "training"],
+      "answer": "Yes. The university assists eligible students in securing internship opportunities through industry collaborations, career services, and departmental initiatives.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0277",
+      "category": "Internships",
+      "question": "Are internships compulsory for all courses?",
+      "alternate_questions": [
+        "Mandatory internship",
+        "Internship requirement",
+        "Is internship compulsory?"
+      ],
+      "keywords": ["internship", "mandatory"],
+      "answer": "Internship requirements depend on the curriculum and academic regulations of the respective program.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0278",
+      "category": "Internships",
+      "question": "When do students usually start internships?",
+      "alternate_questions": [
+        "Internship semester",
+        "Internship timing",
+        "When is internship conducted?"
+      ],
+      "keywords": ["internship", "semester"],
+      "answer": "Internships are generally scheduled according to the academic curriculum and departmental guidelines.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0279",
+      "category": "Internships",
+      "question": "Can I find my own internship?",
+      "alternate_questions": [
+        "Self-arranged internship",
+        "Own internship",
+        "External internship"
+      ],
+      "keywords": ["internship", "self arranged"],
+      "answer": "Yes. Students may pursue self-arranged internships, subject to approval from the concerned department where required.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0280",
+      "category": "Internships",
+      "question": "Will the university issue an internship recommendation letter?",
+      "alternate_questions": [
+        "Recommendation letter",
+        "Internship letter",
+        "College recommendation"
+      ],
+      "keywords": ["recommendation", "internship"],
+      "answer": "Recommendation or forwarding letters may be issued according to departmental procedures and eligibility.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0281",
+      "category": "Internships",
+      "question": "Can international students apply for internships through the university?",
+      "alternate_questions": [
+        "International internship",
+        "Foreign student internship",
+        "Internship for international students"
+      ],
+      "keywords": ["international", "internship"],
+      "answer": "Eligible international students may participate in internship opportunities in accordance with university policies and applicable regulations.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0282",
+      "category": "Internships",
+      "question": "Does the university organize internship fairs?",
+      "alternate_questions": [
+        "Internship drive",
+        "Internship fair",
+        "Internship recruitment"
+      ],
+      "keywords": ["internship", "fair"],
+      "answer": "Internship drives and recruitment events may be organized through the Training and Placement Cell or academic departments.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0283",
+      "category": "Internships",
+      "question": "Do internships carry academic credits?",
+      "alternate_questions": [
+        "Internship credits",
+        "Credit-based internship",
+        "Academic credit internship"
+      ],
+      "keywords": ["credits", "internship"],
+      "answer": "Credit allocation depends on the curriculum and academic regulations applicable to the student's program.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0284",
+      "category": "Internships",
+      "question": "How do I submit my internship report?",
+      "alternate_questions": [
+        "Internship report submission",
+        "Submit internship documents",
+        "Internship report"
+      ],
+      "keywords": ["internship", "report"],
+      "answer": "Internship reports should be submitted according to the deadlines and format prescribed by the department.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0285",
+      "category": "Internships",
+      "question": "Who evaluates internship performance?",
+      "alternate_questions": [
+        "Internship evaluation",
+        "Internship assessment",
+        "Internship grading"
+      ],
+      "keywords": ["internship", "evaluation"],
+      "answer": "Internship performance is evaluated according to departmental guidelines, which may include faculty assessment and employer feedback.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0286",
+      "category": "Internships",
+      "question": "Can I complete my internship outside Gujarat?",
+      "alternate_questions": [
+        "Internship in another state",
+        "Outside state internship",
+        "External location internship"
+      ],
+      "keywords": ["internship", "location"],
+      "answer": "Yes, subject to departmental approval and compliance with internship guidelines.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0287",
+      "category": "Internships",
+      "question": "Can I do an online internship?",
+      "alternate_questions": [
+        "Virtual internship",
+        "Remote internship",
+        "Online internship approval"
+      ],
+      "keywords": ["online internship", "virtual"],
+      "answer": "Online internships may be accepted if they satisfy the academic requirements and receive departmental approval.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0288",
+      "category": "Internships",
+      "question": "Will I receive an internship completion certificate?",
+      "alternate_questions": [
+        "Internship certificate",
+        "Completion certificate",
+        "Internship proof"
+      ],
+      "keywords": ["certificate", "internship"],
+      "answer": "Internship completion certificates are generally issued by the internship organization upon successful completion.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0289",
+      "category": "Internships",
+      "question": "Can internship experience help during placements?",
+      "alternate_questions": [
+        "Internship for placement",
+        "Internship experience",
+        "Placement advantage"
+      ],
+      "keywords": ["placement", "internship", "experience"],
+      "answer": "Yes. Relevant internship experience can strengthen a student's resume and improve employability during campus placements.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0290",
+      "category": "Internships",
+      "question": "Can I receive a stipend during my internship?",
+      "alternate_questions": [
+        "Paid internship",
+        "Internship stipend",
+        "Internship salary"
+      ],
+      "keywords": ["stipend", "internship"],
+      "answer": "Whether an internship is paid or unpaid depends on the policies of the organization offering the internship.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0291",
+      "category": "Internships",
+      "question": "What documents are required before starting an internship?",
+      "alternate_questions": [
+        "Internship documents",
+        "Documents for internship",
+        "Internship paperwork"
+      ],
+      "keywords": ["documents", "internship"],
+      "answer": "Required documents may include an internship approval letter, student ID, resume, academic records, and any documents requested by the employer.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0292",
+      "category": "Internships",
+      "question": "Can I extend my internship duration?",
+      "alternate_questions": [
+        "Extend internship",
+        "Longer internship",
+        "Internship extension"
+      ],
+      "keywords": ["extension", "internship"],
+      "answer": "Internship extensions depend on the employer's approval and, where applicable, departmental permission.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0293",
+      "category": "Internships",
+      "question": "Can I change my internship organization after approval?",
+      "alternate_questions": [
+        "Change internship company",
+        "Switch internship",
+        "Internship transfer"
+      ],
+      "keywords": ["change", "internship"],
+      "answer": "Changes to an approved internship generally require prior approval from the concerned academic department.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0294",
+      "category": "Internships",
+      "question": "Does the university verify internship completion?",
+      "alternate_questions": [
+        "Internship verification",
+        "Verify internship",
+        "Internship confirmation"
+      ],
+      "keywords": ["verification", "internship"],
+      "answer": "Yes. Internship completion may be verified through reports, certificates, employer feedback, or departmental evaluation.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0295",
+      "category": "Internships",
+      "question": "Whom should I contact for internship-related queries?",
+      "alternate_questions": [
+        "Internship help",
+        "Internship support",
+        "Internship coordinator"
+      ],
+      "keywords": ["internship", "contact", "support"],
+      "answer": "Students should contact their department or the Training and Placement Cell for internship-related guidance and assistance.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0296",
+      "category": "Research",
+      "question": "Does Parul University encourage student research?",
+      "alternate_questions": [
+        "Student research opportunities",
+        "Research activities",
+        "Research programs"
+      ],
+      "keywords": ["research", "innovation"],
+      "answer": "Yes. The university promotes research and innovation by encouraging students to participate in research projects, publications, and academic activities.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0297",
+      "category": "Research",
+      "question": "Can undergraduate students participate in research projects?",
+      "alternate_questions": [
+        "UG research",
+        "Research for undergraduate students",
+        "Student research project"
+      ],
+      "keywords": ["undergraduate", "research"],
+      "answer": "Yes. Undergraduate students may participate in research activities under faculty guidance depending on departmental opportunities.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0298",
+      "category": "Research",
+      "question": "How can I join a faculty research project?",
+      "alternate_questions": [
+        "Research under professor",
+        "Faculty research",
+        "Join research project"
+      ],
+      "keywords": ["faculty", "research"],
+      "answer": "Students interested in research should approach the concerned faculty member or department to explore available research opportunities.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0299",
+      "category": "Research",
+      "question": "Does the university support research paper publication?",
+      "alternate_questions": [
+        "Research publication",
+        "Publish paper",
+        "Journal publication"
+      ],
+      "keywords": ["publication", "research paper"],
+      "answer": "Yes. The university encourages students and faculty to publish quality research in recognized journals and conferences.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0300",
+      "category": "Research",
+      "question": "Are research workshops conducted for students?",
+      "alternate_questions": [
+        "Research training",
+        "Research workshop",
+        "Academic research sessions"
+      ],
+      "keywords": ["research", "workshop"],
+      "answer": "Yes. Departments may organize research workshops, seminars, and training programs to enhance students' research skills.",
+      "source": "research_innovation.json"
+    }
+  ]
+}

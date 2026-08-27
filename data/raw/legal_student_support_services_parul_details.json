@@ -1,0 +1,38 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The RTI section of this file is based on a real, specific, and recent (June 2025) ruling by the Gujarat Information Commission (GIC) directly concerning Parul University, cross-verified across multiple independent news sources (PTI, Careers360, DeshGujarat, The Print). This is a genuinely notable finding: Parul University itself argued it should NOT be covered by the RTI Act (since it receives no government funding), and the GIC rejected that argument. Student legal aid cell and consumer grievance guidance sections are generated for this academic project, since no Parul-specific policy documents were available for those.",
+    "data_types": {
+      "verified_via_web_search": "Real, multi-source-corroborated news finding specific to Parul University",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project, no confirmed Parul-specific source"
+    }
+  },
+
+  "legal_and_student_support_services": {
+
+    "student_legal_aid_cell": {
+      "data_type": "generated_for_project",
+      "general_note": "A dedicated, formally-branded student legal aid cell was not independently confirmed to exist at Parul University. Students with legal questions would more typically be directed to the Faculty of Law (already documented in academic_details_parul.json), which may offer informal guidance or legal awareness camps as part of its own academic/outreach activities, though this is a reasonable inference rather than a confirmed service.",
+      "distinction_from_grievance_bodies": "This is distinct from the Grievance Redressal Committee and ICC already documented in rules_discipline_grievance_parul_details.json, which handle specific internal complaint categories rather than general legal aid."
+    },
+
+    "consumer_grievance_guidance": {
+      "data_type": "generated_for_project",
+      "general_context": "Whether educational services fall under India's Consumer Protection Act has been treated inconsistently by Indian courts — purely academic/educational functions have sometimes been held outside the scope of 'consumer services', while ancillary services (hostel accommodation, mess, transport — already documented elsewhere in this knowledge base) are more plausibly viewed as consumer-facing services in some rulings.",
+      "practical_guidance": "For fee disputes or service-quality complaints specifically, students are more likely to get resolution through the university's own Grievance Redressal Committee (already documented) as a first step, given the legal ambiguity around external consumer forums for core educational disputes.",
+      "disclaimer": "This is general legal context, not confirmed Parul-specific guidance, and should not be taken as legal advice."
+    },
+
+    "rti_right_to_information_process": {
+      "data_type": "verified_via_web_search",
+      "landmark_ruling": "In a ruling dated June 16, 2025, the Gujarat Information Commission (GIC) held that Parul University qualifies as a 'public authority' under Section 2(h) of the RTI Act, 2005 — specifically because it was established under the Gujarat Private Universities Act, 2009 (a law made by the state legislature), regardless of whether it receives government funding.",
+      "background": "The ruling arose from an appeal by a professor who had been denied information he sought from Parul University under an RTI request. The university had argued it should not be covered by the RTI Act since it receives no government funds — the Commission rejected this argument, noting that any entity created through a state legislature act qualifies as a public authority under the RTI Act regardless of funding source.",
+      "commission_directives": "The GIC directed Parul University's registrar to implement RTI Act provisions, appoint Public Information Officers (PIOs) and First Appellate Authorities, and publish their contact details on the official website — and further directed the state government to ensure this implementation across all universities established under the Gujarat Private Universities Act, 2009.",
+      "practical_implication_for_students": "Based on this ruling, students and citizens can in principle file RTI applications with Parul University requesting official information, and the university is expected (per this recent Commission directive) to appoint and publish PIO/Appellate Authority contact details. Since this ruling is recent, students should check the official website for current PIO contact details, as on-ground implementation may still be catching up with the directive at the time of any given request."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file consolidates real corporate/industry names already documented elsewhere in this project (as lab sponsors in Lakshya 2047, as GCF Programme certification partners, and as Projections tech fest industry contributors) into an organized industry-academia partnership view, rather than restating them differently. It distinguishes genuine corporate/industry partnerships from government research funding bodies (DST/DBT/GUJCOST) and the academic publisher partnership (Springer Nature), which are real but not 'industry' in the corporate sense requested by this category.",
+    "data_type": "verified_from_prior_data"
+  },
+
+  "industry_academia_partnerships": {
+
+    "mous_for_curriculum_collaboration": {
+      "cross_reference": "The GCF (Global Certification Forum) Programme, already documented in skill_development_certifications_parul_details.json, represents the clearest curriculum-integrated industry tie-up — IBM (Java, Python), Microsoft (Azure AI, Power Platform), AWS (Cloud Foundations), Cisco (Networking, Security), and Autodesk (AutoCAD, Inventor) certifications are woven into the six-semester structure rather than offered as a purely elective add-on.",
+      "additional_addon_partners": "The broader elective add-on certification list (already documented in academic_details_parul.json) adds Oracle and Adobe as further curriculum-adjacent industry partners."
+    },
+
+    "guest_lecture_series_tie_ups": {
+      "cross_reference": "Already documented in events_fests_cultural_calendar_parul_details.json — the Projections technical fest has featured 15+ industry tie-ups and multiple guest lecture sessions from technology professionals in recent editions.",
+      "additional_note": "Beyond the annual fest, individual faculties organize their own guest lecture series throughout the year, already documented in placements_parul_details.json's career counseling and higher-studies support sections."
+    },
+
+    "joint_research_collaborations": {
+      "government_funded_research": "Research funding partners documented in research_innovation_parul_details.json (DST, DBT, GUJCOST — Government of India/Gujarat science and technology bodies) are government research collaborations rather than corporate industry partnerships specifically.",
+      "academic_publishing_partnership": "The Springer Nature partnership (already documented in research_innovation_parul_details.json) is a real international partnership, though it is an academic publishing collaboration rather than a corporate/industry research partnership.",
+      "honest_gap": "A specific corporate-industry JOINT RESEARCH collaboration (as distinct from lab sponsorship or certification partnerships) was not independently confirmed in available research — the strongest documented industry ties are in lab sponsorship and certification programs, covered below and above."
+    },
+
+    "corporate_sponsored_labs_and_centers": {
+      "description": "The university's lab ecosystem (Lakshya 2047, already documented in campus_facilities_infrastructure_parul_details.json) names multiple real corporate partners associated with specific labs:",
+      "named_corporate_lab_partners": [
+        "Apple (Apple devices lab)",
+        "NVIDIA (NVIDIA lab)",
+        "Cisco (networking-aligned lab)",
+        "AWS — Amazon Web Services (cloud computing-aligned lab)",
+        "Adobe (design/creative-aligned lab)",
+        "Autodesk (CAD/engineering design-aligned lab)",
+        "ABB (industrial automation-aligned lab)"
+      ],
+      "caution": "As with the broader Lakshya 2047 description, these lab-partner associations were self-flagged as unverified in the original research (a relatively newly-described initiative) and should be confirmed with the university directly for current accuracy."
+    }
+  }
+}

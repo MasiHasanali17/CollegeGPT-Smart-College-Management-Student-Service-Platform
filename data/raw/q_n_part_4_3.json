@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0211",
+      "category": "Degree & Certificates",
+      "question": "When will I receive my degree certificate?",
+      "alternate_questions": [
+        "Degree certificate issue",
+        "When is degree awarded?",
+        "Receive graduation certificate"
+      ],
+      "keywords": ["degree", "certificate", "graduation"],
+      "answer": "Degree certificates are issued after successful completion of the program and fulfillment of all university requirements according to the official schedule.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0212",
+      "category": "Degree & Certificates",
+      "question": "How can I apply for my degree certificate?",
+      "alternate_questions": [
+        "Degree application",
+        "Apply for degree",
+        "Degree certificate process"
+      ],
+      "keywords": ["degree", "application"],
+      "answer": "Students can apply for their degree certificate by following the procedure prescribed by the university after becoming eligible.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0213",
+      "category": "Degree & Certificates",
+      "question": "Can I collect my degree certificate in person?",
+      "alternate_questions": [
+        "Collect degree",
+        "Degree pickup",
+        "Receive certificate personally"
+      ],
+      "keywords": ["degree", "collection"],
+      "answer": "Yes. Eligible students may collect their degree certificate according to the university's certificate distribution process.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0214",
+      "category": "Degree & Certificates",
+      "question": "Can someone else collect my degree certificate on my behalf?",
+      "alternate_questions": [
+        "Authorized person degree",
+        "Representative collection",
+        "Collect degree by family"
+      ],
+      "keywords": ["degree", "authorization"],
+      "answer": "Collection through an authorized representative may be permitted if the required authorization documents are submitted and approved.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0215",
+      "category": "Degree & Certificates",
+      "question": "How can I obtain a duplicate degree certificate?",
+      "alternate_questions": [
+        "Lost degree certificate",
+        "Duplicate certificate",
+        "Degree replacement"
+      ],
+      "keywords": ["duplicate", "degree", "replacement"],
+      "answer": "Students must apply through the prescribed university procedure and submit the required documents to obtain a duplicate degree certificate.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0216",
+      "category": "Degree & Certificates",
+      "question": "Can I get a provisional certificate before receiving my degree?",
+      "alternate_questions": [
+        "Provisional certificate",
+        "Temporary degree certificate",
+        "Interim certificate"
+      ],
+      "keywords": ["provisional", "certificate"],
+      "answer": "Yes. Eligible students may apply for a provisional certificate according to the university's academic policies.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0217",
+      "category": "Degree & Certificates",
+      "question": "How can I apply for a provisional certificate?",
+      "alternate_questions": [
+        "Apply provisional certificate",
+        "Temporary certificate application",
+        "Need provisional"
+      ],
+      "keywords": ["provisional", "application"],
+      "answer": "Applications for provisional certificates should be submitted through the designated university office along with the required documents.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0218",
+      "category": "Degree & Certificates",
+      "question": "Can I request a bonafide certificate?",
+      "alternate_questions": [
+        "Bonafide certificate",
+        "Student verification certificate",
+        "Need bonafide"
+      ],
+      "keywords": ["bonafide", "certificate"],
+      "answer": "Yes. Students can request a bonafide certificate by following the university's prescribed application process.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0219",
+      "category": "Degree & Certificates",
+      "question": "What is a bonafide certificate used for?",
+      "alternate_questions": [
+        "Purpose of bonafide",
+        "Bonafide uses",
+        "Student certificate purpose"
+      ],
+      "keywords": ["bonafide", "verification"],
+      "answer": "A bonafide certificate verifies that a student is enrolled at the university and may be required for scholarships, visas, education loans, and other official purposes.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0220",
+      "category": "Degree & Certificates",
+      "question": "Can I apply for a character certificate?",
+      "alternate_questions": [
+        "Character certificate",
+        "Conduct certificate",
+        "Student conduct certificate"
+      ],
+      "keywords": ["character certificate", "conduct"],
+      "answer": "Yes. Eligible students may request a character or conduct certificate according to university procedures.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0221",
+      "category": "Degree & Certificates",
+      "question": "Can I request a migration certificate?",
+      "alternate_questions": [
+        "Migration certificate",
+        "University migration",
+        "Transfer certificate"
+      ],
+      "keywords": ["migration", "certificate"],
+      "answer": "Students who fulfill the eligibility criteria may apply for a migration certificate through the prescribed university process.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0222",
+      "category": "Degree & Certificates",
+      "question": "How can I apply for a migration certificate?",
+      "alternate_questions": [
+        "Migration application",
+        "Apply migration",
+        "Migration process"
+      ],
+      "keywords": ["migration", "application"],
+      "answer": "Migration certificate applications should be submitted to the designated university office with the required documents and applicable fees.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0223",
+      "category": "Degree & Certificates",
+      "question": "Can I obtain my consolidated marksheet?",
+      "alternate_questions": [
+        "Consolidated marksheet",
+        "Final marksheet",
+        "Combined marksheet"
+      ],
+      "keywords": ["marksheet", "consolidated"],
+      "answer": "Yes. Eligible students may request a consolidated marksheet after completing the required academic requirements.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0224",
+      "category": "Degree & Certificates",
+      "question": "What should I do if my certificate contains incorrect information?",
+      "alternate_questions": [
+        "Certificate correction",
+        "Wrong name on certificate",
+        "Certificate error"
+      ],
+      "keywords": ["certificate", "correction"],
+      "answer": "Students should immediately contact the university's certificate section and submit supporting documents for verification and correction.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0225",
+      "category": "Degree & Certificates",
+      "question": "Are certificate services available online?",
+      "alternate_questions": [
+        "Online certificate request",
+        "Digital certificate application",
+        "Certificate portal"
+      ],
+      "keywords": ["certificate", "online"],
+      "answer": "Certain certificate requests may be available online depending on the university's digital service provisions.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0226",
+      "category": "Degree & Certificates",
+      "question": "How long does it take to receive requested certificates?",
+      "alternate_questions": [
+        "Certificate processing time",
+        "Certificate delivery",
+        "Processing duration"
+      ],
+      "keywords": ["certificate", "processing"],
+      "answer": "Processing time varies depending on the type of certificate requested and the university's administrative procedures.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0227",
+      "category": "Degree & Certificates",
+      "question": "Is there a fee for certificate services?",
+      "alternate_questions": [
+        "Certificate fee",
+        "Document charges",
+        "Certificate payment"
+      ],
+      "keywords": ["certificate", "fee"],
+      "answer": "Some certificate services may require payment of the applicable processing fee as prescribed by the university.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0228",
+      "category": "Degree & Certificates",
+      "question": "Can international students request academic transcripts?",
+      "alternate_questions": [
+        "Transcript for foreign students",
+        "International transcript",
+        "Academic records abroad"
+      ],
+      "keywords": ["international", "transcript"],
+      "answer": "Yes. International students can request official transcripts following the university's transcript application procedure.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0229",
+      "category": "Degree & Certificates",
+      "question": "Can certificates be sent by courier?",
+      "alternate_questions": [
+        "Courier certificate",
+        "Postal delivery",
+        "Certificate by mail"
+      ],
+      "keywords": ["courier", "certificate"],
+      "answer": "Certificate dispatch options depend on university policy and may be available for eligible requests.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0230",
+      "category": "Degree & Certificates",
+      "question": "Whom should I contact for certificate-related issues?",
+      "alternate_questions": [
+        "Certificate support",
+        "Document help",
+        "Certificate office"
+      ],
+      "keywords": ["certificate", "support"],
+      "answer": "Students should contact the university's certificate or examination section for assistance with certificate-related matters.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0231",
+      "category": "Library",
+      "question": "Does Parul University have a central library?",
+      "alternate_questions": [
+        "University library",
+        "Central library",
+        "Library facility"
+      ],
+      "keywords": ["library", "books"],
+      "answer": "Yes. The university provides library facilities that support academic learning, research, and access to study resources.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0232",
+      "category": "Library",
+      "question": "How can I access the university library?",
+      "alternate_questions": [
+        "Library access",
+        "Enter library",
+        "Use library"
+      ],
+      "keywords": ["library", "access"],
+      "answer": "Students can access the library using their valid university identity credentials and by following the library regulations.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0233",
+      "category": "Library",
+      "question": "Can I borrow books from the library?",
+      "alternate_questions": [
+        "Issue library books",
+        "Borrow books",
+        "Book lending"
+      ],
+      "keywords": ["library", "borrow", "books"],
+      "answer": "Yes. Eligible students can borrow library books according to the library borrowing policy.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0234",
+      "category": "Library",
+      "question": "How many books can I issue at a time?",
+      "alternate_questions": [
+        "Library borrowing limit",
+        "Maximum books",
+        "Book issue limit"
+      ],
+      "keywords": ["books", "issue limit"],
+      "answer": "The number of books that can be borrowed depends on the library rules applicable to the student's program.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0235",
+      "category": "Library",
+      "question": "What happens if I return a library book late?",
+      "alternate_questions": [
+        "Late return fine",
+        "Library fine",
+        "Overdue books"
+      ],
+      "keywords": ["library", "fine", "late return"],
+      "answer": "Late returns may attract overdue charges or other actions according to the university library policy.",
+      "source": "campus_facilities.json"
+    }
+  ]
+}

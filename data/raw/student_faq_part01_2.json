@@ -1,0 +1,175 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0011",
+      "category": "Admissions",
+      "question": "Is there an application fee for admission?",
+      "alternate_questions": [
+        "Do I have to pay an application fee?",
+        "Admission application fee",
+        "Registration fee for admission"
+      ],
+      "keywords": [
+        "application fee",
+        "registration",
+        "admission"
+      ],
+      "answer": "If an application or registration fee is applicable for your selected program, it must be paid during the admission process as per the university's current admission guidelines.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0012",
+      "category": "Admissions",
+      "question": "Can I apply for more than one course?",
+      "alternate_questions": [
+        "Can I choose multiple programs?",
+        "Apply for two courses",
+        "Multiple course application"
+      ],
+      "keywords": [
+        "multiple courses",
+        "program",
+        "application"
+      ],
+      "answer": "Students may apply for multiple eligible programs according to the university's admission policy. The final admission depends on eligibility and seat availability.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0013",
+      "category": "Admissions",
+      "question": "What happens after I submit my application?",
+      "alternate_questions": [
+        "Admission process after application",
+        "Next step after applying",
+        "What comes after registration?"
+      ],
+      "keywords": [
+        "application",
+        "verification",
+        "admission process"
+      ],
+      "answer": "After submitting the application, the university verifies your details and documents. Eligible candidates are guided through counseling, admission confirmation, and fee payment.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0014",
+      "category": "Admissions",
+      "question": "How long does the admission process take?",
+      "alternate_questions": [
+        "Admission duration",
+        "How many days for admission?",
+        "Admission timeline"
+      ],
+      "keywords": [
+        "timeline",
+        "duration",
+        "admission"
+      ],
+      "answer": "The admission process duration depends on document verification, counseling, and completion of admission formalities.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0015",
+      "category": "Admissions",
+      "question": "Can I apply before receiving my final examination results?",
+      "alternate_questions": [
+        "Apply before result declaration",
+        "Admission before board results",
+        "Can I register while waiting for results?"
+      ],
+      "keywords": [
+        "results",
+        "provisional admission",
+        "application"
+      ],
+      "answer": "Eligible students may be allowed to begin the admission process before final results, subject to submission of the required academic documents within the prescribed timeline.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0016",
+      "category": "Admissions",
+      "question": "Can I change my selected course after submitting my application?",
+      "alternate_questions": [
+        "Change course after applying",
+        "Modify selected program",
+        "Switch course before admission"
+      ],
+      "keywords": [
+        "course change",
+        "application",
+        "program"
+      ],
+      "answer": "Course changes may be possible before admission confirmation, depending on eligibility, seat availability, and university policies.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0017",
+      "category": "Admissions",
+      "question": "How will I know if my admission is confirmed?",
+      "alternate_questions": [
+        "Admission confirmation",
+        "How do I check admission status?",
+        "When is admission confirmed?"
+      ],
+      "keywords": [
+        "confirmation",
+        "status",
+        "admission"
+      ],
+      "answer": "Admission is considered confirmed after successful document verification, fulfillment of admission requirements, and completion of the applicable fee payment process.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0018",
+      "category": "Admissions",
+      "question": "Can parents accompany students during admission?",
+      "alternate_questions": [
+        "Can parents visit during admission?",
+        "Parent allowed at admission office?",
+        "Family during admission"
+      ],
+      "keywords": [
+        "parents",
+        "guardians",
+        "admission"
+      ],
+      "answer": "Yes. Parents or guardians are welcome to accompany students during admission and counseling procedures.",
+      "source": "guest_visitor_services.json"
+    },
+    {
+      "id": "faq_0019",
+      "category": "Admissions",
+      "question": "Are original documents required during admission?",
+      "alternate_questions": [
+        "Need original certificates?",
+        "Original document verification",
+        "Must I carry original documents?"
+      ],
+      "keywords": [
+        "original documents",
+        "verification",
+        "certificates"
+      ],
+      "answer": "Applicants should carry original documents for verification whenever required by the university, along with photocopies as instructed during admission.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0020",
+      "category": "Admissions",
+      "question": "What should I do if I have questions during the admission process?",
+      "alternate_questions": [
+        "Who can help me with admission?",
+        "Admission support",
+        "Need help with admission"
+      ],
+      "keywords": [
+        "support",
+        "help",
+        "admission office",
+        "contact"
+      ],
+      "answer": "You can contact the university admission office through the official helpline, email, or visit the admission center on campus for assistance with any admission-related queries.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

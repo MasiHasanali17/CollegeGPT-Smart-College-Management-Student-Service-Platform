@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+.admin-page {
+    background: #f8fafc;
+    color: #0f172a;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 85vh;
+    padding: 60px 20px;
+}
+
+.admin-wrap {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+}
+
+.admin-wrap input {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 14px;
+}
+
+.admin-wrap button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #7c3aed;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admin-table-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+    overflow-x: auto;
+}
+
+.admin-table-wrap h2 {
+    margin-top: 0;
+}
+
+table.apps-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table.apps-table th {
+    text-align: left;
+    padding: 12px;
+    background: #f8fafc;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+}
+
+table.apps-table td {
+    padding: 12px;
+    border-top: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+table.apps-table select {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+table.apps-table button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+    font-size: 12.5px;
+}
+
+.tid {
+    font-family: monospace;
+    font-weight: 700;
+}
+
+.admin-logout {
+    display: block;
+    text-align: right;
+    max-width: 1100px;
+    margin: 0 auto 12px;
+}
+
+.admin-logout a {
+    color: #64748b;
+    font-size: 13.5px;
+}
+</style>
+
+<div class="admin-page">
+
+    {% if not logged_in %}
+
+    <div class="admin-wrap">
+        <p style="color:#64748b;font-size:13.5px;">Please <a href="{{ url_for('admin_login') }}">log in</a> to access this area.</p>
+    </div>
+
+    {% else %}
+
+    <div class="admin-logout" style="display:flex;justify-content:space-between;align-items:center;">
+        <span style="color:#64748b;font-size:13.5px;">Signed in as <strong>{{ admin.username }}</strong> ({{ admin.role.replace('_', ' ') }})</span>
+        <span>
+            <a href="{{ url_for('admin_portal') }}" style="margin-right:16px;">Student Portal Admin →</a>
+            <a href="{{ url_for('admin_logout') }}">Log out</a>
+        </span>
+    </div>
+
+    <div class="admin-table-wrap">
+        <h2>Admission Applications ({{ applications|length }})</h2>
+
+        <table class="apps-table">
+            <thead>
+                <tr>
+                    <th>Tracking ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>Applied</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app in applications %}
+                <tr>
+                    <td class="tid">{{ app.tracking_id }}</td>
+                    <td>{{ app.name }}</td>
+                    <td>{{ app.email }}</td>
+                    <td>{{ app.phone }}</td>
+                    <td>{{ app.course }}</td>
+                    <td>{{ app.created_at }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin_applications') }}" style="display:flex;gap:6px;">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="tracking_id" value="{{ app.tracking_id }}">
+                            <select name="status_update">
+                                {% for s in statuses %}
+                                <option value="{{ s }}" {{ 'selected' if s == app.status else '' }}>{{ s }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit">Update</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+
+                {% if not applications %}
+                <tr><td colspan="8" style="text-align:center;color:#94a3b8;padding:30px;">No applications yet.</td></tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

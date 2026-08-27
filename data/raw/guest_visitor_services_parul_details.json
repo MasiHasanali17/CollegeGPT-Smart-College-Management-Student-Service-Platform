@@ -1,0 +1,32 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This entire file is generated for this academic project, since no real data was provided for this category. It cross-references the campus security structure already documented in campus_facilities_infrastructure_parul_details.json and the student ambassador program already documented in student_governance_representation_parul_details.json, rather than inventing disconnected new structures. None of this should be treated as officially confirmed university policy.",
+    "data_type": "generated_for_project"
+  },
+
+  "guest_and_visitor_services": {
+
+    "guest_house_for_visiting_parents": {
+      "availability": "Given the university's large hosteler population (including international and out-of-state students, already documented in hostel_residential_life_parul_details.json and international_students_global_programs_parul_details.json), an on-campus or near-campus guest house facility for visiting parents/relatives would be a reasonable and commonly-offered amenity at a residential university of this scale.",
+      "typical_booking_process": "Advance booking is typically required, generally coordinated through the hostel office or a dedicated guest services desk, particularly during high-demand periods like orientation, convocation, and major fests (Projections, Dhoom — already documented in events_fests_cultural_calendar_parul_details.json).",
+      "disclaimer": "Specific guest house capacity, tariff, and exact booking channel could not be independently confirmed and are not claimed here with false precision."
+    },
+
+    "visitor_entry_and_security_process": {
+      "general_process": "Consistent with the campus-wide security structure already documented in campus_facilities_infrastructure_parul_details.json (24/7 security personnel, CCTV coverage, ID card access checkpoints), visitors are generally required to register at the main gate/security desk with valid photo ID before entry.",
+      "hostel_specific_note": "For visitors specifically wishing to access hostel premises, the more specific visitor policy (visiting hours, registration, restricted access to residential floors) already documented in hostel_residential_life_parul_details.json applies.",
+      "prospective_student_visitors": "Visitors specifically for admissions/campus tour purposes (prospective students and their families) generally follow a related but distinct process — see below."
+    },
+
+    "campus_tour_booking": {
+      "process": "Prospective students and their families can typically request a campus tour through the admissions office (via the main university contact already documented in administration_departments_contacts_parul_details.json) or through an online tour request form on the official website.",
+      "student_ambassador_involvement": "Campus tours are commonly conducted with the involvement of the Student/Campus Ambassador program, already documented in student_governance_representation_parul_details.json, giving prospective students a peer perspective on campus life alongside the formal admissions information.",
+      "timing": "Tours are generally available on a scheduled basis (particularly during the admission season, already broadly documented in admissions_parul_details.json's 'important_dates_pattern'), though exact availability should be confirmed directly with the admissions office."
+    }
+  }
+}

@@ -1,0 +1,371 @@
+/* ==========================================================
+   Shared styles for the Current-Student Portal (Interface 2)
+   Used by: dashboard, portal_notices, portal_events,
+   portal_courses, portal_facilities, portal_hostel_transfer,
+   portal_grievance, portal_academics, admin_portal
+   ========================================================== */
+
+.portal-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    min-height: 80vh;
+}
+
+.portal-hero {
+    background: #0f172a;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    color: white;
+    padding: 60px 20px 40px;
+    text-align: center;
+}
+
+.portal-hero h1 {
+    font-size: clamp(28px, 4.5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.portal-hero p {
+    color: #cbd5f5;
+    font-size: 15.5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.portal-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+.portal-flash {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.flash-box {
+    background: #f5f3ff;
+    color: #5b21b6;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Filter pills (notices category, etc.) */
+.pill-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.pill {
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #f1f5f9;
+    color: #475569;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.pill.active {
+    background: #7c3aed;
+    color: white;
+}
+
+/* Cards grid (activities, notices) */
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.portal-card {
+    background: #f8fafc;
+    border: 1px solid #eef2f7;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.portal-card h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+}
+
+.portal-card .meta {
+    font-size: 12.5px;
+    color: #7c3aed;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.portal-card p.desc {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 14px;
+}
+
+.portal-card .schedule {
+    font-size: 13px;
+    color: #334155;
+    margin-bottom: 14px;
+}
+
+.capacity-bar {
+    font-size: 12.5px;
+    color: #94a3b8;
+    margin-bottom: 14px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary, .btn-danger {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #7c3aed;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #6d28d9;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-danger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.badge-full {
+    display: inline-block;
+    background: #fef2f2;
+    color: #b91c1c;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+.badge-booked {
+    display: inline-block;
+    background: #f0fdf4;
+    color: #166534;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12.5px;
+    font-weight: 700;
+}
+
+/* Status pills used on hostel/grievance/application status */
+.status-pill {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-open, .status-submitted, .status-received { background: #fffbeb; color: #92400e; }
+.status-progress, .status-review { background: #eff6ff; color: #1e40af; }
+.status-resolved, .status-approved, .status-completed, .status-confirmed { background: #f0fdf4; color: #166534; }
+.status-closed, .status-rejected { background: #fef2f2; color: #b91c1c; }
+
+/* Forms */
+.portal-form-card {
+    max-width: 600px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.1);
+    padding: 34px;
+    margin: 0 auto 30px;
+}
+
+.portal-form-card label {
+    display: block;
+    font-weight: 700;
+    font-size: 13.5px;
+    margin: 16px 0 6px;
+}
+
+.portal-form-card label:first-of-type {
+    margin-top: 0;
+}
+
+.portal-form-card input,
+.portal-form-card select,
+.portal-form-card textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 14.5px;
+    background: #f8fafc;
+    font-family: inherit;
+}
+
+.portal-form-card textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.portal-form-card button {
+    margin-top: 22px;
+}
+
+/* Simple table (used by admin + record lists) */
+.portal-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.portal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    min-width: 480px;
+}
+
+.portal-table th {
+    text-align: left;
+    padding: 10px 12px;
+    background: #f8fafc;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748b;
+}
+
+.portal-table td {
+    padding: 10px 12px;
+    border-top: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    color: #94a3b8;
+    font-size: 14.5px;
+}
+
+/* Dashboard quick-link cards */
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.quick-link-card {
+    display: block;
+    text-decoration: none;
+    background: white;
+    border: 1px solid #eef2f7;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.05);
+    transition: transform 0.2s ease;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-4px);
+}
+
+.quick-link-card .icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.quick-link-card h4 {
+    margin: 0 0 4px;
+    color: #0f172a;
+    font-size: 15.5px;
+}
+
+.quick-link-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12.5px;
+}
+
+/* Admin tab nav */
+.admin-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 14px;
+}
+
+.admin-tabs a {
+    padding: 9px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #475569;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.admin-tabs a.active {
+    background: #0f172a;
+    color: white;
+}
+
+.admin-inline-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.admin-inline-form select {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.admin-inline-form button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+    font-size: 12.5px;
+}

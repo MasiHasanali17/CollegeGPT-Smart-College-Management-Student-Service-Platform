@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+:root {
+    --brand-purple: #7c3aed;
+    --brand-dark: #0f172a;
+    --text-slate: #64748b;
+}
+
+.hostel-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--brand-dark);
+}
+
+.hostel-hero {
+    background: var(--brand-dark);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    color: white;
+    padding: 90px 20px 70px;
+    text-align: center;
+}
+
+.hostel-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.hostel-hero p {
+    color: #cbd5f5;
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.hostel-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.stat-box {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+}
+
+.stat-box .val {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--brand-purple);
+    margin-bottom: 4px;
+}
+
+.stat-box .lbl {
+    font-size: 12.5px;
+    color: var(--text-slate);
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background: #f8fafc;
+    border: 1px solid #eef2f7;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.info-card h4 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: var(--brand-purple);
+}
+
+.info-card p {
+    margin: 0 0 8px;
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.tab-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    font-weight: 700;
+    font-size: 13.5px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: var(--brand-purple);
+    color: white;
+    border-color: var(--brand-purple);
+}
+
+.hostel-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 50px;
+}
+
+table.hostel-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    min-width: 600px;
+}
+
+table.hostel-table th {
+    text-align: left;
+    padding: 12px;
+    background: #0f172a;
+    color: white;
+    font-size: 11.5px;
+    text-transform: uppercase;
+}
+
+table.hostel-table td {
+    padding: 12px;
+    border-top: 1px solid #f1f5f9;
+}
+
+table.hostel-table tr:nth-child(even) td {
+    background: #f8fafc;
+}
+</style>
+
+<div class="hostel-page">
+
+    <div class="hostel-hero">
+        <h1>Hostel Information</h1>
+        <p>Everything about accommodation, fees, and facilities at Parul University hostels.</p>
+    </div>
+
+    <div class="hostel-wrap">
+
+        <div class="stat-row">
+            <div class="stat-box">
+                <div class="val">{{ boys_names|length + girls_names|length }}</div>
+                <div class="lbl">Total Hostel Blocks</div>
+            </div>
+            <div class="stat-box">
+                <div class="val">{{ boys_names|length }}</div>
+                <div class="lbl">Boys Hostels</div>
+            </div>
+            <div class="stat-box">
+                <div class="val">{{ girls_names|length }}</div>
+                <div class="lbl">Girls Hostels</div>
+            </div>
+            <div class="stat-box">
+                <div class="val">{{ cheapest.fees_per_annum }}</div>
+                <div class="lbl">Lowest Fee ({{ cheapest.name }})</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Facilities & Policies</h2>
+        <div class="info-grid">
+
+            <div class="info-card">
+                <h4>🍽️ Mess</h4>
+                <p>{{ mess.food_type }}</p>
+                <p>{{ mess.meal_inclusion }}</p>
+            </div>
+
+            <div class="info-card">
+                <h4>📶 Wi-Fi</h4>
+                <p>{{ wifi.usage_policy }}</p>
+                <p>{{ wifi.timing }}</p>
+            </div>
+
+            <div class="info-card">
+                <h4>🧺 Laundry</h4>
+                <p>{{ laundry.complimentary_allowance }}</p>
+            </div>
+
+            <div class="info-card">
+                <h4>💧 Water Supply</h4>
+                <p>Cold water: {{ water_supply.cold_water }}</p>
+                <p>Hot water: {{ water_supply.hot_water }}</p>
+            </div>
+
+            <div class="info-card">
+                <h4>🔑 Room Allotment</h4>
+                <p>{{ allotment.general_basis }}</p>
+            </div>
+
+            <div class="info-card">
+                <h4>🏋️ Other Facilities</h4>
+                <p>{{ facilities.facilities|join(', ') }}</p>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">All Hostel Blocks & Fees</h2>
+
+        <div class="tab-row">
+            <button class="tab-btn active" onclick="filterHostels('all', this)">All ({{ all_hostels|length }})</button>
+            <button class="tab-btn" onclick="filterHostels('boys', this)">Boys</button>
+            <button class="tab-btn" onclick="filterHostels('girls', this)">Girls</button>
+        </div>
+
+        <div class="hostel-table-wrap">
+            <table class="hostel-table" id="hostelTable">
+                <thead>
+                    <tr><th>Hostel</th><th>Occupancy</th><th>AC / Non-AC</th><th>Washroom</th><th>Fee / Year</th></tr>
+                </thead>
+                <tbody>
+                    {% for h in all_hostels %}
+                    <tr data-gender="{{ 'boys' if h.name in boys_names else ('girls' if h.name in girls_names else 'all') }}">
+                        <td>{{ h.name }}</td>
+                        <td>{{ h.room_occupancy }}</td>
+                        <td>{{ h.ac_non_ac }}</td>
+                        <td>{{ h.facilities }}</td>
+                        <td>{{ h.fees_per_annum }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <p style="text-align:center;color:#94a3b8;font-size:13px;">
+            Have a specific question? Ask <a href="/chatbot" style="color:#7c3aed;font-weight:700;">Campus AI</a> or submit a
+            <a href="/contact" style="color:#7c3aed;font-weight:700;">contact enquiry</a>.
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+function filterHostels(gender, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('#hostelTable tbody tr').forEach(row => {
+        if (gender === 'all' || row.dataset.gender === gender) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+}
+</script>
+
+{% endblock %}

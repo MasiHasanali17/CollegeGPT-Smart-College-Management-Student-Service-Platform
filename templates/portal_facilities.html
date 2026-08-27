@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<div class="portal-page">
+
+    <div class="portal-hero">
+        <h1>Sports & Gym Booking</h1>
+        <p>Reserve a time slot for sports facilities or the gym.</p>
+    </div>
+
+
+    <div class="portal-wrap">
+
+        {% if activities %}
+        <div class="portal-grid">
+            {% for a in activities %}
+            <div class="portal-card">
+                <div class="meta">{{ a.schedule_text }}</div>
+                {% if a.price and a.price > 0 %}
+                <div style="display:inline-block;background:#fef3c7;color:#92400e;font-size:12px;font-weight:800;padding:4px 10px;border-radius:20px;margin-bottom:10px;">₹{{ a.price }}</div>
+                {% else %}
+                <div style="display:inline-block;background:#f0fdf4;color:#166534;font-size:12px;font-weight:800;padding:4px 10px;border-radius:20px;margin-bottom:10px;">FREE</div>
+                {% endif %}
+                <h3>{{ a.title }}</h3>
+                <p class="desc">{{ a.description }}</p>
+
+                <div class="capacity-bar">
+                    {% if a.capacity %}
+                        {{ a.booked_count }} / {{ a.capacity }} spots filled
+                    {% else %}
+                        Unlimited spots
+                    {% endif %}
+                </div>
+
+                {% if a.id in booked_ids %}
+                    <span class="badge-booked">✓ Slot booked</span>
+                    <form method="POST" action="{{ url_for('portal_cancel', activity_id=a.id) }}" style="margin-top:10px;">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <button type="submit" class="btn-danger btn-full">Cancel slot</button>
+                    </form>
+                {% elif a.is_full %}
+                    <span class="badge-full">Slot full</span>
+                {% else %}
+                    <form method="POST" action="{{ url_for('portal_book', activity_id=a.id) }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <button type="submit" class="btn-primary btn-full">Book Slot</button>
+                    </form>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">No sports/gym slots available right now.</div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

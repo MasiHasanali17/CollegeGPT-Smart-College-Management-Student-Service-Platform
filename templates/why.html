@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+/* 1. GLOBAL & THEME REFINEMENT */
+:root {
+    --brand-purple: #7c3aed;
+    --brand-dark: #0f172a;
+    --brand-blue: #0ea5e9;
+    --text-slate: #64748b;
+}
+
+.why-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--brand-dark);
+}
+
+/* 2. ULTRA HERO SECTION */
+.hero-visual {
+    height: 75vh;
+    background: var(--brand-dark);
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-visual h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.hero-visual p {
+    font-size: clamp(18px, 2vw, 24px);
+    color: #cbd5f5;
+    max-width: 850px;
+    margin: auto;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* 3. RESEARCH BENTO GRID (The Core Points) */
+.section { padding: 100px 8%; }
+
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 240px;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.bento-box {
+    background: #f8fafc;
+    border-radius: 35px;
+    padding: 40px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Text at bottom for modern feel */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bento-box:hover {
+    transform: translateY(-12px);
+    border-color: var(--brand-purple);
+    background: white;
+    box-shadow: 0 30px 60px rgba(124, 58, 237, 0.1);
+}
+
+.bento-box h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--brand-dark);
+}
+
+.bento-box p {
+    color: var(--text-slate);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Bento Variants */
+.box-large {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: var(--brand-purple);
+    color: white;
+    border: none;
+    justify-content: center;
+}
+
+.box-large h3 { color: white; font-size: 42px; margin-bottom: 20px; }
+.box-large p { color: #ede9fe; font-size: 19px; }
+
+.box-wide { grid-column: span 2; }
+
+/* 4. COMPARISON TABLE - NEUMORPHIC STYLE */
+.comparison-wrapper {
+    background: #f8fafc;
+    border-radius: 50px;
+    padding: 80px 5%;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin-top: 40px;
+}
+
+.comparison-table th {
+    padding: 20px;
+    text-align: left;
+    color: var(--text-slate);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.comparison-table td {
+    background: white;
+    padding: 30px 25px;
+    font-weight: 600;
+}
+
+.comparison-table td:first-child { border-radius: 20px 0 0 20px; }
+.comparison-table td:last-child { border-radius: 0 20px 20px 0; border-left: 3px solid #7c3aed; color: #7c3aed;}
+
+.check { color: #10b981; font-weight: 900; font-size: 18px; }
+
+/* 5. CAMPUS SECTION - ASYMMETRIC */
+.campus-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.campus-img {
+    height: 550px;
+    border-radius: 45px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-overlay-card {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    font-weight: 800;
+}
+
+/* 6. GLOBAL CTA - FLOATING GRADIENT */
+.why-cta {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, #1e293b 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 80px 5% 100px;
+    border-radius: 60px;
+    box-shadow: 0 40px 80px rgba(15, 23, 42, 0.3);
+}
+
+.cta-btn {
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.ai-btn { background: var(--brand-purple); color: white; }
+.ai-btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4); }
+
+.course-btn { background: white; color: var(--brand-dark); margin-left: 20px; }
+
+@media(max-width: 1024px) {
+    .bento-container { grid-template-columns: repeat(2, 1fr); }
+    .campus-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="why-page">
+
+    <section class="hero-visual">
+        <div>
+            <p style="text-transform: uppercase; letter-spacing: 4px; font-weight: 700; color: var(--brand-purple); margin-bottom: 20px;">The Ultimate Choice</p>
+            <h1>Beyond Education.<br>Engineering the Future.</h1>
+            <p>Parul University is India's leading innovation hub, designed to transform students into global industry leaders.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="font-size: 48px; font-weight: 900; text-align: center; margin-bottom: 60px;">Research & Innovation Proper</h2>
+        
+        <div class="bento-container">
+            <div class="bento-box box-large">
+                <div style="font-size: 50px; margin-bottom: 20px;">📜</div>
+                <h3>1,600+ Patents Filed</h3>
+                <p>We lead the nation in Intellectual Property. Our dedicated Patent Cell helps students turn their final year projects into legal assets.</p>
+            </div>
+
+            <div class="bento-box box-wide">
+                <h3>₹17 Crore Research Grants</h3>
+                <p>Massive funding from DST, DBT, and GUJCOST powers our high-end research projects in Biotech, AI, and Sustainable Energy.</p>
+            </div>
+
+            <div class="bento-box">
+                <h3>Global CoE</h3>
+                <p>Host to the <b>India-New Zealand Centre of Excellence</b> for collaborative international research.</p>
+            </div>
+
+            <div class="bento-box">
+                <h3>700+ PhD Mentors</h3>
+                <p>Learn from professors who are active researchers with 5,500+ global publications.</p>
+            </div>
+
+            <div class="bento-box box-wide">
+                <h3>PIERC Startup School</h3>
+                <p>Our in-house incubator provides seed funding up to <b>₹5 Lakhs</b> to turn your research into a profitable startup.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="campus-grid">
+            <div class="campus-img">
+                <img src="https://www.collegebatch.com/static/clg-gallery/parul-university-vadodara-226034.webp" alt="Parul Campus">
+                <div class="img-overlay-card">
+                    <span style="color: var(--brand-purple);">★</span> 120-Acre Smart Campus
+                </div>
+            </div>
+            <div>
+                <h2 style="font-size: 42px; font-weight: 900; margin-bottom: 25px;">The Campus Advantage</h2>
+                <p style="color: var(--text-slate); font-size: 19px; line-height: 1.8; margin-bottom: 35px;">
+                    Experience a city within a city. Our Vadodara campus is a vibrant multicultural ecosystem home to 5,000+ international students.
+                </p>
+                <ul class="campus-features" style="list-style: none; padding: 0;">
+                    <li><span>★</span> <b>NAAC A++ Grade:</b> Top 1% of Indian Universities.</li>
+                    <li><span>★</span> <b>Global Diversity:</b> Students from 60+ Nations.</li>
+                    <li><span>★</span> <b>Industry Ready:</b> 2,200+ Recruiters across sectors.</li>
+                    <li><span>★</span> <b>24/7 Innovation:</b> Access to NVIDIA-powered AI Labs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section comparison-wrapper">
+        <h2 style="text-align:center; font-size: 42px; font-weight: 900; margin-bottom: 40px;">Parul vs. Others</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Standard Universities</th>
+                    <th style="color: var(--brand-purple);">Parul University</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Placement Training</td>
+                    <td>Final Year Only</td>
+                    <td><span class="check">✓</span> Day 1 Onwards via CDC</td>
+                </tr>
+                <tr>
+                    <td>International Exposure</td>
+                    <td>Limited Seminars</td>
+                    <td><span class="check">✓</span> Global Exchange in 22 Countries</td>
+                </tr>
+                <tr>
+                    <td>Research Access</td>
+                    <td>Restricted to Faculty</td>
+                    <td><span class="check">✓</span> Open Innovation Labs for Students</td>
+                </tr>
+                <tr>
+                    <td>Startup Support</td>
+                    <td>Theoretical</td>
+                    <td><span class="check">✓</span> Seed Funding & Legal Support</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="why-cta">
+        <h2>Start Your Genius Journey</h2>
+        <p style="font-size: 20px; color: #94a3b8; margin-bottom: 40px;">
+            The 2026 Admissions are now open. Don't just follow trends, set them.
+        </p>
+        <div class="cta-buttons">
+            <a href="/chatbot" class="cta-btn ai-btn">Talk to AI Advisor</a>
+            <a href="/courses" class="cta-btn course-btn">View All Courses</a>
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

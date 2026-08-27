@@ -1,0 +1,51 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is generated for this academic project, since no real data was provided for this category. It formally defines the student ERP portal that has been referenced implicitly across many earlier files in this knowledge base (fee payment, attendance, examination, placement, hostel allotment, Wi-Fi login) — consolidating those scattered references into one consistent system description rather than contradicting them. None of this should be treated as officially confirmed university information.",
+    "data_type": "generated_for_project"
+  },
+
+  "technology_and_digital_services": {
+
+    "student_erp_portal": {
+      "login_process": "Students receive ERP login credentials (student ID-linked username and a temporary password) at the time of admission/orientation, consistent with how Wi-Fi credentials are already described as being issued in campus_facilities_infrastructure_parul_details.json. Students are typically prompted to set a personal password on first login.",
+      "modules_and_uses": {
+        "attendance": "Real-time attendance tracking per subject, feeding into the attendance policy already documented in academic_details_parul.json.",
+        "grades_and_results": "Semester results, CGPA tracking, and internal assessment marks.",
+        "fee_payment": "Online fee payment, receipt download, and payment history, already referenced in fees_financial_aid_parul_details.json.",
+        "examination": "Hall ticket download, exam schedule, and revaluation requests, already referenced in administration_departments_contacts_parul_details.json.",
+        "placement": "Placement/internship listings and application tracking, already referenced in placements_parul_details.json and internships_career_development_parul_details.json.",
+        "hostel": "Hostel allotment requests and hostel fee status, already referenced in hostel_residential_life_parul_details.json.",
+        "transport": "Bus route selection and GPS tracking access, already referenced in transport_commute_parul_details.json.",
+        "library": "Book search, borrowing status, and due-date reminders, complementing the library services already documented in campus_facilities_infrastructure_parul_details.json."
+      }
+    },
+
+    "mobile_app": {
+      "availability": "A companion mobile app is commonly provided alongside the ERP portal at universities of this scale, mirroring core ERP functions (attendance, fees, results, notices) in a more accessible mobile format.",
+      "typical_features": [
+        "Push notifications for important announcements, fee due dates, and exam schedules",
+        "Quick access to attendance percentage and grades",
+        "Digital ID card / QR-based campus access in some implementations",
+        "Bus tracking integration (if the GPS tracking feature described in transport_commute_parul_details.json is app-based)"
+      ],
+      "disclaimer": "Specific app name/branding is not claimed here since it could not be independently verified for this project."
+    },
+
+    "email_and_workspace_access": {
+      "official_email": "Students are typically issued an official university email address (commonly in a format like firstname.lastname@paruluniversity.ac.in or a roll-number-based variant) upon enrollment, used for all official university communication.",
+      "workspace_suite": "This is commonly provisioned through a Google Workspace for Education (or similar) suite, providing access to email, cloud storage, and collaborative document tools under the university's domain, which is standard practice at most Indian universities of this scale.",
+      "usage_expectation": "The official university email is generally the expected channel for formal communication with faculty and administration, distinct from personal email accounts."
+    },
+
+    "online_exam_and_assignment_submission": {
+      "assignment_submission": "Course assignments are commonly submitted through a Learning Management System (LMS) module (either integrated within the ERP portal or a connected platform like Google Classroom), allowing faculty to set deadlines, collect submissions, and provide digital feedback.",
+      "online_exam_component": "Internal assessments and certain evaluations may be conducted online through the LMS/ERP system, particularly for objective-format tests, while major end-semester exams remain primarily in-person/proctored, consistent with the exam pattern already documented in academic_details_parul.json.",
+      "plagiarism_check": "Submitted assignments/reports are commonly run through plagiarism-detection software as part of standard academic integrity practice, particularly for final-year projects and dissertations."
+    }
+  }
+}

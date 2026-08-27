@@ -1,0 +1,889 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "Course names, durations, specializations, and tuition fees in the 'faculties' section are real data provided by the project owner. All other sections (fee breakdown formula, eligibility, semester structure, timings, exam pattern, attendance policy, syllabus structure, lateral entry, add-on certifications) are generated for this academic project to be realistic and internally consistent with Parul University's actual scale (50,000+ students, 25+ faculties, multi-campus infrastructure). These generated sections should not be treated as officially confirmed university policy.",
+    "data_types": {
+      "verified_by_user": "Real data provided directly by the project owner",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "general_academic_policies": {
+    "data_type": "generated_for_project",
+
+    "semester_and_credit_system": {
+      "structure": "Two semesters per academic year — Odd Semester (July to December) and Even Semester (January to June).",
+      "credit_system": "Choice Based Credit System (CBCS). Undergraduate engineering programs typically carry 20-24 credits per semester; management, commerce, and liberal arts programs typically carry 18-22 credits per semester; postgraduate programs typically carry 16-20 credits per semester.",
+      "grading_scale": "10-point CGPA scale. Grade bands: O (Outstanding, 90-100%), A+ (80-89%), A (70-79%), B+ (60-69%), B (55-59%), C (50-54%), P (Pass, 40-49%), F (Fail, below 40%).",
+      "cgpa_to_percentage": "Approximate conversion: Percentage = (CGPA - 0.5) x 10, though official conversion certificates are issued by the examination department on request."
+    },
+
+    "class_timing": {
+      "campus_hours": "9:30 AM to 4:20 PM, Monday to Saturday (as per general campus timing).",
+      "lecture_duration": "Each lecture period is typically 50-55 minutes.",
+      "lab_sessions": "Laboratory and practical sessions are held in 2-3 hour blocks, typically 2-3 times per week depending on the course and semester.",
+      "weekly_pattern": "A typical week includes 20-26 contact hours combining lectures, tutorials, and lab/practical sessions, varying by faculty and program type.",
+      "weekly_off": "Sundays are a general holiday; some faculties (e.g. Medicine, Nursing) may have rotational duty schedules including weekends for clinical postings."
+    },
+
+    "exam_pattern": {
+      "internal_assessment": "Continuous Internal Assessment (CIA) typically contributes 30-40% of the total grade, based on mid-semester tests, assignments, quizzes, and attendance/participation.",
+      "end_semester_exam": "The End-Semester Examination typically contributes 60-70% of the total grade, held at the end of each semester.",
+      "exam_months": "Odd semester exams are typically held in November-December; even semester exams are typically held in April-May.",
+      "backlog_policy": "Students who do not clear a subject may reappear in the subsequent semester's supplementary/backlog examination, typically scheduled 4-8 weeks after result declaration. A fee per backlog subject applies.",
+      "revaluation": "Students may apply for photocopy of answer sheets and/or revaluation within a specified window (typically 10-15 days) after result declaration, subject to a per-subject fee."
+    },
+
+    "attendance_policy": {
+      "minimum_required": "A minimum of 75% attendance per subject per semester is required to be eligible to sit for the end-semester examination, in line with standard AICTE/UGC norms followed by most Indian universities.",
+      "condonation": "Students with attendance between 65% and 74% may apply for condonation with valid supporting documentation (medical certificate, family emergency, university-representation in sports/cultural events), subject to approval by the Head of Department/Dean.",
+      "detention": "Students with attendance below 65% (without an approved condonation) are typically detained from appearing in that subject's end-semester exam and may need to repeat the semester/subject."
+    },
+
+    "medium_of_instruction": "English is the primary medium of instruction across all faculties. Reference material in regional languages (Hindi/Gujarati) may be available for select subjects in Law, Ayurveda, and Homeopathy programs, but examinations and core instruction remain in English.",
+
+    "lateral_entry_and_credit_transfer": {
+      "diploma_to_btech": "Diploma Engineering holders are eligible for lateral entry directly into the 2nd year of the corresponding B.Tech program, subject to seat availability and meeting minimum diploma marks criteria.",
+      "bsc_to_btech": "B.Sc. graduates in relevant subjects may be eligible for lateral entry into select B.Tech/B.Sc. programs with second-year standing, subject to department approval and bridge-course completion if required.",
+      "credit_transfer_from_other_universities": "Students transferring from other UGC-recognized universities may receive credit transfer for equivalent completed subjects, subject to syllabus comparison and approval by the respective faculty's academic committee.",
+      "general_note": "All lateral entry and credit transfer decisions are made on a case-by-case basis by the respective faculty and are subject to AICTE/UGC regulations in effect for that academic year."
+    },
+
+    "addon_certification_programs": {
+      "description": "In addition to the core curriculum, the university offers optional industry-aligned certification programs to enhance student employability, generally available to students from Semester 4 onward.",
+      "certifications_available": [
+        "AWS Cloud Practitioner / AWS Solutions Architect (Amazon Web Services)",
+        "Microsoft Azure AI Fundamentals / Power Platform",
+        "Cisco Networking Essentials / Cybersecurity",
+        "IBM Java Programming / Data Analytics",
+        "Oracle Database Fundamentals",
+        "Adobe Certified Professional (Design-related programs)",
+        "Autodesk AutoCAD / Inventor (Engineering, Design, Architecture)"
+      ],
+      "eligibility_note": "Availability and eligibility for specific certifications vary by faculty and may carry a separate nominal fee and minimum academic cutoff (commonly referenced in university communications as part of a broader Global Certification Forum initiative)."
+    },
+
+    "syllabus_structure_pattern": {
+      "description": "While detailed subject-wise syllabi differ by course and are maintained by individual departments, most undergraduate programs at Parul University generally follow this year-wise structure:",
+      "year_1": "Foundational subjects common across the faculty (basic sciences, communication skills, introduction to the discipline, environmental studies).",
+      "year_2": "Core discipline subjects begin, along with foundational labs/practicals specific to the specialization.",
+      "year_3": "Specialization-focused core and elective subjects, increased lab/practical/project component, and (for eligible programs) internship exposure.",
+      "final_year": "Advanced electives, major project/dissertation, industry internship, and placement preparation activities run in parallel with academics.",
+      "postgraduate_note": "Postgraduate (PG) programs generally follow a condensed 2-year version of this structure: Year 1 covers core/advanced subjects, Year 2 focuses on specialization electives, a research project/dissertation, and (for professional PG programs like MBA) a mandatory internship.",
+
+      "illustrative_example": {
+        "course": "B.Tech - Computer Science and Engineering",
+        "note": "This is a representative illustration of how the general year-wise pattern above applies to one specific course, not an officially verified semester-wise syllabus.",
+        "semester_1_2": "Engineering Mathematics, Physics/Chemistry, Programming Fundamentals (C/Python), Basic Electrical & Electronics, Engineering Graphics, Communication Skills, Environmental Science.",
+        "semester_3_4": "Data Structures, Object-Oriented Programming, Digital Logic Design, Computer Organization, Discrete Mathematics, Database Management Systems, Operating Systems.",
+        "semester_5_6": "Algorithms, Computer Networks, Software Engineering, Web Technologies, Specialization electives (e.g. AI/ML, Cloud Computing), Mini Project.",
+        "semester_7_8": "Advanced electives (e.g. Cyber Security, Data Science, Distributed Systems), Major Project/Dissertation, Industry Internship, Seminar/Research Publication component."
+      }
+    }
+  },
+
+  "eligibility_by_faculty": {
+    "data_type": "generated_for_project",
+    "note": "Eligibility is grouped by faculty since it is realistically consistent across a faculty's undergraduate offerings. Specific minimum percentages may vary slightly by category (General/Reserved) and are subject to change per admission cycle — always confirm current-year criteria with the admissions office.",
+
+    "Faculty of Engineering and Technology": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Mathematics (PCM), minimum 45% aggregate (40% for reserved categories). Diploma holders eligible for lateral entry to 2nd year.",
+      "entrance_exams_accepted": ["JEE Main", "GUJCET", "Parul University Entrance Test"],
+      "pg_eligibility": "Relevant B.Tech/B.E. degree with minimum 50% aggregate (45% for reserved categories). GATE score preferred but not always mandatory."
+    },
+    "Faculty of Management Studies": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based / Parul University Entrance Test"],
+      "pg_eligibility": "Graduation in any discipline with minimum 50% aggregate. CAT/MAT/CMAT/university entrance test scores considered for MBA."
+    },
+    "Faculty of Commerce": {
+      "ug_eligibility": "10+2 in any stream (Commerce background preferred), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Graduation (B.Com preferred) with minimum 50% aggregate."
+    },
+    "Faculty of Hotel Management and Catering Technology": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based / NCHMCT JEE (where applicable)"],
+      "pg_eligibility": "N/A"
+    },
+    "Faculty of Law": {
+      "ug_eligibility": "10+2 in any stream for 5-year integrated programs (BA LL.B, BBA LL.B), minimum 45% aggregate. Graduation in any discipline for 3-year LL.B.",
+      "entrance_exams_accepted": ["CLAT / Merit-based / Parul University Entrance Test"],
+      "pg_eligibility": "LL.B degree with minimum 50% aggregate for LL.M."
+    },
+    "Faculty of Social Work": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Graduation in any discipline with minimum 50% aggregate."
+    },
+    "Faculty of Library and Information Science": {
+      "ug_eligibility": "Graduation in any discipline, minimum 45% aggregate (this is offered as a 1-year program, typically post-graduation level entry).",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Bachelor's degree in Library Science or graduation with relevant experience."
+    },
+    "Faculty of Design": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate, plus a portfolio review and/or design aptitude test.",
+      "entrance_exams_accepted": ["NID/NIFT/UCEED scores (where applicable) or Parul University Design Aptitude Test"],
+      "pg_eligibility": "Relevant Bachelor's degree in Design with minimum 50% aggregate, plus portfolio review."
+    },
+    "Faculty of Fine Arts": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate, plus a portfolio/practical demonstration.",
+      "entrance_exams_accepted": ["Merit-based with practical assessment"],
+      "pg_eligibility": "Relevant Bachelor's degree (BFA) with minimum 50% aggregate."
+    },
+    "Faculty of Performing Arts": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate, plus an audition in the chosen discipline (Music/Dance/Drama).",
+      "entrance_exams_accepted": ["Merit-based with audition"],
+      "pg_eligibility": "Relevant Bachelor's degree with minimum 50% aggregate, plus audition."
+    },
+    "Faculty of Liberal Arts": {
+      "ug_eligibility": "10+2 in any stream, minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Graduation in a relevant subject with minimum 50% aggregate."
+    },
+    "Faculty of Architecture and Planning": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Mathematics (PCM), minimum 50% aggregate.",
+      "entrance_exams_accepted": ["NATA", "JEE Main Paper 2"],
+      "pg_eligibility": "B.Arch/relevant Bachelor's degree with minimum 55% aggregate."
+    },
+    "Faculty of Information Technology and Computer Science": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Mathematics (PCM), minimum 45% aggregate. (BCA also open to Commerce/Arts stream with Mathematics as a subject in some cases.)",
+      "entrance_exams_accepted": ["Merit-based / Parul University Entrance Test"],
+      "pg_eligibility": "Relevant Bachelor's degree (BCA/B.Sc. IT/equivalent) with minimum 50% aggregate."
+    },
+    "Faculty of Pharmacy": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology/Mathematics (PCB/PCM), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["GUJCET", "Merit-based"],
+      "pg_eligibility": "B.Pharm degree with minimum 55% aggregate. GPAT score preferred."
+    },
+    "Faculty of Applied Sciences": {
+      "ug_eligibility": "10+2 with relevant science subjects (Physics/Chemistry/Biology/Mathematics depending on specialization), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Relevant B.Sc. degree with minimum 50% aggregate."
+    },
+    "Faculty of Nursing": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology (PCB), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["NEET (for B.Sc. Nursing)", "Merit-based (for GNM/ANM)"],
+      "pg_eligibility": "B.Sc. Nursing with minimum 55% aggregate and registered nursing license."
+    },
+    "Faculty of Agriculture": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology/Mathematics (PCB/PCM), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["GUJCET / Merit-based"],
+      "pg_eligibility": "Relevant Bachelor's degree in Agriculture with minimum 50% aggregate."
+    },
+    "Faculty of Medicine": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology (PCB), minimum 50% aggregate (45% for reserved categories).",
+      "entrance_exams_accepted": ["NEET (mandatory)"],
+      "pg_eligibility": "MBBS degree with completed internship. NEET-PG score mandatory for MD/MS admission."
+    },
+    "Faculty of Physiotherapy": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology (PCB), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["NEET / Merit-based (varies by year and regulation)"],
+      "pg_eligibility": "Bachelor of Physiotherapy degree with minimum 50% aggregate and completed internship."
+    },
+    "Faculty of Paramedical and Health Sciences": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology/Mathematics (PCB/PCM), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Relevant Bachelor's degree with minimum 50% aggregate."
+    },
+    "Faculty of Ayurveda": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology (PCB), minimum 50% aggregate.",
+      "entrance_exams_accepted": ["NEET (mandatory)"],
+      "pg_eligibility": "BAMS degree with completed internship."
+    },
+    "Faculty of Homeopathy": {
+      "ug_eligibility": "10+2 with Physics, Chemistry, and Biology (PCB), minimum 50% aggregate.",
+      "entrance_exams_accepted": ["NEET (mandatory)"],
+      "pg_eligibility": "BHMS degree with completed internship."
+    },
+    "Faculty of Public Health": {
+      "ug_eligibility": "10+2 in any stream (Science background preferred), minimum 45% aggregate.",
+      "entrance_exams_accepted": ["Merit-based"],
+      "pg_eligibility": "Relevant Bachelor's degree with minimum 50% aggregate."
+    }
+  },
+
+  "fee_structure_formula": {
+    "data_type": "generated_for_project",
+    "description": "Beyond the base tuition fee (which is real, per-course data provided by the university), most Indian private universities charge several additional standardized fee components. The formula below is a realistic generated estimate for this project, expressed as a percentage/fixed addition to the real tuition fee, rather than a fabricated absolute number for each of the 150+ individual specializations.",
+    "components": {
+      "tuition_fee": "As listed per course/specialization in the 'faculties' section below — this is real, verified data.",
+      "development_fee": "Approximately 8-10% of the annual tuition fee, covering infrastructure and campus development.",
+      "examination_fee": "₹3,000 to ₹5,000 per year for undergraduate programs; ₹4,000 to ₹6,000 per year for postgraduate/doctoral programs.",
+      "other_charges": "₹2,000 to ₹3,500 per year, covering ID card, library access, sports facilities, and student welfare activities.",
+      "one_time_admission_fee": "₹5,000 to ₹10,000, charged only in the first year at the time of admission.",
+      "refundable_caution_deposit": "₹5,000 to ₹10,000, refundable at the time of course completion or withdrawal, subject to no pending dues."
+    },
+    "worked_example": {
+      "course": "B.Tech - Computer Science and Engineering",
+      "base_tuition_fee_per_year": "₹94,800 (real data)",
+      "estimated_development_fee": "₹8,532 (9% of tuition)",
+      "estimated_examination_fee": "₹4,000",
+      "estimated_other_charges": "₹2,800",
+      "estimated_total_recurring_fee_per_year": "approximately ₹1,10,132",
+      "estimated_first_year_additional_one_time_charges": "₹7,500 admission fee + ₹7,500 refundable caution deposit",
+      "disclaimer": "This worked example is a generated estimate for illustration only. Actual additional charges should be confirmed with the university's accounts department."
+    }
+  },
+
+  "faculties": [
+    {
+      "faculty_name": "Faculty of Engineering and Technology",
+      "courses": [
+        {
+          "course_name": "Diploma Engineering",
+          "duration": "3 Years",
+          "program_type": "Diploma",
+          "specializations": [
+            { "name": "Civil Engineering", "tuition_fee": "₹ 47,400" },
+            { "name": "Mechanical Engineering", "tuition_fee": "₹ 47,400" },
+            { "name": "Electrical Engineering", "tuition_fee": "₹ 47,400" },
+            { "name": "Computer Engineering", "tuition_fee": "₹ 47,400" },
+            { "name": "Information Technology", "tuition_fee": "₹ 47,400" }
+          ]
+        },
+        {
+          "course_name": "B.Tech",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Computer Science and Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Computer Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Information Technology", "tuition_fee": "₹ 94,800" },
+            { "name": "Artificial Intelligence", "tuition_fee": "₹ 94,800" },
+            { "name": "Artificial Intelligence and Machine Learning", "tuition_fee": "₹ 94,800" },
+            { "name": "Data Science", "tuition_fee": "₹ 94,800" },
+            { "name": "Cyber Security", "tuition_fee": "₹ 94,800" },
+            { "name": "Civil Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Mechanical Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Electrical Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Electronics and Communication Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Chemical Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Automobile Engineering", "tuition_fee": "₹ 94,800" }
+          ]
+        },
+        {
+          "course_name": "B.Tech (Honours)",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Computer Science and Engineering", "tuition_fee": "₹ 94,800" },
+            { "name": "Artificial Intelligence", "tuition_fee": "₹ 94,800" },
+            { "name": "Data Science", "tuition_fee": "₹ 94,800" }
+          ]
+        },
+        {
+          "course_name": "M.Tech",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Computer Engineering", "tuition_fee": "₹ 1,05,840" },
+            { "name": "Structural Engineering", "tuition_fee": "₹ 1,05,840" },
+            { "name": "Machine Design", "tuition_fee": "₹ 1,05,840" },
+            { "name": "Thermal Engineering", "tuition_fee": "₹ 1,05,840" },
+            { "name": "Power Systems", "tuition_fee": "₹ 1,05,840" }
+          ]
+        },
+        {
+          "course_name": "Ph.D.",
+          "duration": "As per University Norms",
+          "program_type": "Doctoral",
+          "tuition_fee": "₹ 75,000"
+        }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Management Studies",
+      "courses": [
+        {
+          "course_name": "BBA",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "General", "tuition_fee": "₹ 85,000" },
+            { "name": "Business Analytics", "tuition_fee": "₹ 85,000" },
+            { "name": "Hospital Management", "tuition_fee": "₹ 85,000" },
+            { "name": "Aviation Management", "tuition_fee": "₹ 85,000" }
+          ]
+        },
+        {
+          "course_name": "MBA",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Finance", "tuition_fee": "₹ 81,550" },
+            { "name": "Marketing", "tuition_fee": "₹ 81,550" },
+            { "name": "Human Resource", "tuition_fee": "₹ 81,550" },
+            { "name": "International Business", "tuition_fee": "₹ 81,550" },
+            { "name": "Business Analytics", "tuition_fee": "₹ 81,550" }
+          ]
+        },
+        {
+          "course_name": "Ph.D.",
+          "duration": "As per University Norms",
+          "program_type": "Doctoral",
+          "tuition_fee": "₹ 1,00,000"
+        }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Commerce",
+      "courses": [
+        {
+          "course_name": "B.Com",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "General", "tuition_fee": "₹ 56,000" },
+            { "name": "Accounting", "tuition_fee": "₹ 56,000" },
+            { "name": "Banking & Insurance", "tuition_fee": "₹ 56,000" }
+          ]
+        },
+        {
+          "course_name": "M.Com",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "General", "tuition_fee": "₹ 50,000" }
+          ]
+        },
+        {
+          "course_name": "Ph.D.",
+          "duration": "As per University Norms",
+          "program_type": "Doctoral",
+          "tuition_fee": "₹ 1,00,000"
+        }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Hotel Management and Catering Technology",
+      "courses": [
+        {
+          "course_name": "BHMCT",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Hotel Management", "tuition_fee": "₹ 67,250" }
+          ]
+        },
+        {
+          "course_name": "Diploma",
+          "duration": "1-3 Years",
+          "program_type": "Diploma",
+          "specializations": [
+            { "name": "Food Production", "tuition_fee": "₹ 44,100" },
+            { "name": "Bakery & Confectionery", "tuition_fee": "₹ 44,100" }
+          ]
+        }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Law",
+      "courses": [
+        { "course_name": "BA LL.B", "duration": "5 Years", "program_type": "Integrated", "tuition_fee": "₹ 1,15,000" },
+        { "course_name": "BBA LL.B", "duration": "5 Years", "program_type": "Integrated", "tuition_fee": "₹ 1,15,000" },
+        { "course_name": "LL.B", "duration": "3 Years", "program_type": "Undergraduate", "tuition_fee": "₹ 42,000" },
+        { "course_name": "LL.M", "duration": "1 Year", "program_type": "Postgraduate", "tuition_fee": "₹ 64,000" },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 1,00,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Social Work",
+      "courses": [
+        { "course_name": "BSW", "duration": "3 Years", "program_type": "Undergraduate", "tuition_fee": "₹ 40,000" },
+        { "course_name": "MSW", "duration": "2 Years", "program_type": "Postgraduate", "tuition_fee": "₹ 40,000" },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Library and Information Science",
+      "courses": [
+        { "course_name": "B.Lib.I.Sc", "duration": "1 Year", "program_type": "Undergraduate", "tuition_fee": "₹ 20,000" },
+        { "course_name": "M.Lib.I.Sc", "duration": "1 Year", "program_type": "Postgraduate", "tuition_fee": "₹ 20,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Design",
+      "courses": [
+        {
+          "course_name": "B.Des",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Fashion Design", "tuition_fee": "₹ 2,60,000" },
+            { "name": "Interior Design", "tuition_fee": "₹ 2,60,000" },
+            { "name": "Product Design", "tuition_fee": "₹ 2,60,000" },
+            { "name": "Communication Design", "tuition_fee": "₹ 2,60,000" },
+            { "name": "Animation & VFX", "tuition_fee": "₹ 2,60,000" }
+          ]
+        },
+        {
+          "course_name": "M.Des",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Interior Design", "tuition_fee": "₹ 1,05,000" },
+            { "name": "Fashion Design", "tuition_fee": "₹ 1,32,000" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Fine Arts",
+      "courses": [
+        {
+          "course_name": "BFA",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Painting", "tuition_fee": "₹ 60,000" },
+            { "name": "Applied Arts", "tuition_fee": "₹ 60,000" },
+            { "name": "Sculpture", "tuition_fee": "₹ 60,000" }
+          ]
+        },
+        {
+          "course_name": "MFA",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Painting", "tuition_fee": "Refer Brochure" },
+            { "name": "Applied Arts", "tuition_fee": "Refer Brochure" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Performing Arts",
+      "courses": [
+        {
+          "course_name": "Bachelor of Performing Arts",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Music", "tuition_fee": "₹ 70,000" },
+            { "name": "Dance", "tuition_fee": "₹ 70,000" },
+            { "name": "Drama", "tuition_fee": "₹ 70,000" }
+          ]
+        },
+        { "course_name": "Master of Performing Arts", "duration": "2 Years", "program_type": "Postgraduate", "tuition_fee": "₹ 90,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Liberal Arts",
+      "courses": [
+        {
+          "course_name": "BA",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Psychology", "tuition_fee": "₹ 46,500" },
+            { "name": "English", "tuition_fee": "₹ 46,500" },
+            { "name": "Economics", "tuition_fee": "₹ 46,500" },
+            { "name": "Political Science", "tuition_fee": "₹ 46,500" },
+            { "name": "Sociology", "tuition_fee": "₹ 46,500" }
+          ]
+        },
+        {
+          "course_name": "MA",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Psychology", "tuition_fee": "₹ 55,500" },
+            { "name": "English", "tuition_fee": "₹ 55,500" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Architecture and Planning",
+      "courses": [
+        {
+          "course_name": "B.Arch",
+          "duration": "5 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Architecture", "tuition_fee": "₹ 1,01,400" }
+          ]
+        },
+        {
+          "course_name": "Bachelor of Planning",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Urban Planning", "tuition_fee": "Refer Brochure" }
+          ]
+        },
+        {
+          "course_name": "M.Arch",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Architecture", "tuition_fee": "Refer Brochure" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Information Technology and Computer Science",
+      "courses": [
+        {
+          "course_name": "BCA",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Computer Applications", "tuition_fee": "₹ 80,000" },
+            { "name": "Data Science", "tuition_fee": "₹ 80,000" },
+            { "name": "Artificial Intelligence", "tuition_fee": "₹ 80,000" },
+            { "name": "Cloud Computing", "tuition_fee": "₹ 80,000" },
+            { "name": "Cyber Security", "tuition_fee": "₹ 80,000" }
+          ]
+        },
+        {
+          "course_name": "B.Sc. Information Technology",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Information Technology", "tuition_fee": "₹ 80,000" },
+            { "name": "Artificial Intelligence", "tuition_fee": "₹ 80,000" },
+            { "name": "Data Analytics", "tuition_fee": "₹ 80,000" }
+          ]
+        },
+        {
+          "course_name": "MCA",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Computer Applications", "tuition_fee": "₹ 80,000" }
+          ]
+        },
+        {
+          "course_name": "M.Sc. Information Technology",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Information Technology", "tuition_fee": "₹ 81,550" }
+          ]
+        },
+        {
+          "course_name": "PG Diploma",
+          "duration": "1 Year",
+          "program_type": "Postgraduate Diploma",
+          "specializations": [
+            { "name": "Computer Applications", "tuition_fee": "₹ 30,000" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Pharmacy",
+      "courses": [
+        {
+          "course_name": "D.Pharm",
+          "duration": "2 Years",
+          "program_type": "Diploma",
+          "specializations": [
+            { "name": "Pharmacy", "tuition_fee": "₹ 44,100" }
+          ]
+        },
+        {
+          "course_name": "B.Pharm",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Pharmacy", "tuition_fee": "₹ 1,00,300, NRI Quota: ₹ 1,15,300" }
+          ]
+        },
+        {
+          "course_name": "Pharm.D",
+          "duration": "6 Years",
+          "program_type": "Doctor of Pharmacy",
+          "specializations": [
+            { "name": "Pharmacy Practice", "tuition_fee": "₹ 2,30,000" }
+          ]
+        },
+        {
+          "course_name": "Pharm.D (Post Baccalaureate)",
+          "duration": "3 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Pharmacy Practice", "tuition_fee": "₹ 1,33,750, NRI Quota: ₹ 2,45,000" }
+          ]
+        },
+        {
+          "course_name": "M.Pharm",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Pharmaceutics", "tuition_fee": "₹ 1,27,890" },
+            { "name": "Pharmaceutical Quality Assurance", "tuition_fee": "₹ 1,27,890" },
+            { "name": "Pharmacology", "tuition_fee": "₹ 1,27,890" },
+            { "name": "Pharmaceutical Chemistry", "tuition_fee": "₹ 1,27,890" },
+            { "name": "Pharmacognosy", "tuition_fee": "₹ 1,27,890" },
+            { "name": "Regulatory Affairs", "tuition_fee": "₹ 1,27,890" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Applied Sciences",
+      "courses": [
+        {
+          "course_name": "B.Sc.",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Physics", "tuition_fee": "₹ 72,000" },
+            { "name": "Chemistry", "tuition_fee": "₹ 72,000" },
+            { "name": "Mathematics", "tuition_fee": "₹ 72,000" },
+            { "name": "Microbiology", "tuition_fee": "₹ 72,000" },
+            { "name": "Biotechnology", "tuition_fee": "₹ 72,000" },
+            { "name": "Forensic Science", "tuition_fee": "₹ 72,000" },
+            { "name": "Environmental Science", "tuition_fee": "₹ 72,000" }
+          ]
+        },
+        {
+          "course_name": "M.Sc.",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Physics", "tuition_fee": "₹ 72,000" },
+            { "name": "Chemistry", "tuition_fee": "₹ 72,000" },
+            { "name": "Mathematics", "tuition_fee": "₹ 72,000" },
+            { "name": "Microbiology", "tuition_fee": "₹ 72,000" },
+            { "name": "Biotechnology", "tuition_fee": "₹ 72,000" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 75,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Nursing",
+      "courses": [
+        {
+          "course_name": "GNM",
+          "duration": "3 Years",
+          "program_type": "Diploma",
+          "specializations": [
+            { "name": "General Nursing and Midwifery", "tuition_fee": "State Quota: ₹ 68,000, Management Quota: ₹ 1,93,000/- P.A." }
+          ]
+        },
+        {
+          "course_name": "ANM",
+          "duration": "2 Years",
+          "program_type": "Diploma",
+          "specializations": [
+            { "name": "Auxiliary Nursing and Midwifery", "tuition_fee": "State Quota: ₹ 38,000, Management Quota: ₹ 85,000/- P.A." }
+          ]
+        },
+        {
+          "course_name": "B.Sc. Nursing",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Nursing", "tuition_fee": "State Quota: ₹ 1,39,000" }
+          ]
+        },
+        {
+          "course_name": "Post Basic B.Sc. Nursing",
+          "duration": "2 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Nursing", "tuition_fee": "₹ 80,000" }
+          ]
+        },
+        {
+          "course_name": "M.Sc. Nursing",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Medical Surgical Nursing", "tuition_fee": "₹ 1,10,000" },
+            { "name": "Child Health Nursing", "tuition_fee": "₹ 1,10,000" },
+            { "name": "Mental Health Nursing", "tuition_fee": "₹ 1,10,000" },
+            { "name": "Community Health Nursing", "tuition_fee": "₹ 1,10,000" },
+            { "name": "Obstetrics and Gynecological Nursing", "tuition_fee": "₹ 1,10,000" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 1,00,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Agriculture",
+      "courses": [
+        {
+          "course_name": "B.Sc. Agriculture",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Agriculture", "tuition_fee": "₹ 69,000" }
+          ]
+        },
+        {
+          "course_name": "B.Tech Agricultural Engineering",
+          "duration": "4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Agricultural Engineering", "tuition_fee": "Refer Brochure" }
+          ]
+        },
+        {
+          "course_name": "M.Sc. Agriculture",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Agronomy", "tuition_fee": "Refer Brochure" },
+            { "name": "Genetics & Plant Breeding", "tuition_fee": "Refer Brochure" },
+            { "name": "Horticulture", "tuition_fee": "Refer Brochure" },
+            { "name": "Soil Science", "tuition_fee": "Refer Brochure" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Medicine",
+      "courses": [
+        {
+          "course_name": "MBBS",
+          "duration": "5.5 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Bachelor of Medicine and Bachelor of Surgery", "tuition_fee": "State Quota: ₹ 10,00,000/-, Management Quota: ₹ 19,75,000/- P.A, NRI Quota: 25,000 USD" }
+          ]
+        },
+        {
+          "course_name": "MD",
+          "duration": "3 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Anatomy", "tuition_fee": "State Quota: ₹ 1,000" },
+            { "name": "Physiology", "tuition_fee": "State Quota: ₹ 1,000" },
+            { "name": "Biochemistry", "tuition_fee": "State Quota: ₹ 1,000" },
+            { "name": "Community Medicine", "tuition_fee": "State Quota: ₹ 1,000" }
+          ]
+        },
+        {
+          "course_name": "MS",
+          "duration": "3 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "General Surgery", "tuition_fee": "State Quota: ₹ 30,00,000, Management Quota: ₹ 42,00,000/- P.A." },
+            { "name": "Orthopaedics", "tuition_fee": "State Quota: ₹ 32,00,000, Management Quota: ₹ 42,00,000/- P.A." },
+            { "name": "Obstetrics and Gynaecology", "tuition_fee": "State Quota: ₹ 30,00,000, Management Quota: ₹ 42,00,000/- P.A." }
+          ]
+        }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Physiotherapy",
+      "courses": [
+        {
+          "course_name": "Bachelor of Physiotherapy",
+          "duration": "4.5 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Physiotherapy", "tuition_fee": "State Quota: ₹ 1,61,000, Management Quota: ₹ 1,97,000/- P.A." }
+          ]
+        },
+        {
+          "course_name": "Master of Physiotherapy",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Orthopaedics", "tuition_fee": "State Quota: ₹ 1,85,000" },
+            { "name": "Neurology", "tuition_fee": "State Quota: ₹ 1,35,000" },
+            { "name": "Sports Physiotherapy", "tuition_fee": "State Quota: ₹ 1,85,000" },
+            { "name": "Cardio Respiratory", "tuition_fee": "State Quota: ₹ 1,35,000" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral", "tuition_fee": "₹ 1,00,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Paramedical and Health Sciences",
+      "courses": [
+        {
+          "course_name": "B.Sc.",
+          "duration": "3-4 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Medical Laboratory Technology", "tuition_fee": "₹ 78,000" },
+            { "name": "Medical Imaging Technology", "tuition_fee": "₹ 78,000" },
+            { "name": "Operation Theatre Technology", "tuition_fee": "₹ 78,000" },
+            { "name": "Dialysis Technology", "tuition_fee": "₹ 78,000" },
+            { "name": "Optometry", "tuition_fee": "₹ 78,000" },
+            { "name": "Emergency Medical Services", "tuition_fee": "₹ 78,000" }
+          ]
+        },
+        {
+          "course_name": "M.Sc.",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Medical Laboratory Technology", "tuition_fee": "₹ 84,000" }
+          ]
+        }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Ayurveda",
+      "courses": [
+        {
+          "course_name": "BAMS",
+          "duration": "5.5 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Ayurvedic Medicine and Surgery", "tuition_fee": "State Quota: ₹ 3,75,000, Management Quota: ₹ 5,89,000/- P.A." }
+          ]
+        },
+        { "course_name": "MD Ayurveda", "duration": "3 Years", "program_type": "Postgraduate", "tuition_fee": "State Quota: ₹ 1,00,000 to ₹ 4,25,000" },
+        { "course_name": "MS Ayurveda", "duration": "3 Years", "program_type": "Postgraduate", "tuition_fee": "State Quota: ₹ 3,00,000 to ₹ 5,00,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Homeopathy",
+      "courses": [
+        {
+          "course_name": "BHMS",
+          "duration": "5.5 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Homeopathic Medicine and Surgery", "tuition_fee": "State Quota: ₹ 1,71,000, Management Quota: ₹ 2,57,000/- P.A." }
+          ]
+        },
+        { "course_name": "MD Homeopathy", "duration": "3 Years", "program_type": "Postgraduate", "tuition_fee": "State Quota: ₹ 1,00,000" }
+      ]
+    },
+    {
+      "faculty_name": "Faculty of Public Health",
+      "courses": [
+        {
+          "course_name": "Bachelor of Public Health",
+          "duration": "3 Years",
+          "program_type": "Undergraduate",
+          "specializations": [
+            { "name": "Public Health", "tuition_fee": "₹ 60,000" }
+          ]
+        },
+        {
+          "course_name": "Master of Public Health",
+          "duration": "2 Years",
+          "program_type": "Postgraduate",
+          "specializations": [
+            { "name": "Public Health", "tuition_fee": "₹ 90,000" }
+          ]
+        },
+        { "course_name": "Ph.D.", "duration": "As per University Norms", "program_type": "Doctoral" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0426",
+      "category": "Transport",
+      "question": "Can hostel students use the university bus service?",
+      "alternate_questions": [
+        "Hosteller transport",
+        "Hostel bus facility",
+        "Bus for hostel students"
+      ],
+      "keywords": ["hostel", "bus", "transport"],
+      "answer": "Hostel students may use university transportation services where applicable, depending on operational requirements and approved routes.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0427",
+      "category": "Transport",
+      "question": "How are bus routes decided?",
+      "alternate_questions": [
+        "Transport routes",
+        "Bus coverage",
+        "Bus service areas"
+      ],
+      "keywords": ["bus route", "transport"],
+      "answer": "Bus routes are planned based on student demand, operational feasibility, and university transport policies.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0428",
+      "category": "Transport",
+      "question": "Can I change my assigned bus route?",
+      "alternate_questions": [
+        "Change bus route",
+        "Transport route modification",
+        "Bus route transfer"
+      ],
+      "keywords": ["route", "transport"],
+      "answer": "Route changes may be permitted subject to seat availability and approval from the university transport office.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0429",
+      "category": "Transport",
+      "question": "Can I change my boarding point after registration?",
+      "alternate_questions": [
+        "Boarding point change",
+        "Bus stop update",
+        "Transport stop change"
+      ],
+      "keywords": ["boarding point", "bus"],
+      "answer": "Students may request a boarding point change through the transport office, subject to operational feasibility.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0430",
+      "category": "Transport",
+      "question": "What should I do if I miss the university bus?",
+      "alternate_questions": [
+        "Missed bus",
+        "Bus left without me",
+        "Transport problem"
+      ],
+      "keywords": ["missed bus", "transport"],
+      "answer": "Students who miss the scheduled bus should arrange alternate transportation and follow the published transport schedule for future trips.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0431",
+      "category": "Transport",
+      "question": "Can I track the university bus location?",
+      "alternate_questions": [
+        "Bus tracking",
+        "Track bus",
+        "Live bus location"
+      ],
+      "keywords": ["bus tracking", "GPS"],
+      "answer": "If bus tracking services are available, students can use the designated university platform or mobile application to view bus locations.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0432",
+      "category": "Transport",
+      "question": "What are the university bus timings?",
+      "alternate_questions": [
+        "Bus schedule",
+        "Transport timings",
+        "Bus departure time"
+      ],
+      "keywords": ["bus", "schedule"],
+      "answer": "Bus timings are announced by the university transport office and may vary depending on the assigned route.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0433",
+      "category": "Transport",
+      "question": "Are buses available on weekends?",
+      "alternate_questions": [
+        "Weekend transport",
+        "Saturday bus",
+        "Sunday bus"
+      ],
+      "keywords": ["weekend", "bus"],
+      "answer": "Weekend transport services operate according to the university's approved transport schedule.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0434",
+      "category": "Transport",
+      "question": "Does the university provide transportation during examinations?",
+      "alternate_questions": [
+        "Exam bus",
+        "Transport during exams",
+        "Examination transport"
+      ],
+      "keywords": ["exam", "bus"],
+      "answer": "Transportation services during examinations follow the schedules announced by the university transport department.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0435",
+      "category": "Transport",
+      "question": "Can students bring bicycles to campus?",
+      "alternate_questions": [
+        "Cycle parking",
+        "Bicycle on campus",
+        "Use bicycle"
+      ],
+      "keywords": ["bicycle", "parking"],
+      "answer": "Students may use bicycles on campus in accordance with university traffic and parking regulations.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0436",
+      "category": "Transport",
+      "question": "Is parking available for student vehicles?",
+      "alternate_questions": [
+        "Student parking",
+        "Vehicle parking",
+        "Parking facility"
+      ],
+      "keywords": ["parking", "vehicle"],
+      "answer": "Yes. Designated parking areas are available for eligible student vehicles according to university regulations.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0437",
+      "category": "Transport",
+      "question": "Can students bring motorcycles to campus?",
+      "alternate_questions": [
+        "Bike parking",
+        "Motorcycle permission",
+        "Two-wheeler parking"
+      ],
+      "keywords": ["motorcycle", "parking"],
+      "answer": "Students may bring two-wheelers to campus subject to vehicle registration, parking rules, and university policies.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0438",
+      "category": "Transport",
+      "question": "Do I need a parking permit?",
+      "alternate_questions": [
+        "Parking registration",
+        "Vehicle permit",
+        "Parking pass"
+      ],
+      "keywords": ["parking permit", "vehicle"],
+      "answer": "Students should follow the university's vehicle registration and parking permit procedures where applicable.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0439",
+      "category": "Transport",
+      "question": "Is visitor parking available on campus?",
+      "alternate_questions": [
+        "Guest parking",
+        "Visitor vehicle",
+        "Parking for parents"
+      ],
+      "keywords": ["visitor", "parking"],
+      "answer": "Visitor parking facilities are available according to university visitor management policies.",
+      "source": "guest_visitor_services.json"
+    },
+    {
+      "id": "faq_0440",
+      "category": "Transport",
+      "question": "What should I do if I lose something on the university bus?",
+      "alternate_questions": [
+        "Lost item on bus",
+        "Lost and found bus",
+        "Bus belongings"
+      ],
+      "keywords": ["lost", "bus"],
+      "answer": "Students should immediately report lost items to the transport office or the bus supervisor for assistance.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0441",
+      "category": "Transport",
+      "question": "Can transport registration be cancelled?",
+      "alternate_questions": [
+        "Cancel bus service",
+        "Transport cancellation",
+        "Stop bus facility"
+      ],
+      "keywords": ["transport", "cancel"],
+      "answer": "Transport cancellation requests are processed according to university policies and any applicable refund rules.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0442",
+      "category": "Transport",
+      "question": "Can I renew my transport registration every semester?",
+      "alternate_questions": [
+        "Transport renewal",
+        "Renew bus pass",
+        "Bus registration renewal"
+      ],
+      "keywords": ["renewal", "transport"],
+      "answer": "Students should renew transport registration according to the university's announced transport schedule and procedures.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0443",
+      "category": "Transport",
+      "question": "Are transport fee refunds available?",
+      "alternate_questions": [
+        "Bus fee refund",
+        "Transport refund",
+        "Refund transport charges"
+      ],
+      "keywords": ["refund", "transport"],
+      "answer": "Transport fee refunds, if applicable, are processed according to the university's refund policy.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0444",
+      "category": "Transport",
+      "question": "How can I report a transport-related complaint?",
+      "alternate_questions": [
+        "Bus complaint",
+        "Transport grievance",
+        "Report transport issue"
+      ],
+      "keywords": ["complaint", "transport"],
+      "answer": "Students should contact the university transport office or use the designated grievance mechanism for transport-related concerns.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0445",
+      "category": "Transport",
+      "question": "Whom should I contact for transport-related assistance?",
+      "alternate_questions": [
+        "Transport office contact",
+        "Bus office",
+        "Transport support"
+      ],
+      "keywords": ["transport", "contact"],
+      "answer": "Students should contact the university transport office for assistance regarding routes, registration, schedules, and transport services.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0446",
+      "category": "International Students",
+      "question": "Does Parul University admit international students?",
+      "alternate_questions": [
+        "Foreign student admission",
+        "International admission",
+        "Study in Parul University"
+      ],
+      "keywords": ["international", "admission"],
+      "answer": "Yes. The university welcomes international students and provides admission support according to the applicable admission procedures.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0447",
+      "category": "International Students",
+      "question": "Is there a dedicated office for international students?",
+      "alternate_questions": [
+        "International office",
+        "International student support",
+        "Foreign student office"
+      ],
+      "keywords": ["international office", "support"],
+      "answer": "Yes. The university has a dedicated international student support office to assist international applicants and enrolled students.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0448",
+      "category": "International Students",
+      "question": "Can international students stay in university hostels?",
+      "alternate_questions": [
+        "International hostel",
+        "Hostel for foreign students",
+        "Accommodation"
+      ],
+      "keywords": ["hostel", "international"],
+      "answer": "Yes. International students can apply for university hostel accommodation subject to availability and hostel policies.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0449",
+      "category": "International Students",
+      "question": "Does the university help international students with documentation?",
+      "alternate_questions": [
+        "Visa documentation",
+        "International paperwork",
+        "Student documents"
+      ],
+      "keywords": ["visa", "documentation"],
+      "answer": "Yes. The international student office provides guidance regarding admission-related documentation and other required formalities.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0450",
+      "category": "International Students",
+      "question": "Can international students participate in campus activities?",
+      "alternate_questions": [
+        "International student clubs",
+        "Campus activities",
+        "Student participation"
+      ],
+      "keywords": ["international", "activities"],
+      "answer": "Yes. International students are encouraged to participate in academic, cultural, sports, and extracurricular activities across the university.",
+      "source": "international_students.json"
+    }
+  ]
+}

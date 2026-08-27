@@ -1,0 +1,59 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file covers the final two categories together. The official social media handles are real, verified directly from each platform (Instagram, Twitter/X, Facebook) — not fabricated, avoiding the same risk as a wrong phone number. ERP/mobile app/email sections cross-reference technology_digital_services_parul_details.json rather than restating it differently. Merchandise/bookstore sections are generated for this academic project. Side note: @pu.global's real Instagram bio states '75+ Countries', which corroborates the official website figure noted as a discrepancy in faculty_teaching_staff_parul_details.json, rather than the older '60+ countries' baseline used in earlier files — relevant context for the global consistency pass planned at the end of data collection.",
+    "data_types": {
+      "verified_via_web_search": "Real, platform-confirmed social media handles",
+      "verified_from_prior_data": "Real/cross-referenced facts already established elsewhere in this project",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "digital_communication_channels": {
+
+    "official_mobile_app": {
+      "cross_reference": "Already documented in technology_digital_services_parul_details.json's 'mobile_app' — a companion app mirroring core ERP functions (attendance, fees, results, notices), with push notifications and digital ID card features."
+    },
+
+    "student_erp_portal": {
+      "cross_reference": "Already documented in detail in technology_digital_services_parul_details.json's 'student_erp_portal', covering login process and all major modules (attendance, grades, fees, examination, placement, hostel, transport, library)."
+    },
+
+    "official_social_media_handles": {
+      "data_type": "verified_via_web_search",
+      "instagram_main": "@paruluniversity (Instagram) — the university's main account, approximately 304K followers.",
+      "instagram_global": "@pu.global (Instagram) — a dedicated account for the university's international student community.",
+      "twitter_x": "@ParulUniversity (Twitter/X).",
+      "facebook": "Parul University (Facebook, facebook.com/ParulUniversity) — approximately 1.2 million+ likes.",
+      "note": "These are real, platform-verified handles, useful for students following official announcements, event coverage (Projections, Dhoom — already documented), and admissions updates."
+    },
+
+    "email_and_workspace_access": {
+      "cross_reference": "Already documented in technology_digital_services_parul_details.json's 'email_and_workspace_access' — official university email issued at enrollment, commonly via a Google Workspace for Education-style suite."
+    },
+
+    "sms_and_notification_system": {
+      "data_type": "generated_for_project",
+      "typical_use": "Beyond app-based push notifications (already documented), SMS alerts are commonly used for time-sensitive/critical notices (fee due date reminders, exam schedule changes, emergency announcements) to reach students even without active app/data usage, complementing rather than replacing the ERP portal and mobile app as primary channels."
+    }
+  },
+
+  "merchandise_and_campus_store": {
+
+    "university_branded_merchandise": {
+      "data_type": "generated_for_project",
+      "uniforms": "Formal uniforms are generally limited to specific programs where professional/clinical attire is required (Nursing, Hotel Management, Medicine — consistent with the lab/clinical dress code already documented in rules_discipline_grievance_parul_details.json), rather than a university-wide uniform requirement.",
+      "sportswear": "University-branded sportswear/team kits are typically available for students representing the university in inter-college tournaments (already documented in sports_recreation_parul_details.json), and often as general merchandise for students wanting to show campus spirit.",
+      "souvenirs": "General university-branded merchandise (apparel, mugs, bags, stationery items bearing the university logo) is commonly available, particularly popular during major fests (Projections, Dhoom, TechExpo — already documented in events_fests_cultural_calendar_parul_details.json) and at the time of orientation/convocation."
+    },
+
+    "bookstore_for_academic_books_and_stationery": {
+      "cross_reference": "A stationery and photocopy shop is already briefly documented in campus_facilities_infrastructure_parul_details.json's 'convenience_stores_and_shops'.",
+      "additional_detail": "Beyond general stationery/photocopy services, a dedicated academic bookstore (stocking faculty-prescribed textbooks and reference material) is commonly available near the library or main academic block, complementing the library's own lending collection (already documented in the same file) for students who prefer to purchase their own copies."
+    }
+  }
+}

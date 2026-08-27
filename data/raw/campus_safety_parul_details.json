@@ -1,0 +1,57 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file uses real, web-verified national and Gujarat-state safety helplines (Women Helpline 181, branded 'ABHAYAM 181' specifically in Gujarat) rather than fabricating a campus-specific number. The anti-ragging helpline cross-references the real number already established in rules_discipline_grievance_parul_details.json. The Women's Safety Cell is explicitly distinguished from the ICC (already documented) since they serve different functions — proactive safety vs. complaint redressal. Self-defense training, fire safety, and evacuation plan sections are generated for this academic project, since no Parul-specific policy documents were available.",
+    "data_types": {
+      "verified_via_web_search": "Real, government-confirmed national/state helpline numbers",
+      "verified_from_prior_data": "Real facts already established elsewhere in this project",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "campus_safety": {
+
+    "womens_safety_cell": {
+      "data_type": "generated_for_project",
+      "distinction_from_icc": "The Women's Safety Cell is distinct from the Internal Complaints Committee (ICC), already documented in rules_discipline_grievance_parul_details.json. The ICC is a legally-mandated, complaint-driven body that investigates specific harassment complaints under the POSH Act. The Women's Safety Cell, by contrast, is expected to work proactively — campus safety audits (lighting, CCTV coverage gaps, isolated areas), organizing awareness campaigns, and coordinating preventive measures — rather than only responding after an incident is reported.",
+      "typical_functions": [
+        "Periodic campus safety walk-throughs/audits, particularly around hostels and less-trafficked areas",
+        "Coordinating self-defense training sessions",
+        "Running safety awareness campaigns and orientation content for new students",
+        "Serving as an additional, informal point of contact for safety concerns that a student may not yet want to formalize as an ICC complaint"
+      ]
+    },
+
+    "campus_helpline_numbers": {
+      "data_type": "verified_via_web_search + verified_from_prior_data",
+      "security_and_general_emergency": "India's national unified emergency number 112 (already documented in administration_departments_contacts_parul_details.json) covers police, fire, and ambulance needs from any phone.",
+      "womens_safety_helpline": "181 — India's national 24/7 toll-free Women Helpline, run under the Ministry of Women and Child Development's 'Universalization of Women Helpline Scheme'. In Gujarat specifically (where Parul University is located), this service is branded 'ABHAYAM 181'. (verified via web search — real, government-run)",
+      "medical_emergency": "Parul Sevashram Hospital (PSH), already documented as the university's on-campus 24/7 hospital.",
+      "anti_ragging": "1800-180-5522 — the National Anti-Ragging Helpline, already documented in rules_discipline_grievance_parul_details.json.",
+      "note": "As with other department contacts in this project, no specific unverified internal campus security phone number is fabricated here — these are real, government-run resources plus the already-verified on-campus hospital."
+    },
+
+    "self_defense_training_programs": {
+      "data_type": "generated_for_project",
+      "availability": "Periodic self-defense workshops are commonly organized for students (particularly for female students in hostels) in coordination with the sports department's coaching staff (already documented in sports_recreation_parul_details.json) or external certified trainers, typically around orientation week or as part of women's safety awareness campaigns.",
+      "frequency": "Such workshops are generally offered once or twice per academic year rather than as an ongoing continuous program, consistent with typical practice at Indian universities."
+    },
+
+    "fire_safety_equipment_and_evacuation_drills": {
+      "data_type": "generated_for_project",
+      "equipment": "Fire extinguishers, smoke detectors, and fire alarm systems are maintained across academic blocks, hostels, and the hospital, consistent with standard fire safety compliance requirements for institutional buildings.",
+      "evacuation_route_signage": "Evacuation route maps and emergency exit signage are typically posted in hostel corridors, academic buildings, and common areas.",
+      "mock_drills": "Periodic fire safety mock drills are generally conducted (commonly once or twice a year) particularly in hostel blocks, to familiarize students with evacuation procedures."
+    },
+
+    "emergency_evacuation_plan": {
+      "data_type": "generated_for_project",
+      "general_structure": "In the event of a fire or other campus-wide emergency, the general expectation is for students/staff to evacuate via marked routes to designated assembly points outside buildings, coordinated by hostel wardens (in residential blocks) or faculty/security personnel (in academic blocks), with campus security managing overall coordination and liaison with external emergency services (fire department, via the national 112 number) if needed.",
+      "hostel_specific_note": "Hostel wardens play a particularly important coordination role during evacuation given the residential, overnight nature of hostel occupancy, consistent with their broader emergency-response role already documented in hostel_residential_life_parul_details.json."
+    }
+  }
+}

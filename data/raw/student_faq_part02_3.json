@@ -1,0 +1,176 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0071",
+      "category": "Fee Refund",
+      "question": "What is the fee refund policy at Parul University?",
+      "alternate_questions": [
+        "Can I get my fees refunded?",
+        "Fee refund rules",
+        "Refund policy after admission"
+      ],
+      "keywords": [
+        "refund",
+        "fees",
+        "cancellation",
+        "policy"
+      ],
+      "answer": "Fee refund requests are processed according to the university's approved refund policy. Students should submit the required application and supporting documents to the appropriate office.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0072",
+      "category": "Fee Refund",
+      "question": "How do I apply for a fee refund?",
+      "alternate_questions": [
+        "Fee refund application",
+        "Refund request",
+        "Apply for refund"
+      ],
+      "keywords": [
+        "refund",
+        "application",
+        "fees"
+      ],
+      "answer": "Students should submit a refund request through the prescribed university procedure along with any required supporting documents.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0073",
+      "category": "Fee Refund",
+      "question": "How long does it take to process a fee refund?",
+      "alternate_questions": [
+        "Refund processing time",
+        "When will I receive my refund?",
+        "Fee refund duration"
+      ],
+      "keywords": [
+        "refund",
+        "processing",
+        "duration"
+      ],
+      "answer": "Refund processing time depends on verification and administrative procedures. Students should contact the accounts office for updates regarding their request.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0074",
+      "category": "Hostel Fees",
+      "question": "Can I pay my hostel fees separately from my academic fees?",
+      "alternate_questions": [
+        "Separate hostel payment",
+        "Hostel fee payment",
+        "Pay hostel fees independently"
+      ],
+      "keywords": [
+        "hostel",
+        "fees",
+        "payment"
+      ],
+      "answer": "Hostel fee payment procedures are governed by the university's hostel administration. Students should follow the instructions provided during hostel admission.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0075",
+      "category": "Hostel Fees",
+      "question": "Is the hostel security deposit refundable?",
+      "alternate_questions": [
+        "Hostel deposit refund",
+        "Security deposit",
+        "Refundable hostel deposit"
+      ],
+      "keywords": [
+        "security deposit",
+        "hostel",
+        "refund"
+      ],
+      "answer": "The hostel security deposit, if applicable, is handled according to hostel regulations and is subject to the university's refund procedures.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0076",
+      "category": "Examination Fees",
+      "question": "Do students have to pay examination fees?",
+      "alternate_questions": [
+        "Exam fee",
+        "Semester examination fees",
+        "Examination payment"
+      ],
+      "keywords": [
+        "exam",
+        "fees",
+        "semester"
+      ],
+      "answer": "Examination fees, where applicable, are notified by the university before the examination process begins.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0077",
+      "category": "Examination Fees",
+      "question": "Is there a fee for backlog or supplementary examinations?",
+      "alternate_questions": [
+        "Backlog exam fee",
+        "Supplementary exam charges",
+        "Re-exam fee"
+      ],
+      "keywords": [
+        "backlog",
+        "supplementary",
+        "exam fee"
+      ],
+      "answer": "Fees for backlog or supplementary examinations are charged according to the university's examination regulations, where applicable.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0078",
+      "category": "Accounts",
+      "question": "What should I do if my online fee payment fails?",
+      "alternate_questions": [
+        "Payment failed",
+        "Online transaction failed",
+        "Fee payment issue"
+      ],
+      "keywords": [
+        "payment failed",
+        "transaction",
+        "fees"
+      ],
+      "answer": "If an online payment fails or the amount is deducted without confirmation, students should keep the transaction details and contact the accounts office or technical support for assistance.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0079",
+      "category": "Accounts",
+      "question": "Who should I contact for fee-related issues?",
+      "alternate_questions": [
+        "Accounts office contact",
+        "Fee support",
+        "Payment help"
+      ],
+      "keywords": [
+        "accounts",
+        "fees",
+        "support",
+        "contact"
+      ],
+      "answer": "Students should contact the university accounts office or fee support team through the official communication channels for any fee-related concerns.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0080",
+      "category": "Accounts",
+      "question": "What should I do if there is an error in my fee record?",
+      "alternate_questions": [
+        "Incorrect fee record",
+        "Fee correction",
+        "Payment record issue"
+      ],
+      "keywords": [
+        "fee record",
+        "correction",
+        "accounts"
+      ],
+      "answer": "Students should immediately report any discrepancy in their fee records to the accounts office and provide the relevant payment receipts or transaction details for verification.",
+      "source": "fees_financial_aid.json"
+    }
+  ]
+}

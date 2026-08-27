@@ -1,0 +1,122 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This entire file is generated for this academic project, since no real admissions data was provided. It is written to be realistic and internally consistent with Parul University's actual scale and with the real entrance-exam mappings already established in academic_details_parul.json. None of this should be treated as officially confirmed university policy.",
+    "data_type": "generated_for_project"
+  },
+
+  "admissions": {
+
+    "application_process": {
+      "description": "General step-by-step process followed for most undergraduate and postgraduate programs at Parul University.",
+      "steps": [
+        "Visit the official Parul University website and navigate to the Admissions section.",
+        "Register with basic details (name, mobile number, email) to create an applicant account.",
+        "Fill out the online application form with personal, academic, and course preference details.",
+        "Upload scanned copies of required documents (see document checklist).",
+        "Pay the non-refundable application fee online.",
+        "Appear for the applicable entrance exam (university-conducted test, or submit valid national-level exam scores such as JEE/NEET/GUJCET where applicable).",
+        "Attend a counseling/interaction session (in-person or online) for seat allotment, based on merit and course-specific criteria.",
+        "Receive a provisional offer letter and complete admission by paying the requisite admission/tuition fee within the specified window.",
+        "Complete document verification (original documents) at the time of physical reporting/orientation."
+      ]
+    },
+
+    "important_dates_pattern": {
+      "disclaimer": "Exact dates change every academic year. The pattern below reflects typical timing observed at most Indian private universities and should be confirmed against the official Parul University website or admissions office for the current year.",
+      "application_window": "Applications typically open around December-January for the upcoming academic year and remain open on a rolling basis until seats are filled, with priority rounds usually closing by June-July.",
+        "entrance_test_window": "University-conducted entrance tests are typically held in multiple rounds between March and July.",
+      "counseling_rounds": "Counseling/seat allotment is typically conducted in 2-4 rounds between June and August, with spot admission rounds sometimes extending into August-September for vacant seats.",
+      "session_start": "The academic session typically begins in the last week of July or first week of August."
+    },
+
+    "entrance_exams_accepted": {
+      "note": "This summary is consistent with the faculty-specific entrance exam mapping already documented in academic_details_parul.json.",
+      "national_level_exams": [
+        "JEE Main (Engineering programs)",
+        "NEET (MBBS, BAMS, BHMS, and B.Sc. Nursing)",
+        "GUJCET (Engineering and Pharmacy programs, Gujarat-domicile candidates)",
+        "NATA / JEE Main Paper 2 (Architecture)",
+        "CLAT (Law programs, alongside merit-based options)"
+      ],
+      "university_conducted": "Parul University Entrance Test (PUET) — a university-level test accepted for most UG/PG programs that do not mandate a specific national-level exam (Management, Commerce, Design, Liberal Arts, IT/CS, and others)."
+    },
+
+    "direct_vs_entrance_based_admission": {
+      "direct_admission": "Available for most non-professional undergraduate programs (BBA, B.Com, BA, BCA, etc.) based purely on Class 12 (or equivalent) marks meeting the minimum eligibility percentage, without requiring an entrance exam score.",
+      "entrance_based_admission": "Mandatory for professional/regulated programs where a national-level entrance exam is required by the respective regulatory council (Engineering via JEE/GUJCET, Medical/Dental/Ayurveda/Homeopathy via NEET, Architecture via NATA, Law via CLAT or university test).",
+      "management_quota_note": "A limited number of seats in most programs are available under a Management Quota, typically at a higher fee bracket, subject to meeting the minimum eligibility criteria (may not require entrance exam qualification for non-regulated programs)."
+    },
+
+    "document_checklist": {
+      "general_ug_pg": [
+        "Class 10 and Class 12 (or equivalent) mark sheets and passing certificates",
+        "For PG programs: Bachelor's degree mark sheets and provisional/final degree certificate",
+        "Transfer Certificate (TC) / School Leaving Certificate",
+        "Migration Certificate (for students from other boards/universities)",
+        "Passport-size photographs (recent)",
+        "Valid government photo ID proof (Aadhaar Card / Passport)",
+        "Category certificate (if applying under reserved category quota)",
+        "Entrance exam scorecard/admit card (where applicable)"
+      ],
+      "additional_for_professional_programs": [
+        "NEET/JEE/NATA/CLAT scorecard as applicable",
+        "Medical fitness certificate (for Medicine, Nursing, Ayurveda, Homeopathy, Physiotherapy programs)",
+        "Domicile certificate (for state-quota seat consideration)"
+      ],
+      "additional_for_nri_international": [
+        "Valid passport and visa documents",
+        "Equivalence certificate from the Association of Indian Universities (AIU), for international qualifications",
+        "NRI/foreign national eligibility certificate where applicable"
+      ]
+    },
+
+    "application_fee_and_payment": {
+      "amount_range": "Approximately ₹500 to ₹1,500 depending on the program, generally non-refundable.",
+      "payment_methods": ["Online payment via debit/credit card", "Net banking", "UPI"],
+      "note": "The application fee is separate from the tuition fee and one-time admission fee described in the course fee structure."
+    },
+
+    "nri_and_international_admission": {
+      "process_overview": "International and NRI applicants follow a largely similar online application process, with additional document requirements and a dedicated International Admissions Cell for guidance.",
+      "eligibility_note": "Equivalence of international qualifications is verified through the Association of Indian Universities (AIU) before admission is finalized.",
+      "fee_structure_note": "NRI/international quota fees are typically higher than domestic fees and, for select professional programs (e.g. MBBS), may be denominated in USD — consistent with the NRI quota figures already listed for MBBS in academic_details_parul.json.",
+      "support_services": "Visa guidance, FRRO registration support, and airport pickup/orientation assistance are typically coordinated through the International Admissions Cell."
+    },
+
+    "lateral_entry_admission": {
+      "process": "Lateral entry candidates (Diploma holders seeking B.Tech admission, or B.Sc. holders seeking relevant B.Tech/B.Sc. programs) apply through a dedicated lateral entry application window, generally after the primary admission rounds.",
+      "seat_allocation": "Lateral entry seats are limited and are typically an additional intake over the sanctioned first-year seats, subject to AICTE norms.",
+      "note": "Detailed lateral entry eligibility criteria are documented in academic_details_parul.json under 'lateral_entry_and_credit_transfer'."
+    },
+
+    "quota_policy": {
+      "state_quota": "Seats reserved for candidates domiciled in Gujarat, generally at a lower fee bracket, particularly relevant for regulated professional programs (Medicine, Nursing, Ayurveda, Homeopathy).",
+      "management_quota": "A separate seat category available at a higher fee bracket for candidates who meet minimum eligibility but may not have a high entrance exam rank; more prevalent in Medicine, Nursing, and other regulated professional programs.",
+      "nri_quota": "A distinct seat category for NRI/foreign national candidates, typically with fees denominated partly or fully in USD for select professional programs.",
+      "sports_quota": "A limited number of seats reserved across various programs for candidates with notable state/national/international-level sporting achievements, subject to document verification and, in some cases, a sports trial/assessment.",
+      "reserved_category_relaxation": "Candidates from SC/ST/OBC/EWS and other government-recognized reserved categories may be eligible for a relaxation in minimum eligibility percentage (typically 5%), subject to valid category certification."
+    },
+
+    "transfer_and_migration_policy": {
+      "process": "Students seeking to transfer from another UGC-recognized university may apply for migration, subject to seat availability in the target semester/year and syllabus equivalence review by the respective faculty.",
+      "documents_required": "Migration certificate from the previous institution, transcripts of completed semesters, and no-objection certificate (NOC) from the previous university.",
+      "credit_transfer": "Equivalent completed subjects may be granted credit transfer following syllabus comparison and approval by the faculty's academic committee, as outlined in academic_details_parul.json."
+    },
+
+    "gap_year_policy": {
+      "acceptance": "Gap years between Class 12 and undergraduate admission (or between graduation and postgraduate admission) are generally accepted without penalty, provided the candidate meets the standard eligibility criteria and entrance exam validity requirements (where applicable, since some national entrance exam scores are valid only for a limited period).",
+      "documentation": "Candidates with a gap year may be asked to submit a gap-year affidavit or explanation letter as part of the document verification process, particularly for professional/regulated programs."
+    },
+
+    "admission_cancellation_and_withdrawal": {
+      "process": "Students wishing to withdraw after confirming admission must submit a written cancellation request to the admissions office, along with the original fee receipt.",
+      "refund_policy_reference": "Refund eligibility and timelines generally follow UGC guidelines: full refund (minus a nominal processing charge) if withdrawn before the seat-freezing/session-start deadline, with a reducing refund percentage the closer the withdrawal is to session start, and no refund typically after the session has started beyond the UGC-mandated cutoff.",
+      "caution_deposit_note": "The refundable caution deposit (described in academic_details_parul.json's fee structure) is returned separately after clearance of any pending dues, regardless of the tuition refund outcome."
+    }
+  }
+}

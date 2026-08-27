@@ -1,0 +1,73 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file cross-references Parul Sevashram Hospital (PSH), already documented as real elsewhere in the knowledge base. The mental health helpline numbers (KIRAN and Tele MANAS) are real, government-run national helplines, verified via web search — not a fabricated on-campus number, deliberately, since an incorrect fabricated helpline could cause real harm if relied upon. Everything else (health center timing, doctor specializations on-site, insurance, vaccination drives, medical leave policy) is generated for this academic project to be realistic and should not be treated as officially confirmed university policy.",
+    "data_types": {
+      "verified_from_prior_research": "Real facts about Parul Sevashram Hospital, already established in this project",
+      "verified_via_web_search": "Real, government-confirmed national helpline numbers",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "health_and_medical_services": {
+
+    "on_campus_health_center": {
+      "data_type": "verified_from_prior_research + generated_for_project",
+      "primary_facility": "Parul Sevashram Hospital (PSH) serves as the university's flagship on-campus hospital, providing 24/7 medical facilities on a chargeable basis. (verified)",
+      "first_response_clinic": "In addition to the full hospital, a smaller first-response health/first-aid point is typically maintained closer to the main academic and hostel zones for quick access to basic care before referral to PSH for anything requiring fuller diagnostic or treatment facilities. (generated)",
+      "location_note": "PSH is located within the Parul University campus in Vadodara, integrated with the broader campus infrastructure. (generated, consistent with verified 24/7 on-campus availability)"
+    },
+
+    "doctor_availability_and_specializations": {
+      "data_type": "generated_for_project",
+      "general_note": "As a full hospital (NABH-accredited, per prior research), PSH maintains general physicians and multiple specialist departments consistent with a comprehensive hospital, likely including General Medicine, Emergency Medicine, Orthopaedics, Gynaecology, Pediatrics, and other specializations aligned with the university's own Faculty of Medicine, Faculty of Ayurveda, Faculty of Homeopathy, and Faculty of Nursing.",
+      "student_specific_access": "Students have access to general OPD (outpatient) consultation during standard hours, with emergency care available 24/7 regardless of specialization needed for initial stabilization/referral."
+    },
+
+    "ambulance_and_emergency_response": {
+      "data_type": "generated_for_project",
+      "availability": "Given PSH's 24/7 operation and NABH accreditation, on-campus ambulance service is available for emergencies, coordinated through hospital emergency response staff and campus security.",
+      "response_process": "In a medical emergency (including hostel emergencies, already documented in hostel_residential_life_parul_details.json), students/hostel wardens contact campus security or the hospital directly, and an ambulance is dispatched for transport to PSH or, if needed, an external tertiary care facility."
+    },
+
+    "tie_up_hospital": {
+      "data_type": "verified_from_prior_research",
+      "name": "Parul Sevashram Hospital (PSH)",
+      "accreditation": "NABH-accredited (National Accreditation Board for Hospitals & Healthcare Providers), the university's flagship hospital.",
+      "service_basis": "Available 24/7 on a chargeable basis to students, faculty, and staff."
+    },
+
+    "student_health_insurance": {
+      "data_type": "generated_for_project",
+      "general_note": "Group health/accident insurance coverage for students is common practice at large private Indian universities, typically covering basic hospitalization/accident scenarios; exact coverage details, premium (if any is passed to students), and claim process would need to be confirmed with the university's accounts or student welfare office for the current academic year.",
+      "disclaimer": "No specific insurance provider, sum insured, or premium figure is claimed here, since this could not be verified and stating a specific fabricated figure would be misleading."
+    },
+
+    "mental_health_and_counseling_support": {
+      "data_type": "verified_via_web_search + generated_for_project",
+      "on_campus_support": "A student counseling/wellness service is generally expected at a university of this scale, coordinated through the Dean of Student Affairs office, offering confidential support for academic stress, personal difficulties, and general mental wellness. (generated — exact structure/staffing not independently confirmed)",
+      "national_helplines": {
+        "kiran": "KIRAN — India's 24/7 toll-free national Mental Health Rehabilitation Helpline, available in 13 languages: 1800-599-0019. Operated by the Ministry of Social Justice and Empowerment, connecting callers to trained counselors and, where needed, referral to psychiatrists/psychologists. (verified via web search — real, government-run)",
+        "tele_manas": "Tele MANAS — a national tele-mental health helpline initiative by India's Ministry of Health and Family Welfare, providing mental wellness support and guidance. (verified via web search — real, government-run)"
+      },
+      "usage_note": "These national helplines are genuine, verified resources appropriate to share regardless of whether a university-specific counseling helpline number could be confirmed, and are a safer reference than an unverified/fabricated campus-specific number."
+    },
+
+    "vaccination_drives_and_health_camps": {
+      "data_type": "generated_for_project",
+      "typical_activities": "Periodic vaccination drives (e.g. seasonal flu, or in response to specific public health needs) and general health check-up camps are commonly organized on campus, often in coordination with PSH and the NSS unit (already documented in clubs_societies_parul_details.json) as part of its social service activities.",
+      "frequency": "Typically once or twice per academic year, alongside awareness camps on topics like blood donation (already documented in events_fests_cultural_calendar_parul_details.json), general hygiene, and seasonal illness prevention."
+    },
+
+    "medical_leave_policy": {
+      "data_type": "generated_for_project",
+      "attendance_context": "Medical leave affecting attendance is handled through the attendance condonation process already documented in academic_details_parul.json's 'general_academic_policies.attendance_policy' — students with attendance shortfall due to genuine medical reasons can apply for condonation with a valid medical certificate.",
+      "exam_context": "Students unable to appear for an exam due to a medical emergency can typically apply for special consideration (e.g. a supplementary/re-exam opportunity) by submitting a medical certificate to the examination department within a specified window after the missed exam, subject to faculty/university approval.",
+      "certificate_requirement": "A valid medical certificate from a registered medical practitioner (PSH or an external doctor) is generally required to support any medical leave request, whether for attendance or exam-related consideration."
+    }
+  }
+}

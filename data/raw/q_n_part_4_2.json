@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0186",
+      "category": "Examinations",
+      "question": "When are the semester examinations conducted?",
+      "alternate_questions": [
+        "Semester exam schedule",
+        "Exam dates",
+        "When are end semester exams?"
+      ],
+      "keywords": ["semester exam", "schedule", "exam dates"],
+      "answer": "Semester examinations are conducted according to the official academic calendar and examination schedule released by the university.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0187",
+      "category": "Examinations",
+      "question": "How can I check my examination timetable?",
+      "alternate_questions": [
+        "Exam timetable",
+        "Exam schedule",
+        "Examination dates"
+      ],
+      "keywords": ["exam timetable", "schedule"],
+      "answer": "Students can access the examination timetable through the ERP, examination portal, or official university notices.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0188",
+      "category": "Examinations",
+      "question": "Where can I download my hall ticket?",
+      "alternate_questions": [
+        "Exam admit card",
+        "Hall ticket download",
+        "Examination admit card"
+      ],
+      "keywords": ["hall ticket", "admit card"],
+      "answer": "Hall tickets are made available through the university's official examination portal or ERP before the examinations.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0189",
+      "category": "Examinations",
+      "question": "Is a hall ticket mandatory for examinations?",
+      "alternate_questions": [
+        "Need admit card",
+        "Hall ticket compulsory",
+        "Exam entry"
+      ],
+      "keywords": ["hall ticket", "mandatory"],
+      "answer": "Yes. Students are generally required to carry a valid hall ticket and university identity card to appear for examinations.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0190",
+      "category": "Examinations",
+      "question": "What documents should I carry to the examination hall?",
+      "alternate_questions": [
+        "Exam documents",
+        "What to bring for exam",
+        "Exam requirements"
+      ],
+      "keywords": ["documents", "hall ticket", "ID card"],
+      "answer": "Students should carry their hall ticket, university identity card, and other permitted materials as specified by the examination department.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0191",
+      "category": "Examinations",
+      "question": "Can I enter the examination hall after the exam has started?",
+      "alternate_questions": [
+        "Late entry in exam",
+        "Late for examination",
+        "Exam late arrival"
+      ],
+      "keywords": ["late entry", "exam rules"],
+      "answer": "Late entry is governed by the university's examination regulations. Students should arrive before the reporting time.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0192",
+      "category": "Examinations",
+      "question": "Are calculators allowed during examinations?",
+      "alternate_questions": [
+        "Calculator in exam",
+        "Scientific calculator",
+        "Exam calculator rules"
+      ],
+      "keywords": ["calculator", "exam rules"],
+      "answer": "Only calculators permitted by the examination rules may be used during applicable examinations.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0193",
+      "category": "Examinations",
+      "question": "Can I use my mobile phone during examinations?",
+      "alternate_questions": [
+        "Phone in exam",
+        "Mobile allowed",
+        "Electronic devices"
+      ],
+      "keywords": ["mobile", "exam rules"],
+      "answer": "No. Mobile phones and other unauthorized electronic devices are generally prohibited inside the examination hall.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0194",
+      "category": "Examinations",
+      "question": "What happens if I miss an examination?",
+      "alternate_questions": [
+        "Absent in exam",
+        "Missed semester exam",
+        "Didn't attend exam"
+      ],
+      "keywords": ["absent", "missed exam"],
+      "answer": "Students who miss an examination should follow the university's examination regulations regarding absence and subsequent eligibility.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0195",
+      "category": "Examinations",
+      "question": "How are internal assessments conducted?",
+      "alternate_questions": [
+        "Internal exam",
+        "Sessional assessment",
+        "Continuous assessment"
+      ],
+      "keywords": ["internal assessment", "sessional"],
+      "answer": "Internal assessments are conducted by departments according to the curriculum and academic evaluation policy.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0196",
+      "category": "Examinations",
+      "question": "Can I view my internal assessment marks?",
+      "alternate_questions": [
+        "Internal marks",
+        "Sessional marks",
+        "Assessment marks"
+      ],
+      "keywords": ["internal marks", "assessment"],
+      "answer": "Yes. Internal assessment marks are communicated through the department or the ERP, where applicable.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0197",
+      "category": "Examinations",
+      "question": "What should I do if my internal marks are incorrect?",
+      "alternate_questions": [
+        "Internal marks correction",
+        "Wrong assessment marks",
+        "Marks issue"
+      ],
+      "keywords": ["internal marks", "correction"],
+      "answer": "Students should immediately contact the concerned faculty member or department regarding discrepancies in internal assessment marks.",
+      "source": "faculty_teaching_staff.json"
+    },
+    {
+      "id": "faq_0198",
+      "category": "Examinations",
+      "question": "When are semester examination results announced?",
+      "alternate_questions": [
+        "Exam result date",
+        "Semester result",
+        "Results announcement"
+      ],
+      "keywords": ["results", "semester"],
+      "answer": "Results are published after completion of the evaluation process according to the university's examination schedule.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0199",
+      "category": "Examinations",
+      "question": "How can I check my examination results?",
+      "alternate_questions": [
+        "Check result",
+        "View marks",
+        "Online results"
+      ],
+      "keywords": ["results", "ERP"],
+      "answer": "Students can check their examination results through the official ERP or examination portal.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0200",
+      "category": "Examinations",
+      "question": "Can I apply for revaluation of my answer sheet?",
+      "alternate_questions": [
+        "Revaluation",
+        "Answer sheet rechecking",
+        "Paper revaluation"
+      ],
+      "keywords": ["revaluation", "rechecking"],
+      "answer": "Yes. Eligible students may apply for revaluation or rechecking according to the university's examination policies within the prescribed deadline.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0201",
+      "category": "Examinations",
+      "question": "How do I apply for revaluation?",
+      "alternate_questions": [
+        "Revaluation process",
+        "Apply for paper checking",
+        "Rechecking application"
+      ],
+      "keywords": ["revaluation", "application"],
+      "answer": "Students should submit the prescribed revaluation application through the examination department or the official online process, if available.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0202",
+      "category": "Examinations",
+      "question": "Is there a fee for revaluation?",
+      "alternate_questions": [
+        "Revaluation fee",
+        "Paper rechecking fee",
+        "Answer sheet charges"
+      ],
+      "keywords": ["revaluation", "fee"],
+      "answer": "Yes. Revaluation or rechecking may require payment of the prescribed fee according to university regulations.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0203",
+      "category": "Examinations",
+      "question": "How long does the revaluation process take?",
+      "alternate_questions": [
+        "Revaluation result",
+        "Rechecking duration",
+        "Paper review time"
+      ],
+      "keywords": ["revaluation", "timeline"],
+      "answer": "The processing time depends on the examination schedule and administrative procedures followed by the university.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0204",
+      "category": "Examinations",
+      "question": "What is a backlog examination?",
+      "alternate_questions": [
+        "Back paper",
+        "Supplementary exam",
+        "Failed subject exam"
+      ],
+      "keywords": ["backlog", "supplementary"],
+      "answer": "A backlog examination allows eligible students to reappear in subjects that have not been successfully completed, according to university rules.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0205",
+      "category": "Examinations",
+      "question": "How do I register for a backlog examination?",
+      "alternate_questions": [
+        "Backlog registration",
+        "Supplementary exam registration",
+        "Back paper form"
+      ],
+      "keywords": ["backlog", "registration"],
+      "answer": "Students can register for backlog examinations by following the registration process announced by the examination department.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0206",
+      "category": "Examinations",
+      "question": "Can I improve my grades after passing a subject?",
+      "alternate_questions": [
+        "Grade improvement",
+        "Improve CGPA",
+        "Improvement exam"
+      ],
+      "keywords": ["grade improvement", "CGPA"],
+      "answer": "Grade improvement opportunities, if available, are governed by the university's academic and examination regulations.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0207",
+      "category": "Examinations",
+      "question": "What is the passing criteria for examinations?",
+      "alternate_questions": [
+        "Passing marks",
+        "Pass percentage",
+        "Exam passing rules"
+      ],
+      "keywords": ["passing marks", "criteria"],
+      "answer": "The passing criteria are determined according to the academic regulations applicable to the student's program.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0208",
+      "category": "Examinations",
+      "question": "Can I obtain an official transcript after my results?",
+      "alternate_questions": [
+        "Academic transcript",
+        "Official marks transcript",
+        "Transcript request"
+      ],
+      "keywords": ["transcript", "academic records"],
+      "answer": "Yes. Eligible students can request official transcripts by following the university's prescribed procedure.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0209",
+      "category": "Examinations",
+      "question": "How can I apply for an official transcript?",
+      "alternate_questions": [
+        "Transcript application",
+        "Apply transcript",
+        "Academic transcript process"
+      ],
+      "keywords": ["transcript", "application"],
+      "answer": "Transcript requests should be submitted to the appropriate university office along with any required documents and fees.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0210",
+      "category": "Examinations",
+      "question": "Whom should I contact for examination-related issues?",
+      "alternate_questions": [
+        "Exam help",
+        "Examination office",
+        "Exam support"
+      ],
+      "keywords": ["exam", "support", "controller of examinations"],
+      "answer": "Students should contact the examination department or the designated university office for examination-related queries and assistance.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is generated for this academic project, written to be realistic and scale-consistent with a 50,000+ student university. Sports quota admission and scholarship details cross-reference the policies already established in admissions_parul_details.json and fees_financial_aid_parul_details.json rather than redefining them differently. None of this should be treated as officially confirmed university information — in particular, no specific tournament results or championship claims are made, since those change every season and are not something this project can verify.",
+    "data_type": "generated_for_project"
+  },
+
+  "sports_and_recreation": {
+
+    "sports_offered": {
+      "outdoor_sports": [
+        "Cricket", "Football", "Hockey", "Kabaddi", "Kho-Kho",
+        "Athletics (Track & Field)", "Volleyball", "Basketball (outdoor courts)"
+      ],
+      "court_based_sports": [
+        "Basketball", "Volleyball", "Badminton", "Tennis", "Table Tennis"
+      ],
+      "aquatics": [
+        "Swimming (see swimming pool facility already documented in campus_facilities_infrastructure_parul_details.json)"
+      ],
+      "indoor_recreational_games": [
+        "Chess", "Carrom", "Table Tennis"
+      ]
+    },
+
+    "grounds_and_courts": {
+      "cricket_ground": "A dedicated cricket ground, already documented among the university's outdoor sports facilities.",
+      "football_ground": "A dedicated football/multipurpose outdoor ground, often shared with athletics and other field sports.",
+      "athletics_track": "A running track located alongside the main outdoor sports ground for athletics practice and events.",
+      "basketball_and_volleyball_courts": "Both outdoor and indoor basketball and volleyball courts are available, with indoor courts typically located within the university's sports/indoor games complex.",
+      "badminton_and_table_tennis": "Indoor badminton courts and table tennis tables are housed within the indoor sports complex.",
+      "tennis_court": "A tennis court is available for recreational and inter-departmental play.",
+      "hockey_and_kabaddi_kho_kho": "Practiced on the shared multipurpose outdoor ground, scheduled on a rotational basis with other field sports."
+    },
+
+    "ground_and_court_booking_timing": {
+      "general_hours": "Sports facilities are generally available from 6:00 AM to 9:00 PM daily, split between early morning/evening practice slots (cooler hours) and daytime slots for physical education classes and casual play.",
+      "booking_process": "Students/teams can reserve specific courts or ground slots (for practice or friendly matches) through the sports department office or a booking request submitted via the student ERP portal's sports module, subject to prior scheduling for official team practice."
+    },
+
+    "sports_equipment_issue_process": {
+      "process": "Students can borrow sports equipment (balls, rackets, bats, nets, etc.) from the sports department's equipment room by submitting their student ID card as a temporary deposit, returned upon returning the equipment.",
+      "team_equipment": "Equipment for university teams representing the institution in inter-college tournaments is issued directly to team captains/coaches for the duration of practice and competition."
+    },
+
+    "coach_and_trainer_availability": {
+      "structure": "The university maintains physical education staff and sport-specific coaches for its major competitive sports (Cricket, Football, Basketball, Volleyball, Athletics, Badminton), generally available during scheduled team practice hours.",
+      "general_fitness_trainers": "Separate certified fitness trainers are available at the gymnasium (as documented in campus_facilities_infrastructure_parul_details.json), distinct from sport-specific coaches.",
+      "availability_note": "Coaching availability for less competitive/recreational sports (Kho-Kho, Kabaddi, Table Tennis, Chess/Carrom) is more informal, often facilitated through student clubs and senior student mentors rather than dedicated paid coaches."
+    },
+
+    "inter_college_tournament_participation": {
+      "general_note": "The university's sports department fields teams to represent Parul University at inter-college and university-level tournaments across major sports (Cricket, Football, Basketball, Volleyball, Athletics), organized through state university sports associations and All India Inter-University tournaments where eligible.",
+      "disclaimer": "Specific past tournament results, rankings, or championship titles are not claimed here, since those change every season and would need to be verified against official university sports department records for the current year."
+    },
+
+    "intra_college_annual_sports_meet": {
+      "typical_name": "Annual Sports Meet / Sports Fest (exact branded name varies by year and is decided by the sports department/student council).",
+      "typical_timing": "Commonly held in December-January, after the odd-semester exams and before the even semester begins, or occasionally in February-March depending on the academic calendar.",
+      "typical_format": "Includes track and field events, team sport finals (Cricket, Football, Basketball, Volleyball), and often a mix of fun/recreational events open to all students, not just varsity athletes."
+    },
+
+    "sports_quota_admission_criteria": {
+      "cross_reference": "Sports quota admission policy is already documented in admissions_parul_details.json under 'quota_policy.sports_quota'.",
+      "sport_specific_detail": "Eligible sports for quota consideration typically include the university's actively fielded competitive sports (Cricket, Football, Basketball, Volleyball, Athletics, Badminton, Table Tennis), with district/state-level achievement generally being the minimum threshold considered, and national/international-level achievement given higher priority.",
+      "trial_process": "Where required, a sports trial/assessment is conducted by the sports department coaching staff as part of the admission verification process, in addition to certificate verification."
+    },
+
+    "sports_scholarship_details": {
+      "cross_reference": "Sports scholarship policy is already documented in fees_financial_aid_parul_details.json under 'scholarships.sports_quota_scholarship'.",
+      "sport_specific_detail": "Scholarship tier is generally proportional to achievement level: district-level achievers may receive a smaller tuition waiver, state-level a moderate waiver, and national/international-level achievers the highest waiver tier (up to full tuition waiver in exceptional cases), subject to the student continuing to represent the university in that sport during their course."
+    },
+
+    "indoor_games_facilities": {
+      "chess_and_carrom": "Available within the indoor games/common recreation room, generally open to all students during non-class hours, commonly located within hostel common rooms as well as a dedicated indoor games hall.",
+      "table_tennis": "Available both within the dedicated indoor sports complex (competitive practice) and informally within hostel common rooms/recreation areas (casual play)."
+    }
+  }
+}

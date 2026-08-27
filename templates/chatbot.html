@@ -1,0 +1,324 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+/* 1. CONTAINER UPGRADES */
+.chat-page-wrapper {
+    background: #f1f5f9; /* Soft background to make the white container pop */
+    padding: 40px 20px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    max-width: 1100px;
+    background: white;
+    border-radius: 30px; /* Softer corners */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 2. LEFT PANEL - INFO (Upgraded with Gradient & Icons) */
+.chat-info {
+    width: 35%;
+    background: linear-gradient(160deg, #7c3aed 0%, #4f46e5 100%);
+    color: white;
+    padding: 50px 35px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-info h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.chat-info p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.info-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.info-list span { margin-right: 12px; font-size: 20px; }
+
+/* 3. RIGHT CHAT AREA */
+.chat-box-area {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.chat-header {
+    padding: 20px 30px;
+    background: white;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bot-status-dot {
+    height: 10px;
+    width: 10px;
+    background: #10b981; /* Online green */
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #10b981;
+}
+
+/* 4. MESSAGES */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #fafafa;
+}
+
+.message {
+    max-width: 80%;
+    padding: 14px 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bot {
+    background: white;
+    color: #1e293b;
+    border-radius: 2px 20px 20px 20px;
+    align-self: flex-start;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #f1f5f9;
+}
+
+.user {
+    background: #7c3aed;
+    color: white;
+    border-radius: 20px 20px 2px 20px;
+    align-self: flex-end;
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+}
+
+/* 5. INPUT AREA - FLOATING STYLE */
+.chat-input-wrapper {
+    padding: 25px 30px;
+    background: white;
+}
+
+.chat-input {
+    display: flex;
+    background: #f1f5f9;
+    padding: 8px 8px 8px 20px;
+    border-radius: 50px;
+    align-items: center;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.chat-input:focus-within {
+    background: white;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 15px;
+    outline: none;
+    color: #1e293b;
+}
+
+.chat-input button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-input button:hover {
+    transform: scale(1.05);
+    background: #6d28d9;
+}
+
+/* 6. TYING ANIMATION */
+.typing {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: inline-flex;
+    gap: 5px;
+    align-self: flex-start;
+    border: 1px solid #f1f5f9;
+}
+
+.typing span {
+    height: 8px;
+    width: 8px;
+    background: #cbd5e1;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-8px); }
+}
+
+/* Custom Scrollbar */
+.chat-messages::-webkit-scrollbar { width: 6px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }
+.chat-messages::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+
+</style>
+
+<div class="chat-page-wrapper">
+    <div class="chat-container">
+        
+        <div class="chat-info">
+            <h2>Campus Genius AI 🤖</h2>
+            <p>Your instant guide to Parul University. I'm trained to help you with:</p>
+            
+            <ul class="info-list">
+                <li><span>📚</span> Course Details & Eligibility</li>
+                <li><span>🏠</span> Hostel Rooms & Mess</li>
+                <li><span>💰</span> Fees & Scholarships</li>
+                <li><span>🎓</span> Admission Support</li>
+                <li><span>🏢</span> Placement Stats</li>
+            </ul>
+
+            <div style="margin-top: auto; font-size: 13px; opacity: 0.7;">
+                Powered by Campus Genius AI v2.0
+            </div>
+        </div>
+
+        <div class="chat-box-area">
+            <div class="chat-header">
+                <div class="bot-status-dot"></div>
+                <div>
+                    <div style="font-weight: 800; color: #0f172a;">Campus Assistant</div>
+                    <div style="font-size: 12px; color: #64748b;">Always Online</div>
+                </div>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot">
+                    Hello! I'm your <b>Campus Genius</b> assistant. 👋 <br><br>
+                    How can I help you with Parul University today?
+                </div>
+            </div>
+
+            <div class="chat-input-wrapper">
+                <div class="chat-input">
+                    <input id="questionInput" type="text" placeholder="Type your question here..." onkeypress="handleKeyPress(event)" />
+                    <button onclick="sendQuestion()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function handleKeyPress(e) {
+    if (e.key === 'Enter') {
+        sendQuestion();
+    }
+}
+
+async function sendQuestion() {
+    let input = document.getElementById("questionInput");
+    let question = input.value.trim();
+    if (question === "") return;
+
+    let chat = document.getElementById("chatMessages");
+
+    // USER MESSAGE
+    chat.innerHTML += `<div class="message user">${question}</div>`;
+    input.value = "";
+
+    // LOADING ANIMATION
+    let typingDiv = document.createElement("div");
+    typingDiv.id = "typing";
+    typingDiv.className = "typing";
+    typingDiv.innerHTML = `<span></span><span></span><span></span>`;
+    chat.appendChild(typingDiv);
+    
+    chat.scrollTop = chat.scrollHeight;
+
+    try {
+        let res = await fetch("/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question: question })
+        });
+        
+        let data = await res.json();
+        document.getElementById("typing").remove();
+
+        // BOT MESSAGE
+        chat.innerHTML += `<div class="message bot">${data.answer}</div>`;
+    } catch (error) {
+        document.getElementById("typing").remove();
+        chat.innerHTML += `<div class="message bot">Sorry, I'm having trouble connecting right now. 😕</div>`;
+    }
+
+    chat.scrollTop = chat.scrollHeight;
+}
+</script>
+
+{% endblock %}

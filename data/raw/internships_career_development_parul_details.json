@@ -1,0 +1,71 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is generated for this academic project, written to be realistic and scale-consistent with a 50,000+ student university. It cross-references the real Training & Placement (T&P) Cell and IMPACT Training program already documented in the placements/research knowledge base, rather than inventing a separate, contradictory internship structure. Regulatory internship norms mentioned for Medicine (MBBS) and Law are based on genuine, well-established Indian professional education requirements (NMC and Bar Council of India norms), not fabricated. Everything else is a realistic generated estimate and should not be treated as officially confirmed university policy.",
+    "data_types": {
+      "verified_general_knowledge": "Well-established Indian regulatory/professional education norms (not specific to Parul, but factually accurate)",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "internships_and_career_development": {
+
+    "mandatory_internship_by_course_type": {
+      "data_type": "verified_general_knowledge + generated_for_project",
+      "engineering_btech": "Typically includes a summer internship after the 3rd year (4-8 weeks) and a mandatory internship/major-project component integrated into the final semester, consistent with the project/internship component already outlined in academic_details_parul.json's syllabus structure pattern.",
+      "management_mba": "A mandatory summer internship (commonly 8-12 weeks) between the 1st and 2nd year is standard practice for MBA programs, contributing to final internal evaluation.",
+      "pharmacy_bpharm": "Industrial training/internship is integrated into the final year as part of the regulatory curriculum for pharmacy education.",
+      "law": "Law students are required under Bar Council of India (BCI) norms to complete internships during their course, with the required duration typically increasing in later years of the program (a well-established national requirement, not specific to this university).",
+      "medicine_mbbs": "MBBS students undergo a mandatory 1-year Compulsory Rotatory Residential Internship (CRRI) after completing the academic curriculum, as mandated by the National Medical Commission (NMC) — a standard requirement across all NMC-recognized medical colleges in India.",
+      "hotel_management_bhmct": "Industrial training (commonly a dedicated semester, often around 6 months) is a standard part of hotel management curricula, consistent with industry practice.",
+      "other_programs": "Most other undergraduate/postgraduate programs (Design, Commerce, IT/CS, Applied Sciences, Liberal Arts) include a mandatory internship or live-project component in the final year, typically ranging from 4-12 weeks depending on the course."
+    },
+
+    "internship_cell_and_coordination": {
+      "data_type": "generated_for_project",
+      "structure": "Internship coordination is handled through the university's Training & Placement (T&P) Cell (already documented as real in the placements knowledge base), which maintains internship listings, employer partnerships, and application coordination alongside its placement functions.",
+      "process": "Students register their internship interest/eligibility through the T&P Cell or student ERP portal, apply to listed opportunities (or self-source and get them approved), and are assigned a faculty mentor who oversees and evaluates the internship for academic credit."
+    },
+
+    "internship_vs_live_project_options": {
+      "data_type": "generated_for_project",
+      "internship_route": "Students who secure a formal internship with an external company/organization complete their mandatory internship requirement through that placement, with faculty mentor oversight.",
+      "live_project_route": "Where an external internship placement is not secured (particularly relevant given the scale of the student body), students may alternatively undertake a faculty-supervised live/industry-sponsored project — often tied to ongoing research at the university's R&D Cell, PIERC-incubated startups, or faculty industry collaborations — fulfilling the same academic requirement.",
+      "equivalence": "Both routes are typically evaluated on comparable criteria (project report, presentation/viva, mentor assessment) for the purpose of course credit."
+    },
+
+    "stipend_expectations": {
+      "data_type": "generated_for_project",
+      "general_range": "Stipend amounts vary significantly by role, company, and location, and are never guaranteed. As a general reference range: unpaid to modest stipends (₹2,000-₹8,000/month) are common for smaller organizations or research-based internships, while stipends at larger companies for technical/management roles commonly range from ₹8,000-₹25,000/month, with select roles (particularly for high-performing students at larger firms) reaching higher.",
+      "disclaimer": "These figures are illustrative reference ranges only, not a guarantee — actual stipend depends entirely on the hiring organization."
+    },
+
+    "internship_report_and_evaluation_process": {
+      "data_type": "generated_for_project",
+      "components": "Students are typically required to submit a structured internship report (objectives, work done, learnings) along with a certificate/letter from the host organization confirming completion.",
+      "evaluation": "Evaluation generally combines the faculty mentor's assessment, the host organization's supervisor feedback/certificate, and a viva/presentation before a faculty panel, contributing to the course credit for that semester."
+    },
+
+    "summer_internship_support": {
+      "data_type": "generated_for_project",
+      "support_provided": "The T&P Cell circulates summer internship opportunities ahead of the break, and students preparing for internships/placements benefit from the university's IMPACT Training program (already documented as real, covering aptitude, coding practice, resume building, and mock interviews, typically around Semester 6-7).",
+      "timing_note": "Summer internship applications/interviews are typically coordinated in the months leading up to the summer break, so eligible students can secure placements before the break begins."
+    },
+
+    "international_internship_opportunities": {
+      "data_type": "generated_for_project",
+      "availability": "International internship opportunities are more limited in scale compared to domestic internships but are facilitated through the university's international exchange partnerships and industry collaborations where available.",
+      "note": "Students interested in international internships are generally advised to coordinate early with the International Admissions/Exchange Cell and the T&P Cell, since availability depends on partner-institution and partner-company agreements active in a given year."
+    },
+
+    "resume_building_and_interview_preparation": {
+      "data_type": "generated_for_project",
+      "ongoing_support": "Career development workshops (resume writing, LinkedIn profile building, basic interview etiquette) are typically introduced from the early years of a program, distinct from the more intensive, placement-specific IMPACT Training that is concentrated around Semester 6-7.",
+      "delivery_format": "Delivered through a mix of T&P Cell workshops, faculty mentorship, and student club-led sessions (e.g. through the Entrepreneurship Cell or department-specific career committees), giving students exposure to career-readiness skills well before their final placement season."
+    }
+  }
+}

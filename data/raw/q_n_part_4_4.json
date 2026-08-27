@@ -1,0 +1,264 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0236",
+      "category": "Library",
+      "question": "Can I renew a borrowed library book?",
+      "alternate_questions": [
+        "Book renewal",
+        "Renew library books",
+        "Extend borrowing period"
+      ],
+      "keywords": ["library", "renewal", "books"],
+      "answer": "Yes. Library books may be renewed if they are eligible for renewal under the university library policy.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0237",
+      "category": "Library",
+      "question": "Can I reserve a book that is already issued?",
+      "alternate_questions": [
+        "Reserve library book",
+        "Book reservation",
+        "Hold a book"
+      ],
+      "keywords": ["library", "reservation", "books"],
+      "answer": "Students may reserve eligible books according to the library's reservation system and availability.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0238",
+      "category": "Library",
+      "question": "Does the library provide digital resources?",
+      "alternate_questions": [
+        "Digital library",
+        "E-books",
+        "Online journals"
+      ],
+      "keywords": ["digital library", "ebooks", "journals"],
+      "answer": "Yes. The university library provides access to digital learning resources, subject to institutional subscriptions and policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0239",
+      "category": "Library",
+      "question": "Can I access the digital library from home?",
+      "alternate_questions": [
+        "Remote library access",
+        "Online library login",
+        "Access e-resources"
+      ],
+      "keywords": ["digital library", "remote access"],
+      "answer": "Eligible students may access available digital library resources remotely using authorized university credentials where applicable.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0240",
+      "category": "Library",
+      "question": "Does the library provide Wi-Fi?",
+      "alternate_questions": [
+        "Library internet",
+        "Wi-Fi in library",
+        "Internet facility in library"
+      ],
+      "keywords": ["library", "wifi", "internet"],
+      "answer": "Yes. Library areas provide internet connectivity according to the university's network policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0241",
+      "category": "Library",
+      "question": "Are study rooms available in the library?",
+      "alternate_questions": [
+        "Library study room",
+        "Group study room",
+        "Reading rooms"
+      ],
+      "keywords": ["study room", "library"],
+      "answer": "The library provides study spaces and reading areas for students according to availability and library regulations.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0242",
+      "category": "Library",
+      "question": "Can students use the library during weekends?",
+      "alternate_questions": [
+        "Weekend library",
+        "Library Saturday",
+        "Library Sunday"
+      ],
+      "keywords": ["library", "weekend", "timings"],
+      "answer": "Library working days and timings are announced by the university and may vary during weekends and holidays.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0243",
+      "category": "Library",
+      "question": "What are the library working hours?",
+      "alternate_questions": [
+        "Library timings",
+        "Library opening hours",
+        "Library schedule"
+      ],
+      "keywords": ["library", "timings"],
+      "answer": "Students should refer to the official library schedule for the latest operating hours.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0244",
+      "category": "Library",
+      "question": "Can alumni use the university library?",
+      "alternate_questions": [
+        "Alumni library access",
+        "Graduate library",
+        "Library after graduation"
+      ],
+      "keywords": ["alumni", "library"],
+      "answer": "Library access for alumni depends on the university's alumni and library access policies.",
+      "source": "alumni_network.json"
+    },
+    {
+      "id": "faq_0245",
+      "category": "Library",
+      "question": "Can I suggest new books for the library?",
+      "alternate_questions": [
+        "Recommend books",
+        "Book request",
+        "Library purchase suggestion"
+      ],
+      "keywords": ["library", "book recommendation"],
+      "answer": "Students may recommend academic books or resources through the library's suggestion process.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0246",
+      "category": "Library",
+      "question": "What should I do if I lose a library book?",
+      "alternate_questions": [
+        "Lost library book",
+        "Book missing",
+        "Replace borrowed book"
+      ],
+      "keywords": ["library", "lost book"],
+      "answer": "Students should immediately inform the library staff and follow the replacement or penalty procedure prescribed by the library.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0247",
+      "category": "Library",
+      "question": "Can I photocopy books in the library?",
+      "alternate_questions": [
+        "Library photocopy",
+        "Xerox facility",
+        "Copy study material"
+      ],
+      "keywords": ["photocopy", "xerox", "library"],
+      "answer": "Photocopying services may be available subject to copyright regulations and university policies.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0248",
+      "category": "Library",
+      "question": "Does the library provide printing facilities?",
+      "alternate_questions": [
+        "Library printing",
+        "Print documents",
+        "Print assignments"
+      ],
+      "keywords": ["printing", "library"],
+      "answer": "Printing facilities may be available through designated university services according to applicable charges and policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0249",
+      "category": "Library",
+      "question": "Is silence mandatory inside the library?",
+      "alternate_questions": [
+        "Library rules",
+        "Noise in library",
+        "Library discipline"
+      ],
+      "keywords": ["library", "rules", "discipline"],
+      "answer": "Yes. Students are expected to maintain silence and follow all library rules while using library facilities.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0250",
+      "category": "Library",
+      "question": "Can visitors access the university library?",
+      "alternate_questions": [
+        "Guest library access",
+        "Visitor library",
+        "Outside users"
+      ],
+      "keywords": ["visitor", "library"],
+      "answer": "Visitor access to the library is governed by the university's library access policy and applicable permissions.",
+      "source": "guest_visitor_services.json"
+    },
+    {
+      "id": "faq_0251",
+      "category": "Placements",
+      "question": "Does Parul University provide placement assistance?",
+      "alternate_questions": [
+        "Campus placements",
+        "Placement support",
+        "Job assistance"
+      ],
+      "keywords": ["placement", "career", "jobs"],
+      "answer": "Yes. The university provides placement assistance, career guidance, and campus recruitment opportunities for eligible students.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0252",
+      "category": "Placements",
+      "question": "When does the campus placement process begin?",
+      "alternate_questions": [
+        "Placement season",
+        "Campus recruitment start",
+        "Placement schedule"
+      ],
+      "keywords": ["placements", "recruitment"],
+      "answer": "Campus recruitment activities are conducted according to the placement schedule announced by the Training and Placement Cell.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0253",
+      "category": "Placements",
+      "question": "Who is eligible for campus placements?",
+      "alternate_questions": [
+        "Placement eligibility",
+        "Who can sit for placements?",
+        "Campus interview eligibility"
+      ],
+      "keywords": ["placement", "eligibility"],
+      "answer": "Eligibility depends on academic performance, program requirements, company criteria, and placement policies.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0254",
+      "category": "Placements",
+      "question": "How can I register for campus placements?",
+      "alternate_questions": [
+        "Placement registration",
+        "Register for placement",
+        "Campus placement form"
+      ],
+      "keywords": ["placement", "registration"],
+      "answer": "Students can register through the university's Training and Placement Cell or the designated placement portal.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0255",
+      "category": "Placements",
+      "question": "Does the university conduct placement training?",
+      "alternate_questions": [
+        "Placement preparation",
+        "Interview training",
+        "Placement coaching"
+      ],
+      "keywords": ["placement", "training", "interview"],
+      "answer": "Yes. The university conducts placement training programs that may include aptitude preparation, soft skills, technical sessions, resume building, and interview guidance.",
+      "source": "internships_career_development.json"
+    }
+  ]
+}

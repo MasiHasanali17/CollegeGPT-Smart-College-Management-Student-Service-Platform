@@ -1,0 +1,182 @@
+{
+  "university": "Parul University",
+  "academic_year": "2025-26",
+  "category": "Fees & Financial Aid",
+  "faqs": [
+    {
+      "id": "faq_0051",
+      "category": "Fees",
+      "question": "What are the tuition fees for my course?",
+      "alternate_questions": [
+        "Course fee",
+        "Program fee",
+        "Tuition fee structure",
+        "How much are the fees?"
+      ],
+      "keywords": [
+        "fees",
+        "tuition",
+        "course",
+        "fee structure"
+      ],
+      "answer": "The tuition fee depends on the selected program. Students should refer to the official fee structure provided by the university or contact the admission office for the latest details.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0052",
+      "category": "Fees",
+      "question": "Where can I check the latest fee structure?",
+      "alternate_questions": [
+        "Fee structure",
+        "Latest fees",
+        "Program fee details",
+        "Course fee information"
+      ],
+      "keywords": [
+        "fee structure",
+        "fees",
+        "information"
+      ],
+      "answer": "The latest fee structure is available through the university's official admission office and official communication channels.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0053",
+      "category": "Fees",
+      "question": "Can I pay my fees online?",
+      "alternate_questions": [
+        "Online fee payment",
+        "Pay fees digitally",
+        "Can I pay through the portal?"
+      ],
+      "keywords": [
+        "online payment",
+        "fees",
+        "payment"
+      ],
+      "answer": "Yes. Students can pay their academic fees using the university's approved online payment facilities.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0054",
+      "category": "Fees",
+      "question": "Can I pay my fees offline?",
+      "alternate_questions": [
+        "Offline fee payment",
+        "Pay fees at campus",
+        "Fee payment at university"
+      ],
+      "keywords": [
+        "offline",
+        "fees",
+        "payment"
+      ],
+      "answer": "Yes. Offline payment options are available as per the university's fee collection procedures.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0055",
+      "category": "Fees",
+      "question": "Can I pay my fees in installments?",
+      "alternate_questions": [
+        "Fee installments",
+        "Installment facility",
+        "Can I split my fees?"
+      ],
+      "keywords": [
+        "installment",
+        "fees",
+        "payment"
+      ],
+      "answer": "Installment facilities, if available, are governed by the university's fee payment policy. Students should contact the accounts or admission office for applicable options.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0056",
+      "category": "Fees",
+      "question": "What payment methods are accepted for fee payment?",
+      "alternate_questions": [
+        "Payment options",
+        "How can I pay fees?",
+        "Accepted payment methods"
+      ],
+      "keywords": [
+        "payment",
+        "UPI",
+        "bank",
+        "fees"
+      ],
+      "answer": "The university supports approved payment methods such as online payment gateways, banking channels, and other officially accepted payment options.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0057",
+      "category": "Fees",
+      "question": "Will I receive a fee payment receipt?",
+      "alternate_questions": [
+        "Fee receipt",
+        "Payment receipt",
+        "Receipt after fee payment"
+      ],
+      "keywords": [
+        "receipt",
+        "payment",
+        "fees"
+      ],
+      "answer": "Yes. Students receive an official fee payment receipt after successful processing of the payment.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0058",
+      "category": "Fees",
+      "question": "How can I download my fee receipt?",
+      "alternate_questions": [
+        "Download fee receipt",
+        "Get payment receipt",
+        "Print fee receipt"
+      ],
+      "keywords": [
+        "receipt",
+        "download",
+        "ERP",
+        "fees"
+      ],
+      "answer": "Fee receipts can be obtained through the university's designated student services or ERP portal, wherever applicable.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0059",
+      "category": "Fees",
+      "question": "Is there a deadline for paying semester fees?",
+      "alternate_questions": [
+        "Fee due date",
+        "Last date for fee payment",
+        "Semester fee deadline"
+      ],
+      "keywords": [
+        "deadline",
+        "semester",
+        "fees"
+      ],
+      "answer": "Yes. Semester fee payment deadlines are announced by the university before each academic session.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0060",
+      "category": "Fees",
+      "question": "What happens if I pay my fees after the due date?",
+      "alternate_questions": [
+        "Late fee payment",
+        "Missed fee deadline",
+        "Delayed payment"
+      ],
+      "keywords": [
+        "late fee",
+        "deadline",
+        "fees"
+      ],
+      "answer": "Late fee payments are handled according to the university's financial regulations. Students should avoid delays and contact the accounts office if assistance is required.",
+      "source": "fees_financial_aid.json"
+    }
+  ]
+}

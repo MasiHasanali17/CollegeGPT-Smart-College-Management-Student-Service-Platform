@@ -1,0 +1,264 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0121",
+      "category": "Hostel",
+      "question": "Are visitors allowed in the hostel?",
+      "alternate_questions": [
+        "Can my parents visit the hostel?",
+        "Hostel visitor policy",
+        "Guests in hostel"
+      ],
+      "keywords": ["visitor", "guest", "parents", "hostel"],
+      "answer": "Visitors are permitted only according to the university's hostel visitor policy and during approved visiting hours.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0122",
+      "category": "Hostel",
+      "question": "What are the hostel visiting hours?",
+      "alternate_questions": [
+        "Visitor timing",
+        "When can parents visit?",
+        "Hostel visiting time"
+      ],
+      "keywords": ["visitor", "timing", "hostel"],
+      "answer": "Hostel visiting hours are determined by the hostel administration. Students should follow the officially announced timings.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0123",
+      "category": "Hostel",
+      "question": "Is there a hostel curfew timing?",
+      "alternate_questions": [
+        "Hostel curfew",
+        "Entry timing",
+        "Hostel gate closing time"
+      ],
+      "keywords": ["curfew", "timing", "hostel"],
+      "answer": "Yes. Hostel residents are expected to follow the entry and curfew timings prescribed by the hostel administration.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0124",
+      "category": "Hostel",
+      "question": "Can I leave the hostel during weekends?",
+      "alternate_questions": [
+        "Weekend outing",
+        "Weekend leave",
+        "Leave hostel on weekends"
+      ],
+      "keywords": ["weekend", "outing", "leave"],
+      "answer": "Students may leave the hostel by following the approved leave procedure and hostel regulations.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0125",
+      "category": "Hostel",
+      "question": "How can I apply for hostel leave?",
+      "alternate_questions": [
+        "Leave application",
+        "Hostel leave process",
+        "Permission to leave hostel"
+      ],
+      "keywords": ["leave", "permission", "hostel"],
+      "answer": "Hostel leave requests should be submitted according to the procedure specified by the hostel administration.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0126",
+      "category": "Hostel",
+      "question": "Can parents take students home from the hostel?",
+      "alternate_questions": [
+        "Parent permission",
+        "Hostel checkout with parents",
+        "Leave with guardian"
+      ],
+      "keywords": ["parents", "guardian", "hostel leave"],
+      "answer": "Parents or authorized guardians may take students home after completing the required hostel leave formalities.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0127",
+      "category": "Hostel",
+      "question": "Are hostel rooms shared?",
+      "alternate_questions": [
+        "Sharing room",
+        "Single room available",
+        "Room occupancy"
+      ],
+      "keywords": ["shared room", "occupancy", "hostel"],
+      "answer": "Hostel accommodation options vary. Room occupancy depends on the accommodation type selected and availability.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0128",
+      "category": "Hostel",
+      "question": "Can I request a single occupancy hostel room?",
+      "alternate_questions": [
+        "Single room",
+        "Private hostel room",
+        "Individual room"
+      ],
+      "keywords": ["single room", "hostel", "accommodation"],
+      "answer": "Single occupancy rooms may be available depending on hostel capacity and accommodation options.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0129",
+      "category": "Hostel",
+      "question": "Can I choose my roommate?",
+      "alternate_questions": [
+        "Roommate selection",
+        "Stay with friend",
+        "Preferred roommate"
+      ],
+      "keywords": ["roommate", "friend", "hostel"],
+      "answer": "Roommate requests may be considered by the hostel administration depending on availability and hostel policies.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0130",
+      "category": "Hostel",
+      "question": "What items should I bring when joining the hostel?",
+      "alternate_questions": [
+        "Hostel packing list",
+        "Things to carry",
+        "Hostel essentials"
+      ],
+      "keywords": ["packing", "luggage", "hostel"],
+      "answer": "Students should carry personal belongings, clothing, toiletries, essential documents, and other items recommended by the hostel administration.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0131",
+      "category": "Hostel",
+      "question": "Are electrical appliances allowed in hostel rooms?",
+      "alternate_questions": [
+        "Electric kettle",
+        "Induction stove",
+        "Electrical items in hostel"
+      ],
+      "keywords": ["electrical appliances", "rules", "hostel"],
+      "answer": "Only appliances permitted under hostel regulations may be used. Students should follow hostel safety guidelines.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0132",
+      "category": "Hostel",
+      "question": "Is cooking allowed inside hostel rooms?",
+      "alternate_questions": [
+        "Cook in hostel",
+        "Can I use induction?",
+        "Cooking rules"
+      ],
+      "keywords": ["cooking", "hostel", "rules"],
+      "answer": "Cooking inside hostel rooms is governed by hostel safety regulations. Students must follow the prescribed rules.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0133",
+      "category": "Hostel",
+      "question": "Are refrigerators available in hostel rooms?",
+      "alternate_questions": [
+        "Hostel fridge",
+        "Refrigerator facility",
+        "Mini fridge"
+      ],
+      "keywords": ["refrigerator", "hostel", "facilities"],
+      "answer": "Availability of refrigerators depends on the hostel accommodation type and university provisions.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0134",
+      "category": "Hostel",
+      "question": "Is air conditioning available in hostel rooms?",
+      "alternate_questions": [
+        "AC hostel",
+        "Air-conditioned rooms",
+        "AC accommodation"
+      ],
+      "keywords": ["AC", "air conditioning", "hostel"],
+      "answer": "Air-conditioned accommodation may be available depending on the hostel category selected by the student.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0135",
+      "category": "Hostel",
+      "question": "Can I change my hostel after one semester?",
+      "alternate_questions": [
+        "Transfer hostel",
+        "Shift hostel building",
+        "Move to another hostel"
+      ],
+      "keywords": ["hostel transfer", "change hostel"],
+      "answer": "Hostel transfer requests are considered based on availability, valid reasons, and hostel administration policies.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0136",
+      "category": "Hostel",
+      "question": "Is medical assistance available for hostel students?",
+      "alternate_questions": [
+        "Medical emergency hostel",
+        "Doctor in hostel",
+        "Health support"
+      ],
+      "keywords": ["medical", "health", "hostel"],
+      "answer": "Yes. Hostel residents can access the university's medical and healthcare facilities in accordance with university procedures.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0137",
+      "category": "Hostel",
+      "question": "What should I do if something in my hostel room is damaged?",
+      "alternate_questions": [
+        "Maintenance request",
+        "Broken furniture",
+        "Repair hostel room"
+      ],
+      "keywords": ["maintenance", "repair", "hostel"],
+      "answer": "Students should report maintenance issues to the hostel warden or hostel office for inspection and repair.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0138",
+      "category": "Hostel",
+      "question": "Who is responsible for hostel maintenance?",
+      "alternate_questions": [
+        "Hostel maintenance team",
+        "Repair services",
+        "Maintenance office"
+      ],
+      "keywords": ["maintenance", "hostel", "support"],
+      "answer": "Hostel maintenance is managed by the university's hostel administration and maintenance staff.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0139",
+      "category": "Hostel",
+      "question": "Can I stay in the hostel during semester breaks?",
+      "alternate_questions": [
+        "Vacation hostel",
+        "Holiday stay",
+        "Hostel during vacations"
+      ],
+      "keywords": ["vacation", "semester break", "hostel"],
+      "answer": "Hostel stay during vacations is subject to university policies and hostel administration approval.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0140",
+      "category": "Hostel",
+      "question": "How do I contact my hostel warden?",
+      "alternate_questions": [
+        "Warden contact number",
+        "Hostel office",
+        "Need hostel support"
+      ],
+      "keywords": ["warden", "contact", "hostel support"],
+      "answer": "Students can obtain the hostel warden's contact details from the hostel office or the university's official hostel administration.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

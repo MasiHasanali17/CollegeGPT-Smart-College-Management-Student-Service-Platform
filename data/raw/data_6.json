@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0351",
+      "category": "Student Clubs & Societies",
+      "question": "Are there entrepreneurship clubs at Parul University?",
+      "alternate_questions": [
+        "Startup club",
+        "Entrepreneurship society",
+        "Business club"
+      ],
+      "keywords": ["entrepreneurship", "startup", "club"],
+      "answer": "Yes. Entrepreneurship-focused clubs encourage innovation, business development, startup networking, and entrepreneurial learning.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0352",
+      "category": "Student Clubs & Societies",
+      "question": "Does the university have literary clubs?",
+      "alternate_questions": [
+        "Literary society",
+        "Debate club",
+        "Reading club"
+      ],
+      "keywords": ["literary", "debate", "club"],
+      "answer": "Yes. Literary clubs organize debates, public speaking sessions, creative writing activities, and reading events.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0353",
+      "category": "Student Clubs & Societies",
+      "question": "Can first-year students join clubs?",
+      "alternate_questions": [
+        "Freshers club membership",
+        "Club for first year",
+        "Join clubs as fresher"
+      ],
+      "keywords": ["freshers", "clubs"],
+      "answer": "Yes. First-year students are encouraged to join clubs and societies to develop skills and engage in campus life.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0354",
+      "category": "Student Clubs & Societies",
+      "question": "Is there any membership fee for joining clubs?",
+      "alternate_questions": [
+        "Club fee",
+        "Membership charges",
+        "Club registration fee"
+      ],
+      "keywords": ["membership", "fee", "club"],
+      "answer": "Membership requirements vary by club. Students should check with the respective club coordinator for applicable guidelines.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0355",
+      "category": "Student Clubs & Societies",
+      "question": "Can international students participate in student clubs?",
+      "alternate_questions": [
+        "International student clubs",
+        "Foreign student activities",
+        "Club participation"
+      ],
+      "keywords": ["international", "clubs"],
+      "answer": "Yes. International students are encouraged to participate in student clubs and campus activities.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0356",
+      "category": "Student Clubs & Societies",
+      "question": "Do clubs organize workshops and seminars?",
+      "alternate_questions": [
+        "Club workshops",
+        "Club seminars",
+        "Training by clubs"
+      ],
+      "keywords": ["workshop", "seminar", "club"],
+      "answer": "Yes. Student clubs regularly organize workshops, seminars, guest lectures, competitions, and skill development sessions.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0357",
+      "category": "Student Clubs & Societies",
+      "question": "Can students start a new club?",
+      "alternate_questions": [
+        "Create student club",
+        "Register new club",
+        "Start society"
+      ],
+      "keywords": ["new club", "student initiative"],
+      "answer": "Students may propose new clubs subject to university approval and the applicable student activity guidelines.",
+      "source": "student_governance_representation.json"
+    },
+    {
+      "id": "faq_0358",
+      "category": "Student Clubs & Societies",
+      "question": "Do club activities help in personality development?",
+      "alternate_questions": [
+        "Benefits of clubs",
+        "Club participation advantages",
+        "Soft skills through clubs"
+      ],
+      "keywords": ["personality", "leadership", "clubs"],
+      "answer": "Yes. Club participation helps students develop leadership, teamwork, communication, and organizational skills.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0359",
+      "category": "Student Clubs & Societies",
+      "question": "Can students receive certificates for club activities?",
+      "alternate_questions": [
+        "Club certificates",
+        "Participation certificate",
+        "Club recognition"
+      ],
+      "keywords": ["certificate", "club"],
+      "answer": "Students may receive certificates or recognition for participating in approved club events and activities.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0360",
+      "category": "Student Clubs & Societies",
+      "question": "Who manages student clubs?",
+      "alternate_questions": [
+        "Club coordinator",
+        "Club management",
+        "Faculty coordinator"
+      ],
+      "keywords": ["club", "coordinator"],
+      "answer": "Student clubs are typically managed by student office bearers under the guidance of faculty coordinators.",
+      "source": "student_governance_representation.json"
+    },
+    {
+      "id": "faq_0361",
+      "category": "Student Clubs & Societies",
+      "question": "How are club leaders selected?",
+      "alternate_questions": [
+        "Club president selection",
+        "Leadership positions",
+        "Club elections"
+      ],
+      "keywords": ["leadership", "club"],
+      "answer": "Leadership positions are filled according to the club's constitution and university guidelines, which may include selection or election.",
+      "source": "student_governance_representation.json"
+    },
+    {
+      "id": "faq_0362",
+      "category": "Student Clubs & Societies",
+      "question": "Can students organize club events?",
+      "alternate_questions": [
+        "Host club event",
+        "Organize activities",
+        "Club event planning"
+      ],
+      "keywords": ["events", "clubs"],
+      "answer": "Yes. Students can organize club events with approval from the club coordinator and the university authorities.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0363",
+      "category": "Student Clubs & Societies",
+      "question": "Are hackathons organized through student clubs?",
+      "alternate_questions": [
+        "Club hackathon",
+        "Coding competition",
+        "Technical events"
+      ],
+      "keywords": ["hackathon", "technical club"],
+      "answer": "Yes. Technical clubs frequently organize hackathons, coding competitions, and innovation events.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0364",
+      "category": "Student Clubs & Societies",
+      "question": "Can clubs invite industry experts for guest lectures?",
+      "alternate_questions": [
+        "Guest lecture",
+        "Industry expert session",
+        "Club speaker"
+      ],
+      "keywords": ["guest lecture", "industry"],
+      "answer": "Yes. Clubs may organize expert talks and guest lectures after obtaining the necessary university approvals.",
+      "source": "industry_academia_partnerships.json"
+    },
+    {
+      "id": "faq_0365",
+      "category": "Student Clubs & Societies",
+      "question": "Do clubs participate in inter-university competitions?",
+      "alternate_questions": [
+        "Inter-university events",
+        "External competitions",
+        "Club competitions"
+      ],
+      "keywords": ["competition", "club"],
+      "answer": "Yes. Eligible student clubs may participate in external competitions and represent the university.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0366",
+      "category": "Student Clubs & Societies",
+      "question": "Can club participation improve my resume?",
+      "alternate_questions": [
+        "Resume value of clubs",
+        "Extracurricular activities",
+        "CV improvement"
+      ],
+      "keywords": ["resume", "leadership", "clubs"],
+      "answer": "Yes. Active participation in student clubs demonstrates leadership, teamwork, and extracurricular involvement, which can strengthen a resume.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0367",
+      "category": "Student Clubs & Societies",
+      "question": "Do clubs collaborate with academic departments?",
+      "alternate_questions": [
+        "Department club collaboration",
+        "Faculty support",
+        "Academic clubs"
+      ],
+      "keywords": ["department", "club"],
+      "answer": "Yes. Many student clubs collaborate with academic departments to organize technical, cultural, and educational activities.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0368",
+      "category": "Student Clubs & Societies",
+      "question": "Where are club announcements published?",
+      "alternate_questions": [
+        "Club notifications",
+        "Club updates",
+        "Club announcements"
+      ],
+      "keywords": ["announcements", "clubs"],
+      "answer": "Club announcements are shared through official university communication channels, ERP, emails, notice boards, or social media pages where applicable.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0369",
+      "category": "Student Clubs & Societies",
+      "question": "Can students leave a club after joining?",
+      "alternate_questions": [
+        "Cancel club membership",
+        "Leave society",
+        "Withdraw from club"
+      ],
+      "keywords": ["membership", "club"],
+      "answer": "Yes. Students may discontinue club membership by following the club's prescribed procedures.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0370",
+      "category": "Student Clubs & Societies",
+      "question": "Whom should I contact for club-related queries?",
+      "alternate_questions": [
+        "Club contact",
+        "Club coordinator",
+        "Student activities office"
+      ],
+      "keywords": ["club", "contact"],
+      "answer": "Students should contact the respective club coordinator or the university's student activities office for assistance.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0371",
+      "category": "Technology & Digital Services",
+      "question": "Does Parul University provide campus Wi-Fi?",
+      "alternate_questions": [
+        "Campus internet",
+        "University Wi-Fi",
+        "Wireless internet"
+      ],
+      "keywords": ["wifi", "internet", "campus"],
+      "answer": "Yes. The university provides campus Wi-Fi facilities for eligible students in designated academic and residential areas.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0372",
+      "category": "Technology & Digital Services",
+      "question": "How do I connect to the campus Wi-Fi?",
+      "alternate_questions": [
+        "Wi-Fi login",
+        "Connect internet",
+        "Campus Wi-Fi setup"
+      ],
+      "keywords": ["wifi", "login"],
+      "answer": "Students can connect using the credentials and instructions provided by the university's IT services.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0373",
+      "category": "Technology & Digital Services",
+      "question": "What should I do if campus Wi-Fi is not working?",
+      "alternate_questions": [
+        "Wi-Fi problem",
+        "Internet issue",
+        "Network support"
+      ],
+      "keywords": ["wifi", "support"],
+      "answer": "Students should contact the university's IT support team or help desk to report connectivity issues.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0374",
+      "category": "Technology & Digital Services",
+      "question": "Does the university provide official student email accounts?",
+      "alternate_questions": [
+        "University email",
+        "Student email ID",
+        "Official email"
+      ],
+      "keywords": ["email", "student"],
+      "answer": "Official email services may be provided depending on the student's program and university policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0375",
+      "category": "Technology & Digital Services",
+      "question": "Whom should I contact for technical support?",
+      "alternate_questions": [
+        "IT help desk",
+        "Technical support",
+        "Technology support"
+      ],
+      "keywords": ["IT", "support", "helpdesk"],
+      "answer": "Students should contact the university's IT support or digital services help desk for assistance with technical issues.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

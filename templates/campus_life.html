@@ -1,0 +1,161 @@
+{#
+  Campus Life gallery.
+
+  NOTE FOR DEVELOPER: We didn't have real campus photos sourced yet, so each
+  tile below is a styled placeholder (gradient + icon + caption) instead of
+  a hotlinked/stock image. To use real photos:
+    1. Drop your image files into: static/images/campus-life/
+    2. Replace the <div class="ph-tile ..."> block for that card with:
+       <img src="{{ url_for('static', filename='images/campus-life/library.jpg') }}" alt="Library">
+  Everything else (grid, captions, hover effects) will keep working as-is.
+#}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+.life-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+}
+
+.life-hero {
+    background: #0f172a;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    color: white;
+    padding: 90px 20px 60px;
+    text-align: center;
+}
+
+.life-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.life-hero p {
+    color: #cbd5f5;
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.life-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 26px;
+}
+
+.life-card {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15,23,42,0.1);
+    transition: transform 0.25s ease;
+}
+
+.life-card:hover {
+    transform: translateY(-6px);
+}
+
+.ph-tile {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.ph-1 { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+.ph-2 { background: linear-gradient(135deg, #0ea5e9, #7c3aed); }
+.ph-3 { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+.ph-4 { background: linear-gradient(135deg, #10b981, #0ea5e9); }
+.ph-5 { background: linear-gradient(135deg, #ec4899, #7c3aed); }
+.ph-6 { background: linear-gradient(135deg, #6366f1, #0ea5e9); }
+
+.life-caption {
+    padding: 18px 20px;
+    background: #f8fafc;
+}
+
+.life-caption h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.life-caption p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13.5px;
+}
+</style>
+
+<div class="life-page">
+
+    <div class="life-hero">
+        <h1>Campus Life</h1>
+        <p>A glimpse into everyday life at Parul University — where students learn, play, and grow.</p>
+    </div>
+
+    <div class="life-grid">
+
+        <div class="life-card">
+            <div class="ph-tile ph-1">📚</div>
+            <div class="life-caption">
+                <h3>Library</h3>
+                <p>Quiet study halls and a huge collection of academic resources.</p>
+            </div>
+        </div>
+
+        <div class="life-card">
+            <div class="ph-tile ph-2">🏟️</div>
+            <div class="life-caption">
+                <h3>Sports Complex</h3>
+                <p>Cricket, football, athletics track and indoor sports facilities.</p>
+            </div>
+        </div>
+
+        <div class="life-card">
+            <div class="ph-tile ph-3">🏠</div>
+            <div class="life-caption">
+                <h3>Hostels</h3>
+                <p>Comfortable, secure hostel accommodation for boys and girls.</p>
+            </div>
+        </div>
+
+        <div class="life-card">
+            <div class="ph-tile ph-4">🍽️</div>
+            <div class="life-caption">
+                <h3>Canteen & Mess</h3>
+                <p>Multiple food courts and mess facilities across campus.</p>
+            </div>
+        </div>
+
+        <div class="life-card">
+            <div class="ph-tile ph-5">🎭</div>
+            <div class="life-caption">
+                <h3>Clubs & Events</h3>
+                <p>Cultural fests, tech clubs, and student-run societies year-round.</p>
+            </div>
+        </div>
+
+        <div class="life-card">
+            <div class="ph-tile ph-6">🔬</div>
+            <div class="life-caption">
+                <h3>Labs & Workshops</h3>
+                <p>Well-equipped labs across engineering, science, and design programs.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

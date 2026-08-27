@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0401",
+      "category": "Health & Medical Services",
+      "question": "Is medical consultation free for students?",
+      "alternate_questions": [
+        "Free doctor consultation",
+        "Medical checkup charges",
+        "Student healthcare"
+      ],
+      "keywords": ["medical", "consultation", "health"],
+      "answer": "Medical consultation services are provided according to the university's healthcare policies. Students should contact the campus medical center for applicable details.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0402",
+      "category": "Health & Medical Services",
+      "question": "Does the university have its own hospital?",
+      "alternate_questions": [
+        "University hospital",
+        "Teaching hospital",
+        "Campus hospital"
+      ],
+      "keywords": ["hospital", "medical"],
+      "answer": "The university provides healthcare support through its medical facilities and associated healthcare services.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0403",
+      "category": "Health & Medical Services",
+      "question": "Can hostel students access medical services at night?",
+      "alternate_questions": [
+        "Night medical support",
+        "Hostel emergency",
+        "24-hour medical service"
+      ],
+      "keywords": ["hostel", "medical", "emergency"],
+      "answer": "Emergency medical assistance is available for hostel students according to the university's healthcare procedures.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0404",
+      "category": "Health & Medical Services",
+      "question": "Are medicines available at the campus medical center?",
+      "alternate_questions": [
+        "Campus pharmacy",
+        "Medicine availability",
+        "Medical store"
+      ],
+      "keywords": ["medicine", "pharmacy"],
+      "answer": "Basic medicines and healthcare support may be available through the university medical facilities as per institutional policies.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0405",
+      "category": "Health & Medical Services",
+      "question": "Can students receive vaccination services on campus?",
+      "alternate_questions": [
+        "Vaccination camp",
+        "Immunization",
+        "Health vaccination"
+      ],
+      "keywords": ["vaccination", "health"],
+      "answer": "Health awareness programs and vaccination camps may be organized by the university whenever applicable.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0406",
+      "category": "Health & Medical Services",
+      "question": "Does the university organize health check-up camps?",
+      "alternate_questions": [
+        "Medical camp",
+        "Health screening",
+        "Health camp"
+      ],
+      "keywords": ["health camp", "checkup"],
+      "answer": "Yes. Periodic health check-up camps and wellness programs may be organized for students.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0407",
+      "category": "Health & Medical Services",
+      "question": "Is mental health counseling available?",
+      "alternate_questions": [
+        "Student counseling",
+        "Mental health support",
+        "Psychological counseling"
+      ],
+      "keywords": ["mental health", "counseling"],
+      "answer": "Yes. Students can access counseling and mental wellness support through the university's student support services.",
+      "source": "legal_student_support_services.json"
+    },
+    {
+      "id": "faq_0408",
+      "category": "Health & Medical Services",
+      "question": "Can students consult a counselor confidentially?",
+      "alternate_questions": [
+        "Private counseling",
+        "Confidential counseling",
+        "Student counselor"
+      ],
+      "keywords": ["counseling", "confidential"],
+      "answer": "Yes. Counseling sessions are handled confidentially in accordance with university policies and professional practices.",
+      "source": "legal_student_support_services.json"
+    },
+    {
+      "id": "faq_0409",
+      "category": "Health & Medical Services",
+      "question": "What should I do if I become sick during class?",
+      "alternate_questions": [
+        "Ill during lecture",
+        "Medical emergency in class",
+        "Feeling sick on campus"
+      ],
+      "keywords": ["medical emergency", "class"],
+      "answer": "Students should immediately inform the faculty member or university staff so appropriate medical assistance can be arranged.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0410",
+      "category": "Health & Medical Services",
+      "question": "Can parents be informed during a medical emergency?",
+      "alternate_questions": [
+        "Emergency contact",
+        "Inform parents",
+        "Medical emergency notification"
+      ],
+      "keywords": ["parents", "emergency"],
+      "answer": "Yes. The university may contact the student's registered emergency contact during serious medical emergencies.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0411",
+      "category": "Health & Medical Services",
+      "question": "Does the university provide disability support services?",
+      "alternate_questions": [
+        "Support for differently abled students",
+        "Accessibility services",
+        "Special assistance"
+      ],
+      "keywords": ["accessibility", "disability"],
+      "answer": "The university strives to provide support and accessible services for students with disabilities according to institutional policies.",
+      "source": "legal_student_support_services.json"
+    },
+    {
+      "id": "faq_0412",
+      "category": "Health & Medical Services",
+      "question": "Are physiotherapy services available on campus?",
+      "alternate_questions": [
+        "Physiotherapy",
+        "Rehabilitation services",
+        "Physical therapy"
+      ],
+      "keywords": ["physiotherapy", "health"],
+      "answer": "Physiotherapy or rehabilitation services may be available through the university's healthcare facilities where applicable.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0413",
+      "category": "Health & Medical Services",
+      "question": "Can international students access campus medical services?",
+      "alternate_questions": [
+        "Medical care for international students",
+        "Healthcare for foreign students",
+        "International medical support"
+      ],
+      "keywords": ["international", "medical"],
+      "answer": "Yes. International students can access campus healthcare facilities according to university policies.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0414",
+      "category": "Health & Medical Services",
+      "question": "Does the university conduct blood donation camps?",
+      "alternate_questions": [
+        "Blood donation",
+        "Health awareness event",
+        "Donation camp"
+      ],
+      "keywords": ["blood donation", "camp"],
+      "answer": "The university may organize blood donation camps and health awareness activities in collaboration with healthcare organizations.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0415",
+      "category": "Health & Medical Services",
+      "question": "Can students obtain medical certificates from the campus medical center?",
+      "alternate_questions": [
+        "Medical certificate",
+        "Doctor certificate",
+        "Health certificate"
+      ],
+      "keywords": ["medical certificate", "doctor"],
+      "answer": "Medical certificates may be issued according to the healthcare facility's procedures and applicable regulations.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0416",
+      "category": "Health & Medical Services",
+      "question": "Is health insurance available for students?",
+      "alternate_questions": [
+        "Student insurance",
+        "Medical insurance",
+        "Health coverage"
+      ],
+      "keywords": ["insurance", "health"],
+      "answer": "Health insurance availability depends on university policies and any applicable student insurance schemes.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0417",
+      "category": "Health & Medical Services",
+      "question": "Are emergency contact details stored by the university?",
+      "alternate_questions": [
+        "Emergency contact information",
+        "Guardian contact",
+        "Emergency phone number"
+      ],
+      "keywords": ["emergency contact", "guardian"],
+      "answer": "Yes. Students are encouraged to maintain updated emergency contact information with the university.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0418",
+      "category": "Health & Medical Services",
+      "question": "Can students request medical leave due to illness?",
+      "alternate_questions": [
+        "Medical leave",
+        "Health leave",
+        "Leave because of illness"
+      ],
+      "keywords": ["medical leave", "attendance"],
+      "answer": "Yes. Students may apply for medical leave by following the university's leave procedures and submitting supporting documents where required.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0419",
+      "category": "Health & Medical Services",
+      "question": "Does the university organize wellness awareness programs?",
+      "alternate_questions": [
+        "Health awareness",
+        "Wellness seminar",
+        "Fitness awareness"
+      ],
+      "keywords": ["wellness", "health"],
+      "answer": "Yes. Wellness awareness programs covering physical and mental health are organized throughout the academic year.",
+      "source": "wellness_sustainability.json"
+    },
+    {
+      "id": "faq_0420",
+      "category": "Health & Medical Services",
+      "question": "Whom should I contact for medical assistance on campus?",
+      "alternate_questions": [
+        "Medical contact",
+        "Healthcare support",
+        "Campus medical office"
+      ],
+      "keywords": ["medical", "contact"],
+      "answer": "Students should contact the campus medical center or the designated university healthcare office for medical assistance.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0421",
+      "category": "Transport",
+      "question": "Does Parul University provide transportation facilities?",
+      "alternate_questions": [
+        "University bus",
+        "Transport service",
+        "Campus transportation"
+      ],
+      "keywords": ["transport", "bus"],
+      "answer": "Yes. The university provides transportation facilities connecting various locations according to approved routes and schedules.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0422",
+      "category": "Transport",
+      "question": "How can I apply for the university bus service?",
+      "alternate_questions": [
+        "Bus registration",
+        "Transport application",
+        "Bus pass"
+      ],
+      "keywords": ["bus", "registration"],
+      "answer": "Students can apply for transportation services by following the prescribed university transport registration process.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0423",
+      "category": "Transport",
+      "question": "Are transport services available for day scholars?",
+      "alternate_questions": [
+        "Day scholar bus",
+        "Commuter transport",
+        "Bus for day scholars"
+      ],
+      "keywords": ["day scholar", "transport"],
+      "answer": "Yes. Transportation facilities are available for eligible day scholars based on route availability.",
+      "source": "day_scholar_facilities.json"
+    },
+    {
+      "id": "faq_0424",
+      "category": "Transport",
+      "question": "Can I check bus routes before registering?",
+      "alternate_questions": [
+        "Bus routes",
+        "Transport route",
+        "University bus map"
+      ],
+      "keywords": ["bus route", "transport"],
+      "answer": "Yes. Students can review available routes and boarding points before completing transport registration.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0425",
+      "category": "Transport",
+      "question": "Are transport fees charged separately?",
+      "alternate_questions": [
+        "Bus fee",
+        "Transportation charges",
+        "Transport payment"
+      ],
+      "keywords": ["transport fee", "bus charges"],
+      "answer": "Yes. Transport charges, where applicable, are separate from tuition fees and are determined according to the selected route and university policy.",
+      "source": "fees_financial_aid.json"
+    }
+  ]
+}

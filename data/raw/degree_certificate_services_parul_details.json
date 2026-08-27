@@ -1,0 +1,49 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file cross-references certificate processes already partially documented in examination_services_parul_details.json (provisional certificate, transcripts, duplicate certificates) and fees_financial_aid_parul_details.json (bonafide certificate), expanding them with additional detail specific to this category rather than restating them differently. Convocation details and the outgoing migration certificate process (distinct from the incoming-transfer migration certificate already documented in admissions_parul_details.json) are newly generated here. None of this should be treated as officially confirmed university policy.",
+    "data_type": "generated_for_project"
+  },
+
+  "degree_and_certificate_services": {
+
+    "convocation_ceremony": {
+      "cross_reference": "Briefly introduced in events_fests_cultural_calendar_parul_details.json under 'farewell_and_graduation_day.convocation'; expanded here.",
+      "timing": "Typically held once a year, after final results for graduating batches are declared, consistent with standard Indian university practice.",
+      "attire": "Graduates typically wear an academic gown and cap (mortarboard) for the ceremony, often provided/rented through the university for the event.",
+      "guest_speakers": "Convocation ceremonies commonly feature a chief guest (often a notable industry figure, alumnus, or academic) delivering a keynote/convocation address, alongside recognition of gold medalists and top rank holders across faculties.",
+      "process": "Graduating students register for convocation participation in advance (confirming attendance, gown size, etc.); degrees are formally conferred on stage during the ceremony, with students unable to attend able to collect their degree certificate afterward through the examination department."
+    },
+
+    "migration_certificate_process_outgoing": {
+      "distinction_note": "This is distinct from the migration certificate process for students TRANSFERRING INTO Parul University from another institution, already documented in admissions_parul_details.json's 'transfer_and_migration_policy'. This section covers students who have COMPLETED their degree at Parul and need a migration certificate to pursue further studies elsewhere.",
+      "purpose": "A migration certificate confirms that a student has completed/left Parul University and is eligible to seek admission at another institution, commonly required for students pursuing further studies (e.g. after UG, before joining a PG program elsewhere).",
+      "process": "Requested through the examination department (in person or via the ERP portal), generally requires confirmation of no pending dues and final result declaration, and is typically issued as a one-time original document (re-issuance of a lost migration certificate follows a separate duplicate-document process, similar to the duplicate degree process)."
+    },
+
+    "provisional_certificate_process": {
+      "cross_reference": "Already documented in examination_services_parul_details.json's 'degree_and_transcript_issuance_process.provisional_certificate' — issued upon successful completion of all semesters and final result declaration, confirming degree completion pending the formal Convocation ceremony.",
+      "additional_note": "The provisional certificate is often the document students use for immediate purposes (job onboarding, further study applications) while awaiting the formal degree certificate from Convocation."
+    },
+
+    "bonafide_certificate_request_process": {
+      "cross_reference": "Already documented in fees_financial_aid_parul_details.json's 'fee_receipt_and_certificate_process.bonafide_certificate' — requestable through the ERP portal or student services office, typically issued within 3-7 working days.",
+      "common_uses": "Commonly needed for bank loan applications, scholarship applications, passport/visa applications, and other situations requiring official confirmation of current enrollment status."
+    },
+
+    "transcript_request_process": {
+      "domestic_use": "Already documented in examination_services_parul_details.json's 'degree_and_transcript_issuance_process.transcript_requests' — requestable through the ERP portal or examination department, typically processed within 1-2 weeks.",
+      "for_abroad_use": "For transcripts intended for use outside India (e.g. applications to foreign universities, immigration purposes), additional attestation/apostille processing is typically required beyond the standard transcript — this generally involves notarization and, depending on the destination country, apostille certification through India's Ministry of External Affairs (MEA) or the relevant country's embassy/consulate attestation process. This adds meaningfully to the processing timeline compared to a standard domestic transcript request, and students should plan well in advance of application deadlines.",
+      "sealed_envelope_requirement": "Transcripts for abroad use are commonly required to be sent in a sealed, university-stamped envelope directly to the receiving institution (or via a secure digital transcript service, where the university has adopted one), rather than being handed to the student unsealed."
+    },
+
+    "duplicate_degree_and_marksheet_process": {
+      "cross_reference": "Already documented in examination_services_parul_details.json's 'degree_and_transcript_issuance_process.duplicate_certificate_process' — requires an affidavit/police complaint copy and a processing fee, with a longer processing window than standard transcript requests.",
+      "additional_note": "Students requesting a duplicate degree certificate (as opposed to a duplicate marksheet) should expect an even longer processing window, since a duplicate degree typically requires additional verification steps and, in some cases, publication of a loss notice before reissuance."
+    }
+  }
+}

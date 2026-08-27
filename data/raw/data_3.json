@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0301",
+      "category": "Research",
+      "question": "Can students present research papers at conferences?",
+      "alternate_questions": [
+        "Conference presentation",
+        "Present research paper",
+        "Research conference"
+      ],
+      "keywords": ["conference", "research", "paper"],
+      "answer": "Yes. Students may present research papers at conferences with departmental guidance and subject to conference eligibility requirements.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0302",
+      "category": "Research",
+      "question": "Does the university organize research conferences?",
+      "alternate_questions": [
+        "Research conference at Parul",
+        "Academic conference",
+        "University conference"
+      ],
+      "keywords": ["conference", "research"],
+      "answer": "Yes. The university organizes and hosts research conferences, seminars, and academic events across various disciplines.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0303",
+      "category": "Research",
+      "question": "Can students publish papers with faculty members?",
+      "alternate_questions": [
+        "Faculty publication",
+        "Joint research paper",
+        "Research with professor"
+      ],
+      "keywords": ["publication", "faculty", "research"],
+      "answer": "Yes. Students can collaborate with faculty members on research projects and publications according to departmental guidelines.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0304",
+      "category": "Research",
+      "question": "Does Parul University have research laboratories?",
+      "alternate_questions": [
+        "Research labs",
+        "Laboratories for research",
+        "Innovation labs"
+      ],
+      "keywords": ["laboratory", "research"],
+      "answer": "Yes. The university has research laboratories and specialized facilities that support academic research and innovation activities.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0305",
+      "category": "Research",
+      "question": "Can students use research laboratories?",
+      "alternate_questions": [
+        "Access research lab",
+        "Student laboratory access",
+        "Research facilities"
+      ],
+      "keywords": ["lab", "research", "students"],
+      "answer": "Students may use research laboratories under faculty supervision and according to departmental laboratory policies.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0306",
+      "category": "Research",
+      "question": "Does the university support patent filing?",
+      "alternate_questions": [
+        "Patent support",
+        "Innovation patent",
+        "File patent"
+      ],
+      "keywords": ["patent", "innovation"],
+      "answer": "Yes. The university encourages innovation and supports eligible students and researchers in the patent filing process.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0307",
+      "category": "Research",
+      "question": "Can students participate in innovation competitions?",
+      "alternate_questions": [
+        "Innovation contest",
+        "Research competition",
+        "Hackathon participation"
+      ],
+      "keywords": ["innovation", "competition"],
+      "answer": "Yes. Students are encouraged to participate in innovation competitions, hackathons, and research events organized by the university and external organizations.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0308",
+      "category": "Research",
+      "question": "Does the university have an incubation center?",
+      "alternate_questions": [
+        "Startup incubation",
+        "Business incubator",
+        "Innovation center"
+      ],
+      "keywords": ["incubation", "startup"],
+      "answer": "Yes. The university promotes entrepreneurship through incubation and innovation support initiatives.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0309",
+      "category": "Research",
+      "question": "Can students start a startup while studying?",
+      "alternate_questions": [
+        "Student startup",
+        "Entrepreneurship support",
+        "Start business in college"
+      ],
+      "keywords": ["startup", "entrepreneurship"],
+      "answer": "Yes. Students interested in entrepreneurship may receive mentoring and support through the university's innovation ecosystem.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0310",
+      "category": "Research",
+      "question": "Are startup mentoring programs available?",
+      "alternate_questions": [
+        "Startup mentor",
+        "Business mentoring",
+        "Innovation mentoring"
+      ],
+      "keywords": ["startup", "mentor"],
+      "answer": "Yes. Startup mentoring programs are conducted to help students develop innovative ideas into viable ventures.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0311",
+      "category": "Research",
+      "question": "Does the university organize hackathons?",
+      "alternate_questions": [
+        "Hackathon events",
+        "Coding competition",
+        "Innovation hackathon"
+      ],
+      "keywords": ["hackathon", "coding"],
+      "answer": "Yes. Various hackathons and innovation events are organized throughout the academic year depending on departmental activities.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0312",
+      "category": "Research",
+      "question": "Can students receive funding for research projects?",
+      "alternate_questions": [
+        "Research funding",
+        "Project funding",
+        "Research grants"
+      ],
+      "keywords": ["funding", "research"],
+      "answer": "Funding opportunities may be available through university initiatives or external funding agencies, subject to eligibility.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0313",
+      "category": "Research",
+      "question": "How do I apply for a student research project?",
+      "alternate_questions": [
+        "Research application",
+        "Student project",
+        "Join research"
+      ],
+      "keywords": ["research", "application"],
+      "answer": "Students should contact their department or faculty mentor to explore available research opportunities and application procedures.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0314",
+      "category": "Research",
+      "question": "Can postgraduate students participate in funded research?",
+      "alternate_questions": [
+        "PG research",
+        "Master's research",
+        "Funded projects"
+      ],
+      "keywords": ["postgraduate", "research"],
+      "answer": "Yes. Postgraduate students may participate in funded research projects depending on departmental opportunities and eligibility.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0315",
+      "category": "Research",
+      "question": "Does the university collaborate with industries for research?",
+      "alternate_questions": [
+        "Industry research collaboration",
+        "Research partnerships",
+        "Industrial research"
+      ],
+      "keywords": ["industry", "research"],
+      "answer": "Yes. The university collaborates with industries and organizations to promote applied research and innovation.",
+      "source": "industry_academia_partnerships.json"
+    },
+    {
+      "id": "faq_0316",
+      "category": "Research",
+      "question": "Can students work on industry-sponsored projects?",
+      "alternate_questions": [
+        "Industry project",
+        "Sponsored research",
+        "Corporate project"
+      ],
+      "keywords": ["industry", "project"],
+      "answer": "Eligible students may participate in industry-sponsored projects through their departments or research centers.",
+      "source": "industry_academia_partnerships.json"
+    },
+    {
+      "id": "faq_0317",
+      "category": "Research",
+      "question": "Does Parul University celebrate National Science Day?",
+      "alternate_questions": [
+        "Science Day events",
+        "Research celebration",
+        "Science activities"
+      ],
+      "keywords": ["science day", "events"],
+      "answer": "Academic departments may organize Science Day and other research-oriented events to encourage scientific learning and innovation.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0318",
+      "category": "Research",
+      "question": "Can students participate in multidisciplinary research?",
+      "alternate_questions": [
+        "Interdisciplinary research",
+        "Cross department research",
+        "Multi-disciplinary projects"
+      ],
+      "keywords": ["multidisciplinary", "research"],
+      "answer": "Yes. Students may participate in interdisciplinary research initiatives where opportunities are available.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0319",
+      "category": "Research",
+      "question": "Does the university recognize outstanding student research?",
+      "alternate_questions": [
+        "Research awards",
+        "Student research recognition",
+        "Innovation awards"
+      ],
+      "keywords": ["research award", "recognition"],
+      "answer": "Yes. Outstanding research and innovation achievements may be recognized through university awards and academic appreciation programs.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0320",
+      "category": "Research",
+      "question": "Whom should I contact for research-related guidance?",
+      "alternate_questions": [
+        "Research coordinator",
+        "Research office",
+        "Research support"
+      ],
+      "keywords": ["research", "contact"],
+      "answer": "Students should contact their department, faculty mentor, or the university's research and innovation office for guidance.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0321",
+      "category": "Sports",
+      "question": "Does Parul University provide sports facilities?",
+      "alternate_questions": [
+        "Sports facilities",
+        "Games at university",
+        "Sports infrastructure"
+      ],
+      "keywords": ["sports", "facilities"],
+      "answer": "Yes. The university provides indoor and outdoor sports facilities to encourage physical fitness and student participation.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0322",
+      "category": "Sports",
+      "question": "Which sports are available on campus?",
+      "alternate_questions": [
+        "Games available",
+        "Sports list",
+        "Sports offered"
+      ],
+      "keywords": ["sports", "games"],
+      "answer": "Students can participate in various indoor and outdoor sports depending on the facilities and university sports programs.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0323",
+      "category": "Sports",
+      "question": "Can every student participate in sports activities?",
+      "alternate_questions": [
+        "Join sports",
+        "Sports participation",
+        "Student games"
+      ],
+      "keywords": ["sports", "participation"],
+      "answer": "Yes. Students are encouraged to participate in sports activities according to eligibility and facility availability.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0324",
+      "category": "Sports",
+      "question": "Does the university organize annual sports events?",
+      "alternate_questions": [
+        "Sports festival",
+        "Annual sports meet",
+        "Sports competition"
+      ],
+      "keywords": ["sports event", "competition"],
+      "answer": "Yes. The university organizes annual sports meets and various interdepartmental and intercollegiate competitions.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0325",
+      "category": "Sports",
+      "question": "How can I join the university sports team?",
+      "alternate_questions": [
+        "Sports team selection",
+        "Join university team",
+        "Sports trials"
+      ],
+      "keywords": ["sports team", "selection"],
+      "answer": "Students can participate in sports trials and selection processes conducted by the university sports department.",
+      "source": "sports_recreation.json"
+    }
+  ]
+}

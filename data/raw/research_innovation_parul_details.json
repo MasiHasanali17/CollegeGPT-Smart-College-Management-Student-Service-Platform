@@ -1,0 +1,76 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file consolidates real research collected earlier in this project (R&D Cell, PIERC, DSIR recognition, Springer Nature partnership, Micro-Nano R&D Center, Sensor Technology CoE) with one editorial resolution (research funding figure) and one deliberate non-resolution (university-wide patent count, where no reliable single number exists — stated honestly rather than fabricated). PhD admission/funding structure and UG/PG research opportunities are generated for this academic project based on standard Indian university practice. None of this should be treated as officially confirmed, current-year data.",
+    "data_types": {
+      "verified_from_prior_research": "Real facts collected earlier in this project with consistent sourcing",
+      "resolved_from_conflicting_sources": "A single figure deliberately chosen from among multiple conflicting numbers found in prior research, with reasoning given",
+      "honestly_unresolved": "A figure that genuinely cannot be stated reliably, left as a qualitative statement rather than a fabricated number",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project, no real source"
+    }
+  },
+
+  "research_and_innovation": {
+
+    "research_centers_and_labs": {
+      "data_type": "verified_from_prior_research + generated_for_project",
+      "rd_cell": "The Research & Development Cell/Centre facilitates research activities for students and faculty, supporting extramural (externally funded) and intramural (internally funded) research projects, and has been involved in filing patents and academic publications on behalf of the university's researchers. (verified)",
+      "micro_nano_rd_center": "A dedicated Micro-Nano Research & Development Center supports research projects in micro/nano-scale technology domains under faculty-led supervision. (verified)",
+      "sensor_technology_coe": "A Centre of Excellence in Sensor Technology houses 50+ types of sensors and is associated with 30+ patent filings/disclosures in this domain (see patents_filed_or_granted below for why this shouldn't be read as a confirmed granted-patent count). (verified)",
+      "department_wise_labs": "Beyond these dedicated centers, individual faculties maintain their own research-oriented labs relevant to their discipline (e.g. drug research labs in Pharmacy, clinical/biomedical research support in Medicine and Nursing, agricultural research facilities in the Faculty of Agriculture, and specialized engineering labs across Computer Science, Electronics, and Mechanical disciplines). (generated)"
+    },
+
+    "focus_research_domains": {
+      "data_type": "generated_for_project",
+      "domains": [
+        "Artificial Intelligence & Machine Learning",
+        "Biotechnology",
+        "Sustainable/Renewable Energy",
+        "Sensor Technology (tied to the dedicated Centre of Excellence)",
+        "Micro-Nano Technology (tied to the dedicated R&D Center)",
+        "Pharmaceutical Sciences & Drug Research",
+        "Agricultural Sciences",
+        "Healthcare & Biomedical Research"
+      ],
+      "note": "These domains are consistent with the university's existing public-facing description of its research focus areas, and with the specialized centers already documented as real."
+    },
+
+    "research_funding_and_grants": {
+      "data_type": "resolved_from_conflicting_sources",
+      "figure": "Recent reporting describes approximately ₹58.31 crore in government-funded research and ₹4.37 crore in privately-funded research engagements, spread across 315 funded projects.",
+      "reasoning": "Prior research found this more recent, more detailed figure alongside an older, smaller figure of 'over ₹17 crore' from an earlier snapshot. The more recent and more detailed figure is used here, consistent with the pattern of research funding growing over time rather than the two figures being contradictory."
+    },
+
+    "patents_filed_or_granted": {
+      "data_type": "honestly_unresolved",
+      "unit_level_data": "The Centre of Excellence in Sensor Technology is associated with 30+ patents in that domain specifically — though this figure likely refers to patent applications filed/disclosed rather than patents formally granted.",
+      "university_wide_total": "No reliable, confirmed university-wide total patent count (filed vs. granted) could be established from available research. Rather than presenting a fabricated overall number, this is stated honestly: patent activity is real and ongoing (supported by the R&D Cell), but a single confirmed total is not available in this project's data."
+    },
+
+    "publication_support_and_journal_partnerships": {
+      "data_type": "verified_from_prior_research + generated_for_project",
+      "springer_nature_partnership": "The university has signed a license/partnership agreement with the academic publisher Springer Nature, aimed at amplifying research visibility and supporting international academic collaboration. (verified)",
+      "dsir_recognition": "The university holds recognition from India's Department of Scientific and Industrial Research (DSIR), a government body that formally recognizes in-house R&D units at qualifying institutions. (verified)",
+      "general_support_services": "The R&D Cell typically supports faculty and research scholars with manuscript preparation guidance, conference/journal fee support for accepted papers, and coordination for accessing subscribed journal databases (supported in part by the Springer Nature partnership). (generated)"
+    },
+
+    "phd_program_details": {
+      "data_type": "generated_for_project",
+      "admission_process": "PhD admission typically requires clearing the university's own PhD Entrance Test (PET), or holding a valid qualifying score in UGC-NET/UGC-CSIR NET/GATE (which may exempt a candidate from the entrance test depending on the discipline), followed by a research proposal presentation and interview with the respective faculty's doctoral committee.",
+      "eligibility": "A relevant Master's degree with a minimum aggregate (commonly 55% or equivalent CGPA, with relaxation for reserved categories) is generally required, consistent with UGC PhD regulations followed by most Indian universities.",
+      "funding_and_stipend": "PhD scholars working on externally-funded (extramural) research projects under the R&D Cell may receive a stipend consistent with the funding agency's norms (e.g. UGC/DST/ICMR JRF-SRF stipend slabs, where applicable). Self-financed PhD candidates (the more common route at most private universities) generally do not receive a guaranteed stipend and pay the PhD tuition fee already documented per faculty in academic_details_parul.json.",
+      "duration": "PhD duration is described in academic_details_parul.json as 'as per university norms', consistent with standard UGC PhD regulations of a minimum 3 years (with a maximum duration limit, commonly 6 years including extensions)."
+    },
+
+    "ug_pg_student_research_opportunities": {
+      "data_type": "generated_for_project",
+      "structure": "Undergraduate and postgraduate students can participate in faculty-supervised research projects through their final-year project/dissertation requirement (already documented in academic_details_parul.json's syllabus structure), and through voluntary participation in ongoing faculty research under the R&D Cell.",
+      "innovation_and_ipr_support": "Students with patentable ideas or innovative projects can seek support from the R&D Cell for patent filing guidance, and from PIERC (already documented in placements_parul_details.json) if the project has startup/commercialization potential.",
+      "paper_presentation_support": "Students co-authoring research with faculty are generally supported (travel/registration assistance, where available) to present at student research symposiums, department-level conferences, and the annual TechExpo showcase (already documented in events_fests_cultural_calendar_parul_details.json)."
+    }
+  }
+}

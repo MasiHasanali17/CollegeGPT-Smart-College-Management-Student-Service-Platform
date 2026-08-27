@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<div class="portal-page">
+
+    <div class="portal-hero">
+        <h1>Welcome, {{ student.name }} 👋</h1>
+        <p>{{ student.course or "Student" }} &nbsp;•&nbsp; ID: {{ student.student_id }}</p>
+    </div>
+
+
+    <div class="portal-wrap">
+
+        <h2 class="section-title">Quick Access</h2>
+
+        <div class="quick-links">
+
+            <a class="quick-link-card" href="{{ url_for('portal_notices') }}">
+                <span class="icon">📢</span>
+                <h4>Notices</h4>
+                <p>{{ notice_count }} notice{{ 's' if notice_count != 1 else '' }} posted</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_events') }}">
+                <span class="icon">🎟️</span>
+                <h4>Event Tickets</h4>
+                <p>Book seats for college fests & events</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_courses') }}">
+                <span class="icon">📘</span>
+                <h4>Extra Courses</h4>
+                <p>Register for elective / add-on courses</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_facilities') }}">
+                <span class="icon">🏸</span>
+                <h4>Sports & Gym</h4>
+                <p>Book a slot for sports or gym facilities</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_hostel_transfer') }}">
+                <span class="icon">🏠</span>
+                <h4>Hostel Transfer</h4>
+                <p>{{ my_hostel_requests|length }} request{{ 's' if my_hostel_requests|length != 1 else '' }} submitted</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_grievance') }}">
+                <span class="icon">📝</span>
+                <h4>Grievance Desk</h4>
+                <p>{{ my_grievances|length }} complaint{{ 's' if my_grievances|length != 1 else '' }} raised</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_academics') }}">
+                <span class="icon">🎓</span>
+                <h4>Academic Records</h4>
+                <p>Attendance, timetable & results</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('portal_my_bookings') }}">
+                <span class="icon">🎫</span>
+                <h4>My Bookings</h4>
+                <p>All your tickets & registrations in one place</p>
+            </a>
+
+            <a class="quick-link-card" href="{{ url_for('chatbot_page') }}">
+                <span class="icon">🤖</span>
+                <h4>Ask Campus AI</h4>
+                <p>Have a question? Ask the chatbot anytime</p>
+            </a>
+
+        </div>
+
+        {% if upcoming_events %}
+        <h2 class="section-title" style="margin-top:44px;">Upcoming Events</h2>
+        <div class="portal-grid">
+            {% for e in upcoming_events %}
+            <div class="portal-card">
+                <div class="meta">{{ e.schedule_text }}</div>
+                <h3>{{ e.title }}</h3>
+                <p class="desc">{{ e.description }}</p>
+                <a href="{{ url_for('portal_events') }}" class="btn-secondary">View & Book →</a>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <p style="margin-top:40px;">
+            <a href="{{ url_for('logout') }}" style="color:#64748b;font-size:13.5px;">Logout</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

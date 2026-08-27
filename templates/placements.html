@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+/* 1. LAYOUT & THEME */
+.placement-page {
+    padding: 80px 8%;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.placement-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.placement-header h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -1px;
+}
+
+.placement-header p {
+    color: #64748b;
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+/* 2. HERO STATS (Enhanced Gradient & Glassmorphism) */
+.hero-placement {
+    background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+    color: white;
+    border-radius: 40px;
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.2);
+}
+
+.hero-placement h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.placement-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 35px 20px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.stat-box:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+.stat-box h3 {
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: #e0e7ff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 3. RECRUITERS GRID */
+.company-section { margin-top: 100px; }
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 50px;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.company-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #f1f5f9;
+    font-weight: 800;
+    color: #475569;
+    font-size: 18px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.company-card:hover {
+    border-color: #7c3aed;
+    color: #7c3aed;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.1);
+}
+
+/* 4. PROCESS STEPS (Vertical Alignment Style) */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.process-card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    position: relative;
+    border: 1px solid #f1f5f9;
+    transition: 0.3s;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    background: #7c3aed;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    box-shadow: 0 8px 15px rgba(124, 58, 237, 0.3);
+}
+
+.process-card h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.process-card p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* 5. TRAINING SECTION (NEW INFO) */
+.training-box {
+    margin-top: 100px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border: 1px solid #e2e8f0;
+}
+
+.training-content { flex: 1; min-width: 300px; }
+.training-content h2 { font-size: 32px; font-weight: 800; margin-bottom: 20px; }
+.training-list { list-style: none; padding: 0; }
+.training-list li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-weight: 500;
+    color: #475569;
+}
+
+.training-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: 900;
+}
+
+.training-image-container {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 20px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.training-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+</style>
+
+<div class="placement-page">
+
+    <div class="placement-header">
+        <h1>Placement Excellence</h1>
+        <p>Bridging the gap between academic brilliance and professional success at Parul University.</p>
+    </div>
+
+    <div class="hero-placement">
+        <h2>Unmatched Placement Records</h2>
+        <p>A legacy of empowering students to land their dream jobs in Fortune 500 companies.</p>
+
+        <div class="placement-stats">
+            <div class="stat-box">
+                <h3>45 LPA</h3>
+                <p>Highest Package</p>
+            </div>
+            <div class="stat-box">
+                <h3>6.5 LPA</h3>
+                <p>Average Package</p>
+            </div>
+            <div class="stat-box">
+                <h3>2,200+</h3>
+                <p>Global Recruiters</p>
+            </div>
+            <div class="stat-box">
+                <h3>15k+</h3>
+                <p>Students Placed</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="training-box">
+        <div class="training-content">
+            <h2>Career Development Cell (CDC)</h2>
+            <p style="color: #64748b; margin-bottom: 25px;">Our dedicated CDC prepares students from day one to face global competition with confidence.</p>
+            <ul class="training-list">
+                <li>Mock Aptitude & Technical Tests</li>
+                <li>Personality Development Workshops</li>
+                <li>Soft Skills & Communication Training</li>
+                <li>1-on-1 Resume Building Sessions</li>
+                <li>Industry Expert Guest Lectures</li>
+            </ul>
+        </div>
+        <div class="training-image-container">
+            <img src="https://img.freepik.com/free-photo/development-knowledge-study-education-concept_53876-144838.jpg?semt=ais_rp_50_assets&w=740&q=80" alt="Professional Job Interview representing career success">
+        </div>
+    </div>
+
+    <div class="company-section">
+        <h2 class="section-title">Our Top Recruiters</h2>
+        <div class="company-grid">
+            <div class="company-card">Google</div>
+            <div class="company-card">Amazon</div>
+            <div class="company-card">Microsoft</div>
+            <div class="company-card">TCS</div>
+            <div class="company-card">Infosys</div>
+            <div class="company-card">Wipro</div>
+            <div class="company-card">Capgemini</div>
+            <div class="company-card">IBM</div>
+            <div class="company-card">Oracle</div>
+            <div class="company-card">Accenture</div>
+            <div class="company-card">L&T</div>
+            <div class="company-card">Reliance</div>
+        </div>
+    </div>
+
+    <div class="process-section" style="margin-top: 100px; margin-bottom: 50px;">
+        <h2 class="section-title">The Path to Selection</h2>
+        <div class="process-grid">
+            <div class="process-card">
+                <div class="step-number">01</div>
+                <h3>Skill Profiling</h3>
+                <p>We analyze student strengths and map them to suitable industries and job roles.</p>
+            </div>
+            <div class="process-card">
+                <div class="step-number">02</div>
+                <h3>Intensive Training</h3>
+                <p>Students undergo 100+ hours of rigorous training in coding, logic, and interview ethics.</p>
+            </div>
+            <div class="process-card">
+                <div class="step-number">03</div>
+                <h3>Campus Drives</h3>
+                <p>Direct interaction with HRs through mega placement pools and individual company visits.</p>
+            </div>
+            <div class="process-card">
+                <div class="step-number">04</div>
+                <h3>Onboarding</h3>
+                <p>Ensuring a smooth transition from student life to a professional career with offer letter support.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

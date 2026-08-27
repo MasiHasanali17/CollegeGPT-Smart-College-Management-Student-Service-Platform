@@ -1,0 +1,97 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This entire file is generated for this academic project, since no real data was provided for this category. It is written to be realistic and internally consistent with fee-related details already established in academic_details_parul.json (fee structure formula, caution deposit) and admissions_parul_details.json (admission cancellation/refund policy). None of this should be treated as officially confirmed university policy.",
+    "data_type": "generated_for_project"
+  },
+
+  "fees_and_financial_aid": {
+
+    "fee_payment_schedule": {
+      "default_mode": "Tuition fees are generally payable annually, at the start of each academic year, as reflected in the per-year tuition figures listed in academic_details_parul.json.",
+      "installment_option": "Select programs and categories of students may request a semester-wise installment plan (two installments per year) by submitting a written request to the accounts department before the fee due date; approval is at the discretion of the accounts office.",
+      "hostel_fee_schedule": "Hostel fees are payable annually, consistent with the 'fees have to be paid annually' guideline already documented in the hostel data.",
+      "due_date_pattern": "Fee payment is typically due within 10-15 days of the start of each academic year/semester; students are notified via the student portal and registered email/SMS."
+    },
+
+    "payment_methods": {
+      "accepted_methods": [
+        "Online payment via the student ERP portal (debit card, credit card, net banking, UPI)",
+        "Demand Draft (DD) in favor of Parul University, payable at Vadodara",
+        "Direct bank transfer / NEFT / RTGS to the university's designated fee collection account",
+        "EMI options through select partner banks/NBFCs at the time of online payment checkout, subject to bank approval and applicable interest as per the partner's terms"
+      ],
+      "note": "Cash payments are generally discouraged/not accepted at the main campus counters for security reasons; students are directed to online or DD-based payment."
+    },
+
+    "late_payment_penalty": {
+      "penalty_structure": "A late fee penalty typically applies after the due date, commonly structured as a flat charge (e.g. ₹500-₹1,000) plus an additional per-day or per-week charge if payment remains pending beyond a further grace period.",
+      "extended_default": "Continued non-payment beyond an extended grace period (typically 30 days past due date) may result in the student being barred from attending classes/examinations until dues are cleared, and in prolonged cases, from the ERP portal/library access.",
+      "condonation": "Students facing genuine financial hardship may apply in writing to the accounts department or Dean of Students for a short extension, considered on a case-by-case basis."
+    },
+
+    "refund_policy": {
+      "pre_admission_withdrawal": "Full refund of fees paid (minus a nominal processing charge) if withdrawal is requested before the seat-freezing/session-start deadline, as outlined in admissions_parul_details.json under 'admission_cancellation_and_withdrawal'.",
+      "post_admission_withdrawal": "A reducing refund percentage applies the closer the withdrawal request is to the session start date, generally following UGC-mandated refund guidelines; typically no refund is available after a certain number of weeks post session-start.",
+      "caution_deposit": "The refundable caution deposit (see academic_details_parul.json fee structure) is processed and returned separately from the tuition refund, following clearance of library, hostel, and other department dues.",
+      "note": "This section summarizes the refund policy for financial-aid context; full withdrawal process details are documented in admissions_parul_details.json."
+    },
+
+    "scholarships": {
+      "merit_based_scholarship": {
+        "description": "Awarded to students with outstanding academic performance in their qualifying examination (Class 12 for UG, graduation for PG) or in university semester results.",
+        "typical_criteria": "Commonly tiered by percentage/CGPA brackets (e.g. 95%+, 90-94.9%, 85-89.9%), with higher brackets receiving a greater percentage waiver on tuition fee.",
+        "renewal": "Typically renewable each year subject to maintaining a minimum required CGPA/percentage and satisfactory attendance."
+      },
+      "sports_quota_scholarship": {
+        "description": "Available for students with notable district/state/national/international-level sporting achievements, verified through certificates and/or a sports trial.",
+        "benefit": "Partial to full tuition fee waiver depending on the level of achievement, along with sports quota seat consideration described in admissions_parul_details.json."
+      },
+      "defense_wards_scholarship": {
+        "description": "Fee concession for wards (children) of serving or retired Defence/Paramilitary personnel, and in some cases for war widows/dependents, subject to submission of valid service/relationship proof.",
+        "benefit": "Typically a percentage-based tuition fee waiver, varying by category (serving/retired/martyred personnel dependents often receive the highest waiver tier)."
+      },
+      "economically_weaker_section_scholarship": {
+        "description": "Fee concession for students from economically weaker sections (EWS), based on verified family income criteria (commonly an annual family income threshold, e.g. below ₹2.5-8 lakh depending on the scheme).",
+        "benefit": "Partial tuition fee waiver, subject to submission of a valid income certificate issued by a competent government authority."
+      },
+      "minority_scholarship": {
+        "description": "Fee assistance for students belonging to recognized minority communities, often in coordination with central/state government minority scholarship schemes (e.g. Post-Matric Scholarship for Minorities).",
+        "benefit": "Varies based on the specific government scheme; the university typically facilitates application and documentation support rather than funding this scholarship directly."
+      },
+      "state_government_scholarships": {
+        "description": "Students may be eligible for Gujarat state government scholarship schemes (e.g. for SC/ST/OBC/EWS categories, or state merit scholarships), applied for through the state's scholarship portal with university-issued bonafide/fee certificates.",
+        "university_role": "The university's accounts/scholarship cell assists with issuing required certificates and verifying enrollment status for these government-administered schemes."
+      },
+      "general_note": "Scholarships are generally not combinable beyond a specified maximum aggregate waiver percentage; students should confirm current-year scholarship policy and application windows with the accounts/scholarship cell."
+    },
+
+    "education_loan_tie_ups": {
+      "partner_banks_typical": [
+        "State Bank of India (SBI) — Student Loan Scheme",
+        "Bank of Baroda — Baroda Education Loan",
+        "HDFC Bank — Credila Education Loan",
+        "ICICI Bank — Education Loan",
+        "Axis Bank — Education Loan"
+      ],
+      "process": "Students shortlist a partner bank, submit the university-issued fee structure/admission letter along with the bank's required documents (income proof, collateral if applicable, co-applicant details), and the bank processes the loan directly; the university's accounts department assists with providing necessary fee certificates and verification letters.",
+      "note": "Loan approval, interest rate, and collateral requirements are entirely at the discretion of the respective bank/NBFC and are not guaranteed by the university."
+    },
+
+    "sibling_and_family_discount": {
+      "description": "A fee concession may be available when two or more siblings, or a parent and child, are simultaneously enrolled in any program at Parul University.",
+      "typical_benefit": "A percentage discount (commonly in the range of 5-10%) on the tuition fee of the sibling with the lower fee structure, applied from the second enrolled family member onward.",
+      "application_process": "Requires submission of proof of relationship (birth certificate/family record) along with both enrollment IDs to the accounts department at the start of the academic year."
+    },
+
+    "fee_receipt_and_certificate_process": {
+      "fee_receipt": "Automatically generated and available for download from the student ERP portal immediately after successful online payment; DD/bank transfer payments generate a receipt within 3-5 working days of fee reconciliation.",
+      "bonafide_certificate": "Can be requested through the ERP portal or student services office, typically issued within 3-7 working days, commonly needed for scholarship applications, bank loans, or passport/visa purposes.",
+      "fee_structure_certificate": "Official fee structure certificates (for loan or scholarship documentation) can be requested from the accounts department, usually issued within a similar 3-7 working day window."
+    }
+  }
+}

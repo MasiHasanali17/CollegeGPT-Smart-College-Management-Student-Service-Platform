@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0476",
+      "category": "General Student Support",
+      "question": "Where can I find the university academic calendar?",
+      "alternate_questions": [
+        "Academic calendar",
+        "Semester calendar",
+        "University schedule"
+      ],
+      "keywords": ["calendar", "academic"],
+      "answer": "The official academic calendar is available through the university website, ERP, and the concerned academic department.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0477",
+      "category": "General Student Support",
+      "question": "How do I update my emergency contact information?",
+      "alternate_questions": [
+        "Change guardian details",
+        "Emergency contact update",
+        "Update contact information"
+      ],
+      "keywords": ["emergency contact", "profile"],
+      "answer": "Students should update emergency contact details through ERP or by contacting the concerned administrative office, as applicable.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0478",
+      "category": "General Student Support",
+      "question": "Can I request assistance if I face personal difficulties?",
+      "alternate_questions": [
+        "Student support",
+        "Personal counseling",
+        "Need help"
+      ],
+      "keywords": ["student support", "counseling"],
+      "answer": "Yes. Students can approach the university's student support and counseling services for guidance and assistance.",
+      "source": "legal_student_support_services.json"
+    },
+    {
+      "id": "faq_0479",
+      "category": "General Student Support",
+      "question": "How can I submit suggestions to the university?",
+      "alternate_questions": [
+        "Student feedback",
+        "Suggestion box",
+        "Provide feedback"
+      ],
+      "keywords": ["feedback", "suggestion"],
+      "answer": "Students can submit suggestions through the designated university feedback systems or the appropriate administrative office.",
+      "source": "student_governance_representation.json"
+    },
+    {
+      "id": "faq_0480",
+      "category": "General Student Support",
+      "question": "Does the university have a student help desk?",
+      "alternate_questions": [
+        "Help desk",
+        "Student assistance desk",
+        "Support counter"
+      ],
+      "keywords": ["help desk", "support"],
+      "answer": "Yes. The university maintains student help desks to assist with admissions, academics, administration, and student services.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0481",
+      "category": "General Student Support",
+      "question": "How do I know about upcoming university events?",
+      "alternate_questions": [
+        "Campus events",
+        "Upcoming activities",
+        "Event notifications"
+      ],
+      "keywords": ["events", "notifications"],
+      "answer": "Upcoming events are announced through the university website, ERP, official social media channels, notice boards, and email notifications.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0482",
+      "category": "General Student Support",
+      "question": "Can I volunteer for university events?",
+      "alternate_questions": [
+        "Volunteer opportunities",
+        "Event volunteer",
+        "Campus volunteering"
+      ],
+      "keywords": ["volunteer", "events"],
+      "answer": "Yes. Students may volunteer for university events by registering with the organizing department or student activity office.",
+      "source": "events_cultural_calendar.json"
+    },
+    {
+      "id": "faq_0483",
+      "category": "General Student Support",
+      "question": "Where can I find important university forms?",
+      "alternate_questions": [
+        "Download forms",
+        "Student forms",
+        "Application forms"
+      ],
+      "keywords": ["forms", "documents"],
+      "answer": "Official forms are available through ERP, the university website, or the concerned administrative department.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0484",
+      "category": "General Student Support",
+      "question": "Can I contact university offices through email?",
+      "alternate_questions": [
+        "Office email",
+        "University email contact",
+        "Department email"
+      ],
+      "keywords": ["email", "contact"],
+      "answer": "Yes. Students can communicate with university departments using the official contact email addresses published by the university.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0485",
+      "category": "General Student Support",
+      "question": "Does the university provide SMS or email notifications?",
+      "alternate_questions": [
+        "SMS alerts",
+        "Email updates",
+        "Notification service"
+      ],
+      "keywords": ["notification", "SMS", "email"],
+      "answer": "Important academic and administrative updates may be communicated through official SMS, email, ERP notifications, or the university website.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0486",
+      "category": "General Student Support",
+      "question": "Can alumni continue to access university services?",
+      "alternate_questions": [
+        "Alumni services",
+        "Graduate support",
+        "Alumni benefits"
+      ],
+      "keywords": ["alumni", "services"],
+      "answer": "Alumni may continue to access selected university services and alumni engagement programs according to institutional policies.",
+      "source": "alumni_network.json"
+    },
+    {
+      "id": "faq_0487",
+      "category": "General Student Support",
+      "question": "How can I join the university alumni network after graduation?",
+      "alternate_questions": [
+        "Alumni registration",
+        "Graduate alumni",
+        "Join alumni association"
+      ],
+      "keywords": ["alumni", "registration"],
+      "answer": "Graduates can register with the university's alumni network through the designated alumni portal or alumni office.",
+      "source": "alumni_network.json"
+    },
+    {
+      "id": "faq_0488",
+      "category": "General Student Support",
+      "question": "Does the university organize alumni events?",
+      "alternate_questions": [
+        "Alumni meet",
+        "Graduate reunion",
+        "Alumni activities"
+      ],
+      "keywords": ["alumni", "events"],
+      "answer": "Yes. The university regularly organizes alumni interactions, networking events, reunions, and professional engagement activities.",
+      "source": "alumni_network.json"
+    },
+    {
+      "id": "faq_0489",
+      "category": "General Student Support",
+      "question": "Can alumni mentor current students?",
+      "alternate_questions": [
+        "Alumni mentoring",
+        "Graduate mentor",
+        "Student mentorship"
+      ],
+      "keywords": ["alumni", "mentorship"],
+      "answer": "Yes. Alumni may participate in mentoring, career guidance, guest lectures, and networking initiatives for current students.",
+      "source": "alumni_network.json"
+    },
+    {
+      "id": "faq_0490",
+      "category": "General Student Support",
+      "question": "Does the university support startup networking through alumni?",
+      "alternate_questions": [
+        "Alumni entrepreneurs",
+        "Startup mentorship",
+        "Business alumni"
+      ],
+      "keywords": ["startup", "alumni"],
+      "answer": "The alumni network may facilitate entrepreneurship, startup mentoring, and professional networking opportunities for students.",
+      "source": "alumni_network.json"
+    },
+    {
+      "id": "faq_0491",
+      "category": "General Student Support",
+      "question": "Can students participate in university social responsibility activities?",
+      "alternate_questions": [
+        "Community service",
+        "Social work",
+        "NSS activities"
+      ],
+      "keywords": ["community", "social responsibility"],
+      "answer": "Yes. Students are encouraged to participate in community outreach, social responsibility, and volunteer initiatives organized by the university.",
+      "source": "wellness_sustainability.json"
+    },
+    {
+      "id": "faq_0492",
+      "category": "General Student Support",
+      "question": "Does the university organize environmental awareness programs?",
+      "alternate_questions": [
+        "Green campus",
+        "Environmental events",
+        "Sustainability programs"
+      ],
+      "keywords": ["environment", "sustainability"],
+      "answer": "Yes. The university conducts sustainability initiatives, environmental awareness programs, and green campus activities throughout the year.",
+      "source": "wellness_sustainability.json"
+    },
+    {
+      "id": "faq_0493",
+      "category": "General Student Support",
+      "question": "Can students participate in tree plantation drives?",
+      "alternate_questions": [
+        "Tree plantation",
+        "Green initiatives",
+        "Environmental volunteering"
+      ],
+      "keywords": ["tree plantation", "environment"],
+      "answer": "Yes. Students are encouraged to participate in tree plantation and other environmental conservation activities organized by the university.",
+      "source": "wellness_sustainability.json"
+    },
+    {
+      "id": "faq_0494",
+      "category": "General Student Support",
+      "question": "Does the university promote sustainable campus practices?",
+      "alternate_questions": [
+        "Green campus initiatives",
+        "Campus sustainability",
+        "Eco-friendly campus"
+      ],
+      "keywords": ["sustainability", "green campus"],
+      "answer": "Yes. The university promotes environmentally sustainable practices through awareness programs and campus initiatives.",
+      "source": "wellness_sustainability.json"
+    },
+    {
+      "id": "faq_0495",
+      "category": "General Student Support",
+      "question": "Where can I find complete information about university services?",
+      "alternate_questions": [
+        "University information",
+        "Student handbook",
+        "Campus services"
+      ],
+      "keywords": ["information", "services"],
+      "answer": "Students can access complete information through the university website, ERP, official student handbook, and administrative offices.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0496",
+      "category": "General Student Support",
+      "question": "What is the best way to stay updated with university announcements?",
+      "alternate_questions": [
+        "Latest updates",
+        "University notifications",
+        "Official announcements"
+      ],
+      "keywords": ["updates", "announcements"],
+      "answer": "Regularly check the university website, ERP portal, official email, and verified university communication channels for the latest announcements.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0497",
+      "category": "General Student Support",
+      "question": "Can I contact multiple university departments for the same issue?",
+      "alternate_questions": [
+        "Department coordination",
+        "Multiple offices",
+        "Student support offices"
+      ],
+      "keywords": ["department", "support"],
+      "answer": "Students are encouraged to contact the most appropriate department first. If necessary, the matter may be referred to other relevant offices.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0498",
+      "category": "General Student Support",
+      "question": "Does the university encourage student feedback for improving services?",
+      "alternate_questions": [
+        "Feedback system",
+        "Improve university services",
+        "Student suggestions"
+      ],
+      "keywords": ["feedback", "quality"],
+      "answer": "Yes. Student feedback is valued and helps the university improve academic, administrative, and campus services.",
+      "source": "student_governance_representation.json"
+    },
+    {
+      "id": "faq_0499",
+      "category": "General Student Support",
+      "question": "Who should I contact if I am unsure which department handles my request?",
+      "alternate_questions": [
+        "Wrong department",
+        "Need guidance",
+        "Whom should I contact"
+      ],
+      "keywords": ["help", "department", "contact"],
+      "answer": "Students should contact the university help desk or administrative office, which can direct them to the appropriate department.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0500",
+      "category": "General Student Support",
+      "question": "Where should I begin if I have any question about Parul University?",
+      "alternate_questions": [
+        "General university help",
+        "Ask university questions",
+        "Student information"
+      ],
+      "keywords": ["general help", "information", "support"],
+      "answer": "For any university-related query, students should first consult the official university website, ERP portal, or the relevant administrative office. If additional assistance is needed, they can contact the appropriate department or the student help desk.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+/* 1. GLOBAL & NAVBAR FIXES */
+.container {
+    max-width: none;
+    padding: 0;
+}
+
+nav a.navbar-brand, .brand-text {
+    color: hwb(0 91% 8%) !important;
+    font-weight: 800 !important;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(15,23,42,0.7),rgba(15,23,42,0.7)),
+    url("https://image-static.collegedunia.com/public/college_data/images/appImage/1599193361PuCampus.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:clamp(45px,8vw,75px);
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:clamp(18px,3vw,22px);
+    color:#e2e8f0;
+    margin-bottom:40px;
+}
+
+.btn{
+    padding:16px 36px;
+    font-size:18px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+    margin:10px;
+}
+
+.ai-btn{
+    background:#7c3aed;
+    color:white;
+    box-shadow:0 10px 25px rgba(124,58,237,0.4);
+}
+
+.course-btn{
+    background:white;
+    color:#1e293b;
+}
+
+.ai-btn:hover{
+    transform:translateY(-3px);
+    background:#6d28d9;
+}
+
+.course-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* HUB SECTION */
+
+.hub-section{
+    padding:100px 10%;
+    text-align:center;
+    background:white;
+}
+
+.section-title{
+    font-size:clamp(32px,5vw,42px);
+    font-weight:800;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+.section-subtitle{
+    color:#475569;
+    font-size:20px;
+    max-width:850px;
+    margin:0 auto 60px;
+}
+
+/* STATS GRID */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.stat-card{
+    background:white;
+    padding:40px 20px;
+    border-radius:20px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.stat-card h2{
+    font-size:48px;
+    color:#7c3aed;
+    font-weight:800;
+}
+
+.stat-card p{
+    color:#64748b;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:700;
+}
+
+/* FEATURE CARDS */
+
+.feature-section{
+    padding:90px 10%;
+    background:#f8fafc;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:30px;
+}
+
+.card-content h3{
+    font-size:22px;
+    margin-bottom:12px;
+    color:#1e293b;
+}
+
+.card-content p{
+    color:#475569;
+}
+
+/* PLACEMENT */
+
+.placement-container{
+    padding:90px 10%;
+}
+
+.placement-dark{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    border-radius:40px;
+    padding:80px 40px;
+    text-align:center;
+}
+
+.p-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:50px;
+    margin-top:50px;
+}
+
+.p-item h3{
+    font-size:48px;
+    color:#38bdf8;
+    font-weight:800;
+}
+
+.p-item p{
+    color:#cbd5f5;
+}
+
+/* FAQ */
+
+.faq-section{
+    padding:100px 10%;
+    background:white;
+}
+
+.faq-container{
+    max-width:850px;
+    margin:auto;
+}
+
+details{
+    background:#f8fafc;
+    padding:22px;
+    border-radius:16px;
+    margin-bottom:15px;
+    border:1px solid #e2e8f0;
+}
+
+details[open]{
+    border-color:#7c3aed;
+}
+
+summary{
+    font-weight:700;
+    font-size:19px;
+    cursor:pointer;
+}
+
+/* FINAL CTA */
+
+.final-cta{
+    background:linear-gradient(135deg,#7c3aed,#4f46e5);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.final-cta h2{
+    font-size:42px;
+    font-weight:800;
+}
+
+.final-cta p{
+    color:#ddd6fe;
+    font-size:20px;
+}
+
+/* FORCE COMPARE TABLE VISIBILITY */
+
+#compare-result{
+margin-top:40px;
+}
+
+.compare-table{
+background:white !important;
+color:#1e293b !important;
+}
+
+.compare-table th,
+.compare-table td{
+color:#1e293b !important;
+}

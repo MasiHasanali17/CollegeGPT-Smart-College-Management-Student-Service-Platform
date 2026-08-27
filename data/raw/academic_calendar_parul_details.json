@@ -1,0 +1,55 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file deliberately avoids stating exact calendar dates for semester start/end, holidays, and vacations, since these change every academic year and stating a fake precise date would be more misleading than describing the realistic month-level pattern (consistent with how admissions_parul_details.json already handles 'important_dates_pattern'). Cross-references the semester structure and exam months already established in academic_details_parul.json rather than restating them differently. None of this should be treated as the confirmed current-year calendar — students should check the official academic calendar published each year via the ERP portal.",
+    "data_type": "generated_for_project"
+  },
+
+  "academic_calendar": {
+
+    "semester_start_and_end_dates": {
+      "cross_reference": "The semester structure itself (Odd Semester: July-December, Even Semester: January-June) is already documented in academic_details_parul.json's 'general_academic_policies.semester_and_credit_system'.",
+      "typical_pattern": {
+        "odd_semester": "Typically begins in the last week of July or first week of August, and runs through classes until late November/early December, followed by the exam period.",
+        "even_semester": "Typically begins in the first or second week of January, and runs through classes until March/April, followed by the exam period."
+      },
+      "disclaimer": "Exact start/end dates for the current academic year are published on the official academic calendar via the student ERP portal and should be treated as authoritative over this general pattern."
+    },
+
+    "holiday_list_and_festival_breaks": {
+      "national_holidays": [
+        "Independence Day (August 15)",
+        "Gandhi Jayanti (October 2)",
+        "Republic Day (January 26)"
+      ],
+      "regional_and_religious_festival_breaks": [
+        "Navratri — a short break or reduced-schedule period is common given Gujarat's strong Navratri culture (typically September/October)",
+        "Diwali break — typically a 1-2 week break around the festival (October/November), often coinciding with the tail end of odd-semester classes before the exam period",
+        "Uttarayan/Makar Sankranti (January 14) — significant in Gujarat",
+        "Holi (typically March)"
+      ],
+      "disclaimer": "Exact dates shift each year based on the lunar/festival calendar; the current year's holiday list is published alongside the official academic calendar."
+    },
+
+    "summer_and_winter_vacation_schedule": {
+      "summer_vacation": "The main extended break falls between the end of the even semester and the start of the next odd semester, typically spanning parts of May, June, and into July — this is also the period referenced for summer internships in internships_career_development_parul_details.json.",
+      "winter_break": "A shorter winter break typically occurs around the Diwali festival period and/or between the end of odd-semester classes and the start of exams, rather than a separate extended winter vacation block."
+    },
+
+    "exam_period_blocks": {
+      "note": "This describes the CALENDAR BLOCK during which exams occur, distinct from the exam pattern/weightage policy already documented in academic_details_parul.json's 'exam_pattern'.",
+      "odd_semester_exam_block": "Typically a 2-3 week block in November-December, following the exam months already documented in academic_details_parul.json.",
+      "even_semester_exam_block": "Typically a 2-3 week block in April-May.",
+      "backlog_exam_block": "A separate shorter exam block for backlog/supplementary exams occurs a few weeks after each regular exam period, consistent with the backlog policy timing already documented."
+    },
+
+    "orientation_week_schedule": {
+      "timing": "Orientation typically takes place in the first week of the odd semester (late July/early August), coinciding with or shortly before the Freshers Fest event already documented in events_fests_cultural_calendar_parul_details.json.",
+      "typical_structure": "A formal academic orientation component (faculty introductions, campus tour, ERP/ID card setup, overview of clubs and support services — already described in events_fests_cultural_calendar_parul_details.json) is generally held during the first few days, often followed by the more celebratory Freshers Fest welcome later in the same window."
+    }
+  }
+}

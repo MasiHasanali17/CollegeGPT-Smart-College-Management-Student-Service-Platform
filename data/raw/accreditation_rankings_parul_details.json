@@ -1,0 +1,54 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file consolidates real accreditation and ranking data already established earlier in this project (from extrainfo.json, real data provided by the project owner), organized into the specific structure requested. Professional council mappings to faculties are inferred logically (e.g. PCI governs Pharmacy) based on standard Indian regulatory practice, not independently re-verified here. This is one of the most factually solid files in the knowledge base, since almost all of it traces back to real, previously-provided data rather than fresh generation.",
+    "data_types": {
+      "verified_from_prior_data": "Real accreditation/ranking data provided directly by the project owner earlier in this project"
+    }
+  },
+
+  "accreditation_and_rankings": {
+
+    "grades_and_rankings": {
+      "data_type": "verified_from_prior_data",
+      "naac_grade": "NAAC Grade A++ (National Assessment and Accreditation Council) — the highest institutional accreditation grade band in the Indian higher education system.",
+      "nirf_ranking": "Featured in NIRF's Top 50 Innovations Ranking (National Institutional Ranking Framework, a Government of India ranking body).",
+      "qs_i_gauge_rating": "QS I-GAUGE Diamond Rating.",
+      "ministry_of_education_rating": "Rated 4 out of 4 stars by India's Ministry of Education."
+    },
+
+    "ugc_aicte_and_professional_council_recognitions": {
+      "data_type": "verified_from_prior_data",
+      "general_regulatory_bodies": [
+        "University Grants Commission (UGC)",
+        "Ministry of Education",
+        "Association of Indian Universities (AIU)",
+        "National Institutional Ranking Framework (NIRF)",
+        "Gujarat State Institutional Rating Framework (GSIRF)",
+        "All India Council for Technical Education (AICTE)"
+      ],
+      "profession_specific_councils": {
+        "national_medical_commission_nmc": "Governs the Faculty of Medicine (MBBS, MD, MS programs already documented in academic_details_parul.json).",
+        "pharmacy_council_of_india_pci": "Governs the Faculty of Pharmacy (D.Pharm, B.Pharm, Pharm.D, M.Pharm programs).",
+        "bar_council_of_india_bci": "Governs the Faculty of Law (BA LL.B, BBA LL.B, LL.B, LL.M programs), consistent with the BCI internship norms already documented in internships_career_development_parul_details.json.",
+        "council_of_architecture_coa": "Governs the Faculty of Architecture and Planning (B.Arch and related programs).",
+        "national_commission_for_indian_system_of_medicine_ncism": "Governs the Faculty of Ayurveda (BAMS, MD/MS Ayurveda programs).",
+        "national_commission_for_homoeopathy_nch": "Governs the Faculty of Homeopathy (BHMS, MD Homeopathy programs).",
+        "institute_of_town_planners_india_itpi": "Relevant to the Bachelor of Planning program under the Faculty of Architecture and Planning.",
+        "indian_nursing_council_inc": "Governs the Faculty of Nursing (GNM, ANM, B.Sc. Nursing, M.Sc. Nursing programs)."
+      },
+      "dsir_recognition": "Also recognized by India's Department of Scientific and Industrial Research (DSIR), already documented in research_innovation_parul_details.json."
+    },
+
+    "international_accreditations_and_partnerships": {
+      "data_type": "verified_from_prior_data",
+      "commonwealth_universities": "Recognized by the Association of Commonwealth Universities.",
+      "springer_nature_partnership": "A license/partnership agreement with the academic publisher Springer Nature, already documented in research_innovation_parul_details.json, supporting international research visibility and academic collaboration.",
+      "note": "This reflects the international accreditation/partnership facts already confirmed in this project; broader exchange program partnerships are addressed separately (and more cautiously, given limited confirmation) in international_students_global_programs_parul_details.json."
+    }
+  }
+}

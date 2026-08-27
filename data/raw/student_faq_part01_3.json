@@ -1,0 +1,174 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0021",
+      "category": "Admissions",
+      "question": "Can I cancel my admission after confirmation?",
+      "alternate_questions": [
+        "How do I cancel my admission?",
+        "Can I withdraw my admission?",
+        "Admission cancellation process"
+      ],
+      "keywords": [
+        "cancel admission",
+        "withdraw",
+        "refund"
+      ],
+      "answer": "Students who wish to cancel their admission should contact the admission office and complete the prescribed cancellation formalities. Any refund, if applicable, will be processed according to the university's refund policy.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0022",
+      "category": "Admissions",
+      "question": "How are seats allocated for admission?",
+      "alternate_questions": [
+        "Seat allocation process",
+        "How do I get a seat?",
+        "Admission seat availability"
+      ],
+      "keywords": [
+        "seat",
+        "allocation",
+        "availability"
+      ],
+      "answer": "Seats are allotted based on eligibility, availability, and completion of the admission process as per university guidelines.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0023",
+      "category": "Admissions",
+      "question": "Can I check whether seats are still available in my preferred course?",
+      "alternate_questions": [
+        "Course seat availability",
+        "Available seats",
+        "Is admission still open?"
+      ],
+      "keywords": [
+        "seat availability",
+        "course",
+        "admission"
+      ],
+      "answer": "Yes. The admission office can provide the latest information regarding seat availability for each program.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0024",
+      "category": "Admissions",
+      "question": "Is admission based on merit?",
+      "alternate_questions": [
+        "Merit-based admission",
+        "Admission through merit",
+        "Selection process"
+      ],
+      "keywords": [
+        "merit",
+        "selection",
+        "eligibility"
+      ],
+      "answer": "Admission is granted according to the eligibility criteria and admission process applicable to the selected program.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0025",
+      "category": "Admissions",
+      "question": "Does Parul University conduct counseling before admission?",
+      "alternate_questions": [
+        "Admission counseling",
+        "Course counseling",
+        "Guidance before admission"
+      ],
+      "keywords": [
+        "counseling",
+        "guidance",
+        "admission"
+      ],
+      "answer": "Yes. Admission counselors guide students regarding courses, eligibility, documentation, fees, and career opportunities before admission.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0026",
+      "category": "Admissions",
+      "question": "Do I need to appear for an entrance examination?",
+      "alternate_questions": [
+        "Entrance exam required?",
+        "Is there any entrance test?",
+        "Admission entrance exam"
+      ],
+      "keywords": [
+        "entrance exam",
+        "test",
+        "admission"
+      ],
+      "answer": "The requirement for an entrance examination depends on the program you are applying for. Please check the eligibility criteria for your chosen course.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0027",
+      "category": "Admissions",
+      "question": "Is lateral entry admission available?",
+      "alternate_questions": [
+        "Direct second-year admission",
+        "Lateral entry process",
+        "Can diploma students apply?"
+      ],
+      "keywords": [
+        "lateral entry",
+        "diploma",
+        "admission"
+      ],
+      "answer": "Lateral entry may be available for eligible programs. Applicants should satisfy the prescribed eligibility requirements for lateral admission.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0028",
+      "category": "Admissions",
+      "question": "Can I transfer from another university to Parul University?",
+      "alternate_questions": [
+        "Migration admission",
+        "University transfer",
+        "Transfer student admission"
+      ],
+      "keywords": [
+        "migration",
+        "transfer",
+        "admission"
+      ],
+      "answer": "Transfer or migration requests are considered according to university regulations and the eligibility requirements of the respective program.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0029",
+      "category": "Admissions",
+      "question": "Can students with a gap year apply for admission?",
+      "alternate_questions": [
+        "Gap year admission",
+        "Study gap admission",
+        "Educational gap"
+      ],
+      "keywords": [
+        "gap year",
+        "study gap",
+        "eligibility"
+      ],
+      "answer": "Yes. Students with an academic gap may apply, provided they satisfy the eligibility criteria and submit any required supporting documents.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0030",
+      "category": "Admissions",
+      "question": "When should I apply for admission?",
+      "alternate_questions": [
+        "Admission deadline",
+        "Last date for admission",
+        "When does admission start?"
+      ],
+      "keywords": [
+        "deadline",
+        "last date",
+        "admission schedule"
+      ],
+      "answer": "Students are encouraged to apply as early as possible during the admission cycle. Admission schedules and important dates are announced through the university's official admission notifications.",
+      "source": "academic_calendar.json"
+    }
+  ]
+}

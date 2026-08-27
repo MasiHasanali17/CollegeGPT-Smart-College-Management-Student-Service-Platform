@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+:root {
+    --brand-purple: #7c3aed;
+    --brand-dark: #0f172a;
+    --text-slate: #64748b;
+}
+
+.sch-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--brand-dark);
+}
+
+.sch-hero {
+    background: var(--brand-dark);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    color: white;
+    padding: 90px 20px 70px;
+    text-align: center;
+}
+
+.sch-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.sch-hero p {
+    color: #cbd5f5;
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.sch-wrap {
+    max-width: 720px;
+    margin: -50px auto 80px;
+    padding: 0 20px;
+}
+
+.sch-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+    padding: 40px;
+}
+
+.sch-card label {
+    display: block;
+    font-weight: 700;
+    font-size: 13.5px;
+    margin: 18px 0 6px;
+}
+
+.sch-card label:first-of-type { margin-top: 0; }
+
+.sch-card input, .sch-card select {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    font-size: 15px;
+    background: #f8fafc;
+}
+
+.sch-checkbox-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.sch-checkbox-row label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 13.5px;
+    margin: 0;
+}
+
+.sch-checkbox-row input[type="checkbox"] {
+    width: auto;
+}
+
+.sch-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: var(--brand-purple);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 26px;
+}
+
+.sch-btn:hover { background: #6d28d9; }
+
+.sch-results {
+    margin-top: 30px;
+    display: none;
+}
+
+.sch-results.show { display: block; }
+
+.sch-match {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+}
+
+.sch-match h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #166534;
+}
+
+.sch-match p {
+    margin: 0 0 6px;
+    font-size: 13.5px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.sch-match .label {
+    font-weight: 700;
+    color: #166534;
+}
+
+.sch-none {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-slate);
+    background: #f8fafc;
+    border-radius: 14px;
+}
+
+.sch-general-note {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: #f5f3ff;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #5b21b6;
+    line-height: 1.5;
+}
+</style>
+
+<div class="sch-page">
+
+    <div class="sch-hero">
+        <h1>Scholarship Checker</h1>
+        <p>Answer a few questions to see which university scholarships you should look into.</p>
+    </div>
+
+    <div class="sch-wrap">
+        <div class="sch-card">
+
+            <label for="percentage">Your percentage / CGPA (out of 100)</label>
+            <input type="number" id="percentage" placeholder="e.g. 92" min="0" max="100" step="0.1">
+
+            <label for="category">Category</label>
+            <select id="category">
+                <option value="general">General</option>
+                <option value="ews">EWS</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="obc">OBC</option>
+                <option value="minority">Minority Community</option>
+            </select>
+
+            <label for="income">Annual family income (in ₹ lakh) — optional</label>
+            <input type="number" id="income" placeholder="e.g. 5" min="0" step="0.1">
+
+            <div class="sch-checkbox-row">
+                <label><input type="checkbox" id="sportsAchiever"> I have a notable sports achievement</label>
+                <label><input type="checkbox" id="defenseWard"> I'm a ward of Defence/Paramilitary personnel</label>
+            </div>
+
+            <button class="sch-btn" onclick="checkScholarships()">Check Scholarships</button>
+
+            <div class="sch-results" id="schResults"></div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+async function checkScholarships() {
+    const payload = {
+        percentage: document.getElementById('percentage').value || null,
+        category: document.getElementById('category').value,
+        income_lakh: document.getElementById('income').value || null,
+        sports_achiever: document.getElementById('sportsAchiever').checked,
+        defense_ward: document.getElementById('defenseWard').checked
+    };
+
+    const box = document.getElementById('schResults');
+    box.classList.remove('show');
+
+    try {
+        const res = await fetch('/api/scholarship-check', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+
+        let html = '';
+
+        if (data.matches.length === 0) {
+            html = '<div class="sch-none">Based on what you entered, none of the current scholarship categories clearly match — but eligibility can depend on details we don\\'t ask here. Ask <a href="/chatbot">Campus AI</a> or contact the accounts/scholarship cell directly.</div>';
+        } else {
+            data.matches.forEach(function (m) {
+                html += `
+                    <div class="sch-match">
+                        <h3>✓ ${m.title}${m.your_tier ? ' — ' + m.your_tier : ''}</h3>
+                        <p>${m.description}</p>
+                        <p><span class="label">Typical benefit:</span> ${m.criteria}</p>
+                        ${m.renewal ? `<p><span class="label">Renewal:</span> ${m.renewal}</p>` : ''}
+                    </div>
+                `;
+            });
+        }
+
+        html += `<div class="sch-general-note">${data.general_note}</div>`;
+
+        box.innerHTML = html;
+        box.classList.add('show');
+
+    } catch (err) {
+        box.innerHTML = '<div class="sch-none">Something went wrong. Please try again.</div>';
+        box.classList.add('show');
+    }
+}
+</script>
+
+{% endblock %}

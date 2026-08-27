@@ -1,0 +1,311 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+/* PAGE */
+
+.compare-page{
+padding:90px 8%;
+background:#f8fafc;
+min-height:100vh;
+font-family:'Inter',system-ui,-apple-system,sans-serif;
+}
+
+
+/* HEADER */
+
+.compare-header{
+text-align:center;
+margin-bottom:60px;
+}
+
+.compare-header h1{
+font-size:clamp(36px,6vw,56px);
+font-weight:900;
+color:#0f172a;
+margin-bottom:10px;
+}
+
+.compare-header p{
+font-size:20px;
+color:#64748b;
+max-width:700px;
+margin:auto;
+}
+
+
+/* SELECT BOX AREA */
+
+.compare-select{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-bottom:50px;
+}
+
+.compare-select select{
+padding:14px 18px;
+border-radius:12px;
+border:1px solid #e2e8f0;
+font-size:16px;
+min-width:220px;
+font-weight:600;
+}
+
+
+/* BUTTON */
+
+.compare-btn{
+background:#7c3aed;
+color:white;
+border:none;
+padding:14px 30px;
+border-radius:12px;
+font-weight:700;
+cursor:pointer;
+transition:0.3s;
+}
+
+.compare-btn:hover{
+background:#6d28d9;
+}
+
+
+/* RESULT GRID */
+
+.result-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:40px;
+}
+
+.course-card{
+background:white;
+border-radius:25px;
+padding:35px;
+border:1px solid #e2e8f0;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.course-card h3{
+font-size:26px;
+font-weight:800;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+.course-detail{
+margin-bottom:12px;
+font-weight:600;
+color:#475569;
+}
+
+.course-detail span{
+color:#7c3aed;
+font-weight:800;
+}
+
+
+/* COMPARISON TABLE */
+
+.compare-table{
+margin-top:50px;
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.compare-table th{
+background:#f1f5f9;
+padding:20px;
+text-align:left;
+font-size:14px;
+}
+
+.compare-table td{
+padding:18px;
+border-bottom:1px solid #f1f5f9;
+font-weight:600;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.result-grid{
+grid-template-columns:1fr;
+}
+
+.compare-table-wrap{
+overflow-x:auto;
+}
+
+.compare-table{
+min-width:520px;
+}
+
+}
+
+</style>
+
+<div class="compare-page">
+
+<div class="compare-header">
+
+<h1>Compare Courses</h1>
+
+<p>
+Select two courses and compare fees, duration, faculty,
+and specializations.
+</p>
+
+</div>
+
+<div class="compare-select">
+
+<select id="course1">
+<option value="">Select Course 1</option>
+{% for c in courses %}
+<option value="{{ c }}">{{ c }}</option>
+{% endfor %}
+</select>
+
+<select id="course2">
+<option value="">Select Course 2</option>
+{% for c in courses %}
+<option value="{{ c }}">{{ c }}</option>
+{% endfor %}
+</select>
+
+<button class="compare-btn" onclick="compareCourses()">
+Compare
+</button>
+
+</div>
+
+<div id="compare-result"></div>
+
+</div>
+
+<script>
+
+async function fetchCourseDetails(name) {
+    const res = await fetch(`/api/course-details?course=${encodeURIComponent(name)}`);
+    return res.json();
+}
+
+async function compareCourses(){
+
+const c1 = document.getElementById("course1").value
+const c2 = document.getElementById("course2").value
+
+if(!c1 || !c2){
+    alert("Please select two courses")
+    return
+}
+
+if (c1 === c2) {
+    alert("Please select two different courses")
+    return
+}
+
+const resultBox = document.getElementById("compare-result");
+resultBox.innerHTML = '<p style="text-align:center;color:#94a3b8;margin-top:30px;">Loading real course data...</p>';
+
+const [d1, d2] = await Promise.all([fetchCourseDetails(c1), fetchCourseDetails(c2)]);
+
+if (!d1.ok || !d2.ok) {
+    resultBox.innerHTML = '<p style="text-align:center;color:#b91c1c;margin-top:30px;">Could not load one of the selected courses. Please try again.</p>';
+    return;
+}
+
+function specText(d) {
+    if (!d.specializations || d.specializations.length === 0) return "—";
+    let text = d.specializations.join(", ");
+    if (d.specializations_more > 0) text += ` +${d.specializations_more} more`;
+    return text;
+}
+
+resultBox.innerHTML = `
+
+<div class="result-grid">
+
+<div class="course-card">
+<h3>${d1.course_name}</h3>
+<div class="course-detail">Duration: <span>${d1.duration}</span></div>
+<div class="course-detail">Fee/year: <span>${d1.fee_text}</span></div>
+<div class="course-detail">Faculty: <span>${d1.faculty}</span></div>
+<div class="course-detail">Type: <span>${d1.program_type}</span></div>
+</div>
+
+<div class="course-card">
+<h3>${d2.course_name}</h3>
+<div class="course-detail">Duration: <span>${d2.duration}</span></div>
+<div class="course-detail">Fee/year: <span>${d2.fee_text}</span></div>
+<div class="course-detail">Faculty: <span>${d2.faculty}</span></div>
+<div class="course-detail">Type: <span>${d2.program_type}</span></div>
+</div>
+
+</div>
+
+<div class="compare-table-wrap">
+<table class="compare-table">
+
+<tr>
+<th>Feature</th>
+<th>${d1.course_name}</th>
+<th>${d2.course_name}</th>
+</tr>
+
+<tr>
+<td>Duration</td>
+<td>${d1.duration}</td>
+<td>${d2.duration}</td>
+</tr>
+
+<tr>
+<td>Tuition Fee (per year)</td>
+<td>${d1.fee_text}</td>
+<td>${d2.fee_text}</td>
+</tr>
+
+<tr>
+<td>Faculty / Department</td>
+<td>${d1.faculty}</td>
+<td>${d2.faculty}</td>
+</tr>
+
+<tr>
+<td>Program Type</td>
+<td>${d1.program_type}</td>
+<td>${d2.program_type}</td>
+</tr>
+
+<tr>
+<td>Specializations</td>
+<td>${specText(d1)}</td>
+<td>${specText(d2)}</td>
+</tr>
+
+</table>
+</div>
+
+<p style="text-align:center;color:#94a3b8;font-size:13px;margin-top:20px;">
+Figures shown are pulled live from Parul University's official course data. For placement/career guidance specific to either course, ask <a href="/chatbot" style="color:#7c3aed;font-weight:700;">Campus AI</a>.
+</p>
+
+`
+
+}
+
+</script>
+
+{% endblock %}

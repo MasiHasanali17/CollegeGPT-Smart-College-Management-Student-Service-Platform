@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+.tour-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+}
+
+.tour-hero {
+    background: #0f172a;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    color: white;
+    padding: 90px 20px 60px;
+    text-align: center;
+}
+
+.tour-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.tour-hero p {
+    color: #cbd5f5;
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.tour-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+}
+
+.video-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+    margin-bottom: 40px;
+}
+
+.video-frame-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    background: #000;
+}
+
+.video-frame-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-caption {
+    padding: 18px 22px;
+    background: #f8fafc;
+}
+
+.video-caption h3 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.video-caption p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13.5px;
+}
+
+.tour-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.tour-cta a {
+    display: inline-block;
+    background: #7c3aed;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+</style>
+
+<div class="tour-page">
+
+    <div class="tour-hero">
+        <h1>Campus Tour</h1>
+        <p>Take a walkthrough of Parul University's campus — classrooms, hostels, sports facilities, and more.</p>
+    </div>
+
+    <div class="tour-wrap">
+
+        <div class="video-card">
+            <div class="video-frame-wrap">
+                <iframe src="https://www.youtube.com/embed/CoK-vRyucMU" title="Parul University Campus Tour" allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+                <h3>A Virtual Journey Through Parul University</h3>
+                <p>Official campus walkthrough covering academic blocks and campus grounds.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-frame-wrap">
+                <iframe src="https://www.youtube.com/embed/xtrFSgFZIiE" title="Virtual Campus Tour | Parul University" allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+                <h3>Virtual Campus Tour</h3>
+                <p>A closer look at student life, hostels, and facilities across campus.</p>
+            </div>
+        </div>
+
+        <div class="tour-cta">
+            <a href="/campus-life">See Campus Life Photos →</a>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

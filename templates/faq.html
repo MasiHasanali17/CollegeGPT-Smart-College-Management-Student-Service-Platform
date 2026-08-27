@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+/* FAQ PAGE */
+
+.faq-page{
+background:#f8fafc;
+padding:90px 8%;
+min-height:100vh;
+font-family:'Inter',system-ui,-apple-system,sans-serif;
+}
+
+
+/* HEADER */
+
+.faq-header{
+text-align:center;
+margin-bottom:70px;
+}
+
+.faq-header h1{
+font-size:clamp(36px,6vw,60px);
+font-weight:900;
+color:#0f172a;
+margin-bottom:15px;
+}
+
+.faq-header p{
+font-size:20px;
+color:#64748b;
+max-width:750px;
+margin:auto;
+}
+
+
+/* FAQ CONTAINER */
+
+.faq-container{
+max-width:900px;
+margin:auto;
+}
+
+
+/* FAQ ITEM */
+
+.faq-item{
+background:white;
+border-radius:20px;
+margin-bottom:18px;
+border:1px solid #e2e8f0;
+overflow:hidden;
+transition:0.3s;
+}
+
+.faq-item:hover{
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+
+/* QUESTION */
+
+.faq-question{
+padding:22px 25px;
+cursor:pointer;
+font-size:18px;
+font-weight:700;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#0f172a;
+}
+
+.faq-question span{
+font-size:22px;
+color:#7c3aed;
+}
+
+
+/* ANSWER */
+
+.faq-answer{
+padding:0 25px;
+max-height:0;
+overflow:hidden;
+transition:0.3s ease;
+color:#64748b;
+line-height:1.7;
+font-size:16px;
+}
+
+
+/* OPEN STATE */
+
+.faq-item.active .faq-answer{
+max-height:200px;
+padding:0 25px 20px 25px;
+}
+
+.faq-item.active span{
+transform:rotate(45deg);
+}
+
+
+/* CTA */
+
+.faq-cta{
+margin-top:80px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:80px 20px;
+border-radius:50px;
+}
+
+.faq-cta h2{
+font-size:36px;
+font-weight:900;
+margin-bottom:15px;
+}
+
+.faq-cta p{
+color:#94a3b8;
+margin-bottom:30px;
+font-size:18px;
+}
+
+.cta-btn{
+background:#7c3aed;
+color:white;
+padding:16px 40px;
+border-radius:40px;
+font-weight:700;
+text-decoration:none;
+display:inline-block;
+transition:0.3s;
+}
+
+.cta-btn:hover{
+background:#6d28d9;
+transform:translateY(-3px);
+}
+
+</style>
+
+<div class="faq-page">
+
+<div class="faq-header">
+
+<h1>Frequently Asked Questions</h1>
+
+<p>
+Find answers to the most common questions about admissions,
+courses, hostels, and placements at Parul University.
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="faq-question">
+What courses are available at Parul University?
+<span>+</span>
+</div>
+<div class="faq-answer">
+Parul University offers more than 250+ programs including
+Engineering, Management, Computer Applications, Pharmacy,
+Design, Medical Sciences, and many more.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+How is the placement at Parul University?
+<span>+</span>
+</div>
+<div class="faq-answer">
+Parul University has strong placement support with more than
+2200+ recruiters. Top companies like TCS, Infosys, Capgemini,
+and Amazon regularly recruit students from the campus.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Are hostel facilities available?
+<span>+</span>
+</div>
+<div class="faq-answer">
+Yes, the university provides modern hostel facilities with
+separate accommodations for boys and girls along with mess,
+security, and recreational areas.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Is there any entrance exam for admission?
+<span>+</span>
+</div>
+<div class="faq-answer">
+Some programs require national-level exams like JEE or NEET,
+while others offer admission based on merit or personal
+interviews depending on the course.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Can international students apply?
+<span>+</span>
+</div>
+<div class="faq-answer">
+Yes, Parul University hosts students from more than 60+
+countries and provides dedicated international student
+support services.
+</div>
+</div>
+
+</div>
+
+<div class="faq-cta">
+
+<h2>Still Have Questions?</h2>
+
+<p>
+Ask our Campus Genius AI assistant and get instant answers.
+</p>
+
+<a href="/chatbot" class="cta-btn">
+Ask Campus AI 🤖
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+document.querySelectorAll(".faq-question").forEach(q => {
+
+q.addEventListener("click", () => {
+
+const item = q.parentElement
+
+item.classList.toggle("active")
+
+})
+
+})
+
+</script>
+
+{% endblock %}

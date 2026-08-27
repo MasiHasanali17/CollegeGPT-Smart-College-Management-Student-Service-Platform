@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<div class="portal-page">
+
+    <div class="portal-hero">
+        <h1>Notices</h1>
+        <p>Official announcements and circulars from the university.</p>
+    </div>
+
+
+    <div class="portal-wrap">
+
+        <div class="pill-row">
+            {% for cat in ['All', 'General', 'Academic', 'Hostel', 'Exam', 'Event'] %}
+            <a class="pill {{ 'active' if active_category == cat else '' }}"
+               href="{{ url_for('portal_notices', category=cat) }}">{{ cat }}</a>
+            {% endfor %}
+        </div>
+
+        {% if notices %}
+        <div class="portal-grid">
+            {% for n in notices %}
+            <div class="portal-card">
+                <div class="meta">{{ n.category }} • {{ n.created_at }}</div>
+                <h3>{{ n.title }}</h3>
+                <p class="desc">{{ n.description }}</p>
+                {% if n.target_audience and n.target_audience != 'All Students' %}
+                <p style="font-size:12px;color:#7c3aed;font-weight:700;margin-bottom:6px;">👥 {{ n.target_audience }}</p>
+                {% endif %}
+                {% if n.expiry_date %}
+                <p style="font-size:11.5px;color:#94a3b8;margin-bottom:6px;">Valid until {{ n.expiry_date }}</p>
+                {% endif %}
+                {% if n.attachment_filename %}
+                <a href="/static/uploads/notices/{{ n.attachment_filename }}" target="_blank" class="btn-secondary" style="font-size:12px;padding:8px 14px;">📎 View Attachment</a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">No notices in this category yet.</div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

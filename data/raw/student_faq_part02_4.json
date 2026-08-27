@@ -1,0 +1,265 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0081",
+      "category": "Scholarships",
+      "question": "Does Parul University offer merit-based scholarships?",
+      "alternate_questions": [
+        "Merit scholarship",
+        "Scholarship for toppers",
+        "Academic merit scholarship"
+      ],
+      "keywords": ["merit", "scholarship", "academic"],
+      "answer": "Eligible students may receive merit-based scholarships according to the university's scholarship policy and academic performance criteria.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0082",
+      "category": "Scholarships",
+      "question": "Are sports scholarships available?",
+      "alternate_questions": [
+        "Sports quota scholarship",
+        "Scholarship for athletes",
+        "Sports financial support"
+      ],
+      "keywords": ["sports", "scholarship", "athlete"],
+      "answer": "Scholarships for sports students may be available under applicable university policies. Students should contact the admission or scholarship office for eligibility details.",
+      "source": "sports_recreation.json"
+    },
+    {
+      "id": "faq_0083",
+      "category": "Scholarships",
+      "question": "Can I apply for a government scholarship while studying at Parul University?",
+      "alternate_questions": [
+        "Government scholarship",
+        "State scholarship",
+        "Central scholarship"
+      ],
+      "keywords": ["government", "scholarship", "financial aid"],
+      "answer": "Eligible students may apply for government scholarship schemes according to the guidelines issued by the respective authorities.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0084",
+      "category": "Scholarships",
+      "question": "Can my scholarship be renewed every year?",
+      "alternate_questions": [
+        "Scholarship renewal",
+        "Renew merit scholarship",
+        "Continue scholarship"
+      ],
+      "keywords": ["renewal", "scholarship"],
+      "answer": "Scholarship renewal depends on fulfilling the continuation criteria specified under the respective scholarship scheme.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0085",
+      "category": "Scholarships",
+      "question": "Can a scholarship be cancelled?",
+      "alternate_questions": [
+        "Scholarship cancellation",
+        "Lose scholarship",
+        "Scholarship discontinued"
+      ],
+      "keywords": ["cancel", "scholarship"],
+      "answer": "Yes. Scholarships may be withdrawn if the required eligibility conditions or continuation requirements are not met.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0086",
+      "category": "Scholarships",
+      "question": "Can international students apply for scholarships?",
+      "alternate_questions": [
+        "Scholarship for international students",
+        "Foreign student scholarship",
+        "International financial aid"
+      ],
+      "keywords": ["international", "scholarship"],
+      "answer": "Scholarship availability for international students depends on the applicable scholarship schemes and eligibility requirements.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0087",
+      "category": "Financial Aid",
+      "question": "Does the university help students obtain education loans?",
+      "alternate_questions": [
+        "Education loan assistance",
+        "Loan support",
+        "Bank loan help"
+      ],
+      "keywords": ["loan", "education", "bank"],
+      "answer": "The university assists eligible students by providing the admission-related documents commonly required by banks for education loan processing.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0088",
+      "category": "Financial Aid",
+      "question": "Which documents are usually required for an education loan?",
+      "alternate_questions": [
+        "Loan documents",
+        "Education loan paperwork",
+        "Documents for bank loan"
+      ],
+      "keywords": ["loan", "documents", "bank"],
+      "answer": "Banks may require admission confirmation, fee details, identity proof, academic records, and other documents as per their lending policies.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0089",
+      "category": "Accounts",
+      "question": "Can I obtain a fee certificate from the university?",
+      "alternate_questions": [
+        "Fee certificate",
+        "Tuition fee certificate",
+        "Payment certificate"
+      ],
+      "keywords": ["certificate", "fees", "accounts"],
+      "answer": "Yes. Students may request a fee certificate from the appropriate university office by following the prescribed procedure.",
+      "source": "degree_certificate_services.json"
+    },
+    {
+      "id": "faq_0090",
+      "category": "Accounts",
+      "question": "Can I get a fee payment history for previous semesters?",
+      "alternate_questions": [
+        "Previous fee records",
+        "Fee history",
+        "Old payment receipts"
+      ],
+      "keywords": ["history", "fees", "records"],
+      "answer": "Students can request their previous fee payment records through the university's accounts office or designated student service portal, where applicable.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0091",
+      "category": "Fees",
+      "question": "Can I pay fees using UPI?",
+      "alternate_questions": [
+        "UPI payment",
+        "Google Pay fees",
+        "PhonePe fee payment"
+      ],
+      "keywords": ["UPI", "payment", "fees"],
+      "answer": "UPI payments may be available through the university's approved online payment gateway, depending on the supported payment options.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0092",
+      "category": "Fees",
+      "question": "Can I pay my fees through net banking?",
+      "alternate_questions": [
+        "Net banking payment",
+        "Online bank transfer",
+        "Internet banking fees"
+      ],
+      "keywords": ["net banking", "payment"],
+      "answer": "Yes. Net banking is generally available through the university's approved online payment facilities.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0093",
+      "category": "Fees",
+      "question": "Can parents pay fees on behalf of students?",
+      "alternate_questions": [
+        "Parent fee payment",
+        "Guardian payment",
+        "Family can pay fees"
+      ],
+      "keywords": ["parents", "fees", "payment"],
+      "answer": "Yes. Parents or guardians may make fee payments using the university's approved payment methods.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0094",
+      "category": "Fees",
+      "question": "Will I receive payment confirmation after paying my fees?",
+      "alternate_questions": [
+        "Fee payment confirmation",
+        "Payment successful message",
+        "Fee confirmation"
+      ],
+      "keywords": ["confirmation", "payment"],
+      "answer": "Yes. A payment confirmation is provided after successful processing through the university's payment system.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0095",
+      "category": "Fees",
+      "question": "Can I download my payment receipt multiple times?",
+      "alternate_questions": [
+        "Re-download fee receipt",
+        "Download receipt again",
+        "Print payment receipt"
+      ],
+      "keywords": ["receipt", "download"],
+      "answer": "Yes. If available through the student portal or ERP, students can access and download their fee receipts whenever required.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0096",
+      "category": "Accounts",
+      "question": "Whom should I contact if my payment is not reflected?",
+      "alternate_questions": [
+        "Payment not updated",
+        "Fee not showing",
+        "Transaction issue"
+      ],
+      "keywords": ["payment", "accounts", "transaction"],
+      "answer": "Students should contact the accounts office with their payment receipt or transaction reference for verification.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0097",
+      "category": "Fees",
+      "question": "Can I pay semester fees before the due date?",
+      "alternate_questions": [
+        "Early fee payment",
+        "Advance payment",
+        "Pay fees early"
+      ],
+      "keywords": ["advance", "fees", "semester"],
+      "answer": "Yes. Students may pay their semester fees before the announced due date using the approved payment methods.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0098",
+      "category": "Accounts",
+      "question": "Does the university provide GST invoices for fee payments?",
+      "alternate_questions": [
+        "GST receipt",
+        "Tax invoice",
+        "Fee invoice"
+      ],
+      "keywords": ["GST", "invoice", "fees"],
+      "answer": "Students requiring official financial documents should contact the accounts office to know which documents are available for their fee payments.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0099",
+      "category": "Financial Aid",
+      "question": "Can economically weaker students apply for financial assistance?",
+      "alternate_questions": [
+        "Need-based financial aid",
+        "Financial support for needy students",
+        "Economic assistance"
+      ],
+      "keywords": ["financial aid", "support", "assistance"],
+      "answer": "Eligible students may apply for available financial assistance schemes according to the university's policies and applicable eligibility criteria.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0100",
+      "category": "Fees",
+      "question": "Where can I get help for any fee-related query?",
+      "alternate_questions": [
+        "Fee enquiry",
+        "Accounts office",
+        "Who should I contact for fees?",
+        "Need help with fee payment"
+      ],
+      "keywords": ["fees", "accounts", "support", "help"],
+      "answer": "For any fee-related issue, students should contact the university's accounts office or official student support channels for accurate assistance.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is generated for this academic project, since no real data was provided for this category. It cross-references the exam pattern (internal/external weightage, exam months, backlog policy, revaluation) already established in academic_details_parul.json rather than restating it differently, and adds the specific process-level details requested here (schedule release, hall ticket process, result timeline, degree/transcript issuance) which weren't previously covered. None of this should be treated as officially confirmed university policy.",
+    "data_type": "generated_for_project"
+  },
+
+  "examination_services": {
+
+    "exam_schedule_release_process": {
+      "release_channel": "Exam schedules (date sheets) are published through the student ERP portal's examination module (already documented in technology_digital_services_parul_details.json), along with notice board postings at respective faculty offices.",
+      "typical_timing": "Schedules are generally released 2-3 weeks before the start of the examination period, consistent with the exam months already documented in academic_details_parul.json (November-December for odd semester, April-May for even semester)."
+    },
+
+    "hall_ticket_and_admit_card_process": {
+      "eligibility_check": "Hall tickets/admit cards are issued only after the university's automated eligibility check confirms the student has met the minimum attendance requirement (already documented in academic_details_parul.json's attendance policy) and has no pending fee dues.",
+      "download_process": "Once eligible, students can download their hall ticket directly from the ERP portal's examination module, typically made available about one week before the exam period begins.",
+      "issue_resolution": "Students who are unable to generate a hall ticket (due to attendance shortfall or fee dues) are directed to resolve the underlying issue (condonation application or fee clearance) before a hall ticket can be issued."
+    },
+
+    "revaluation_and_rechecking_process": {
+      "cross_reference": "The core revaluation policy (window, fee) is already documented in academic_details_parul.json's 'exam_pattern.revaluation'.",
+      "application_process": "Revaluation/photocopy requests are typically submitted through the ERP portal's examination module within the specified window (10-15 days after result declaration), along with the applicable per-subject fee.",
+      "outcome_timeline": "Revised marks (if any change results from revaluation) are typically communicated within 3-4 weeks of the revaluation request being processed."
+    },
+
+    "result_declaration_timeline": {
+      "typical_timeline": "Semester results are typically declared within 3-4 weeks of the last examination paper for that semester, published via the ERP portal.",
+      "provisional_vs_final": "Results are usually first published as provisional (subject to any pending revaluation adjustments), with a formal semester grade card/transcript made available shortly after."
+    },
+
+    "backlog_and_supplementary_exam_process": {
+      "cross_reference": "The core backlog policy (timing, fee) is already documented in academic_details_parul.json's 'exam_pattern.backlog_policy'.",
+      "application_process": "Students with a backlog subject apply for the supplementary/backlog examination through the ERP portal during the designated backlog exam registration window, paying the applicable per-subject backlog exam fee.",
+      "repeated_backlog_note": "Students with backlogs persisting across multiple attempts may be required to consult their faculty academic advisor regarding progression eligibility for the next academic year, consistent with standard Indian university practice."
+    },
+
+    "degree_and_transcript_issuance_process": {
+      "provisional_certificate": "Upon successful completion of all semesters and final result declaration, students are issued a Provisional Certificate confirming degree completion, pending the formal Convocation ceremony (already documented in events_fests_cultural_calendar_parul_details.json).",
+      "formal_degree": "The formal degree certificate is conferred at the Convocation ceremony, or can be collected/couriered afterward for students unable to attend in person.",
+      "transcript_requests": "Official transcripts (for higher studies applications, visa purposes, or employer verification) can be requested through the ERP portal or the examination department office, typically processed within 1-2 weeks, consistent with the certificate processing timelines already referenced in fees_financial_aid_parul_details.json.",
+      "duplicate_certificate_process": "In case of a lost original certificate, students can apply for a duplicate degree/marksheet through the examination department, typically requiring an affidavit/police complaint copy and a processing fee, with a longer processing window than standard transcript requests."
+    }
+  }
+}

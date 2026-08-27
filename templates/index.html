@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+/* 1. GLOBAL & NAVBAR FIXES */
+.container {
+    max-width: none;
+    padding: 0;
+}
+
+/* Specific fix for the brand name in the navbar */
+nav a.navbar-brand, .brand-text {
+    color: #7c3aed !important; 
+    font-weight: 800 !important;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* 2. HERO SECTION - KEEPING YOUR ORIGINAL IMAGE */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                url("https://image-static.collegedunia.com/public/college_data/images/appImage/1599193361PuCampus.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(45px, 8vw, 75px);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.hero-content p {
+    font-size: clamp(18px, 3vw, 22px);
+    color: #f1f5f9;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.btn {
+    padding: 16px 36px;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.ai-btn { background: #7c3aed; color: white; border: none; box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3); }
+.course-btn { background: white; color: #1e293b; border: none; }
+
+.ai-btn:hover { transform: translateY(-3px); background: #6d28d9; }
+.course-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+/* 3. EDUCATION HUB - IMPROVED COLOR & CONTRAST */
+.hub-section {
+    padding: 100px 10%;
+    text-align: center;
+    background: #ffffff; 
+}
+
+.section-title {
+    font-size: clamp(32px, 5vw, 42px);
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #0f172a; /* Deep Dark for clarity */
+}
+
+.section-subtitle {
+    color: #334155; /* Dark grey for readability */
+    font-size: 20px;
+    max-width: 850px;
+    margin: 0 auto 60px;
+}
+
+/* 4. STATS GRID */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.stat-card {
+    background: #f8fafc;
+    padding: 40px 20px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.stat-card:hover { border-color: #7c3aed; transform: translateY(-5px); }
+
+.stat-card h2 {
+    font-size: 48px;
+    color: #7c3aed;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.stat-card p {
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+
+/* 5. CAMPUS FEATURES */
+.feature-section { padding: 80px 10%; background: #f1f5f9; }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.feature-card img { width: 100%; height: 220px; object-fit: cover; }
+.card-content { padding: 30px; text-align: left; }
+.card-content h3 { font-size: 22px; margin-bottom: 12px; color: #1e293b; font-weight: 700;}
+.card-content p { color: #475569; }
+
+/* 6. PLACEMENT SECTION */
+.placement-container {
+    padding: 80px 5%;
+}
+
+.placement-dark {
+    background: #0f172a;
+    color: white;
+    border-radius: 40px;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.p-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.p-item h3 { font-size: 45px; color: #38bdf8; font-weight: 800; }
+.p-item p { color: #94a3b8; font-size: 18px; }
+
+/* 7. FAQ SECTION */
+.faq-section { padding: 100px 10%; background: white; }
+.faq-container { max-width: 850px; margin: 0 auto; text-align: left; }
+
+details {
+    background: #f8fafc;
+    padding: 22px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+details[open] { border-color: #7c3aed; background: white; }
+
+summary { font-weight: 700; font-size: 19px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+summary::after { content: "+"; color: #7c3aed; font-size: 24px; font-weight: bold; }
+details[open] summary::after { content: "−"; }
+
+/* 8. FINAL CTA */
+.final-cta {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.final-cta h2 { color: white; font-size: 42px; font-weight: 800; margin-bottom: 20px; }
+.final-cta p { color: #ddd6fe; margin-bottom: 40px; font-size: 20px; }
+
+</style>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Campus Genius</h1>
+        <p>Your smart AI assistant for Parul University — courses, hostels, placements and admissions.</p>
+        <div class="hero-buttons">
+            <a href="/chatbot" class="btn ai-btn">Ask Campus AI 🤖</a>
+            <a href="/courses" class="btn course-btn">Explore Courses 📚</a>
+        </div>
+    </div>
+</section>
+
+<section class="hub-section">
+    <h2 class="section-title">A World-Class Education Hub</h2>
+    <p class="section-subtitle">
+        Parul University is one of India's leading private universities. 
+        With a focus on innovation and global excellence, we empower <b>50,000+ students</b> 
+        to achieve their dreams across 250+ specialized programs.
+    </p>
+    
+    <div class="stats-grid">
+        <div class="stat-card"><h2>50k+</h2><p>Students</p></div>
+        <div class="stat-card"><h2>250+</h2><p>Programs</p></div>
+        <div class="stat-card"><h2>2200+</h2><p>Recruiters</p></div>
+        <div class="stat-card"><h2>60+</h2><p>Countries</p></div>
+    </div>
+</section>
+
+<section class="feature-section">
+    <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">Campus Life & Facilities</h2>
+    <div class="card-grid">
+        <div class="feature-card">
+            <img src="https://qs-igauge.blr1.cdn.digitaloceanspaces.com/parul-university-vadodara-226034.jpg">
+            <div class="card-content">
+                <h3>Modern Infrastructure</h3>
+                <p>Smart classrooms, advanced laboratories, libraries and sports complexes built for the future.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://assets.kollegeapply.com/articles/documents/file-1770729991631-1770729991631.png">
+            <div class="card-content">
+                <h3>Global Community</h3>
+                <p>Learn alongside students from 60+ countries in a truly diverse and inclusive environment.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://paruluniversity.ac.in/wp-content/uploads/2025/10/New-Project.webp">
+            <div class="card-content">
+                <h3>Research & Innovation</h3>
+                <p>Turn your ideas into reality with our dedicated incubation centers and research labs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="placement-container">
+    <div class="placement-dark">
+        <h2 class="section-title" style="color: white; margin-bottom: 10px;">Placement Highlights</h2>
+        <p style="color: #94a3b8;">Top tier companies recruit our talent every year.</p>
+        <div class="p-grid">
+            <div class="p-item"><h3>45 LPA</h3><p>Highest Package</p></div>
+            <div class="p-item"><h3>6.5 LPA</h3><p>Average Package</p></div>
+            <div class="p-item"><h3>15k+</h3><p>Students Placed</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
+    <p style="text-align: center; color: #64748b; margin-bottom: 40px;">Find quick answers to common queries about Parul University.</p>
+    
+    <div class="faq-container">
+        <details>
+            <summary>Is there an entrance exam for admission?</summary>
+            <p style="padding-top:12px; color:#475569;">Admission criteria vary. Many programs accept scores from national exams like JEE or NEET, while others have merit-based entry or personal interviews.</p>
+        </details>
+        <details>
+            <summary>What types of hostel facilities are available?</summary>
+            <p style="padding-top:12px; color:#475569;">We offer a variety of options including AC and Non-AC rooms, with dedicated wings for international students and premium amenities.</p>
+        </details>
+        <details>
+            <summary>What kind of scholarships does the university offer?</summary>
+            <p style="padding-top:12px; color:#475569;">Parul University provides merit-based scholarships for high-achieving students, as well as financial aid for sports achievers and defense personnel wards.</p>
+        </details>
+        <details>
+            <summary>Can I apply for multiple courses at once?</summary>
+            <p style="padding-top:12px; color:#475569;">Yes, you can apply for multiple programs. Our counselors and the Campus AI can help you determine which program best fits your career goals.</p>
+        </details>
+    </div>
+</section>
+
+<section class="final-cta">
+    <h2>Ready to start your journey?</h2>
+    <p>Ask our AI assistant anything about admissions, hostels, or life at Parul.</p>
+    <a href="/chatbot">
+        <button class="btn" style="background:white; color:#7c3aed; padding: 20px 60px; font-size:20px;">Ask Campus AI Now 🤖</button>
+    </a>
+</section>
+
+{% endblock %}

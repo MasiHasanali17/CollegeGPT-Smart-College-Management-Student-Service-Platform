@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0161",
+      "category": "Academics",
+      "question": "What is the minimum attendance required to appear for examinations?",
+      "alternate_questions": [
+        "Attendance requirement",
+        "Minimum attendance",
+        "Attendance percentage"
+      ],
+      "keywords": ["attendance", "exam", "percentage"],
+      "answer": "Students must maintain the minimum attendance prescribed by the university for their respective program to remain eligible for examinations.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0162",
+      "category": "Academics",
+      "question": "How can I check my attendance?",
+      "alternate_questions": [
+        "Attendance record",
+        "Attendance status",
+        "Check attendance online"
+      ],
+      "keywords": ["attendance", "ERP", "record"],
+      "answer": "Students can check their attendance through the university ERP or other officially designated academic portals.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0163",
+      "category": "Academics",
+      "question": "How often is attendance updated?",
+      "alternate_questions": [
+        "Attendance update",
+        "Attendance not updated",
+        "Latest attendance"
+      ],
+      "keywords": ["attendance", "update"],
+      "answer": "Attendance is updated according to the academic process followed by the department and faculty.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0164",
+      "category": "Academics",
+      "question": "What should I do if my attendance is incorrect?",
+      "alternate_questions": [
+        "Attendance correction",
+        "Wrong attendance",
+        "Attendance issue"
+      ],
+      "keywords": ["attendance", "correction"],
+      "answer": "Students should immediately report attendance discrepancies to the concerned faculty member or department.",
+      "source": "faculty_teaching_staff.json"
+    },
+    {
+      "id": "faq_0165",
+      "category": "Academics",
+      "question": "Can medical leave be considered for attendance?",
+      "alternate_questions": [
+        "Medical attendance relaxation",
+        "Attendance for illness",
+        "Medical leave attendance"
+      ],
+      "keywords": ["medical", "attendance", "leave"],
+      "answer": "Attendance relaxation for medical reasons is considered according to university rules and supporting documentation requirements.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0166",
+      "category": "Academics",
+      "question": "Will low attendance affect my examinations?",
+      "alternate_questions": [
+        "Attendance shortage",
+        "Exam eligibility",
+        "Low attendance consequences"
+      ],
+      "keywords": ["attendance", "exam", "eligibility"],
+      "answer": "Students who do not meet the prescribed attendance requirements may become ineligible for examinations as per university regulations.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0167",
+      "category": "Academics",
+      "question": "Can I request attendance correction after verification?",
+      "alternate_questions": [
+        "Correct attendance",
+        "Attendance verification",
+        "Attendance modification"
+      ],
+      "keywords": ["attendance", "verification"],
+      "answer": "Attendance correction requests should be submitted promptly to the concerned faculty if supported by valid evidence.",
+      "source": "faculty_teaching_staff.json"
+    },
+    {
+      "id": "faq_0168",
+      "category": "ERP",
+      "question": "What is the university ERP portal?",
+      "alternate_questions": [
+        "ERP meaning",
+        "Student ERP",
+        "University portal"
+      ],
+      "keywords": ["ERP", "portal", "student"],
+      "answer": "The ERP is the university's digital platform that allows students to access academic, attendance, examination, and administrative services.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0169",
+      "category": "ERP",
+      "question": "How do I log in to the ERP portal?",
+      "alternate_questions": [
+        "ERP login",
+        "Student portal login",
+        "Login ERP"
+      ],
+      "keywords": ["ERP", "login"],
+      "answer": "Students can log in using the credentials provided by the university during admission or account activation.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0170",
+      "category": "ERP",
+      "question": "I forgot my ERP password. What should I do?",
+      "alternate_questions": [
+        "Reset ERP password",
+        "Forgot password",
+        "ERP password recovery"
+      ],
+      "keywords": ["ERP", "password", "reset"],
+      "answer": "Students should use the password recovery option or contact the university's IT support if they cannot access their ERP account.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0171",
+      "category": "ERP",
+      "question": "Can I access ERP from my mobile phone?",
+      "alternate_questions": [
+        "ERP mobile",
+        "Phone login",
+        "ERP on smartphone"
+      ],
+      "keywords": ["ERP", "mobile"],
+      "answer": "Yes. Students can access the ERP using supported mobile browsers or official university applications, where available.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0172",
+      "category": "ERP",
+      "question": "What information is available on the ERP portal?",
+      "alternate_questions": [
+        "ERP features",
+        "Student portal services",
+        "ERP functions"
+      ],
+      "keywords": ["ERP", "services", "features"],
+      "answer": "The ERP provides access to attendance, examination details, academic records, timetable, fee information, and other student services.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0173",
+      "category": "ERP",
+      "question": "Why is my ERP account not working?",
+      "alternate_questions": [
+        "ERP login issue",
+        "Cannot access ERP",
+        "ERP account problem"
+      ],
+      "keywords": ["ERP", "login issue"],
+      "answer": "Students experiencing ERP issues should verify their credentials and contact the university's IT support if the problem continues.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0174",
+      "category": "ERP",
+      "question": "Can I update my profile through ERP?",
+      "alternate_questions": [
+        "Update profile",
+        "Edit student details",
+        "ERP profile"
+      ],
+      "keywords": ["ERP", "profile"],
+      "answer": "Certain profile information may be updated through the ERP, while other changes require approval from the university administration.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0175",
+      "category": "ERP",
+      "question": "How can I download my timetable from ERP?",
+      "alternate_questions": [
+        "Timetable ERP",
+        "Download class schedule",
+        "ERP timetable"
+      ],
+      "keywords": ["ERP", "timetable"],
+      "answer": "Students can view and download their timetable through the ERP if the feature is available for their program.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0176",
+      "category": "ERP",
+      "question": "Can I check examination results on ERP?",
+      "alternate_questions": [
+        "Result in ERP",
+        "Check marks online",
+        "ERP result"
+      ],
+      "keywords": ["ERP", "results"],
+      "answer": "Yes. Examination results are published through the official university channels, including the ERP where applicable.",
+      "source": "examination_services.json"
+    },
+    {
+      "id": "faq_0177",
+      "category": "ERP",
+      "question": "Can I download my fee receipt from ERP?",
+      "alternate_questions": [
+        "ERP fee receipt",
+        "Payment receipt",
+        "Receipt download"
+      ],
+      "keywords": ["ERP", "receipt", "fees"],
+      "answer": "Students can access fee payment details and receipts through the ERP if the feature is enabled.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0178",
+      "category": "ERP",
+      "question": "Can I submit applications through ERP?",
+      "alternate_questions": [
+        "ERP application",
+        "Online requests",
+        "Submit request"
+      ],
+      "keywords": ["ERP", "application"],
+      "answer": "Depending on the available modules, students can submit selected academic and administrative requests through the ERP.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0179",
+      "category": "ERP",
+      "question": "Who should I contact if ERP is down?",
+      "alternate_questions": [
+        "ERP technical support",
+        "Portal not working",
+        "ERP help"
+      ],
+      "keywords": ["ERP", "support", "IT"],
+      "answer": "Students should contact the university's IT support team or helpdesk for ERP-related technical issues.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0180",
+      "category": "ERP",
+      "question": "Can parents access the ERP portal?",
+      "alternate_questions": [
+        "Parent ERP",
+        "Guardian portal",
+        "Parent login"
+      ],
+      "keywords": ["parent", "ERP"],
+      "answer": "Parent access, if provided, depends on the university's ERP features and access policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0181",
+      "category": "Academics",
+      "question": "How are practical classes conducted?",
+      "alternate_questions": [
+        "Laboratory classes",
+        "Practical sessions",
+        "Lab schedule"
+      ],
+      "keywords": ["practical", "lab"],
+      "answer": "Practical classes are conducted according to the curriculum and departmental laboratory schedule.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0182",
+      "category": "Academics",
+      "question": "Can I attend classes in another section?",
+      "alternate_questions": [
+        "Different section",
+        "Attend another class",
+        "Section change"
+      ],
+      "keywords": ["section", "classes"],
+      "answer": "Students should attend the section assigned to them unless permission is granted by the department.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0183",
+      "category": "Academics",
+      "question": "How do I know my faculty advisor?",
+      "alternate_questions": [
+        "Faculty mentor",
+        "Academic advisor",
+        "Mentor details"
+      ],
+      "keywords": ["mentor", "advisor"],
+      "answer": "Faculty advisor information is communicated by the department or available through official academic channels.",
+      "source": "faculty_teaching_staff.json"
+    },
+    {
+      "id": "faq_0184",
+      "category": "Academics",
+      "question": "Can I request academic counseling?",
+      "alternate_questions": [
+        "Academic guidance",
+        "Course counseling",
+        "Meet academic advisor"
+      ],
+      "keywords": ["academic counseling", "advisor"],
+      "answer": "Yes. Students can approach their faculty advisor or department for academic counseling and guidance.",
+      "source": "student_support_services.json"
+    },
+    {
+      "id": "faq_0185",
+      "category": "Academics",
+      "question": "Where can I find my course syllabus?",
+      "alternate_questions": [
+        "Course syllabus",
+        "Subject syllabus",
+        "Curriculum"
+      ],
+      "keywords": ["syllabus", "curriculum", "subjects"],
+      "answer": "Students can obtain the course syllabus through their department, faculty members, or official academic resources provided by the university.",
+      "source": "academic_details.json"
+    }
+  ]
+}

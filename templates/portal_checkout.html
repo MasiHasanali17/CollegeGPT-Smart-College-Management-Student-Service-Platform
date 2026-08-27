@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<style>
+.checkout-wrap {
+    max-width: 480px;
+    margin: 60px auto 100px;
+    padding: 0 20px;
+}
+
+.checkout-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+    padding: 36px;
+    text-align: center;
+}
+
+.checkout-card .kind-tag {
+    display: inline-block;
+    background: #f5f3ff;
+    color: #7c3aed;
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+.checkout-card h2 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.checkout-card .schedule {
+    color: #64748b;
+    font-size: 13.5px;
+    margin-bottom: 24px;
+}
+
+.checkout-amount {
+    font-size: 40px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.checkout-amount span {
+    font-size: 16px;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.checkout-note {
+    color: #94a3b8;
+    font-size: 12.5px;
+    margin-bottom: 26px;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #0f9d58;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background: #0c8548;
+}
+
+.pay-btn:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+}
+
+.checkout-error {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #fef2f2;
+    color: #b91c1c;
+    border-radius: 8px;
+    font-size: 13.5px;
+    display: none;
+}
+
+.checkout-error.show {
+    display: block;
+}
+
+.not-configured-box {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: #fffbeb;
+    color: #92400e;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.secure-note {
+    margin-top: 18px;
+    font-size: 11.5px;
+    color: #94a3b8;
+}
+</style>
+
+<div class="checkout-wrap">
+    <div class="checkout-card">
+
+        <span class="kind-tag">{{ activity.kind }}</span>
+        <h2>{{ activity.title }}</h2>
+        <div class="schedule">{{ activity.schedule_text }}</div>
+
+        <div class="checkout-amount">₹{{ activity.price }} <span>/ ticket</span></div>
+        <div class="checkout-note">Secure payment powered by Razorpay</div>
+
+        {% if payments_configured %}
+        <button class="pay-btn" id="payBtn" onclick="startPayment()">Pay ₹{{ activity.price }} & Book</button>
+        <div class="checkout-error" id="checkoutError"></div>
+        <div class="secure-note">🔒 Test mode — no real money will be charged.</div>
+        {% else %}
+        <div class="not-configured-box">
+            ⚠️ Payments aren't set up yet. The admin needs to add <code>RAZORPAY_KEY_ID</code> and
+            <code>RAZORPAY_KEY_SECRET</code> to the project's <code>.env</code> file before this ticket can be purchased.
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+
+{% if payments_configured %}
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+async function startPayment() {
+    const btn = document.getElementById('payBtn');
+    const errorBox = document.getElementById('checkoutError');
+    errorBox.classList.remove('show');
+    btn.disabled = true;
+    btn.textContent = "Starting payment...";
+
+    try {
+        const orderRes = await fetch("{{ url_for('portal_create_order', activity_id=activity.id) }}", {
+            method: "POST",
+            headers: { "X-CSRFToken": document.querySelector('meta[name="csrf-token"]').content }
+        });
+        const orderData = await orderRes.json();
+
+        if (!orderData.ok) {
+            throw new Error(orderData.error || "Could not start payment.");
+        }
+
+        const options = {
+            key: orderData.key_id,
+            amount: orderData.amount,
+            currency: orderData.currency,
+            name: "Parul University — Campus Genius",
+            description: orderData.activity_title,
+            order_id: orderData.order_id,
+            prefill: {
+                name: orderData.student_name
+            },
+            theme: { color: "#7c3aed" },
+            handler: async function (response) {
+                btn.textContent = "Confirming booking...";
+
+                const verifyRes = await fetch("{{ url_for('portal_verify_payment') }}", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": document.querySelector('meta[name="csrf-token"]').content
+                    },
+                    body: JSON.stringify({
+                        razorpay_order_id: response.razorpay_order_id,
+                        razorpay_payment_id: response.razorpay_payment_id,
+                        razorpay_signature: response.razorpay_signature
+                    })
+                });
+                const verifyData = await verifyRes.json();
+
+                if (verifyData.ok) {
+                    window.location.href = verifyData.redirect;
+                } else {
+                    errorBox.textContent = verifyData.error || "Payment verification failed.";
+                    errorBox.classList.add('show');
+                    btn.disabled = false;
+                    btn.textContent = "Pay ₹{{ activity.price }} & Book";
+                }
+            },
+            modal: {
+                ondismiss: function () {
+                    btn.disabled = false;
+                    btn.textContent = "Pay ₹{{ activity.price }} & Book";
+                }
+            }
+        };
+
+        const rzp = new Razorpay(options);
+        rzp.on('payment.failed', function (response) {
+            errorBox.textContent = "Payment failed: " + response.error.description;
+            errorBox.classList.add('show');
+            btn.disabled = false;
+            btn.textContent = "Pay ₹{{ activity.price }} & Book";
+        });
+        rzp.open();
+
+        btn.textContent = "Waiting for payment...";
+
+    } catch (err) {
+        errorBox.textContent = err.message || "Something went wrong.";
+        errorBox.classList.add('show');
+        btn.disabled = false;
+        btn.textContent = "Pay ₹{{ activity.price }} & Book";
+    }
+}
+</script>
+{% endif %}
+
+{% endblock %}

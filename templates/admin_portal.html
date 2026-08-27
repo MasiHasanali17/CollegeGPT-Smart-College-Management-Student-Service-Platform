@@ -1,0 +1,520 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<style>
+.admin-page-wrap {
+    background: #f8fafc;
+    min-height: 85vh;
+    padding: 50px 20px 80px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+.admin-login-box {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+}
+.admin-login-box input {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 14px;
+}
+.admin-login-box button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #7c3aed;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.admin-content-box {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+    overflow-x: auto;
+}
+.admin-create-form {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    align-items: end;
+}
+.admin-create-form label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #475569;
+    display: block;
+    margin-bottom: 4px;
+}
+.admin-create-form input,
+.admin-create-form select,
+.admin-create-form textarea {
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    font-size: 13.5px;
+}
+.admin-create-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #7c3aed;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    height: fit-content;
+}
+.top-bar-links {
+    max-width: 1100px;
+    margin: 0 auto 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+}
+.top-bar-links a { color: #64748b; }
+</style>
+
+<div class="admin-page-wrap">
+
+    {% if not logged_in %}
+
+    <div class="admin-login-box">
+        <p style="color:#64748b;font-size:13.5px;">Please <a href="{{ url_for('admin_login') }}">log in</a> to access this area.</p>
+    </div>
+
+    {% else %}
+
+    <div class="top-bar-links">
+        <span style="color:#64748b;">Signed in as <strong>{{ admin.username }}</strong> ({{ admin.role.replace('_', ' ') }})</span>
+        <span>
+            {% if admin.role == 'super_admin' %}
+            <a href="{{ url_for('admin_applications') }}" style="margin-right:16px;">Applications Admin →</a>
+            {% endif %}
+            <a href="{{ url_for('admin_logout') }}">Log out</a>
+        </span>
+    </div>
+
+    <div class="admin-content-box">
+
+        <div class="admin-tabs">
+            {% set tab_labels = {'notices': 'Notices', 'events': 'Events', 'courses': 'Extra Courses',
+                                  'facilities': 'Sports/Gym', 'hostel': 'Hostel Requests', 'grievances': 'Grievances',
+                                  'academics': 'Academics', 'transport': 'Transport', 'gallery': 'Gallery',
+                                  'students': 'Students', 'admins': 'Manage Admins'} %}
+            {% for t in my_tabs %}
+            <a href="{{ url_for('admin_portal', tab=t) }}" class="{{ 'active' if tab == t else '' }}">{{ tab_labels.get(t, t) }}</a>
+            {% endfor %}
+        </div>
+
+        {# ---------------- NOTICES ---------------- #}
+        {% if tab == 'notices' %}
+
+        <form class="admin-create-form" method="POST" action="{{ url_for('admin_portal', tab='notices') }}" enctype="multipart/form-data">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="create_notice">
+            <div>
+                <label>Title</label>
+                <input type="text" name="title" required>
+            </div>
+            <div>
+                <label>Category</label>
+                <select name="category">
+                    <option>General</option><option>Academic</option>
+                    <option>Hostel</option><option>Exam</option><option>Event</option>
+                </select>
+            </div>
+            <div>
+                <label>Expiry Date (optional)</label>
+                <input type="date" name="expiry_date">
+            </div>
+            <div>
+                <label>Target Audience</label>
+                <select name="target_audience">
+                    <option>All Students</option>
+                    <option>Hostel Residents</option>
+                    {% for c in courses %}
+                    <option>{{ c }} students</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <label>Attachment (PDF, optional)</label>
+                <input type="file" name="attachment" accept="application/pdf">
+            </div>
+            <div style="grid-column: span 2;">
+                <label>Description</label>
+                <textarea name="description" rows="1" required></textarea>
+            </div>
+            <button type="submit">Post Notice</button>
+        </form>
+
+        <table class="portal-table">
+            <thead><tr><th>Title</th><th>Category</th><th>Audience</th><th>Expiry</th><th>Attachment</th><th>Posted</th><th></th></tr></thead>
+            <tbody>
+                {% for n in notices %}
+                <tr>
+                    <td>{{ n.title }}</td>
+                    <td>{{ n.category }}</td>
+                    <td>{{ n.target_audience }}</td>
+                    <td>{{ n.expiry_date or '—' }}{% if n.expiry_date and n.expiry_date < now_date %} <span style="color:#b91c1c;font-weight:700;">(expired)</span>{% endif %}</td>
+                    <td>{% if n.attachment_filename %}<a href="/static/uploads/notices/{{ n.attachment_filename }}" target="_blank">View PDF</a>{% else %}—{% endif %}</td>
+                    <td>{{ n.created_at }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin_portal', tab='notices') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="delete_notice">
+                            <input type="hidden" name="notice_id" value="{{ n.id }}">
+                            <button type="submit" style="background:none;border:none;color:#b91c1c;cursor:pointer;">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not notices %}<tr><td colspan="7" style="text-align:center;color:#94a3b8;">No notices yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+
+        {# ---------------- EVENTS / COURSES / FACILITIES ---------------- #}
+        {% elif tab in ['events', 'courses', 'facilities'] %}
+
+        <form class="admin-create-form" method="POST" action="{{ url_for('admin_portal', tab=tab) }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="create_activity">
+            <input type="hidden" name="kind" value="{{ kind }}">
+            <div>
+                <label>Title</label>
+                <input type="text" name="title" required>
+            </div>
+            <div>
+                <label>Schedule</label>
+                <input type="text" name="schedule_text" placeholder="e.g. 15 Aug, 6 PM">
+            </div>
+            <div>
+                <label>Capacity (0 = unlimited)</label>
+                <input type="number" name="capacity" value="0" min="0">
+            </div>
+            <div>
+                <label>Price ₹ (0 = free)</label>
+                <input type="number" name="price" value="0" min="0">
+            </div>
+            <div style="grid-column: span 2;">
+                <label>Description</label>
+                <textarea name="description" rows="1"></textarea>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+
+        <table class="portal-table">
+            <thead><tr><th>Title</th><th>Schedule</th><th>Price</th><th>Booked / Capacity</th><th></th></tr></thead>
+            <tbody>
+                {% for a in activities %}
+                <tr>
+                    <td>{{ a.title }}</td>
+                    <td>{{ a.schedule_text }}</td>
+                    <td>{{ '₹' + a.price|string if a.price else 'Free' }}</td>
+                    <td>{{ a.booked_count }} / {{ a.capacity if a.capacity else '∞' }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin_portal', tab=tab) }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="delete_activity">
+                            <input type="hidden" name="activity_id" value="{{ a.id }}">
+                            <button type="submit" style="background:none;border:none;color:#b91c1c;cursor:pointer;">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not activities %}<tr><td colspan="5" style="text-align:center;color:#94a3b8;">None added yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+        {# ---------------- HOSTEL REQUESTS ---------------- #}
+        {% elif tab == 'hostel' %}
+
+        <table class="portal-table">
+            <thead><tr><th>Student</th><th>From</th><th>To</th><th>Reason</th><th>Refund</th><th>Status</th></tr></thead>
+            <tbody>
+                {% for r in requests %}
+                <tr>
+                    <td>{{ r.student_name }} ({{ r.student_id }})</td>
+                    <td>{{ r.current_hostel }}</td>
+                    <td>{{ r.requested_hostel }}</td>
+                    <td>{{ r.reason }}</td>
+                    <td>{{ r.refund_needed }}</td>
+                    <td>
+                        <form class="admin-inline-form" method="POST" action="{{ url_for('admin_portal', tab='hostel') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="update_hostel_status">
+                            <input type="hidden" name="request_id" value="{{ r.id }}">
+                            <select name="status">
+                                {% for s in statuses %}
+                                <option value="{{ s }}" {{ 'selected' if s == r.status else '' }}>{{ s }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit">Update</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not requests %}<tr><td colspan="6" style="text-align:center;color:#94a3b8;">No requests yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+        {# ---------------- GRIEVANCES ---------------- #}
+        {% elif tab == 'grievances' %}
+
+        <table class="portal-table">
+            <thead><tr><th>Student</th><th>Category</th><th>Description</th><th>Status</th></tr></thead>
+            <tbody>
+                {% for g in grievances %}
+                <tr>
+                    <td>{{ g.student_name }} ({{ g.student_id }})</td>
+                    <td>{{ g.category }}</td>
+                    <td>{{ g.description }}</td>
+                    <td>
+                        <form class="admin-inline-form" method="POST" action="{{ url_for('admin_portal', tab='grievances') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="update_grievance_status">
+                            <input type="hidden" name="grievance_id" value="{{ g.id }}">
+                            <select name="status">
+                                {% for s in statuses %}
+                                <option value="{{ s }}" {{ 'selected' if s == g.status else '' }}>{{ s }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit">Update</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not grievances %}<tr><td colspan="4" style="text-align:center;color:#94a3b8;">No complaints yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+        {# ---------------- ACADEMICS ---------------- #}
+        {% elif tab == 'academics' %}
+
+        <table class="portal-table">
+            <thead><tr><th>Student</th><th>Attendance</th><th>Timetable</th><th>Results</th><th>Update</th></tr></thead>
+            <tbody>
+                {% for s in students %}
+                <tr>
+                    <td>{{ s.name }}<br><span style="color:#94a3b8;">{{ s.student_id }}</span></td>
+                    <td>{{ s.record.attendance_percent }}</td>
+                    <td>{{ s.record.exam_timetable }}</td>
+                    <td>{{ s.record.results }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin_portal', tab='academics') }}" style="display:flex;flex-direction:column;gap:4px;min-width:180px;">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="update_academic">
+                            <input type="hidden" name="student_id" value="{{ s.student_id }}">
+                            <input type="text" name="attendance_percent" placeholder="Attendance %" value="{{ s.record.attendance_percent }}">
+                            <input type="text" name="exam_timetable" placeholder="Exam timetable" value="{{ s.record.exam_timetable }}">
+                            <input type="text" name="results" placeholder="Results" value="{{ s.record.results }}">
+                            <button type="submit" style="padding:6px;border:none;border-radius:6px;background:#7c3aed;color:white;cursor:pointer;">Save</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not students %}<tr><td colspan="5" style="text-align:center;color:#94a3b8;">No students registered yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+        {# ---------------- TRANSPORT ---------------- #}
+        {% elif tab == 'transport' %}
+
+        <form class="admin-create-form" method="POST" action="{{ url_for('admin_portal', tab='transport') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="create_route">
+            <div>
+                <label>Route Name</label>
+                <input type="text" name="route_name" placeholder="e.g. Route 1 - City Center" required>
+            </div>
+            <div>
+                <label>Timing</label>
+                <input type="text" name="timing_text" placeholder="e.g. 7:30 AM / 5:30 PM">
+            </div>
+            <div>
+                <label>Contact</label>
+                <input type="text" name="contact" placeholder="Transport office number">
+            </div>
+            <div style="grid-column: span 2;">
+                <label>Stops (comma separated)</label>
+                <textarea name="stops_text" rows="1" required placeholder="Railway Station, Bus Depot, Main Gate..."></textarea>
+            </div>
+            <button type="submit">Add Route</button>
+        </form>
+
+        <table class="portal-table">
+            <thead><tr><th>Route</th><th>Stops</th><th>Timing</th><th>Contact</th><th></th></tr></thead>
+            <tbody>
+                {% for r in routes %}
+                <tr>
+                    <td>{{ r.route_name }}</td>
+                    <td>{{ r.stops_text }}</td>
+                    <td>{{ r.timing_text }}</td>
+                    <td>{{ r.contact }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin_portal', tab='transport') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="delete_route">
+                            <input type="hidden" name="route_id" value="{{ r.id }}">
+                            <button type="submit" style="background:none;border:none;color:#b91c1c;cursor:pointer;">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not routes %}<tr><td colspan="5" style="text-align:center;color:#94a3b8;">No routes added yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+        {# ---------------- GALLERY ---------------- #}
+        {% elif tab == 'gallery' %}
+
+        <form class="admin-create-form" method="POST" action="{{ url_for('admin_portal', tab='gallery') }}" enctype="multipart/form-data">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="upload_image">
+            <div>
+                <label>Image</label>
+                <input type="file" name="image" accept="image/jpeg,image/png,image/webp,image/gif" required>
+            </div>
+            <div>
+                <label>Category</label>
+                <select name="category">
+                    {% for c in categories %}
+                    <option>{{ c }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div style="grid-column: span 2;">
+                <label>Caption (optional)</label>
+                <input type="text" name="caption" placeholder="e.g. Main library reading hall">
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;">
+            {% for img in images %}
+            <div style="border-radius:10px;overflow:hidden;border:1px solid #eef2f7;">
+                <img src="/static/uploads/gallery/{{ img.filename }}" style="width:100%;height:120px;object-fit:cover;display:block;">
+                <div style="padding:8px;font-size:11.5px;">
+                    <div style="color:#7c3aed;font-weight:700;">{{ img.category }}</div>
+                    <div style="color:#64748b;margin:2px 0 6px;">{{ img.caption or '' }}</div>
+                    <form method="POST" action="{{ url_for('admin_portal', tab='gallery') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="action" value="delete_image">
+                        <input type="hidden" name="image_id" value="{{ img.id }}">
+                        <button type="submit" style="background:none;border:none;color:#b91c1c;cursor:pointer;font-size:11.5px;padding:0;">Delete</button>
+                    </form>
+                </div>
+            </div>
+            {% endfor %}
+            {% if not images %}
+            <p style="grid-column:1/-1;text-align:center;color:#94a3b8;padding:30px;">No images uploaded yet.</p>
+            {% endif %}
+        </div>
+
+        {# ---------------- STUDENTS (password reset) ---------------- #}
+        {% elif tab == 'students' %}
+
+        <p style="color:#64748b;font-size:13px;margin-bottom:18px;">Reset a student's password directly — useful for students who never set a security question or forgot the answer too.</p>
+
+        <table class="portal-table">
+            <thead><tr><th>Name</th><th>Student ID</th><th>Course</th><th>Reset Password</th></tr></thead>
+            <tbody>
+                {% for s in students %}
+                <tr>
+                    <td>{{ s.name }}</td>
+                    <td>{{ s.student_id }}</td>
+                    <td>{{ s.course }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('admin_portal', tab='students') }}" style="display:flex;gap:6px;">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="reset_student_password">
+                            <input type="hidden" name="student_id" value="{{ s.student_id }}">
+                            <input type="password" name="new_password" placeholder="New password" required style="padding:6px 8px;border-radius:6px;border:1px solid #e2e8f0;">
+                            <button type="submit" style="padding:6px 12px;border:none;border-radius:6px;background:#7c3aed;color:white;cursor:pointer;font-size:12.5px;">Reset</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if not students %}<tr><td colspan="4" style="text-align:center;color:#94a3b8;">No students registered yet.</td></tr>{% endif %}
+            </tbody>
+        </table>
+
+        {# ---------------- ADMINS (super_admin only) ---------------- #}
+        {% elif tab == 'admins' %}
+
+        <form class="admin-create-form" method="POST" action="{{ url_for('admin_portal', tab='admins') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="action" value="create_admin_account">
+            <div>
+                <label>Username</label>
+                <input type="text" name="new_username" required>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="new_password" required>
+            </div>
+            <div>
+                <label>Role</label>
+                <select name="new_role">
+                    {% for r in roles %}
+                    <option value="{{ r }}">{{ r.replace('_', ' ') }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="submit">Create Admin</button>
+        </form>
+
+        <table class="portal-table">
+            <thead><tr><th>Username</th><th>Role</th><th>Status</th><th>Created</th><th></th></tr></thead>
+            <tbody>
+                {% for a in admins %}
+                <tr>
+                    <td>{{ a.username }}</td>
+                    <td>{{ a.role.replace('_', ' ') }}</td>
+                    <td>{{ 'Active' if a.active else 'Deactivated' }}</td>
+                    <td>{{ a.created_at }}</td>
+                    <td>
+                        {% if a.username != 'superadmin' %}
+                        <form method="POST" action="{{ url_for('admin_portal', tab='admins') }}">
+<input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="action" value="toggle_admin_active">
+                            <input type="hidden" name="target_admin_id" value="{{ a.id }}">
+                            <input type="hidden" name="make_active" value="{{ '0' if a.active else '1' }}">
+                            <button type="submit" style="background:none;border:none;color:{{ '#b91c1c' if a.active else '#166534' }};cursor:pointer;">{{ 'Deactivate' if a.active else 'Reactivate' }}</button>
+                        </form>
+                        {% else %}
+                        <span style="color:#94a3b8;font-size:12px;">Protected account</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% endif %}
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

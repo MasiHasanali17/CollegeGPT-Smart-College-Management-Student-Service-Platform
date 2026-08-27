@@ -1,0 +1,267 @@
+{
+  "university": "Parul University",
+  "academic_year": "2025-26",
+  "category": "Hostel & Residential Life",
+  "faqs": [
+    {
+      "id": "faq_0101",
+      "category": "Hostel",
+      "question": "Does Parul University provide hostel facilities?",
+      "alternate_questions": [
+        "Is hostel available?",
+        "Can students stay in hostel?",
+        "Residential accommodation"
+      ],
+      "keywords": ["hostel", "accommodation", "residential"],
+      "answer": "Yes. Parul University provides hostel facilities for eligible students with various accommodation options and amenities.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0102",
+      "category": "Hostel",
+      "question": "Who can apply for hostel accommodation?",
+      "alternate_questions": [
+        "Hostel eligibility",
+        "Who gets hostel?",
+        "Can every student apply for hostel?"
+      ],
+      "keywords": ["hostel", "eligibility", "accommodation"],
+      "answer": "Students admitted to the university may apply for hostel accommodation, subject to availability and hostel regulations.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0103",
+      "category": "Hostel",
+      "question": "How can I apply for a hostel room?",
+      "alternate_questions": [
+        "Hostel application",
+        "Book hostel room",
+        "Hostel registration"
+      ],
+      "keywords": ["hostel", "application", "registration"],
+      "answer": "Students can apply for hostel accommodation by following the university's hostel admission process after or during academic admission.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0104",
+      "category": "Hostel",
+      "question": "When are hostel rooms allotted?",
+      "alternate_questions": [
+        "Hostel allotment",
+        "Room allocation",
+        "When will I get my hostel?"
+      ],
+      "keywords": ["allotment", "hostel", "room"],
+      "answer": "Hostel rooms are allotted according to the university's hostel allocation schedule and room availability.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0105",
+      "category": "Hostel",
+      "question": "Can I choose my hostel room?",
+      "alternate_questions": [
+        "Choose hostel room",
+        "Select hostel room",
+        "Preferred room"
+      ],
+      "keywords": ["room", "selection", "hostel"],
+      "answer": "Room selection depends on hostel policies and availability. The hostel administration allocates rooms according to university procedures.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0106",
+      "category": "Hostel",
+      "question": "Are separate hostels available for boys and girls?",
+      "alternate_questions": [
+        "Boys hostel",
+        "Girls hostel",
+        "Separate accommodation"
+      ],
+      "keywords": ["boys", "girls", "hostel"],
+      "answer": "Yes. Separate hostel facilities are provided for male and female students.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0107",
+      "category": "Hostel",
+      "question": "Are hostel rooms furnished?",
+      "alternate_questions": [
+        "Furniture in hostel",
+        "Hostel room facilities",
+        "Room amenities"
+      ],
+      "keywords": ["furniture", "bed", "room"],
+      "answer": "Hostel rooms include the basic furniture and facilities provided according to the hostel accommodation type.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0108",
+      "category": "Hostel",
+      "question": "Is Wi-Fi available in the hostel?",
+      "alternate_questions": [
+        "Hostel internet",
+        "WiFi in hostel",
+        "Internet facility"
+      ],
+      "keywords": ["wifi", "internet", "hostel"],
+      "answer": "Yes. Wi-Fi connectivity is available in hostel areas according to the university's network policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0109",
+      "category": "Hostel",
+      "question": "Is electricity available 24 hours in the hostel?",
+      "alternate_questions": [
+        "Power supply",
+        "24x7 electricity",
+        "Hostel electricity"
+      ],
+      "keywords": ["electricity", "power", "hostel"],
+      "answer": "Hostel buildings are equipped with essential utility services including electricity, subject to maintenance and operational requirements.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0110",
+      "category": "Hostel",
+      "question": "Is drinking water available in the hostel?",
+      "alternate_questions": [
+        "Purified water",
+        "RO water",
+        "Water facility"
+      ],
+      "keywords": ["water", "RO", "hostel"],
+      "answer": "Yes. Hostel residents have access to drinking water facilities provided by the university.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0111",
+      "category": "Mess",
+      "question": "Is mess facility available for hostel students?",
+      "alternate_questions": [
+        "Hostel mess",
+        "Food facility",
+        "Dining hall"
+      ],
+      "keywords": ["mess", "food", "hostel"],
+      "answer": "Yes. Hostel students have access to mess and dining facilities operated according to the university's hostel services.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0112",
+      "category": "Mess",
+      "question": "Does the mess provide vegetarian food?",
+      "alternate_questions": [
+        "Veg food",
+        "Vegetarian meals",
+        "Veg mess"
+      ],
+      "keywords": ["vegetarian", "mess", "food"],
+      "answer": "The hostel mess provides meal options according to its approved menu and operational guidelines.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0113",
+      "category": "Mess",
+      "question": "How many meals are served in the hostel mess?",
+      "alternate_questions": [
+        "Mess timings",
+        "Daily meals",
+        "Food schedule"
+      ],
+      "keywords": ["meals", "mess", "timings"],
+      "answer": "Meals are served according to the hostel mess schedule announced by the hostel administration.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0114",
+      "category": "Mess",
+      "question": "Can day scholars use the hostel mess?",
+      "alternate_questions": [
+        "Mess for day scholars",
+        "Non-hosteller mess",
+        "Outside students mess"
+      ],
+      "keywords": ["day scholar", "mess"],
+      "answer": "Access to hostel mess facilities for non-hostel students depends on university policies and availability.",
+      "source": "day_scholar_facilities.json"
+    },
+    {
+      "id": "faq_0115",
+      "category": "Laundry",
+      "question": "Is laundry service available in the hostel?",
+      "alternate_questions": [
+        "Laundry facility",
+        "Clothes washing",
+        "Hostel laundry"
+      ],
+      "keywords": ["laundry", "washing", "hostel"],
+      "answer": "Yes. Laundry facilities are available for hostel residents according to hostel service guidelines.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0116",
+      "category": "Laundry",
+      "question": "Do students have to pay separately for laundry services?",
+      "alternate_questions": [
+        "Laundry charges",
+        "Laundry fee",
+        "Is laundry free?"
+      ],
+      "keywords": ["laundry", "charges", "fees"],
+      "answer": "Laundry charges, if applicable, depend on the hostel accommodation plan and university policies.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0117",
+      "category": "Hostel",
+      "question": "Is housekeeping provided in the hostel?",
+      "alternate_questions": [
+        "Room cleaning",
+        "Cleaning service",
+        "Housekeeping"
+      ],
+      "keywords": ["housekeeping", "cleaning", "hostel"],
+      "answer": "Housekeeping services are provided according to the hostel maintenance schedule and operational guidelines.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0118",
+      "category": "Hostel",
+      "question": "Can I change my hostel room after allotment?",
+      "alternate_questions": [
+        "Room change",
+        "Shift hostel room",
+        "Transfer room"
+      ],
+      "keywords": ["room change", "hostel"],
+      "answer": "Room change requests may be considered by the hostel administration depending on availability and valid reasons.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0119",
+      "category": "Hostel",
+      "question": "Who should I contact if I face problems in the hostel?",
+      "alternate_questions": [
+        "Hostel complaint",
+        "Warden contact",
+        "Hostel support"
+      ],
+      "keywords": ["warden", "complaint", "hostel"],
+      "answer": "Students should contact the hostel warden or hostel administration for any accommodation-related issues or complaints.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0120",
+      "category": "Hostel",
+      "question": "Are hostel wardens available for student support?",
+      "alternate_questions": [
+        "Hostel warden",
+        "Warden assistance",
+        "Residential support"
+      ],
+      "keywords": ["warden", "hostel", "support"],
+      "answer": "Yes. Hostel wardens supervise hostel operations and assist students with residential matters according to university regulations.",
+      "source": "hostel_residential_life.json"
+    }
+  ]
+}

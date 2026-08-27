@@ -1,0 +1,22 @@
+# Web framework
+flask
+flask-login
+
+# Chatbot (RAG pipeline) — unchanged, do not modify versions casually
+groq
+faiss-cpu
+sentence-transformers
+pyspellchecker
+numpy
+python-dotenv
+
+# Non-student (Interface 1) — brochure PDF generation
+reportlab
+
+# Current-student portal (Interface 2) — Phase 1: payments & tickets
+razorpay
+qrcode
+pillow
+
+# Performance & security (Phase 6)
+flask-compress

@@ -1,0 +1,50 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This entire file is generated for this academic project, since no real data was provided for this category. It is written to be realistic and scale-consistent with a 50,000+ student, 25+ faculty university, meaning a multi-tier representation structure rather than a single small student council. None of this should be treated as officially confirmed university policy.",
+    "data_type": "generated_for_project"
+  },
+
+  "student_governance_and_representation": {
+
+    "student_council_structure": {
+      "overview": "Given the university's scale (25+ faculties), student governance is generally structured hierarchically rather than as a single flat body: a University-level Student Council sits above Faculty-level Student Councils, which in turn are supported by Class Representatives at the individual class/section level.",
+      "university_council_positions": [
+        "University Student Council President — overall student representative to university administration",
+        "Vice President",
+        "General Secretary — coordinates council operations and record-keeping",
+        "Joint Secretary",
+        "Faculty Representatives — one or more representatives from each of the university's faculties, ensuring all disciplines have a voice at the university level"
+      ],
+      "faculty_council_positions": "Each faculty typically maintains its own smaller student council (President, Secretary, and a few core members) that feeds into the university-level council through its faculty representative(s)."
+    },
+
+    "election_process": {
+      "eligibility": "Candidates are typically required to maintain a minimum academic standing (satisfactory attendance and no pending disciplinary action) to be eligible to contest.",
+      "process": "University and faculty-level council elections are generally held once per academic year (commonly at the start of the odd semester), involving candidate nomination, a campaign period, and a general student body vote (in-person ballot or through the student ERP portal).",
+      "oversight": "Elections are typically overseen by a faculty committee (often under the Dean of Student Affairs office) to ensure a fair and orderly process, consistent with standard practice at most Indian universities."
+    },
+
+    "class_representative_system": {
+      "structure": "Each class/section typically elects or selects one or two Class Representatives (CRs) per semester, acting as the direct liaison between students and faculty/administration for that specific class.",
+      "responsibilities": "CRs typically communicate class-wide concerns (scheduling conflicts, academic difficulties, facility issues) to faculty and the Head of Department, and relay official announcements back to classmates.",
+      "selection_process": "CR selection is often informal (peer nomination/consensus within the class) rather than a full campaign-style election, reflecting the more localized, functional nature of the role compared to university/faculty council positions."
+    },
+
+    "student_feedback_mechanism": {
+      "academic_feedback": "End-of-semester course and faculty feedback forms are typically collected through the student ERP portal, allowing students to rate teaching quality, course content, and provide open-ended comments, which feed into internal academic quality review processes.",
+      "facility_feedback": "Separate feedback channels (surveys, suggestion portals, or a physical suggestion box at key locations like the library and hostel offices) are typically available for students to report facility-related concerns (hostel, mess, sports, IT infrastructure), routed to the respective department for action.",
+      "grievance_escalation": "Persistent or serious feedback that isn't resolved through general channels can be escalated through the formal Grievance Redressal Committee (already referenced in the university's broader policy structure)."
+    },
+
+    "student_ambassador_programs": {
+      "admissions_ambassador_program": "A Student/Campus Ambassador program is commonly run in coordination with the admissions office, where selected current students help represent the university to prospective students and their families — through campus tours, virtual information sessions, and peer-to-peer guidance during the admission season.",
+      "social_media_and_outreach": "Student ambassadors may also support the university's social media presence and outreach activities, sharing authentic campus life content to prospective students.",
+      "selection_and_benefits": "Selection is typically based on academic standing, communication skills, and an interview/application process; ambassadors may receive recognition (certificates, occasionally a stipend or fee concession) in return for their outreach involvement, though such benefits vary by program and are not guaranteed."
+    }
+  }
+}

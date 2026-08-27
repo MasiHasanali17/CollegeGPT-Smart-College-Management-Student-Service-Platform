@@ -1,0 +1,177 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0061",
+      "category": "Scholarships",
+      "question": "Does Parul University offer scholarships?",
+      "alternate_questions": [
+        "Are scholarships available?",
+        "Can I get a scholarship?",
+        "Scholarship at Parul University",
+        "Financial scholarship"
+      ],
+      "keywords": [
+        "scholarship",
+        "financial aid",
+        "benefits"
+      ],
+      "answer": "Yes. The university offers scholarship opportunities for eligible students under various schemes. Eligibility and benefits depend on the applicable scholarship policy.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0062",
+      "category": "Scholarships",
+      "question": "Who is eligible for scholarships?",
+      "alternate_questions": [
+        "Scholarship eligibility",
+        "Can I apply for a scholarship?",
+        "Who qualifies for scholarships?"
+      ],
+      "keywords": [
+        "eligibility",
+        "scholarship",
+        "criteria"
+      ],
+      "answer": "Scholarship eligibility depends on the criteria specified for each scholarship scheme, such as academic performance or other qualifying conditions.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0063",
+      "category": "Scholarships",
+      "question": "How can I apply for a scholarship?",
+      "alternate_questions": [
+        "Scholarship application",
+        "How to get a scholarship?",
+        "Apply for financial aid"
+      ],
+      "keywords": [
+        "apply",
+        "scholarship",
+        "financial aid"
+      ],
+      "answer": "Eligible students can apply by following the scholarship application process and submitting the required documents within the prescribed timeline.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0064",
+      "category": "Scholarships",
+      "question": "Can existing students apply for scholarships?",
+      "alternate_questions": [
+        "Scholarship after admission",
+        "Current student scholarship",
+        "Existing student financial aid"
+      ],
+      "keywords": [
+        "existing student",
+        "scholarship",
+        "aid"
+      ],
+      "answer": "Eligible continuing students may apply for scholarships according to the university's scholarship guidelines.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0065",
+      "category": "Scholarships",
+      "question": "Do scholarships cover the full tuition fee?",
+      "alternate_questions": [
+        "Full scholarship",
+        "100% scholarship",
+        "Scholarship amount"
+      ],
+      "keywords": [
+        "full scholarship",
+        "tuition",
+        "fee waiver"
+      ],
+      "answer": "Scholarship benefits vary depending on the scheme. Students should refer to the applicable scholarship guidelines for coverage details.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0066",
+      "category": "Scholarships",
+      "question": "Can I receive more than one scholarship?",
+      "alternate_questions": [
+        "Multiple scholarships",
+        "Two scholarships",
+        "Scholarship combination"
+      ],
+      "keywords": [
+        "multiple",
+        "scholarship",
+        "benefits"
+      ],
+      "answer": "Whether multiple scholarships can be combined depends on the university's scholarship policies and the conditions of each scheme.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0067",
+      "category": "Scholarships",
+      "question": "What documents are required for a scholarship application?",
+      "alternate_questions": [
+        "Scholarship documents",
+        "Required certificates",
+        "Scholarship paperwork"
+      ],
+      "keywords": [
+        "documents",
+        "scholarship",
+        "application"
+      ],
+      "answer": "Applicants should submit the documents required for the specific scholarship scheme, such as academic records and supporting certificates, wherever applicable.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0068",
+      "category": "Scholarships",
+      "question": "How will I know if my scholarship application is approved?",
+      "alternate_questions": [
+        "Scholarship status",
+        "Application approval",
+        "Scholarship result"
+      ],
+      "keywords": [
+        "status",
+        "approval",
+        "scholarship"
+      ],
+      "answer": "Students are informed through the university's official communication channels after the scholarship application has been reviewed.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0069",
+      "category": "Financial Aid",
+      "question": "Does the university provide financial assistance to students?",
+      "alternate_questions": [
+        "Financial support",
+        "Student financial help",
+        "Financial aid available"
+      ],
+      "keywords": [
+        "financial aid",
+        "assistance",
+        "support"
+      ],
+      "answer": "The university provides financial assistance opportunities through applicable schemes and student support initiatives, subject to eligibility.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0070",
+      "category": "Education Loan",
+      "question": "Can students apply for an education loan?",
+      "alternate_questions": [
+        "Education loan",
+        "Student loan",
+        "Loan for tuition fees",
+        "Bank loan"
+      ],
+      "keywords": [
+        "education loan",
+        "bank",
+        "loan",
+        "fees"
+      ],
+      "answer": "Students seeking an education loan should contact their preferred bank or financial institution. The university provides the necessary admission-related documents required for eligible loan applications.",
+      "source": "fees_financial_aid.json"
+    }
+  ]
+}

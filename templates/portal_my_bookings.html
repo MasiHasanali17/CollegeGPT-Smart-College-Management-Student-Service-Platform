@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<style>
+.booking-row-card {
+    background: white;
+    border: 1px solid #eef2f7;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.booking-row-left .kind-tag {
+    display: inline-block;
+    background: #f5f3ff;
+    color: #7c3aed;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.booking-row-left h3 {
+    margin: 0 0 4px;
+    font-size: 16.5px;
+}
+
+.booking-row-left .meta-line {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.booking-row-right {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.booking-ref-chip {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: #7c3aed;
+    background: #f5f3ff;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.paid-chip {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #166534;
+    background: #f0fdf4;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+</style>
+
+<div class="portal-page">
+
+    <div class="portal-hero">
+        <h1>My Bookings</h1>
+        <p>All your event tickets, course registrations, and facility bookings in one place.</p>
+    </div>
+
+
+    <div class="portal-wrap">
+
+        {% if bookings %}
+            {% for b in bookings %}
+            <a href="{{ url_for('portal_ticket', booking_ref=b.booking_ref) }}" style="text-decoration:none;color:inherit;">
+            <div class="booking-row-card">
+                <div class="booking-row-left">
+                    <span class="kind-tag">{{ b.kind }}</span>
+                    <h3>{{ b.title }}</h3>
+                    <div class="meta-line">{{ b.schedule_text }} • Booked {{ b.booked_at }}</div>
+                </div>
+                <div class="booking-row-right">
+                    {% if b.payment_status == 'paid' %}
+                    <span class="paid-chip">₹{{ b.amount_paid }} paid</span>
+                    {% endif %}
+                    <span class="booking-ref-chip">{{ b.booking_ref }}</span>
+                </div>
+            </div>
+            </a>
+            {% endfor %}
+        {% else %}
+        <div class="empty-state">
+            No bookings yet. Head to <a href="{{ url_for('portal_events') }}">Events</a>,
+            <a href="{{ url_for('portal_courses') }}">Courses</a>, or
+            <a href="{{ url_for('portal_facilities') }}">Facilities</a> to book something.
+        </div>
+        {% endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

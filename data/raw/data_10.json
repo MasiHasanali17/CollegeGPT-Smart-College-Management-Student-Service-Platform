@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0451",
+      "category": "International Students",
+      "question": "Does Parul University assist with student visa guidance?",
+      "alternate_questions": [
+        "Visa assistance",
+        "Student visa support",
+        "Visa guidance"
+      ],
+      "keywords": ["visa", "international", "guidance"],
+      "answer": "Yes. The International Relations Office provides guidance regarding student visa requirements and related documentation, subject to applicable immigration regulations.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0452",
+      "category": "International Students",
+      "question": "Can international students receive airport pickup assistance?",
+      "alternate_questions": [
+        "Airport pickup",
+        "Arrival assistance",
+        "Airport transfer"
+      ],
+      "keywords": ["airport", "arrival", "international"],
+      "answer": "Airport pickup or arrival assistance may be available for international students according to the university's international student support services.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0453",
+      "category": "International Students",
+      "question": "Are orientation programs conducted for international students?",
+      "alternate_questions": [
+        "International orientation",
+        "Foreign student orientation",
+        "Welcome program"
+      ],
+      "keywords": ["orientation", "international"],
+      "answer": "Yes. Orientation sessions help international students become familiar with academic procedures, campus facilities, and student life.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0454",
+      "category": "International Students",
+      "question": "Can international students open a bank account with university guidance?",
+      "alternate_questions": [
+        "Bank account assistance",
+        "Student bank account",
+        "International banking"
+      ],
+      "keywords": ["bank", "international"],
+      "answer": "The university may guide international students regarding the documentation required for opening a local bank account.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0455",
+      "category": "International Students",
+      "question": "Is English the primary language of instruction?",
+      "alternate_questions": [
+        "Teaching language",
+        "Medium of instruction",
+        "Classes in English"
+      ],
+      "keywords": ["english", "language"],
+      "answer": "Most academic programs are conducted in English as per the curriculum and university regulations.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0456",
+      "category": "International Students",
+      "question": "Can international students participate in internships?",
+      "alternate_questions": [
+        "Internship for foreign students",
+        "International internship",
+        "Training opportunities"
+      ],
+      "keywords": ["internship", "international"],
+      "answer": "Eligible international students may participate in internship opportunities subject to university policies and applicable legal requirements.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0457",
+      "category": "International Students",
+      "question": "Do international students receive placement assistance?",
+      "alternate_questions": [
+        "Placement for international students",
+        "Career support",
+        "International placements"
+      ],
+      "keywords": ["placement", "international"],
+      "answer": "Career guidance and placement-related support may be available depending on eligibility, employer requirements, and applicable regulations.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0458",
+      "category": "International Students",
+      "question": "Can international students join student clubs?",
+      "alternate_questions": [
+        "Foreign students clubs",
+        "International club participation",
+        "Join campus clubs"
+      ],
+      "keywords": ["clubs", "international"],
+      "answer": "Yes. International students are encouraged to participate in student clubs, societies, and cultural events.",
+      "source": "clubs_societies.json"
+    },
+    {
+      "id": "faq_0459",
+      "category": "International Students",
+      "question": "Is on-campus medical support available for international students?",
+      "alternate_questions": [
+        "Medical help for foreign students",
+        "Healthcare international students",
+        "Campus health"
+      ],
+      "keywords": ["medical", "international"],
+      "answer": "Yes. International students can access campus healthcare services according to university policies.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0460",
+      "category": "International Students",
+      "question": "Whom should international students contact for assistance?",
+      "alternate_questions": [
+        "International office contact",
+        "Foreign student support",
+        "International coordinator"
+      ],
+      "keywords": ["international office", "contact"],
+      "answer": "International students should contact the university's International Relations Office for academic and administrative assistance.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0461",
+      "category": "Campus Safety",
+      "question": "Is the university campus secure?",
+      "alternate_questions": [
+        "Campus security",
+        "University safety",
+        "Safe campus"
+      ],
+      "keywords": ["security", "campus"],
+      "answer": "Yes. The university maintains campus security through trained personnel, surveillance systems, and established safety procedures.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0462",
+      "category": "Campus Safety",
+      "question": "Are CCTV cameras installed across the campus?",
+      "alternate_questions": [
+        "Campus CCTV",
+        "Security cameras",
+        "Surveillance"
+      ],
+      "keywords": ["CCTV", "security"],
+      "answer": "Yes. CCTV surveillance is installed in designated campus areas to enhance safety and security.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0463",
+      "category": "Campus Safety",
+      "question": "Are security guards available 24/7?",
+      "alternate_questions": [
+        "Campus guards",
+        "24 hour security",
+        "Security staff"
+      ],
+      "keywords": ["security guards", "24x7"],
+      "answer": "Yes. Security personnel are deployed across the campus according to the university's security arrangements.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0464",
+      "category": "Campus Safety",
+      "question": "What should I do during a campus emergency?",
+      "alternate_questions": [
+        "Emergency procedure",
+        "Campus emergency",
+        "Safety protocol"
+      ],
+      "keywords": ["emergency", "safety"],
+      "answer": "Students should immediately follow instructions issued by university authorities and contact the designated emergency services if required.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0465",
+      "category": "Campus Safety",
+      "question": "How can I report a safety concern?",
+      "alternate_questions": [
+        "Safety complaint",
+        "Security issue",
+        "Report incident"
+      ],
+      "keywords": ["report", "security"],
+      "answer": "Students should report safety concerns to campus security or the designated university authorities as soon as possible.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0466",
+      "category": "Campus Safety",
+      "question": "Does the university have anti-ragging measures?",
+      "alternate_questions": [
+        "Anti-ragging policy",
+        "Ragging complaint",
+        "Campus anti-ragging"
+      ],
+      "keywords": ["anti-ragging", "discipline"],
+      "answer": "Yes. The university follows anti-ragging regulations and provides mechanisms for reporting and addressing ragging complaints.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0467",
+      "category": "Campus Safety",
+      "question": "Are fire safety systems installed on campus?",
+      "alternate_questions": [
+        "Fire safety",
+        "Fire extinguishers",
+        "Emergency fire system"
+      ],
+      "keywords": ["fire safety", "emergency"],
+      "answer": "Yes. Fire safety equipment and emergency response measures are maintained in accordance with applicable safety standards.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0468",
+      "category": "Campus Safety",
+      "question": "Are emergency contact numbers available on campus?",
+      "alternate_questions": [
+        "Emergency numbers",
+        "Campus helpline",
+        "Security contact"
+      ],
+      "keywords": ["emergency", "contact"],
+      "answer": "Yes. Emergency contact details are made available through official university communication channels and campus notices.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0469",
+      "category": "Campus Safety",
+      "question": "Does the university conduct safety awareness programs?",
+      "alternate_questions": [
+        "Safety workshops",
+        "Security awareness",
+        "Emergency training"
+      ],
+      "keywords": ["awareness", "safety"],
+      "answer": "Yes. Safety awareness sessions and emergency preparedness programs may be organized periodically for students.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0470",
+      "category": "Campus Safety",
+      "question": "Whom should I contact in case of a campus emergency?",
+      "alternate_questions": [
+        "Emergency contact",
+        "Security office",
+        "Campus emergency help"
+      ],
+      "keywords": ["emergency", "security", "contact"],
+      "answer": "Students should contact campus security, the university emergency helpline, or the designated emergency response office immediately.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0471",
+      "category": "General Student Support",
+      "question": "Where can I get general student assistance on campus?",
+      "alternate_questions": [
+        "Student help desk",
+        "Support office",
+        "Student assistance"
+      ],
+      "keywords": ["student support", "help"],
+      "answer": "Students can contact the university's student support office or help desk for assistance with academic and administrative matters.",
+      "source": "legal_student_support_services.json"
+    },
+    {
+      "id": "faq_0472",
+      "category": "General Student Support",
+      "question": "Can I submit grievances online?",
+      "alternate_questions": [
+        "Online grievance",
+        "Complaint portal",
+        "Student complaint"
+      ],
+      "keywords": ["grievance", "online"],
+      "answer": "Yes. Students may submit grievances through the university's designated grievance redressal mechanism where available.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0473",
+      "category": "General Student Support",
+      "question": "Is academic counseling available?",
+      "alternate_questions": [
+        "Academic guidance",
+        "Study counseling",
+        "Faculty advisor"
+      ],
+      "keywords": ["academic", "counseling"],
+      "answer": "Yes. Academic counseling is available through faculty advisors and departmental student support systems.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0474",
+      "category": "General Student Support",
+      "question": "Can parents contact the university regarding student concerns?",
+      "alternate_questions": [
+        "Parent support",
+        "Guardian contact",
+        "Parent assistance"
+      ],
+      "keywords": ["parents", "support"],
+      "answer": "Yes. Parents or guardians may contact the appropriate university office regarding academic or administrative concerns, following university procedures.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0475",
+      "category": "General Student Support",
+      "question": "Where can I find official university announcements?",
+      "alternate_questions": [
+        "University notices",
+        "Official updates",
+        "Latest announcements"
+      ],
+      "keywords": ["announcements", "notices"],
+      "answer": "Official announcements are published through the university website, ERP, official email, and other authorized communication channels.",
+      "source": "digital_communication_merchandise.json"
+    }
+  ]
+}

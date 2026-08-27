@@ -1,0 +1,264 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0256",
+      "category": "Placements",
+      "question": "Which companies visit Parul University for campus placements?",
+      "alternate_questions": [
+        "Top recruiters",
+        "Companies visiting campus",
+        "Placement companies"
+      ],
+      "keywords": ["companies", "recruiters", "placements"],
+      "answer": "Various national and international companies participate in campus recruitment each year. The list of recruiters varies depending on the placement season and industry requirements.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0257",
+      "category": "Placements",
+      "question": "Can students from all branches participate in placements?",
+      "alternate_questions": [
+        "Placement for every course",
+        "All departments placement",
+        "Branch eligibility"
+      ],
+      "keywords": ["branch", "placement", "eligibility"],
+      "answer": "Placement opportunities are available for eligible students from different programs, depending on company-specific eligibility criteria.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0258",
+      "category": "Placements",
+      "question": "Does the university provide resume-building support?",
+      "alternate_questions": [
+        "Resume help",
+        "CV preparation",
+        "Resume guidance"
+      ],
+      "keywords": ["resume", "CV", "placement"],
+      "answer": "Yes. The Training and Placement Cell conducts resume-building sessions and provides guidance to help students prepare professional resumes.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0259",
+      "category": "Placements",
+      "question": "Are mock interviews conducted before placements?",
+      "alternate_questions": [
+        "Practice interviews",
+        "Mock interview",
+        "Interview preparation"
+      ],
+      "keywords": ["mock interview", "placement"],
+      "answer": "Yes. Mock interviews are organized to help students improve their interview skills and confidence before campus recruitment.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0260",
+      "category": "Placements",
+      "question": "Does the university conduct aptitude training?",
+      "alternate_questions": [
+        "Aptitude classes",
+        "Placement aptitude",
+        "Reasoning preparation"
+      ],
+      "keywords": ["aptitude", "training"],
+      "answer": "Yes. Aptitude training sessions are conducted to prepare students for campus recruitment tests.",
+      "source": "skill_development_industry_certifications.json"
+    },
+    {
+      "id": "faq_0261",
+      "category": "Placements",
+      "question": "Are communication skills training sessions provided?",
+      "alternate_questions": [
+        "Soft skills training",
+        "Communication classes",
+        "English communication"
+      ],
+      "keywords": ["soft skills", "communication"],
+      "answer": "Yes. The university organizes communication and soft skills development sessions to improve employability.",
+      "source": "skill_development_industry_certifications.json"
+    },
+    {
+      "id": "faq_0262",
+      "category": "Placements",
+      "question": "Does Parul University help students prepare for HR interviews?",
+      "alternate_questions": [
+        "HR interview preparation",
+        "Placement HR round",
+        "Interview guidance"
+      ],
+      "keywords": ["HR interview", "placement"],
+      "answer": "Yes. Placement training programs include HR interview preparation and personality development sessions.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0263",
+      "category": "Placements",
+      "question": "Can students apply to multiple companies during placements?",
+      "alternate_questions": [
+        "Multiple placement drives",
+        "More than one company",
+        "Apply to many recruiters"
+      ],
+      "keywords": ["placement", "companies"],
+      "answer": "Students may apply to multiple companies according to the placement policy and eligibility conditions announced by the university.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0264",
+      "category": "Placements",
+      "question": "What documents should I carry for campus interviews?",
+      "alternate_questions": [
+        "Interview documents",
+        "Placement documents",
+        "Campus interview requirements"
+      ],
+      "keywords": ["documents", "placement"],
+      "answer": "Students should carry their resume, university identity card, academic documents, passport-size photographs, and any other documents requested by the recruiter.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0265",
+      "category": "Placements",
+      "question": "Will I receive placement notifications through ERP or email?",
+      "alternate_questions": [
+        "Placement updates",
+        "Recruitment notifications",
+        "Placement announcements"
+      ],
+      "keywords": ["placement", "notifications"],
+      "answer": "Placement announcements are communicated through official university communication channels such as ERP, email, or the Training and Placement Cell.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0266",
+      "category": "Placements",
+      "question": "Does the university organize campus recruitment drives?",
+      "alternate_questions": [
+        "Campus drive",
+        "Recruitment drive",
+        "Placement events"
+      ],
+      "keywords": ["campus drive", "placement"],
+      "answer": "Yes. The university regularly organizes campus recruitment drives with participating companies.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0267",
+      "category": "Placements",
+      "question": "Can students from previous batches participate in placements?",
+      "alternate_questions": [
+        "Alumni placement",
+        "Passout placement",
+        "Graduated student placement"
+      ],
+      "keywords": ["alumni", "placement"],
+      "answer": "Eligibility for alumni or previous batch placements depends on the university's placement policy and recruiter requirements.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0268",
+      "category": "Placements",
+      "question": "Does the university conduct technical interview preparation sessions?",
+      "alternate_questions": [
+        "Technical interview training",
+        "Coding interview preparation",
+        "Technical placement guidance"
+      ],
+      "keywords": ["technical interview", "placement"],
+      "answer": "Yes. Technical preparation sessions are organized for eligible students according to their discipline and placement requirements.",
+      "source": "skill_development_industry_certifications.json"
+    },
+    {
+      "id": "faq_0269",
+      "category": "Placements",
+      "question": "Are coding practice sessions organized before placements?",
+      "alternate_questions": [
+        "Coding preparation",
+        "Programming practice",
+        "Coding placement training"
+      ],
+      "keywords": ["coding", "placement"],
+      "answer": "For relevant programs, coding practice sessions and technical workshops may be conducted to prepare students for recruitment processes.",
+      "source": "skill_development_industry_certifications.json"
+    },
+    {
+      "id": "faq_0270",
+      "category": "Placements",
+      "question": "Can I update my resume after placement registration?",
+      "alternate_questions": [
+        "Modify resume",
+        "Update CV",
+        "Placement profile update"
+      ],
+      "keywords": ["resume", "update"],
+      "answer": "Resume updates are generally allowed before company-specific application deadlines, subject to placement portal policies.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0271",
+      "category": "Placements",
+      "question": "Does the university provide career counseling?",
+      "alternate_questions": [
+        "Career guidance",
+        "Career counseling",
+        "Professional guidance"
+      ],
+      "keywords": ["career", "guidance"],
+      "answer": "Yes. Career counseling sessions are organized to help students make informed decisions regarding employment and higher education.",
+      "source": "internships_career_development.json"
+    },
+    {
+      "id": "faq_0272",
+      "category": "Placements",
+      "question": "Can I participate in off-campus placement opportunities?",
+      "alternate_questions": [
+        "Off-campus jobs",
+        "External recruitment",
+        "Off-campus placement"
+      ],
+      "keywords": ["off campus", "placement"],
+      "answer": "Students may participate in off-campus opportunities independently or through university-supported initiatives where applicable.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0273",
+      "category": "Placements",
+      "question": "Does the university provide placement statistics?",
+      "alternate_questions": [
+        "Placement report",
+        "Placement data",
+        "Recruitment statistics"
+      ],
+      "keywords": ["placement statistics", "report"],
+      "answer": "Placement statistics and recruitment highlights are published through official university communication channels.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0274",
+      "category": "Placements",
+      "question": "Can higher studies students also participate in placements?",
+      "alternate_questions": [
+        "PG placement",
+        "Master's placement",
+        "Postgraduate recruitment"
+      ],
+      "keywords": ["PG", "placement"],
+      "answer": "Eligible postgraduate students may participate in campus placements based on recruiter requirements and university policies.",
+      "source": "placements.json"
+    },
+    {
+      "id": "faq_0275",
+      "category": "Placements",
+      "question": "How do I contact the Training and Placement Cell?",
+      "alternate_questions": [
+        "Placement office contact",
+        "Training cell contact",
+        "Placement support"
+      ],
+      "keywords": ["placement cell", "contact"],
+      "answer": "Students can contact the Training and Placement Cell through the official university contact channels for placement-related assistance.",
+      "source": "administration_contacts.json"
+    }
+  ]
+}

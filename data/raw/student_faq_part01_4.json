@@ -1,0 +1,176 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0031",
+      "category": "Admissions",
+      "question": "Can NRI students apply for admission at Parul University?",
+      "alternate_questions": [
+        "NRI admission process",
+        "Admission for NRI students",
+        "Can overseas Indians apply?"
+      ],
+      "keywords": [
+        "NRI",
+        "international",
+        "admission"
+      ],
+      "answer": "Yes. NRI students can apply through the university's admission process by submitting the required academic and identification documents as specified for NRI applicants.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0032",
+      "category": "Admissions",
+      "question": "What documents are required for international student admission?",
+      "alternate_questions": [
+        "Documents for foreign students",
+        "International admission documents",
+        "Required papers for overseas applicants"
+      ],
+      "keywords": [
+        "international",
+        "documents",
+        "passport",
+        "visa"
+      ],
+      "answer": "International applicants should submit the required academic records, identification documents, passport details, and other documents requested by the International Admissions Office.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0033",
+      "category": "Admissions",
+      "question": "Can I apply for hostel accommodation during admission?",
+      "alternate_questions": [
+        "Hostel booking during admission",
+        "Can I reserve a hostel room?",
+        "Hostel application process"
+      ],
+      "keywords": [
+        "hostel",
+        "accommodation",
+        "admission"
+      ],
+      "answer": "Yes. Eligible students can apply for hostel accommodation during or after the admission process, subject to room availability and hostel guidelines.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0034",
+      "category": "Admissions",
+      "question": "When should I pay my admission fees?",
+      "alternate_questions": [
+        "Admission fee payment",
+        "When is the fee due?",
+        "Fee payment after admission"
+      ],
+      "keywords": [
+        "fees",
+        "payment",
+        "admission"
+      ],
+      "answer": "Admission fees are generally paid after successful verification of documents and completion of admission formalities, as instructed by the admission office.",
+      "source": "fees_financial_aid.json"
+    },
+    {
+      "id": "faq_0035",
+      "category": "Admissions",
+      "question": "Will I receive an admission confirmation letter?",
+      "alternate_questions": [
+        "Admission letter",
+        "Confirmation letter",
+        "Offer letter after admission"
+      ],
+      "keywords": [
+        "confirmation",
+        "letter",
+        "offer"
+      ],
+      "answer": "Yes. After completing the admission requirements, students receive admission confirmation through the university's official communication process.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0036",
+      "category": "Admissions",
+      "question": "When will I receive my student enrollment number?",
+      "alternate_questions": [
+        "Enrollment number",
+        "Student registration number",
+        "University ID number"
+      ],
+      "keywords": [
+        "enrollment",
+        "student id",
+        "registration"
+      ],
+      "answer": "The enrollment number is issued after admission confirmation and successful completion of the enrollment process.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0037",
+      "category": "Admissions",
+      "question": "Can I change my branch after admission?",
+      "alternate_questions": [
+        "Branch transfer",
+        "Can I switch my course?",
+        "Program change after admission"
+      ],
+      "keywords": [
+        "branch",
+        "course",
+        "change"
+      ],
+      "answer": "Requests for branch or program changes are considered according to university regulations, eligibility requirements, and seat availability.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0038",
+      "category": "Admissions",
+      "question": "How can I check my admission status?",
+      "alternate_questions": [
+        "Admission status",
+        "Track my application",
+        "Check admission progress"
+      ],
+      "keywords": [
+        "status",
+        "application",
+        "tracking"
+      ],
+      "answer": "Applicants can check their admission status through the official communication channels or by contacting the admission office.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0039",
+      "category": "Admissions",
+      "question": "Is there a waiting list if seats are full?",
+      "alternate_questions": [
+        "Admission waiting list",
+        "What if seats are unavailable?",
+        "Waitlist admission"
+      ],
+      "keywords": [
+        "waiting list",
+        "seats",
+        "availability"
+      ],
+      "answer": "If seats are unavailable, eligible applicants may be considered according to the university's admission and seat allocation process, where applicable.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0040",
+      "category": "Admissions",
+      "question": "Does Parul University conduct an orientation program for new students?",
+      "alternate_questions": [
+        "Student orientation",
+        "Freshers orientation",
+        "Induction program"
+      ],
+      "keywords": [
+        "orientation",
+        "induction",
+        "new students",
+        "freshers"
+      ],
+      "answer": "Yes. The university organizes orientation and induction programs to introduce newly admitted students to academic regulations, campus facilities, student services, and university life.",
+      "source": "academic_calendar.json"
+    }
+  ]
+}

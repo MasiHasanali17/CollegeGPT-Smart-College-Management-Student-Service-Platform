@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<style>
+.ticket-page {
+    background: #f8fafc;
+    min-height: 85vh;
+    padding: 60px 20px 100px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.ticket-success-banner {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ticket-success-banner .check {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #22c55e;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+}
+
+.ticket-success-banner h1 {
+    font-size: 24px;
+    margin: 0 0 6px;
+    color: #0f172a;
+}
+
+.ticket-success-banner p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.ticket-card {
+    max-width: 460px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
+    overflow: hidden;
+}
+
+.ticket-top {
+    background: #0f172a;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.5) 0, transparent 60%),
+        radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.4) 0, transparent 60%);
+    color: white;
+    padding: 26px 28px;
+}
+
+.ticket-top .kind-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.ticket-top h2 {
+    margin: 0 0 4px;
+    font-size: 20px;
+}
+
+.ticket-top .schedule {
+    color: #cbd5f5;
+    font-size: 13px;
+}
+
+.ticket-perforation {
+    position: relative;
+    height: 0;
+    border-top: 2px dashed #e2e8f0;
+    margin: 0 20px;
+}
+
+.ticket-perforation::before,
+.ticket-perforation::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    width: 24px;
+    height: 24px;
+    background: #f8fafc;
+    border-radius: 50%;
+}
+
+.ticket-perforation::before { left: -32px; }
+.ticket-perforation::after { right: -32px; }
+
+.ticket-bottom {
+    padding: 26px 28px 30px;
+    text-align: center;
+}
+
+.ticket-qr {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 18px;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.ticket-qr img {
+    width: 100%;
+    height: 100%;
+}
+
+.ticket-ref-label {
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.ticket-ref {
+    font-family: 'Courier New', monospace;
+    font-size: 22px;
+    font-weight: 800;
+    color: #7c3aed;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.ticket-details {
+    text-align: left;
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+}
+
+.ticket-details .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 13.5px;
+}
+
+.ticket-details .row span:first-child {
+    color: #64748b;
+}
+
+.ticket-details .row span:last-child {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.ticket-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.ticket-actions a {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ticket-actions .primary {
+    background: #7c3aed;
+    color: white;
+}
+
+.ticket-actions .secondary {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+@media print {
+    .navbar, .ask-ai, .ticket-actions, .ticket-success-banner { display: none !important; }
+    .ticket-page { background: white; padding: 0; }
+}
+</style>
+
+<div class="ticket-page">
+
+    <div class="ticket-success-banner">
+        <div class="check">✓</div>
+        <h1>Booking Confirmed!</h1>
+        <p>
+            {% if booking.payment_status == 'paid' %}
+                Payment successful — here's your ticket.
+            {% else %}
+                You're all set — here's your confirmation.
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="ticket-card">
+
+        <div class="ticket-top">
+            <span class="kind-tag">{{ booking.kind }}</span>
+            <h2>{{ booking.title }}</h2>
+            <div class="schedule">{{ booking.schedule_text }}</div>
+        </div>
+
+        <div class="ticket-perforation"></div>
+
+        <div class="ticket-bottom">
+
+            <div class="ticket-qr">
+                <img src="{{ qr_code }}" alt="Ticket QR Code">
+            </div>
+
+            <div class="ticket-ref-label">Booking Reference</div>
+            <div class="ticket-ref">{{ booking.booking_ref }}</div>
+
+            <div class="ticket-details">
+                <div class="row"><span>Name</span><span>{{ booking.student_name }}</span></div>
+                <div class="row"><span>Student ID</span><span>{{ booking.student_id }}</span></div>
+                <div class="row"><span>Booked On</span><span>{{ booking.booked_at }}</span></div>
+                {% if booking.payment_status == 'paid' %}
+                <div class="row"><span>Amount Paid</span><span>₹{{ booking.amount_paid }}</span></div>
+                <div class="row"><span>Payment ID</span><span>{{ booking.razorpay_payment_id }}</span></div>
+                {% else %}
+                <div class="row"><span>Type</span><span>Free</span></div>
+                {% endif %}
+            </div>
+
+            <div class="ticket-actions">
+                <a href="#" class="secondary" onclick="window.print(); return false;">🖨️ Print</a>
+                <a href="{{ url_for('portal_my_bookings') }}" class="primary">My Bookings</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+:root {
+    --brand-purple: #7c3aed;
+    --brand-dark: #0f172a;
+    --text-slate: #64748b;
+}
+
+.calc-page {
+    background: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--brand-dark);
+}
+
+.calc-hero {
+    background: var(--brand-dark);
+    background-image:
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.4) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.3) 0, transparent 50%);
+    color: white;
+    padding: 90px 20px 70px;
+    text-align: center;
+}
+
+.calc-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.calc-hero p {
+    color: #cbd5f5;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.calc-wrap {
+    max-width: 760px;
+    margin: -50px auto 80px;
+    padding: 0 20px;
+}
+
+.calc-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+    padding: 40px;
+}
+
+.calc-card label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--brand-dark);
+}
+
+.calc-card select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    font-size: 16px;
+    margin-bottom: 24px;
+    background: #f8fafc;
+}
+
+.calc-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: var(--brand-purple);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.calc-btn:hover {
+    background: #6d28d9;
+}
+
+.calc-result {
+    margin-top: 30px;
+    display: none;
+}
+
+.calc-result.show {
+    display: block;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.result-row:last-child {
+    border-bottom: none;
+}
+
+.result-row .label {
+    color: var(--text-slate);
+    font-weight: 600;
+}
+
+.result-row .value {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.result-row.total .value {
+    color: var(--brand-purple);
+    font-size: 24px;
+}
+
+.calc-note {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: #f5f3ff;
+    border-radius: 10px;
+    font-size: 13.5px;
+    color: #5b21b6;
+    line-height: 1.5;
+}
+
+.calc-error {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: #fef2f2;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #b91c1c;
+    display: none;
+}
+
+.calc-error.show {
+    display: block;
+}
+</style>
+
+<div class="calc-page">
+
+    <div class="calc-hero">
+        <h1>Fee Calculator</h1>
+        <p>Pick a course to see the exact yearly and total tuition fee — pulled directly from Parul University's official fee data.</p>
+    </div>
+
+    <div class="calc-wrap">
+        <div class="calc-card">
+
+            <label for="courseSelect">Select your course</label>
+            <select id="courseSelect">
+                <option value="">-- Choose a course --</option>
+                {% for c in courses %}
+                <option value="{{ c }}">{{ c }}</option>
+                {% endfor %}
+            </select>
+
+            <button class="calc-btn" onclick="calculateFee()">Calculate Fee</button>
+
+            <div class="calc-error" id="calcError"></div>
+
+            <div class="calc-result" id="calcResult">
+                <div class="result-row">
+                    <span class="label">Course</span>
+                    <span class="value" id="resCourse">-</span>
+                </div>
+                <div class="result-row">
+                    <span class="label">Duration</span>
+                    <span class="value" id="resDuration">-</span>
+                </div>
+                <div class="result-row">
+                    <span class="label">Fee per year</span>
+                    <span class="value" id="resYearly">-</span>
+                </div>
+                <div class="result-row total">
+                    <span class="label">Estimated total course fee</span>
+                    <span class="value" id="resTotal">-</span>
+                </div>
+
+                <div class="calc-note">
+                    This is an estimate based on published tuition fees and may vary by quota, category, or scholarship eligibility. For an exact figure, ask Campus AI or contact admissions.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+async function calculateFee() {
+    const course = document.getElementById('courseSelect').value;
+    const errorBox = document.getElementById('calcError');
+    const resultBox = document.getElementById('calcResult');
+
+    errorBox.classList.remove('show');
+    resultBox.classList.remove('show');
+
+    if (!course) {
+        errorBox.textContent = "Please select a course first.";
+        errorBox.classList.add('show');
+        return;
+    }
+
+    try {
+        const res = await fetch(`/api/fee-estimate?course=${encodeURIComponent(course)}`);
+        const data = await res.json();
+
+        if (!data.ok) {
+            errorBox.textContent = data.error || "Could not calculate fee for this course.";
+            errorBox.classList.add('show');
+            return;
+        }
+
+        document.getElementById('resCourse').textContent = data.course;
+        document.getElementById('resDuration').textContent = data.duration || "-";
+        document.getElementById('resYearly').textContent = data.fee_text || "-";
+        document.getElementById('resTotal').textContent = data.total_amount
+            ? `₹ ${data.total_amount.toLocaleString('en-IN')}`
+            : "Contact admissions for total fee";
+
+        resultBox.classList.add('show');
+
+    } catch (err) {
+        errorBox.textContent = "Something went wrong. Please try again.";
+        errorBox.classList.add('show');
+    }
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is generated for this academic project, written to be realistic and scale-consistent with a 50,000+ student, multi-faculty university — meaning multiple clubs per category rather than just one token club per interest area. Specific club names are illustrative and plausible for this scale, not confirmed official club names. The entrepreneurship club entry cross-references PIERC, which is already documented as real in prior collected research. None of this should be treated as officially confirmed university information.",
+    "data_type": "generated_for_project"
+  },
+
+  "clubs_societies_and_student_organizations": {
+
+    "clubs_by_category": {
+
+      "technical_and_coding": [
+        "Coding Club / Competitive Programming Club",
+        "AI & Machine Learning Club",
+        "Web & App Development Club",
+        "Cyber Security Club",
+        "Google Developer Student Club (GDSC) Chapter",
+        "IEEE Student Chapter (technical talks, workshops, electronics/robotics-adjacent projects)"
+      ],
+      "robotics": [
+        "Robotics Club",
+        "Drone & Automation Club (aligned with the AICTE IDEA Lab drone training facility already documented in campus_facilities_infrastructure_parul_details.json)"
+      ],
+      "cultural_umbrella": [
+        "Cultural Committee (coordinates and oversees dance, music, drama, and fine arts sub-clubs for major fests)"
+      ],
+      "dance": [
+        "Western Dance Club",
+        "Classical/Indian Dance Club"
+      ],
+      "music": [
+        "Vocal Music Club",
+        "Instrumental/Band Club"
+      ],
+      "drama": [
+        "Dramatics & Theatre Club"
+      ],
+      "literary_and_debate": [
+        "Literary Club (creative writing, poetry, book discussions)",
+        "Debate & Public Speaking Club"
+      ],
+      "photography": [
+        "Photography & Videography Club"
+      ],
+      "entrepreneurship": [
+        "Entrepreneurship Cell (E-Cell) — works closely with PIERC (Parul Innovation & Entrepreneurship Research Centre), already documented as real in the placements/research knowledge base"
+      ],
+      "social_service": [
+        "NSS (National Service Scheme) Unit",
+        "Rotaract Club",
+        "Social Service & Community Outreach Club"
+      ],
+      "quiz": [
+        "Quiz Club"
+      ],
+      "environment": [
+        "Eco Club / Green Campus Club (sustainability, waste management, tree plantation drives)"
+      ]
+    },
+
+    "how_to_join": {
+      "open_enrollment_clubs": "Interest-based clubs with lower barrier to entry (Coding Club, Literary Club, Quiz Club, Eco Club, Photography Club, Social Service clubs) generally follow an open recruitment model — students fill a simple interest form during the recruitment drive and are added to the club's active member list.",
+      "audition_based_clubs": "Performing arts clubs (Dance, Music, Drama) typically require a short audition/demonstration of skill during the recruitment drive to ensure a baseline performance standard for fest participation.",
+      "selection_test_clubs": "More competitive/specialized clubs (Robotics Club, AI & ML Club, certain technical clubs with limited project slots) may conduct a short written test or interview alongside the interest form, particularly for core/project-team positions (general membership is usually still open).",
+      "special_case_nss": "NSS enrollment often follows a separate university-wide registration process at the start of the academic year, since it is tied to a national scheme with defined unit strength."
+    },
+
+    "faculty_coordinator_structure": {
+      "general_policy": "Each club has a designated faculty coordinator/mentor (typically a professor from a relevant department) who oversees the club's activities, approves event budgets/permissions, and acts as the liaison with the Dean of Student Affairs office.",
+      "role": "The faculty coordinator does not run day-to-day club activities (which are student-led) but provides guidance, ensures activities align with university policy, and signs off on official event bookings (auditoriums, grounds, budget requests)."
+    },
+
+    "typical_activities_and_events": {
+      "technical_clubs": "Hackathons, coding contests, workshops on emerging technologies (AI, cloud, cybersecurity), guest tech talks, and collaborative open-source/project showcases.",
+      "robotics_club": "Robotics competitions (in-house and inter-college), workshops on Arduino/Raspberry Pi/drone building, and project demonstrations during the technical fest.",
+      "cultural_and_performing_arts_clubs": "Regular practice sessions, participation in the annual cultural fest, inter-departmental competitions, and occasional public performances during university events (orientation, convocation, festival celebrations).",
+      "literary_and_debate_club": "Debate competitions, elocution/extempore events, creative writing contests, and participation in inter-college literary festivals.",
+      "photography_club": "Campus photo-walks, event photography/videography coverage for university functions, and photography contests/exhibitions.",
+      "entrepreneurship_cell": "Startup pitch competitions, ideation workshops, mentorship sessions (often linked with PIERC's incubation support), and entrepreneurship guest talks.",
+      "social_service_clubs": "Blood donation camps, tree plantation drives, community outreach programs in nearby villages/underserved areas, and awareness campaigns (health, hygiene, education).",
+      "quiz_club": "Weekly/monthly quiz sessions, participation in inter-college quiz competitions, and general knowledge/subject-specific quiz events during college fests.",
+      "eco_club": "Campus cleanliness drives, waste segregation awareness campaigns, tree plantation events, and sustainability-themed workshops/competitions."
+    },
+
+    "club_recruitment_drive_timing": {
+      "primary_window": "The main club recruitment drive typically takes place within the first 2-3 weeks of the odd semester (July-August), often as part of freshers' orientation activities, to onboard new (especially first-year) students.",
+      "secondary_window": "A smaller secondary recruitment round may occur at the start of the even semester (January) to fill vacant positions or admit students who missed the primary drive."
+    },
+
+    "student_leadership_positions": {
+      "typical_structure": [
+        "President / Club Head — overall leadership and representation of the club to the university administration",
+        "Vice President — supports the president, often oversees specific verticals (events, operations)",
+        "Secretary — handles documentation, member communication, and meeting records",
+        "Treasurer — manages club budget and expense tracking (for clubs with dedicated budgets)",
+        "Event/Activity Head(s) — coordinate specific flagship events or competitions run by the club",
+        "Core Committee Members — general leadership team supporting day-to-day club operations"
+      ],
+      "selection_process": "Leadership positions are typically filled through a combination of application, interview, and/or peer voting among active members, usually conducted at the start of each academic year, with faculty coordinator approval for final positions."
+    }
+  }
+}

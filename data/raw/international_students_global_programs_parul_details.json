@@ -1,0 +1,61 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "Several facts in this file are real data already established elsewhere in this project's knowledge base — NRI-quota hostel pricing (Marie Curie, Albert Einstein, Abraham Lincoln, all priced in USD), NRI-quota course fees (MBBS, B.Pharm, Pharm.D), and the international admissions process outline. This file consolidates and cross-references that real data rather than re-stating it differently, and generates the remaining gaps (FRRO/visa support detail, exchange program specifics, cultural integration structure) to be realistic. None of the generated sections should be treated as officially confirmed university policy.",
+    "data_types": {
+      "verified_from_prior_data": "Real data already established elsewhere in this project, consolidated here",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "international_students_and_global_programs": {
+
+    "international_admission_process": {
+      "data_type": "verified_from_prior_data",
+      "cross_reference": "The core international/NRI admission process is already documented in admissions_parul_details.json under 'nri_and_international_admission'.",
+      "summary": "International and NRI applicants follow a largely similar online application process to domestic students, with additional document requirements and dedicated support from the International Admissions Cell. Equivalence of international qualifications is verified through the Association of Indian Universities (AIU) before admission is finalized."
+    },
+
+    "visa_and_frro_registration_support": {
+      "data_type": "generated_for_project",
+      "support_structure": "The International Admissions Cell (already referenced in admissions_parul_details.json) typically assists incoming international students with visa application guidance (student visa documentation, invitation/admission letters required by Indian consulates) prior to arrival.",
+      "frro_registration": "Upon arrival in India, international students are generally required to register with the Foreigners Regional Registration Office (FRRO) within the mandated timeframe (commonly within 14 days of arrival, per Indian immigration norms); the International Admissions Cell typically assists with this registration process, document preparation, and any renewal requirements during the course of study.",
+      "note": "FRRO registration is a genuine Indian immigration requirement for most international students on a student visa, not a university-specific policy — the university's role here is facilitation and guidance, not the legal requirement itself."
+    },
+
+    "international_student_housing_and_support": {
+      "data_type": "verified_from_prior_data",
+      "dedicated_hostels": "The university maintains hostel accommodation specifically priced for international students, already documented in hostel_residential_life_parul_details.json: Marie Curie (girls' hostel, AC, 3-student sharing, USD 2000/year) and Albert Einstein (boys' hostel, AC, 2/3-student sharing, USD 2000/year). The Abraham Lincoln hostel (boys') also offers USD-denominated pricing (USD 1300-1500/year) alongside its INR options, suggesting it accommodates a mix of international and domestic students.",
+      "support_cell": "The International Admissions Cell serves as the primary support point for international students throughout their stay, extending beyond admission into ongoing housing, visa, and general settling-in support (generated, based on typical structure at universities with a dedicated international admissions function)."
+    },
+
+    "exchange_programs": {
+      "data_type": "generated_for_project",
+      "general_structure": "The university facilitates student exchange programs with partner institutions abroad, allowing eligible students to spend a semester or short-term program at a partner university as part of their broader global exposure initiatives.",
+      "disclaimer": "Specific partner university names and exact countries covered are not claimed here, since this could not be independently verified for the current academic year — students interested in exchange programs should confirm current partner institutions with the International Admissions/Exchange Cell.",
+      "consistency_note": "This is consistent with the university's broader positioning (already reflected in existing site content) as hosting students from 60+ countries, indicating an internationally active student community even where specific exchange partner names aren't confirmed here."
+    },
+
+    "cultural_integration_support": {
+      "data_type": "generated_for_project + verified_from_prior_data",
+      "orientation_support": "International students typically receive additional orientation support (beyond the general freshers' orientation already documented in events_fests_cultural_calendar_parul_details.json) covering local customs, campus navigation, and basic administrative processes specific to international students. (generated)",
+      "cultural_fest_integration": "The university's annual cultural festival, Dhoom (already documented as real), explicitly celebrates India's multicultural heritage and provides a natural integration point for international students to engage with and showcase diverse cultural backgrounds alongside domestic students. (verified_from_prior_data)",
+      "peer_support": "Informal peer-buddy systems (senior students helping new international students settle in) are common at universities with a significant international population, though a formally named/structured buddy program specific to Parul University was not independently confirmed. (generated)"
+    },
+
+    "fee_structure_differences_nri_international_quota": {
+      "data_type": "verified_from_prior_data",
+      "consolidated_examples": {
+        "mbbs": "NRI Quota: 25,000 USD per year (vs. State Quota ₹10,00,000 and Management Quota ₹19,75,000 per annum) — already documented in academic_details_parul.json.",
+        "b_pharm": "NRI Quota: ₹1,15,300 (vs. standard ₹1,00,300) — already documented in academic_details_parul.json.",
+        "pharm_d_post_baccalaureate": "NRI Quota: ₹2,45,000 (vs. standard ₹1,33,750) — already documented in academic_details_parul.json.",
+        "hostel_accommodation": "International-student-oriented hostels (Marie Curie, Albert Einstein) are priced at USD 2,000/year; Abraham Lincoln hostel offers USD 1,300-1,500/year options alongside INR pricing — already documented in hostel_residential_life_parul_details.json."
+      },
+      "general_pattern": "As reflected in these real examples, NRI/international quota fees are generally higher than domestic fees and, for select professional programs and hostel accommodation, are denominated partly or fully in USD rather than INR."
+    }
+  }
+}

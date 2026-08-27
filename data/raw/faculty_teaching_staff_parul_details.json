@@ -1,0 +1,50 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "IMPORTANT: Web research for this category surfaced a significant scale discrepancy affecting the whole project, not just this file. The university's own official 'About Us' page states 70,500+ students, 6,000+ international students from 75+ countries, and a 250-acre campus — figures notably different from the '50,000+ students / 60+ countries' baseline used throughout earlier files in this knowledge base (which traced back to an unverified template, not confirmed research). This file uses the official site's figures as the most authoritative source. Faculty count and student-teacher ratio, specifically, could NOT be resolved to a single confident number — sources ranged from 160+ (premier-institute faculty specifically) to 2,500+ (total faculty), and anecdotal student-teacher ratios ranged from 1:50 to 1:80 depending on the reviewer and program. Rather than picking one arbitrary number, this is presented honestly as a range with sourcing context.",
+    "data_types": {
+      "verified_via_web_search_official": "From the university's own official website — most authoritative",
+      "verified_via_web_search_aggregator": "From third-party education aggregator sites — less authoritative, presented with appropriate caution",
+      "honestly_unresolved": "Genuinely conflicting figures presented as a range rather than a fabricated single number"
+    }
+  },
+
+  "faculty_and_teaching_staff": {
+
+    "total_faculty_count_and_student_teacher_ratio": {
+      "data_type": "honestly_unresolved",
+      "faculty_count_range": "Third-party aggregator sources report faculty figures ranging from '160+ faculty from IIT/NIT-tier institutions' (a more specific, narrower claim, corroborated across two independent aggregator sources) up to '2,500+ total faculty' (a broader total-headcount claim from a single source). Neither could be confirmed against an official university source.",
+      "student_teacher_ratio": "Individual student reviews (Collegedunia) cite ratios ranging from 1:50 to 1:80 depending on the specific program/department, with no single official university-wide ratio found. This wide range likely reflects real variation across different faculties (smaller specialized programs vs. large intake programs) rather than a single fixed figure.",
+      "recommendation": "For a definitive figure (useful if this comes up in a viva), the official current-year NIRF data submission or the university's official 'About Us'/fact-sheet page would be the most reliable source to check directly."
+    },
+
+    "phd_qualified_faculty_percentage": {
+      "data_type": "verified_via_web_search_aggregator",
+      "figure": "One aggregator source cites '500+ PhD faculty' as part of the total faculty count, though an exact percentage of PhD-qualified faculty (vs. total faculty) could not be confidently calculated given the uncertain total faculty count above.",
+      "caution": "This figure should be treated as indicative rather than precise."
+    },
+
+    "visiting_and_guest_faculty_from_industry": {
+      "data_type": "verified_via_web_search_aggregator + generated_for_project",
+      "general_pattern": "Student reviews and aggregator sources describe faculty as including professionals with industry and premier-institute backgrounds (IIT, NIT, NID, NIFT are specifically mentioned across multiple sources), suggesting a meaningful presence of industry-experienced and academically elite faculty. (verified_via_web_search_aggregator)",
+      "guest_lecture_structure": "Beyond permanent faculty, guest/visiting faculty from industry regularly contribute through the guest lectures and industry conclaves already documented in events_fests_cultural_calendar_parul_details.json and placements_parul_details.json's pre-placement training. (generated_for_project, based on cross-referencing already-established real event structures)"
+    },
+
+    "notable_faculty_profiles": {
+      "data_type": "verified_via_web_search_aggregator",
+      "example": "Faculty of Architecture & Planning has been noted in aggregator sources to include senior positions such as a Professor & Dean and Assistant Professors with formal design/architecture credentials, consistent with standard faculty leadership structure.",
+      "disclaimer": "Specific named individuals and their full profiles are not reproduced here, since faculty rosters change over time and this project cannot maintain a current, accurate directory — students should refer to each faculty's official page for current faculty listings."
+    },
+
+    "faculty_recruitment_qualifications": {
+      "data_type": "generated_for_project",
+      "general_standard": "Consistent with UGC minimum qualification norms for university faculty in India, teaching positions typically require a relevant postgraduate degree (Master's) at minimum for Assistant Professor-level roles, with a PhD increasingly required or strongly preferred, especially for Associate Professor and Professor-level positions and for programs requiring UGC-NET/SET qualification where applicable.",
+      "additional_criteria": "Beyond formal qualifications, relevant industry experience is valued for professional programs (Engineering, Management, Design, Hotel Management), consistent with the industry-experienced faculty profile suggested by available research above.",
+      "disclaimer": "This reflects standard Indian higher education recruitment norms, not a confirmed Parul-specific recruitment policy document."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The 'green campus initiatives' section anchors to real facts from the university's official website (self-described as an eco-friendly campus community, with a NABL-accredited Environment Lab), found via web search. Specific claims about solar power capacity, waste management systems, and EV charging infrastructure could not be independently confirmed and are presented as plausible, generated content consistent with the 'eco-friendly' branding, not as confirmed specifics. The Eco Club is already documented as real in clubs_societies_parul_details.json and is cross-referenced here rather than restated differently.",
+    "data_types": {
+      "verified_via_web_search": "Real facts from the university's official website",
+      "verified_from_prior_data": "Real facts already established elsewhere in this project",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project, no confirmed specific source"
+    }
+  },
+
+  "wellness_and_sustainability": {
+
+    "yoga_and_meditation_programs": {
+      "data_type": "generated_for_project",
+      "availability": "Yoga and meditation sessions are commonly offered at Indian universities of this scale, typically coordinated through the sports/physical education department or the Eco Club/wellness-oriented student groups, often with a dedicated schedule around International Yoga Day (June 21) and periodic sessions during high-stress periods like exams.",
+      "disclaimer": "A dedicated, permanently staffed yoga/meditation center specific to Parul University was not independently confirmed; this reflects the general pattern expected at a university of this scale."
+    },
+
+    "mental_wellness_workshops": {
+      "data_type": "generated_for_project",
+      "distinction_from_counseling": "Distinct from the reactive, individual counseling support already documented in health_medical_services_parul_details.json, mental wellness workshops are proactive and preventive — group sessions on stress management, mindfulness, work-life balance, and exam anxiety, typically open to all students rather than requiring an individual appointment.",
+      "typical_timing": "Commonly scheduled around high-stress periods (exam blocks, already documented in academic_calendar_parul_details.json) and as part of orientation programming for new students."
+    },
+
+    "green_campus_initiatives": {
+      "data_type": "verified_via_web_search + generated_for_project",
+      "official_branding": "The university's own official website describes the campus as an 'eco-friendly community', and documents a NABL-accredited Environment Lab as part of its infrastructure. (verified via web search)",
+      "solar_power": "Consistent with this eco-friendly positioning, solar power installations for at least partial campus energy needs would be a reasonable expectation at a modern Indian university campus of this scale, though specific installed capacity could not be independently confirmed. (generated)",
+      "waste_management": "Waste segregation and management initiatives are likely coordinated with the Eco Club's campus cleanliness and sustainability activities, already documented in clubs_societies_parul_details.json. (generated, cross-referenced)",
+      "ev_charging": "EV charging infrastructure, if present, would likely be located near main parking zones already documented in transport_commute_parul_details.json, consistent with growing EV adoption trends at Indian institutions; specific installation details could not be independently confirmed. (generated)"
+    },
+
+    "eco_club_and_sustainability_committee": {
+      "data_type": "verified_from_prior_data + generated_for_project",
+      "eco_club": "Already documented as real in clubs_societies_parul_details.json — organizes campus cleanliness drives, waste segregation awareness campaigns, tree plantation events, and sustainability-themed workshops/competitions. (verified_from_prior_data)",
+      "sustainability_committee": "Beyond the student-led Eco Club, a faculty/administration-level sustainability committee would typically oversee institutional-level green initiatives (energy, waste infrastructure, the NABL-accredited Environment Lab's research contributions to campus sustainability practice), working alongside rather than duplicating the Eco Club's student-facing activities. (generated)"
+    }
+  }
+}

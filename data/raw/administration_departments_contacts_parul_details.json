@@ -1,0 +1,73 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The main university contact (phone, email, address) is real, already established as verified data in this project. India's national emergency number (112) is real and government-confirmed. For internal department-specific contacts (admissions office beyond the main number, hostel warden, placement cell, examination department, accounts department, grievance/ICC committee), NO specific phone numbers or email addresses have been fabricated — inventing a precise but incorrect contact number would be actively misleading in a way that a general policy description would not be. Instead, this file describes the real official channels (ERP portal, official website, in-person office) through which these contacts are found, and cross-references contact-adjacent details already established elsewhere in the knowledge base.",
+    "data_types": {
+      "verified_from_prior_data": "Real contact information already confirmed elsewhere in this project",
+      "verified_via_web_search": "Real, government-confirmed national numbers",
+      "generated_for_project": "Realistic description of official channels/process, without fabricating specific unverified phone numbers"
+    }
+  },
+
+  "administration_departments_and_contacts": {
+
+    "main_university_contact": {
+      "data_type": "verified_from_prior_data",
+      "phone": "+91 2668 260300",
+      "email": "info@paruluniversity.ac.in",
+      "website": "https://paruluniversity.ac.in",
+      "address": "Parul University, Vadodara, Gujarat, India"
+    },
+
+    "department_and_faculty_wise_contacts": {
+      "data_type": "generated_for_project",
+      "how_to_find": "Individual faculty/department contacts (e.g. Faculty of Engineering and Technology office, Faculty of Medicine office) are listed on the official university website's faculty-specific pages, and are also accessible through the student ERP portal's department directory once enrolled.",
+      "general_channel": "For prospective students without ERP access, the main university contact (above) can direct queries to the relevant faculty office."
+    },
+
+    "admission_office_contact": {
+      "data_type": "generated_for_project",
+      "primary_channel": "The main university phone number and email (above) serve as the primary admissions contact point.",
+      "regional_helplines_note": "Region/state-wise admission helpline numbers (covering most Indian states and major cities) are already documented separately in this project's knowledge base (sourced from extrainfo.json), providing more localized contact points for prospective students outside Gujarat."
+    },
+
+    "hostel_office_and_warden_contacts": {
+      "data_type": "generated_for_project",
+      "structure": "As already documented in hostel_residential_life_parul_details.json, each hostel block has an assigned warden/rector as the first point of contact, with a duty mobile number typically posted at each hostel's reception/notice board rather than published centrally (since this varies by block).",
+      "central_hostel_office": "A central hostel administration office (separate from individual block wardens) can generally be reached through the main university contact or in person for allotment, fee, and general hostel administration queries."
+    },
+
+    "placement_cell_contact": {
+      "data_type": "generated_for_project",
+      "channel": "The Training & Placement (T&P) Cell, already documented in placements_parul_details.json, is generally reachable through the student ERP portal's placement module, or in person at the T&P Cell office, rather than a separate publicly listed phone line."
+    },
+
+    "examination_department_contact": {
+      "data_type": "generated_for_project",
+      "channel": "Examination-related queries (hall tickets, revaluation, results) are generally handled through the student ERP portal's examination module, with an in-person examination department office available on campus for issues not resolved online."
+    },
+
+    "accounts_and_fee_department_contact": {
+      "data_type": "generated_for_project",
+      "channel": "Fee payment, receipts, and financial queries are generally handled through the student ERP portal's fee/payment module (already referenced in fees_financial_aid_parul_details.json), with an in-person accounts office available on campus for escalations."
+    },
+
+    "grievance_and_icc_committee_contact": {
+      "data_type": "generated_for_project",
+      "legal_note": "As documented in rules_discipline_grievance_parul_details.json, the Grievance Redressal Committee and Internal Complaints Committee (ICC) are legally required structures; institutions are required to publicize their contact details on campus and on the official website, though this project does not have the specific current contact details to list here.",
+      "how_to_find": "Current ICC and Grievance Committee contact details are required by law to be displayed on the official university website and at prominent campus locations (notice boards, hostel offices, department offices) — students should refer to those official postings for the current, correct contact information rather than relying on any number not sourced from an official posting."
+    },
+
+    "emergency_contacts": {
+      "data_type": "verified_via_web_search + verified_from_prior_data",
+      "national_emergency_number": "112 — India's unified national emergency number, connecting to police, fire, and ambulance services from any phone (works even without a SIM card), launched under the Emergency Response Support System (ERSS) by the Ministry of Home Affairs. (verified via web search)",
+      "additional_service_specific_numbers": "100 (Police), 101 (Fire), 108 (Ambulance/Disaster Management in most states) remain active alongside 112. (verified via web search)",
+      "on_campus_medical_emergency": "Parul Sevashram Hospital (PSH), the university's on-campus 24/7 hospital, is the primary on-campus medical emergency resource, already documented in health_medical_services_parul_details.json. (verified_from_prior_data)",
+      "on_campus_security": "24/7 campus security personnel (already documented in campus_facilities_infrastructure_parul_details.json) coordinate on-campus emergency response and can be reached in person at main gates/security posts; a specific published campus security duty number was not available to list here with confidence."
+    }
+  }
+}

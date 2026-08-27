@@ -1,0 +1,180 @@
+{
+  "university": "Parul University",
+  "academic_year": "2025-26",
+  "category": "Admissions",
+  "faqs": [
+    {
+      "id": "faq_0001",
+      "category": "Admissions",
+      "question": "How can I apply for admission at Parul University?",
+      "alternate_questions": [
+        "How do I apply for admission?",
+        "What is the admission process?",
+        "How can I get admission?",
+        "How do I enroll at Parul University?"
+      ],
+      "keywords": [
+        "admission",
+        "apply",
+        "application",
+        "enrollment",
+        "join"
+      ],
+      "answer": "Students can apply online through the university admission portal or visit the admission office on campus. The admission team guides applicants through eligibility verification, document submission, counseling, and fee payment.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0002",
+      "category": "Admissions",
+      "question": "Can I apply for admission online?",
+      "alternate_questions": [
+        "Is online admission available?",
+        "Can I submit my application online?",
+        "Is online registration possible?"
+      ],
+      "keywords": [
+        "online",
+        "application",
+        "admission"
+      ],
+      "answer": "Yes. Eligible students can submit their admission application online through the university admission portal before completing the remaining admission formalities.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0003",
+      "category": "Admissions",
+      "question": "What documents are required for admission?",
+      "alternate_questions": [
+        "Which documents should I submit?",
+        "Admission document list",
+        "Required certificates for admission"
+      ],
+      "keywords": [
+        "documents",
+        "certificates",
+        "admission"
+      ],
+      "answer": "Applicants are generally required to submit academic mark sheets, identity proof, passport-size photographs, and any additional documents specified for their chosen program during admission.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0004",
+      "category": "Admissions",
+      "question": "Who can apply for admission?",
+      "alternate_questions": [
+        "Am I eligible for admission?",
+        "Who is eligible to apply?",
+        "Admission eligibility"
+      ],
+      "keywords": [
+        "eligibility",
+        "admission",
+        "apply"
+      ],
+      "answer": "Students who satisfy the eligibility criteria prescribed for their selected program may apply for admission.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0005",
+      "category": "Admissions",
+      "question": "Is there an admission helpline?",
+      "alternate_questions": [
+        "How can I contact the admission office?",
+        "Admission contact number",
+        "Whom should I contact for admission?"
+      ],
+      "keywords": [
+        "helpline",
+        "contact",
+        "admission"
+      ],
+      "answer": "Yes. The university admission office assists prospective students through its official contact channels and on-campus admission desk.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0006",
+      "category": "Admissions",
+      "question": "Can I visit the campus before taking admission?",
+      "alternate_questions": [
+        "Is campus visit allowed?",
+        "Can I tour the campus?",
+        "Campus visit before admission"
+      ],
+      "keywords": [
+        "campus",
+        "visit",
+        "admission"
+      ],
+      "answer": "Yes. Prospective students and parents can visit the campus and meet the admission counselors during working hours.",
+      "source": "guest_visitor_services.json"
+    },
+    {
+      "id": "faq_0007",
+      "category": "Admissions",
+      "question": "Do I need to visit the university for admission?",
+      "alternate_questions": [
+        "Is campus visit compulsory for admission?",
+        "Can admission be completed online?"
+      ],
+      "keywords": [
+        "offline",
+        "online",
+        "admission"
+      ],
+      "answer": "Many admission steps can be completed online, while some programs may require physical verification of documents or counseling as per university guidelines.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0008",
+      "category": "Admissions",
+      "question": "Can international students apply for admission?",
+      "alternate_questions": [
+        "Are foreign students eligible?",
+        "International admission process",
+        "Admission for overseas students"
+      ],
+      "keywords": [
+        "international",
+        "foreign",
+        "NRI"
+      ],
+      "answer": "Yes. International students can apply through the university's international admission process by fulfilling the prescribed eligibility and documentation requirements.",
+      "source": "international_students.json"
+    },
+    {
+      "id": "faq_0009",
+      "category": "Admissions",
+      "question": "Does the university provide admission counseling?",
+      "alternate_questions": [
+        "Can I get career counseling?",
+        "Admission guidance",
+        "Counseling before admission"
+      ],
+      "keywords": [
+        "counseling",
+        "guidance",
+        "admission"
+      ],
+      "answer": "Yes. Admission counselors help students understand programs, eligibility, fee structure, and the admission procedure.",
+      "source": "admissions.json"
+    },
+    {
+      "id": "faq_0010",
+      "category": "Admissions",
+      "question": "How can I know which course is suitable for me?",
+      "alternate_questions": [
+        "Which course should I choose?",
+        "Course selection guidance",
+        "Need help choosing a program"
+      ],
+      "keywords": [
+        "course",
+        "program",
+        "guidance",
+        "career"
+      ],
+      "answer": "Students can consult admission counselors who provide guidance based on academic background, career interests, eligibility, and available programs.",
+      "source": "academic_details.json"
+    }
+  ]
+}

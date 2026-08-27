@@ -1,0 +1,309 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+/* Page layout */
+.achievement-page{
+  padding:72px 6%;
+  background:#ffffff;
+  min-height:100vh;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Header */
+.achievement-header{
+  text-align:center;
+  margin-bottom:48px;
+}
+.achievement-header h1{
+  font-size:clamp(32px, 5.5vw, 48px);
+  line-height:1.02;
+  font-weight:800;
+  margin:0;
+}
+.achievement-header p{
+  color:#64748b;
+  font-size:clamp(14px, 1.6vw, 18px);
+  max-width:820px;
+  margin:12px auto 0;
+}
+
+/* Highlight gradient text (keeps compatibility) */
+.highlight-text{
+  background:linear-gradient(90deg,#7c3aed,#4f46e5);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  display:inline-block;
+}
+
+/* Stats banner */
+.stats-banner{
+  background:#0f172a;
+  border-radius:28px;
+  padding:34px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:18px;
+  margin-bottom:48px;
+  align-items:center;
+}
+.stat-item { text-align:center; color:#fff; }
+.stat-item h2{
+  font-size:clamp(24px, 4vw, 38px);
+  margin:0 0 6px;
+  color:#7c3aed;
+  font-weight:900;
+}
+.stat-item p{
+  margin:0;
+  color:#cbd5ff;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+/* Section title */
+.section-title{
+  text-align:center;
+  font-size:clamp(20px, 3.2vw, 30px);
+  font-weight:800;
+  color:#0f172a;
+  margin:42px 0 18px;
+}
+
+/* Achievement cards */
+.achievement-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:22px;
+  margin-top:18px;
+}
+.achievement-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid #eef2ff;
+  box-shadow:0 8px 22px rgba(15,23,42,0.04);
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.achievement-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 60px rgba(124,58,237,0.08);
+  border-color: rgba(124,58,237,0.12);
+}
+.achievement-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
+}
+.achievement-content{
+  padding:18px 20px 24px;
+}
+.achievement-tag{
+  display:inline-block;
+  background:#f3e8ff;
+  color:#7c3aed;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.achievement-content h3{
+  margin:6px 0 8px;
+  font-size:18px;
+  line-height:1.25;
+  color:#0f172a;
+}
+.achievement-content p{
+  margin:0;
+  color:#475569;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* Awards block */
+.awards-section{
+  margin-top:44px;
+  background:#f8fafc;
+  padding:28px;
+  border-radius:14px;
+}
+.awards-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:12px;
+}
+.award-item{
+  background:white;
+  padding:14px 16px;
+  border-radius:10px;
+  border-left:4px solid #7c3aed;
+  font-weight:700;
+  color:#334155;
+  font-size:14px;
+}
+
+/* Timeline */
+.timeline-section{ margin-top:40px; }
+.timeline{
+  max-width:920px;
+  margin:28px auto 0;
+  padding-left:18px;
+  border-left:3px solid #eef2ff;
+}
+.timeline-item{
+  margin-bottom:28px;
+  padding:18px;
+  background:white;
+  border-radius:12px;
+  border:1px solid #eef2ff;
+  position:relative;
+  box-shadow:0 6px 18px rgba(2,6,23,0.03);
+}
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  left:-32px;
+  top:22px;
+  width:14px;
+  height:14px;
+  background:#7c3aed;
+  border-radius:50%;
+  border:4px solid #fff;
+  box-shadow:0 6px 18px rgba(124,58,237,0.15);
+}
+.year-tag{
+  display:block;
+  color:#7c3aed;
+  font-weight:900;
+  font-size:14px;
+  margin-bottom:6px;
+}
+.timeline-item h4{
+  margin:0 0 6px;
+  font-size:16px;
+  font-weight:800;
+}
+.timeline-item p{
+  margin:0;
+  color:#475569;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* Responsive tweaks */
+@media (max-width:900px){
+  .achievement-page{ padding:48px 4%; }
+  .achievement-card img{ height:160px; }
+  .stat-item h2{ font-size:28px; }
+  .timeline{ padding-left:12px; }
+  .timeline-item::before{ left:-28px; top:18px; width:12px; height:12px; }
+}
+</style>
+
+<div class="achievement-page">
+
+  <div class="achievement-header">
+    <h1>Legacy of <span class="highlight-text">Excellence</span></h1>
+    <p>From strong academic standards to research & industry impact — curated milestones and accolades that matter.</p>
+  </div>
+
+  <div class="stats-banner" role="region" aria-label="University statistics">
+    <div class="stat-item" aria-hidden="false">
+      <h2>A++</h2>
+      <p>NAAC Grade</p>
+    </div>
+    <div class="stat-item">
+      <h2>Top 50</h2>
+      <p>ARIIA Rank</p>
+    </div>
+    <div class="stat-item">
+      <h2>#1</h2>
+      <p>Placements (State)</p>
+    </div>
+    <div class="stat-item">
+      <h2>1600+</h2>
+      <p>Patents Filed</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Key Achievements</h2>
+
+  <div class="achievement-grid">
+    <div class="achievement-card" aria-labelledby="ach1">
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b" alt="Graduation ceremony">
+      <div class="achievement-content">
+        <span class="achievement-tag">Academic</span>
+        <h3 id="ach1">NAAC A++ Accreditation</h3>
+        <p>Recognized for high academic standards, governance, and infrastructure — placing the university among the nation's top performers.</p>
+      </div>
+    </div>
+
+    <div class="achievement-card" aria-labelledby="ach2">
+      <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0" alt="Innovation lab">
+      <div class="achievement-content">
+        <span class="achievement-tag">Innovation</span>
+        <h3 id="ach2">ARIIA Innovation Ranking</h3>
+        <p>Honoured for entrepreneurship and startup support; strong incubation and industry collaboration drive student ventures.</p>
+      </div>
+    </div>
+
+    <div class="achievement-card" aria-labelledby="ach3">
+      <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31" alt="Research lab">
+      <div class="achievement-content">
+        <span class="achievement-tag">Research</span>
+        <h3 id="ach3">Patent Leadership</h3>
+        <p>Over 1,600 patents filed across disciplines — a measurable sign of research output and real-world impact.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="awards-section" aria-labelledby="awards">
+    <h2 id="awards" class="section-title" style="margin-bottom:18px;">Major Awards</h2>
+    <div class="awards-list">
+      <div class="award-item">🏆 ASSOCHAM Best Private University</div>
+      <div class="award-item">🏆 FICCI Excellence in Education</div>
+      <div class="award-item">🏆 Top 10 Universities for Startups</div>
+      <div class="award-item">🏆 Best Campus for Global Diversity</div>
+    </div>
+  </div>
+
+  <div class="timeline-section" aria-labelledby="journey">
+    <h2 id="journey" class="section-title" style="margin-top:40px;">Milestones</h2>
+    <div class="timeline" role="list">
+      <div class="timeline-item" role="listitem">
+        <span class="year-tag">2009</span>
+        <h4>Founded</h4>
+        <p>Launched with a mission to deliver multidisciplinary education focused on employability and research.</p>
+      </div>
+
+      <div class="timeline-item" role="listitem">
+        <span class="year-tag">2015</span>
+        <h4>State Private University</h4>
+        <p>Expanded academic offerings and governance, achieving state recognition and rapid growth.</p>
+      </div>
+
+      <div class="timeline-item" role="listitem">
+        <span class="year-tag">2019</span>
+        <h4>Global Partnerships</h4>
+        <p>Scaled international collaborations and exchange programs, broadening student exposure.</p>
+      </div>
+
+      <div class="timeline-item" role="listitem">
+        <span class="year-tag">2023–24</span>
+        <h4>NAAC A++</h4>
+        <p>Achieved the highest accreditation rating for overall institutional quality and performance.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

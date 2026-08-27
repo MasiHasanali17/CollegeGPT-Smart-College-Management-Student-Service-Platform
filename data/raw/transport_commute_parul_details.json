@@ -1,0 +1,91 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The 'distance_and_connectivity' section is based on real, publicly verifiable geographic distances (web-searched and cross-checked across multiple sources). All other sections (bus routes, timing, fees, GPS tracking, driver contact, schedule changes, lost & found, vehicle policy) are generated for this academic project to be realistic and scale-consistent with a 50,000+ student university with a large day-scholar population. None of the generated sections should be treated as officially confirmed university policy.",
+    "data_types": {
+      "verified_via_web_search": "Real, publicly verifiable geographic/location data",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "transport_and_commute": {
+
+    "bus_routes_covered": {
+      "data_type": "generated_for_project",
+      "description": "Given the university's large day-scholar population, university bus services cover multiple routes across Vadodara city and surrounding areas.",
+      "coverage_areas": [
+        "Central Vadodara (Sayajigunj, Alkapuri, Race Course area)",
+        "Karelibaug and Manjalpur",
+        "Gotri and Sama-Savli Road",
+        "Waghodia Road and surrounding localities (closer to campus)",
+        "Makarpura and Vadsar",
+        "Select outer routes toward nearby towns for students commuting from a wider catchment area"
+      ],
+      "note": "Exact route numbers and stop lists are published each semester by the transport office based on demand and are subject to change."
+    },
+
+    "bus_timing_per_shift": {
+      "data_type": "generated_for_project",
+      "morning_pickup": "Buses typically begin pickup from designated city stops between 6:30 AM and 8:00 AM, timed to arrive on campus before the 9:30 AM start of classes.",
+      "evening_drop": "Return buses typically depart from campus shortly after the 4:20 PM campus closing time, with drop-offs along the same routes in reverse order.",
+      "additional_shifts": "Additional late-evening shuttles may run for students attending extra classes, lab sessions, or club/event activities running past the standard campus hours."
+    },
+
+    "bus_fee": {
+      "data_type": "generated_for_project",
+      "structure": "Bus fees are generally charged on an annual or semester basis, varying by route distance/zone.",
+      "approximate_range": "Commonly in the range of ₹15,000 to ₹35,000 per year depending on the route/zone, payable along with or shortly after tuition fee payment.",
+      "note": "Students may opt in/out of the bus service each year based on their residential situation (hosteler vs. day scholar commuting independently)."
+    },
+
+    "gps_tracking": {
+      "data_type": "generated_for_project",
+      "availability": "University buses are typically fitted with GPS tracking, allowing students and parents to track bus location in real time via a transport tracking app or the student ERP portal's transport module.",
+      "benefit": "Helps students time their arrival at pickup points and provides parents visibility into safe arrival/departure, particularly valued for day-scholar safety."
+    },
+
+    "driver_conductor_contact_and_helpline": {
+      "data_type": "generated_for_project",
+      "structure": "Each bus route typically has an assigned driver and conductor, with the conductor's contact number shared with regular commuting students at the start of the term.",
+      "central_helpline": "A central transport department helpline is generally available during operating hours for route queries, delays, or complaints, separate from individual driver/conductor numbers."
+    },
+
+    "holiday_and_exam_period_schedule_changes": {
+      "data_type": "generated_for_project",
+      "holiday_schedule": "Bus services are suspended on university-declared holidays and reduced during long breaks (summer/winter vacation), with advance notice shared via the ERP portal/notice boards.",
+      "exam_period_adjustments": "During exam periods, additional early-morning or midday shift buses may be added to accommodate variable exam timings, alongside the standard shift schedule."
+    },
+
+    "lost_and_found_policy": {
+      "data_type": "generated_for_project",
+      "process": "Items lost on university buses can be reported to the transport department office or the respective route's driver/conductor; found items are typically logged and held at the transport office for a specified period (commonly 30 days) before being handed over to general campus lost-and-found or disposed of per policy.",
+      "reporting_window": "Students are encouraged to report lost items as soon as possible, ideally on the same day, to maximize recovery chances."
+    },
+
+    "private_vehicle_and_parking_policy": {
+      "data_type": "generated_for_project",
+      "two_wheeler_and_car_policy": "Students are permitted to bring personal two-wheelers/cars to campus, subject to registration with campus security and display of a valid parking permit/sticker.",
+      "parking_zones": "Designated parking zones are allocated separately for two-wheelers and four-wheelers, typically located near academic blocks and hostel entrances, with security patrol coverage.",
+      "restrictions": "Parking outside designated zones, or in fire-access/emergency lanes, is prohibited and subject to a fine or vehicle clamping in repeated violation cases.",
+      "helmet_and_safety_rules": "Two-wheeler riders are expected to comply with standard traffic safety norms (helmet usage) while riding within campus premises."
+    },
+
+    "distance_and_connectivity": {
+      "data_type": "verified_via_web_search",
+      "nearest_airport": "Vadodara Airport (BDQ) is approximately 18-20 km from the campus, roughly a 30-40 minute drive; it connects to major cities including Mumbai, Delhi, and Bengaluru.",
+      "nearest_railway_station": "Vadodara Junction Railway Station is approximately 15-20 km from the campus, roughly a 25-30 minute drive; it is a major rail junction on the Mumbai-Delhi line.",
+      "nearest_bus_stand": "The Vadodara Central Bus Stand (CBS) is approximately 18 km from the campus, roughly a 20-minute drive by local bus, taxi, or auto-rickshaw.",
+      "onward_local_travel": "From any of these three points, students can reach campus via local bus, auto-rickshaw, or app-based cab (Ola/Uber); approximate taxi fares from the airport/railway station range from ₹300-₹500."
+    },
+
+    "local_auto_and_cab_availability": {
+      "data_type": "generated_for_project",
+      "availability": "Auto-rickshaws are readily available near campus and throughout Vadodara city; app-based cab services (Ola/Uber) are also commonly used and generally reliable for reaching/leaving campus.",
+      "note": "Shared auto-rickshaws are a common, budget-friendly option for short-distance travel between campus and nearby localities."
+    }
+  }
+}

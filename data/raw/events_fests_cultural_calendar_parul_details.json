@@ -1,0 +1,100 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The technical fest, cultural fest, freshers' welcome event, and department-level tech showcase in this file are based on real, web-verified information about Parul University's actual named events (Projections, Dhoom, Freshers Fest, TechExpo). Details have been paraphrased in our own words rather than copied from source articles. Sections without a confirmed real basis (farewell day, alumni meet, general guest lecture cadence, blood donation/NSS drive frequency) are generated for this academic project to be realistic and scale-consistent. Exact dates/months can shift year to year and should be confirmed against the university's current event calendar.",
+    "data_types": {
+      "verified_via_web_search": "Real event names and details confirmed through web research",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "events_fests_and_cultural_calendar": {
+
+    "technical_fest": {
+      "data_type": "verified_via_web_search",
+      "name": "Projections",
+      "description": "Projections is described as Gujarat's largest technical festival and Parul University's flagship techno-cultural event, with a legacy of over 20 years running.",
+      "scale": "Recent editions have featured 50+ technical and non-technical events, 10-20+ workshops, and industry guest lectures, drawing thousands of participants from multiple Indian states.",
+      "flagship_events_and_competitions": [
+        "RoboWars / Hell in the Cell (robotics combat competition)",
+        "Hackathons and coding marathons (e.g. an event referred to as 'Code Crackerz')",
+        "Human Chess",
+        "Mechamaze",
+        "Aqua Missile",
+        "Trade Tycoon (business simulation event)",
+        "FIFA Horizon (gaming event)",
+        "Frame Focus (photography competition)",
+        "An 'Experience Zone' featuring AR/VR demonstrations"
+      ],
+      "recent_editions_note": "Recent editions have carried yearly themes (e.g. 'Cosmos' for the 2024 edition, 'Tech Marvel 2.0' for the 2025 edition) and have included live concerts by well-known artists as part of the celebration.",
+      "typical_timing": "Timing has varied across recent years and has, in some editions, been held jointly with Freshers Fest; students should check the current year's official event calendar for exact dates."
+    },
+
+    "cultural_fest": {
+      "data_type": "verified_via_web_search",
+      "name": "Dhoom",
+      "description": "Dhoom is Parul University's annual cultural festival, celebrating India's multicultural heritage through folk dance performances, street plays, music shows, and traditional fashion walks.",
+      "flagship_events": [
+        "Mr. Dhoom and Ms. Dhoom contest (crowning a 'king and queen' of the festival)",
+        "Folk dance and garba performances",
+        "Rangoli and campus-wide decoration displays",
+        "Stalls selling traditional art, jewelry, and regional cuisine",
+        "Dhol and live music performances"
+      ],
+      "participation_style": "Students from different faculties often represent their home states/regions, turning the festival into a showcase of India's regional diversity."
+    },
+
+    "annual_sports_meet": {
+      "cross_reference": "Already documented in sports_recreation_parul_details.json under 'intra_college_annual_sports_meet'."
+    },
+
+    "orientation_day_and_freshers_welcome": {
+      "data_type": "verified_via_web_search + generated_for_project",
+      "event_name": "Freshers Fest",
+      "description": "A welcome celebration for newly admitted students, designed to help them settle into campus culture through engaging activities and performances. In recent years this has been held alongside the Projections technical fest.",
+      "notable_past_performances": "Past editions have featured live performances by well-known artists (for example, past editions have included performances by prominent Bollywood and Gujarati folk artists), turning the welcome event into a large-scale campus concert.",
+      "generated_orientation_component": "Alongside the fest-style welcome, a more formal academic orientation is typically held separately in the first week of the semester — covering faculty introductions, campus facility tours, ID card/ERP setup, and an overview of clubs, sports, and support services available to new students."
+    },
+
+    "farewell_and_graduation_day": {
+      "data_type": "generated_for_project",
+      "farewell": "Final-year students are typically given a farewell celebration organized by junior students shortly before their final semester exams, including a formal program, cultural performances, and informal gathering.",
+      "convocation": "A formal Convocation ceremony is held to confer degrees to graduating students, typically featuring a chief guest/keynote speaker, gold medal/rank holder recognitions, and formal academic procession (gowns/caps), consistent with standard Indian university convocation practice."
+    },
+
+    "alumni_meet": {
+      "data_type": "generated_for_project",
+      "description": "Periodic alumni meets/reunions are typically organized (often faculty-wise or as a broader university-wide event), allowing graduates to reconnect with peers and faculty, and providing networking and mentorship opportunities for current students.",
+      "note": "Given the notable alumni already documented in the knowledge base (working at companies like Apple, Amazon, Google, Meta, Intel, and Tesla), alumni meets and mentorship sessions are a natural channel for career guidance to current students."
+    },
+
+    "guest_lectures_and_industry_conclaves": {
+      "data_type": "verified_via_web_search + generated_for_project",
+      "tech_fest_lectures": "Industry guest lectures are already a documented part of the Projections technical fest, with past editions featuring 15+ industry tie-ups and multiple guest sessions from technology professionals.",
+      "general_pattern": "Beyond the technical fest, individual faculties and departments regularly organize guest lectures and industry conclaves throughout the year, often tied to specific subjects or emerging industry trends relevant to that faculty.",
+      "tedx_style_events": "TEDx-style or independently branded talk events are commonly organized by student clubs (particularly the Entrepreneurship Cell and Literary/Debate clubs) as standalone events distinct from the major fests."
+    },
+
+    "hackathons_and_coding_competitions": {
+      "data_type": "verified_via_web_search",
+      "description": "Coding-focused competitions and hackathons are a well-established part of Projections, historically including named coding events and prize money for winners (recent editions have offered prize pools in the range of several lakh rupees across all competitions combined).",
+      "additional_note": "Beyond the annual technical fest, smaller coding contests and hackathons are also organized independently by technical clubs (Coding Club, AI & ML Club, GDSC Chapter) throughout the year, as already documented in clubs_societies_parul_details.json."
+    },
+
+    "blood_donation_camps_and_social_service_drives": {
+      "data_type": "generated_for_project",
+      "frequency": "Blood donation camps are typically organized once or twice per semester, often in coordination with the NSS unit, Rotaract Club, and nearby hospitals/blood banks (potentially including the on-campus Parul Sevashram Hospital already documented in the knowledge base).",
+      "other_social_drives": "Additional social service activities (tree plantation drives, cleanliness campaigns, awareness camps in nearby villages) are organized periodically by NSS and social service clubs throughout the academic year, particularly around national observance days (e.g. Independence Day, Republic Day, World Environment Day)."
+    },
+
+    "department_specific_events_and_symposiums": {
+      "data_type": "verified_via_web_search + generated_for_project",
+      "techexpo": "TechExpo is a real, documented annual technical exhibition at Parul University, where final-year students from engineering, applied sciences, computer applications, and agriculture showcase their technical projects and innovations to peers and industry visitors.",
+      "other_department_symposiums": "Individual faculties (Management, Commerce, Law, Design, Pharmacy, Medicine, and others) typically organize their own department-specific symposiums, case-study competitions, and subject-specific exhibitions/conferences at various points in the academic year, in addition to the university-wide fests."
+    }
+  }
+}

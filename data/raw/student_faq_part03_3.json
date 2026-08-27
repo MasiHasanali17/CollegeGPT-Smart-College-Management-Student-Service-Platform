@@ -1,0 +1,265 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0141",
+      "category": "Hostel",
+      "question": "Can I permanently vacate my hostel during the academic year?",
+      "alternate_questions": [
+        "Leave hostel permanently",
+        "Hostel checkout",
+        "Vacate hostel room"
+      ],
+      "keywords": ["vacate", "checkout", "hostel"],
+      "answer": "Students wishing to vacate the hostel should complete the prescribed checkout procedure and obtain the necessary clearances from the hostel administration.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0142",
+      "category": "Hostel",
+      "question": "Is hostel security available 24 hours?",
+      "alternate_questions": [
+        "Hostel security",
+        "24x7 security",
+        "Safety in hostel"
+      ],
+      "keywords": ["security", "hostel", "safety"],
+      "answer": "Yes. Hostel premises are supervised according to the university's security and safety procedures.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0143",
+      "category": "Hostel",
+      "question": "Are CCTV cameras installed in hostel buildings?",
+      "alternate_questions": [
+        "Hostel CCTV",
+        "Security cameras",
+        "Surveillance in hostel"
+      ],
+      "keywords": ["CCTV", "security", "hostel"],
+      "answer": "Hostel security measures may include CCTV surveillance in common areas to help maintain campus safety and security.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0144",
+      "category": "Hostel",
+      "question": "Is ragging prohibited in the hostel?",
+      "alternate_questions": [
+        "Anti ragging hostel",
+        "Hostel ragging rules",
+        "Ragging policy"
+      ],
+      "keywords": ["ragging", "anti ragging", "hostel"],
+      "answer": "Yes. Ragging is strictly prohibited. The university follows anti-ragging regulations and encourages students to report any such incidents immediately.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0145",
+      "category": "Hostel",
+      "question": "Can I file a complaint regarding hostel facilities?",
+      "alternate_questions": [
+        "Hostel complaint",
+        "Report hostel issue",
+        "Raise hostel grievance"
+      ],
+      "keywords": ["complaint", "grievance", "hostel"],
+      "answer": "Yes. Students can report hostel-related issues to the hostel warden or use the university's grievance redressal process.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0146",
+      "category": "Hostel",
+      "question": "Are hostel rules mandatory for every resident?",
+      "alternate_questions": [
+        "Hostel regulations",
+        "Hostel rules",
+        "Student responsibilities"
+      ],
+      "keywords": ["rules", "hostel", "discipline"],
+      "answer": "Yes. All hostel residents are expected to follow the hostel rules, code of conduct, and disciplinary regulations issued by the university.",
+      "source": "rules_discipline_grievance.json"
+    },
+    {
+      "id": "faq_0147",
+      "category": "Hostel",
+      "question": "What should I do if I lose my hostel room key?",
+      "alternate_questions": [
+        "Lost hostel key",
+        "Duplicate room key",
+        "Room key replacement"
+      ],
+      "keywords": ["key", "lost", "hostel"],
+      "answer": "Students should immediately inform the hostel warden or hostel office so that appropriate action can be taken according to hostel procedures.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0148",
+      "category": "Hostel",
+      "question": "Can I keep a personal vehicle while staying in the hostel?",
+      "alternate_questions": [
+        "Bike in hostel",
+        "Hostel parking",
+        "Vehicle parking"
+      ],
+      "keywords": ["parking", "vehicle", "hostel"],
+      "answer": "Vehicle parking is subject to the university's parking and hostel regulations. Students should obtain the necessary permissions if required.",
+      "source": "transport_commute.json"
+    },
+    {
+      "id": "faq_0149",
+      "category": "Hostel",
+      "question": "Are emergency contacts maintained for hostel students?",
+      "alternate_questions": [
+        "Emergency contact",
+        "Guardian contact",
+        "Hostel emergency details"
+      ],
+      "keywords": ["emergency", "guardian", "hostel"],
+      "answer": "Yes. Students are generally required to provide emergency contact details during hostel admission for safety and communication purposes.",
+      "source": "hostel_residential_life.json"
+    },
+    {
+      "id": "faq_0150",
+      "category": "Hostel",
+      "question": "Can hostel students access all campus facilities?",
+      "alternate_questions": [
+        "Campus facilities for hostellers",
+        "Hostel student facilities",
+        "Hosteller access"
+      ],
+      "keywords": ["hosteller", "facilities", "campus"],
+      "answer": "Yes. Hostel students can use university facilities according to the applicable rules, schedules, and eligibility requirements.",
+      "source": "campus_facilities.json"
+    },
+
+    {
+      "id": "faq_0151",
+      "category": "Academics",
+      "question": "When does the academic session begin?",
+      "alternate_questions": [
+        "Academic session start",
+        "Semester starts",
+        "College reopening date"
+      ],
+      "keywords": ["academic calendar", "semester", "session"],
+      "answer": "The commencement of the academic session is announced in the official academic calendar published by the university.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0152",
+      "category": "Academics",
+      "question": "Where can I find the academic calendar?",
+      "alternate_questions": [
+        "Academic calendar",
+        "Semester calendar",
+        "University calendar"
+      ],
+      "keywords": ["calendar", "academic", "schedule"],
+      "answer": "The academic calendar is published through the university's official communication channels and student portal.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0153",
+      "category": "Academics",
+      "question": "How many semesters are there in an academic year?",
+      "alternate_questions": [
+        "Academic semesters",
+        "Semester system",
+        "How many terms?"
+      ],
+      "keywords": ["semester", "academic year"],
+      "answer": "The university follows the academic structure prescribed for the respective program. Students should refer to their program curriculum for details.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0154",
+      "category": "Academics",
+      "question": "How can I access my class timetable?",
+      "alternate_questions": [
+        "Class schedule",
+        "Lecture timetable",
+        "Timetable download"
+      ],
+      "keywords": ["timetable", "class", "schedule"],
+      "answer": "Students can obtain their class timetable through the ERP, department notice board, or official academic communication channels.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0155",
+      "category": "Academics",
+      "question": "Will I receive an orientation before classes begin?",
+      "alternate_questions": [
+        "Student induction",
+        "Freshers orientation",
+        "Orientation program"
+      ],
+      "keywords": ["orientation", "induction", "freshers"],
+      "answer": "Yes. Newly admitted students participate in orientation and induction programs before or at the beginning of the academic session.",
+      "source": "academic_calendar.json"
+    },
+    {
+      "id": "faq_0156",
+      "category": "Academics",
+      "question": "How can I contact my department?",
+      "alternate_questions": [
+        "Department contact",
+        "Faculty office",
+        "Academic department"
+      ],
+      "keywords": ["department", "contact", "faculty"],
+      "answer": "Department contact details are available through the university administration and official department offices.",
+      "source": "faculty_teaching_staff.json"
+    },
+    {
+      "id": "faq_0157",
+      "category": "Academics",
+      "question": "Can I change my elective subjects?",
+      "alternate_questions": [
+        "Elective change",
+        "Change optional subject",
+        "Modify electives"
+      ],
+      "keywords": ["elective", "subjects", "course"],
+      "answer": "Elective changes are permitted according to the university's academic regulations and within the prescribed timelines, if applicable.",
+      "source": "academic_details.json"
+    },
+    {
+      "id": "faq_0158",
+      "category": "Academics",
+      "question": "How do I know my classroom location?",
+      "alternate_questions": [
+        "Classroom number",
+        "Lecture room",
+        "Where is my class?"
+      ],
+      "keywords": ["classroom", "lecture", "room"],
+      "answer": "Classroom details are provided through class timetables, department notices, or the ERP system where applicable.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0159",
+      "category": "Academics",
+      "question": "Can I meet faculty members outside class hours?",
+      "alternate_questions": [
+        "Faculty consultation",
+        "Meet professor",
+        "Teacher office hours"
+      ],
+      "keywords": ["faculty", "teacher", "consultation"],
+      "answer": "Students may meet faculty members during their designated consultation hours or by prior appointment.",
+      "source": "faculty_teaching_staff.json"
+    },
+    {
+      "id": "faq_0160",
+      "category": "Academics",
+      "question": "Where can I get updates about academic announcements?",
+      "alternate_questions": [
+        "Academic notices",
+        "University announcements",
+        "Important academic updates"
+      ],
+      "keywords": ["announcement", "notice", "academic"],
+      "answer": "Academic announcements are communicated through official university portals, ERP, department notices, and authorized communication channels.",
+      "source": "digital_communication_merchandise.json"
+    }
+  ]
+}

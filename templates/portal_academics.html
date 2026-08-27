@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portal.css') }}">
+
+<div class="portal-page">
+
+    <div class="portal-hero">
+        <h1>Academic Records</h1>
+        <p>Your attendance, exam timetable, and results.</p>
+    </div>
+
+
+    <div class="portal-wrap">
+
+        <div class="portal-grid">
+            <div class="portal-card">
+                <div class="meta">Attendance</div>
+                <h3>{{ record.attendance_percent }}</h3>
+            </div>
+
+            <div class="portal-card">
+                <div class="meta">Exam Timetable</div>
+                <p class="desc">{{ record.exam_timetable }}</p>
+            </div>
+
+            <div class="portal-card">
+                <div class="meta">Results</div>
+                <p class="desc">{{ record.results }}</p>
+            </div>
+        </div>
+
+        <p style="margin-top:24px;color:#94a3b8;font-size:13px;">
+            {% if record.updated_at %}
+                Last updated: {{ record.updated_at }}
+            {% else %}
+                These records haven't been published by the university yet.
+            {% endif %}
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

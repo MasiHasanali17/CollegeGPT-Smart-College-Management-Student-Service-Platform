@@ -1,0 +1,48 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The notable alumni list, alumni meet event, and alumni mentorship structure are real/already documented elsewhere in this project's knowledge base and are consolidated here. Only the alumni association's organizational structure is newly generated for this file, since no real structural details were available.",
+    "data_types": {
+      "verified_from_prior_data": "Real data already confirmed elsewhere in this project, consolidated here",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "alumni_network": {
+
+    "alumni_association_structure": {
+      "data_type": "generated_for_project",
+      "structure": "A central Alumni Association/Relations office typically coordinates alumni engagement, with membership generally granted automatically to all graduating students.",
+      "chapter_model": "At a university of this scale (25+ faculties), alumni engagement is commonly organized both centrally and through faculty-specific alumni chapters (e.g. Engineering alumni, Medicine alumni), allowing more relevant, discipline-specific networking.",
+      "alumni_portal": "An online alumni directory/portal is typically maintained to help graduates stay connected with the university and with each other, and to enable outreach for events, mentorship, and giving-back initiatives."
+    },
+
+    "notable_alumni_and_current_roles": {
+      "data_type": "verified_from_prior_data",
+      "examples": [
+        { "company": "Apple", "role": "Supply Chain Lead - Wearables" },
+        { "company": "Amazon", "role": "Principal Technical Account Manager" },
+        { "company": "Google", "role": "Data Strategist" },
+        { "company": "Meta", "role": "Data Engineer" },
+        { "company": "Intel", "role": "Staff Firmware Engineer" },
+        { "company": "Tesla", "role": "Production Quality Associate" }
+      ],
+      "note": "This list reflects real, already-documented alumni examples in this project's knowledge base, not an exhaustive directory of all alumni."
+    },
+
+    "alumni_events_and_reunions": {
+      "data_type": "verified_from_prior_data",
+      "cross_reference": "Already documented in events_fests_cultural_calendar_parul_details.json under 'alumni_meet' — periodic alumni meets/reunions (often faculty-wise or university-wide) allow graduates to reconnect with peers and faculty."
+    },
+
+    "alumni_mentorship_and_networking_opportunities": {
+      "data_type": "verified_from_prior_data",
+      "cross_reference": "Already documented in placements_parul_details.json under 'alumni_mentorship_programs' — mentorship is generally facilitated through alumni meets and informal faculty-brokered connections, typically taking the form of guest talks, Q&A sessions, and occasional one-on-one mentorship matching for students approaching placements or higher-studies decisions.",
+      "value_proposition": "Given the notable alumni already working at companies like Apple, Amazon, Google, Meta, Intel, and Tesla, alumni mentorship represents a genuine, high-value networking opportunity for current students, particularly in technology-related fields."
+    }
+  }
+}

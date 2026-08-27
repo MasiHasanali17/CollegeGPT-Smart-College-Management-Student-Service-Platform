@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="max-width:420px;margin:60px auto;padding:30px;border-radius:12px;box-shadow:0 0 20px rgba(0,0,0,0.1);">
+  <h2>Student Login</h2>
+
+  <form method="POST">
+    <input type="text" name="student_id" placeholder="Student ID" required style="width:100%;padding:10px;margin:6px 0;"><br>
+    <input type="password" name="password" placeholder="Password" required style="width:100%;padding:10px;margin:6px 0;"><br>
+    <button type="submit" style="width:100%;padding:10px;margin-top:10px;">Login</button>
+  </form>
+
+  <p><a href="{{ url_for('forgot_password') }}">Forgot password?</a></p>
+  <p>New here? <a href="{{ url_for('register') }}">Register</a></p>
+  <p><a href="{{ url_for('forgot_password') }}" style="color:#7c3aed;">Forgot password?</a></p>
+</div>
+{% endblock %}

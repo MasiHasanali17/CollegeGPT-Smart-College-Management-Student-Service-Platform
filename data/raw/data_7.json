@@ -1,0 +1,329 @@
+{
+  "faqs": [
+    {
+      "id": "faq_0376",
+      "category": "Technology & Digital Services",
+      "question": "Can I change my ERP password?",
+      "alternate_questions": [
+        "Reset ERP password",
+        "Change student portal password",
+        "ERP credentials"
+      ],
+      "keywords": ["ERP", "password", "login"],
+      "answer": "Yes. Students can change or reset their ERP password using the available password recovery options or by contacting IT support if required.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0377",
+      "category": "Technology & Digital Services",
+      "question": "Is there a mobile app for ERP services?",
+      "alternate_questions": [
+        "ERP mobile app",
+        "Student app",
+        "ERP application"
+      ],
+      "keywords": ["ERP", "mobile app"],
+      "answer": "If an official ERP mobile application is available, students can use it with their university credentials to access academic services.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0378",
+      "category": "Technology & Digital Services",
+      "question": "Can I access ERP outside the campus?",
+      "alternate_questions": [
+        "Remote ERP access",
+        "ERP from home",
+        "Online ERP login"
+      ],
+      "keywords": ["ERP", "remote access"],
+      "answer": "Yes. ERP services can generally be accessed remotely using valid university login credentials.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0379",
+      "category": "Technology & Digital Services",
+      "question": "How do I update my mobile number in ERP?",
+      "alternate_questions": [
+        "Change phone number",
+        "Update contact details",
+        "ERP profile update"
+      ],
+      "keywords": ["ERP", "profile", "mobile"],
+      "answer": "Students can update their personal information through the designated ERP features or by contacting the concerned university office if approval is required.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0380",
+      "category": "Technology & Digital Services",
+      "question": "Can I update my email address in ERP?",
+      "alternate_questions": [
+        "Change email",
+        "Update email ID",
+        "ERP email"
+      ],
+      "keywords": ["ERP", "email"],
+      "answer": "Students may update their email address according to university procedures through ERP or with administrative approval where applicable.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0381",
+      "category": "Technology & Digital Services",
+      "question": "Does the university provide cloud storage for students?",
+      "alternate_questions": [
+        "Cloud storage",
+        "Student cloud",
+        "Online storage"
+      ],
+      "keywords": ["cloud", "storage"],
+      "answer": "Cloud-based services may be available depending on the university's digital infrastructure and student account provisions.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0382",
+      "category": "Technology & Digital Services",
+      "question": "Can students use computer laboratories after class hours?",
+      "alternate_questions": [
+        "Computer lab timing",
+        "Lab after college",
+        "Computer facility"
+      ],
+      "keywords": ["computer lab", "laboratory"],
+      "answer": "Computer laboratory access after class hours depends on departmental schedules and laboratory regulations.",
+      "source": "campus_facilities.json"
+    },
+    {
+      "id": "faq_0383",
+      "category": "Technology & Digital Services",
+      "question": "Does the university provide licensed software for students?",
+      "alternate_questions": [
+        "Software access",
+        "Student software",
+        "Licensed applications"
+      ],
+      "keywords": ["software", "license"],
+      "answer": "Students may receive access to licensed academic software required for their program, subject to university policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0384",
+      "category": "Technology & Digital Services",
+      "question": "Can students print assignments on campus?",
+      "alternate_questions": [
+        "Assignment printing",
+        "Print documents",
+        "Printing service"
+      ],
+      "keywords": ["printing", "assignment"],
+      "answer": "Printing facilities are available through designated campus services according to applicable charges and policies.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0385",
+      "category": "Technology & Digital Services",
+      "question": "Are scanning facilities available on campus?",
+      "alternate_questions": [
+        "Document scanning",
+        "Scan facility",
+        "Scanner service"
+      ],
+      "keywords": ["scanner", "documents"],
+      "answer": "Scanning facilities may be available through designated university service centers.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0386",
+      "category": "Technology & Digital Services",
+      "question": "Can I access digital study materials online?",
+      "alternate_questions": [
+        "Online study material",
+        "Digital notes",
+        "Learning resources"
+      ],
+      "keywords": ["study material", "digital"],
+      "answer": "Yes. Students may access digital learning resources through ERP, the library, or other official university platforms.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0387",
+      "category": "Technology & Digital Services",
+      "question": "Does the university provide online learning platforms?",
+      "alternate_questions": [
+        "E-learning",
+        "Learning management system",
+        "Online classes"
+      ],
+      "keywords": ["LMS", "online learning"],
+      "answer": "Yes. The university uses digital platforms to support learning, assignments, academic communication, and online educational activities.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0388",
+      "category": "Technology & Digital Services",
+      "question": "Can students submit assignments online?",
+      "alternate_questions": [
+        "Assignment submission",
+        "Online assignments",
+        "ERP assignment upload"
+      ],
+      "keywords": ["assignment", "online"],
+      "answer": "Online assignment submission is available where enabled by the concerned faculty or department.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0389",
+      "category": "Technology & Digital Services",
+      "question": "How can I report an ERP technical issue?",
+      "alternate_questions": [
+        "ERP complaint",
+        "ERP bug",
+        "Technical issue"
+      ],
+      "keywords": ["ERP", "technical", "support"],
+      "answer": "Students should report ERP-related technical issues to the university's IT support team or designated help desk.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0390",
+      "category": "Technology & Digital Services",
+      "question": "Is antivirus software recommended for student laptops?",
+      "alternate_questions": [
+        "Laptop security",
+        "Antivirus recommendation",
+        "Computer protection"
+      ],
+      "keywords": ["antivirus", "security"],
+      "answer": "Students are encouraged to keep their devices updated with appropriate security software to ensure safe access to university systems.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0391",
+      "category": "Technology & Digital Services",
+      "question": "Can students access online journals through the university?",
+      "alternate_questions": [
+        "Research journals",
+        "Digital journals",
+        "Journal access"
+      ],
+      "keywords": ["journals", "library"],
+      "answer": "Yes. Eligible students can access subscribed academic journals and research databases through the university library.",
+      "source": "research_innovation.json"
+    },
+    {
+      "id": "faq_0392",
+      "category": "Technology & Digital Services",
+      "question": "Does the university conduct cybersecurity awareness sessions?",
+      "alternate_questions": [
+        "Cybersecurity training",
+        "Online safety",
+        "Digital security workshop"
+      ],
+      "keywords": ["cybersecurity", "awareness"],
+      "answer": "The university may organize awareness sessions on cybersecurity, responsible internet usage, and digital safety.",
+      "source": "campus_safety.json"
+    },
+    {
+      "id": "faq_0393",
+      "category": "Technology & Digital Services",
+      "question": "Can I access academic notices online?",
+      "alternate_questions": [
+        "Online notices",
+        "Academic notifications",
+        "University announcements"
+      ],
+      "keywords": ["notices", "ERP"],
+      "answer": "Yes. Academic notices and announcements are shared through official digital communication channels such as ERP and university websites.",
+      "source": "digital_communication_merchandise.json"
+    },
+    {
+      "id": "faq_0394",
+      "category": "Technology & Digital Services",
+      "question": "How can I update my profile photo in ERP?",
+      "alternate_questions": [
+        "Change profile picture",
+        "ERP profile photo",
+        "Student profile image"
+      ],
+      "keywords": ["ERP", "photo"],
+      "answer": "Profile photo updates may be completed through ERP or through the designated university office, depending on university policy.",
+      "source": "technology_digital_services.json"
+    },
+    {
+      "id": "faq_0395",
+      "category": "Technology & Digital Services",
+      "question": "Does the university have a dedicated IT Help Desk?",
+      "alternate_questions": [
+        "IT service desk",
+        "Technical help",
+        "IT assistance"
+      ],
+      "keywords": ["IT", "helpdesk"],
+      "answer": "Yes. Students can contact the university's IT Help Desk for assistance with digital services, ERP, Wi-Fi, and other technical issues.",
+      "source": "administration_contacts.json"
+    },
+    {
+      "id": "faq_0396",
+      "category": "Health & Medical Services",
+      "question": "Does Parul University provide medical facilities on campus?",
+      "alternate_questions": [
+        "Campus hospital",
+        "Medical center",
+        "Healthcare services"
+      ],
+      "keywords": ["medical", "health"],
+      "answer": "Yes. The university provides healthcare and medical support services for students through its campus medical facilities.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0397",
+      "category": "Health & Medical Services",
+      "question": "Is emergency medical assistance available on campus?",
+      "alternate_questions": [
+        "Medical emergency",
+        "Emergency healthcare",
+        "Campus emergency"
+      ],
+      "keywords": ["emergency", "medical"],
+      "answer": "Yes. Emergency medical assistance is available for students according to the university's healthcare services.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0398",
+      "category": "Health & Medical Services",
+      "question": "Are doctors available on campus?",
+      "alternate_questions": [
+        "Campus doctor",
+        "Doctor consultation",
+        "Medical consultation"
+      ],
+      "keywords": ["doctor", "consultation"],
+      "answer": "Yes. Qualified healthcare professionals are available through the university's medical services.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0399",
+      "category": "Health & Medical Services",
+      "question": "Can students receive first aid on campus?",
+      "alternate_questions": [
+        "First aid",
+        "Medical first aid",
+        "Emergency treatment"
+      ],
+      "keywords": ["first aid", "medical"],
+      "answer": "Yes. Basic first-aid services are available for students whenever required.",
+      "source": "health_medical_services.json"
+    },
+    {
+      "id": "faq_0400",
+      "category": "Health & Medical Services",
+      "question": "Are ambulance services available for emergencies?",
+      "alternate_questions": [
+        "Campus ambulance",
+        "Emergency ambulance",
+        "Medical transport"
+      ],
+      "keywords": ["ambulance", "emergency"],
+      "answer": "Yes. Ambulance services are available for emergency medical situations according to university healthcare procedures.",
+      "source": "health_medical_services.json"
+    }
+  ]
+}

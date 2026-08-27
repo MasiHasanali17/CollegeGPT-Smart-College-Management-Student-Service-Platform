@@ -1,0 +1,42 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file is built primarily from real, web-verified data, cross-checked across multiple independent sources (the university's own official contact page, Justdial, Mappls map service, and other directories) rather than generated. Distance/connectivity figures are consistent with (and already established in) transport_commute_parul_details.json.",
+    "data_type": "verified_via_web_search"
+  },
+
+  "location_and_logistics": {
+
+    "campus_address_and_map": {
+      "exact_address": "Parul University, P.O. Limda, Ta. Waghodia – 391760, Dist. Vadodara, Gujarat, India.",
+      "location_context": "The main campus is located along Waghodia Road, approximately 25 km from Vadodara city center, in an area that has grown significantly around the university's presence.",
+      "campus_size": "The campus spans approximately 150 acres, consistent with the scale of a 25+ faculty, 50,000+ student university.",
+      "additional_campuses": "Beyond the main Vadodara (Waghodia) campus, the university also operates campuses in Ahmedabad and Rajkot (Gujarat), and Goa.",
+      "map_reference": "The exact coordinates and turn-by-turn directions are available via standard map services (Google Maps, Mappls) by searching 'Parul University, Limda, Waghodia, Vadodara'."
+    },
+
+    "distance_and_connectivity_from_transit_points": {
+      "cross_reference": "This is already documented in detail in transport_commute_parul_details.json under 'distance_and_connectivity'.",
+      "summary": {
+        "nearest_airport": "Vadodara Airport (BDQ) — approximately 18-20 km, 30-40 minute drive.",
+        "nearest_railway_station": "Vadodara Junction Railway Station — approximately 15-20 km, 25-30 minute drive; a major junction on the Mumbai-Delhi line.",
+        "nearest_bus_stand": "Vadodara Central Bus Stand (CBS) — approximately 18 km, ~20 minute drive."
+      }
+    },
+
+    "nearby_city_facilities": {
+      "hospitals": {
+        "on_campus": "Parul Sevashram Hospital (PSH) — the university's own 750-bed, NABH-accredited multispecialty hospital, established 2012, located directly on/adjacent to campus (already documented in health_medical_services_parul_details.json), meaning students have a full hospital within the campus itself rather than needing to travel off-campus for most medical needs.",
+        "nearby_off_campus": "Bhailal Amin General Hospital, located along Waghodia Road, is a well-known nearby hospital option in the broader Vadodara healthcare network."
+      },
+      "markets_and_malls": {
+        "local_development": "The Waghodia Road corridor (where the campus is located) has seen significant growth in retail spaces, supermarkets, and entertainment hubs including malls and multiplexes in recent years, driven partly by the student population the university itself brings to the area.",
+        "city_center_access": "For a wider range of shopping and entertainment options, Vadodara's city center (approximately 25 km away) offers established malls and markets, reachable via the bus/auto/cab options already documented in transport_commute_parul_details.json."
+      }
+    }
+  }
+}

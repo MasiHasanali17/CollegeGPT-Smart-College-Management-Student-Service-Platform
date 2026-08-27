@@ -1,0 +1,455 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+.courses-page{
+padding:80px 8%;
+background:#f8fafc;
+min-height:100vh;
+}
+
+.page-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.page-title h1{
+font-size:42px;
+font-weight:800;
+color:#0f172a;
+}
+
+.page-title p{
+color:#64748b;
+font-size:18px;
+}
+
+/* FILTER */
+
+.filter-bar{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-bottom:50px;
+flex-wrap:wrap;
+}
+
+.filter-btn{
+padding:10px 24px;
+border-radius:50px;
+background:white;
+border:1px solid #e2e8f0;
+color:#64748b;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+background:#7c3aed;
+color:white;
+border-color:#7c3aed;
+}
+
+/* GRID */
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+/* CARD */
+
+.course-card{
+background:white;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+border:1px solid #f1f5f9;
+display:flex;
+flex-direction:column;
+}
+
+.course-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 40px rgba(0,0,0,0.1);
+}
+
+.img-container{
+position:relative;
+overflow:hidden;
+}
+
+.course-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.course-badge{
+position:absolute;
+top:15px;
+right:15px;
+background:rgba(15,23,42,0.8);
+color:white;
+padding:6px 14px;
+border-radius:50px;
+font-size:12px;
+font-weight:700;
+}
+
+/* CONTENT */
+
+.course-content{
+padding:25px;
+display:flex;
+flex-direction:column;
+flex-grow:1;
+}
+
+.course-content h3{
+font-size:22px;
+font-weight:800;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.course-content p{
+color:#64748b;
+margin-bottom:20px;
+}
+
+/* STATS */
+
+.course-stats{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+padding:12px;
+background:#f8fafc;
+border-radius:14px;
+margin-bottom:20px;
+}
+
+.stat-label{
+font-size:11px;
+color:#94a3b8;
+font-weight:700;
+}
+
+.stat-value{
+font-size:14px;
+font-weight:700;
+color:#334155;
+}
+
+.stat-value span{
+color:#7c3aed;
+}
+
+/* BUTTON */
+
+.course-btn{
+margin-top:auto;
+text-align:center;
+background:#7c3aed;
+color:white;
+padding:12px;
+border-radius:10px;
+font-weight:700;
+text-decoration:none;
+transition:0.3s;
+}
+
+.course-btn:hover{
+background:#6d28d9;
+}
+
+</style>
+
+
+<div class="courses-page">
+
+<div class="page-title">
+<h1>Explore Our Courses</h1>
+<p>Your gateway to 250+ specialized programs across multiple disciplines.</p>
+</div>
+
+
+<div class="filter-bar">
+
+<button class="filter-btn active" data-filter="all">All Programs</button>
+<button class="filter-btn" data-filter="engineering">Engineering</button>
+<button class="filter-btn" data-filter="management">Management</button>
+<button class="filter-btn" data-filter="computer">Computer Apps</button>
+<button class="filter-btn" data-filter="pharmacy">Pharmacy</button>
+<button class="filter-btn" data-filter="design">Design</button>
+
+</div>
+
+
+
+<div class="course-grid">
+
+<!-- BTECH -->
+
+<div class="course-card" data-category="engineering">
+
+<div class="img-container">
+<span class="course-badge">Technology</span>
+<img src="https://cdn.itm.ac.in/2024/05/Top-5-Reasons-to-Choose-B-Tech-in-Computer-Science-Engineering.webp">
+</div>
+
+<div class="course-content">
+
+<h3>B.Tech Computer Engineering</h3>
+
+<p>Master AI, Cloud Computing, and Machine Learning through hands-on projects.</p>
+
+<div class="course-stats">
+
+<div>
+<span class="stat-label">Duration</span>
+<span class="stat-value">4 Years</span>
+</div>
+
+<div>
+<span class="stat-label">Yearly Fees</span>
+<span class="stat-value"><span>₹1.50 L</span></span>
+</div>
+
+</div>
+
+<a href="/compare" class="course-btn">Compare Details</a>
+
+</div>
+
+</div>
+
+
+<!-- BCA -->
+
+<div class="course-card" data-category="computer">
+
+<div class="img-container">
+<span class="course-badge">IT</span>
+<img src="https://rec.ac.in/images/BCA.jpg">
+</div>
+
+<div class="course-content">
+
+<h3>BCA</h3>
+
+<p>Learn programming, web development, networking and database systems.</p>
+
+<div class="course-stats">
+
+<div>
+<span class="stat-label">Duration</span>
+<span class="stat-value">3 Years</span>
+</div>
+
+<div>
+<span class="stat-label">Yearly Fees</span>
+<span class="stat-value"><span>₹90,000</span></span>
+</div>
+
+</div>
+
+<a href="/compare" class="course-btn">Compare Details</a>
+
+</div>
+
+</div>
+
+
+<!-- MBA -->
+
+<div class="course-card" data-category="management">
+
+<div class="img-container">
+<span class="course-badge">Management</span>
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800">
+</div>
+
+<div class="course-content">
+
+<h3>MBA</h3>
+
+<p>Develop leadership, finance, and global marketing skills.</p>
+
+<div class="course-stats">
+
+<div>
+<span class="stat-label">Duration</span>
+<span class="stat-value">2 Years</span>
+</div>
+
+<div>
+<span class="stat-label">Yearly Fees</span>
+<span class="stat-value"><span>₹2.00 L</span></span>
+</div>
+
+</div>
+
+<a href="/compare" class="course-btn">Compare Details</a>
+
+</div>
+
+</div>
+
+
+<!-- BBA -->
+
+<div class="course-card" data-category="management">
+
+<div class="img-container">
+<span class="course-badge">Business</span>
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800">
+</div>
+
+<div class="course-content">
+
+<h3>BBA</h3>
+
+<p>Build strong foundations in business management and entrepreneurship.</p>
+
+<div class="course-stats">
+
+<div>
+<span class="stat-label">Duration</span>
+<span class="stat-value">3 Years</span>
+</div>
+
+<div>
+<span class="stat-label">Yearly Fees</span>
+<span class="stat-value"><span>₹1.10 L</span></span>
+</div>
+
+</div>
+
+<a href="/compare" class="course-btn">Compare Details</a>
+
+</div>
+
+</div>
+
+
+<!-- PHARM -->
+
+<div class="course-card" data-category="pharmacy">
+
+<div class="img-container">
+<span class="course-badge">Healthcare</span>
+<img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=800">
+</div>
+
+<div class="course-content">
+
+<h3>B.Pharm</h3>
+
+<p>Study pharmaceutical sciences, drug research and healthcare technology.</p>
+
+<div class="course-stats">
+
+<div>
+<span class="stat-label">Duration</span>
+<span class="stat-value">4 Years</span>
+</div>
+
+<div>
+<span class="stat-label">Yearly Fees</span>
+<span class="stat-value"><span>₹1.40 L</span></span>
+</div>
+
+</div>
+
+<a href="/compare" class="course-btn">Compare Details</a>
+
+</div>
+
+</div>
+
+
+<!-- DESIGN -->
+
+<div class="course-card" data-category="design">
+
+<div class="img-container">
+<span class="course-badge">Creative</span>
+<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800">
+</div>
+
+<div class="course-content">
+
+<h3>B.Des</h3>
+
+<p>Creative program covering UI/UX, graphics, product design and media.</p>
+
+<div class="course-stats">
+
+<div>
+<span class="stat-label">Duration</span>
+<span class="stat-value">4 Years</span>
+</div>
+
+<div>
+<span class="stat-label">Yearly Fees</span>
+<span class="stat-value"><span>₹1.60 L</span></span>
+</div>
+
+</div>
+
+<a href="/compare" class="course-btn">Compare Details</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+const buttons=document.querySelectorAll(".filter-btn")
+const courses=document.querySelectorAll(".course-card")
+
+buttons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+document.querySelector(".filter-btn.active").classList.remove("active")
+button.classList.add("active")
+
+let filter=button.dataset.filter
+
+courses.forEach(course=>{
+
+if(filter==="all"){
+course.style.display="block"
+}
+else if(course.dataset.category===filter){
+course.style.display="block"
+}
+else{
+course.style.display="none"
+}
+
+})
+
+})
+
+})
+
+</script>
+
+
+{% endblock %}

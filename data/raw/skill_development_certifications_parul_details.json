@@ -1,0 +1,44 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file consolidates real research already established elsewhere in this project (the Lakshya 2047 NSDC lab ecosystem, and academic add-on certifications) and properly places the GCF (Global Certification Forum) Programme here — a real research finding not yet used elsewhere in the knowledge base, since it fits this category better than a generic placement-adjacent mention. GCF was originally self-flagged as unverified in prior research (a relatively newly-described initiative), so it is tagged accordingly rather than upgraded to fully verified.",
+    "data_types": {
+      "verified_from_prior_data": "Real facts already established elsewhere in this project",
+      "sourced_from_prior_research": "A real research finding not yet used elsewhere, originally self-flagged as unverified since it describes a newer initiative",
+      "verified_general_knowledge": "Well-established facts about Indian government skill initiatives",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "skill_development_and_industry_certifications": {
+
+    "nsdc_aligned_skill_labs": {
+      "data_type": "verified_from_prior_data",
+      "lakshya_2047": "Already documented in campus_facilities_infrastructure_parul_details.json — a cluster of labs including an NSDC Lab Ecosystem with ten certification-aligned labs (Apple, AR/VR, ABB, NVIDIA, Cisco, AWS, VLSI, ANSYS, Adobe, Autodesk) and an AICTE AVPL/IDEA Lab Zone covering drone training, fabrication, and material synthesis.",
+      "advanced_computing_labs": "Also cross-references the '8 Advanced Computing Labs' and '6 Practical Learning Facilities' already documented in the same file."
+    },
+
+    "gcf_global_certification_forum_programme": {
+      "data_type": "sourced_from_prior_research",
+      "description": "University-linked sources describe a 'GCF Programme' offering six industry certifications spread across six semesters, from partners such as IBM (Java, Python), Microsoft (Azure AI, Power Platform), AWS (Cloud Foundations), Cisco (Networking, Security), and Autodesk (AutoCAD, Inventor).",
+      "eligibility_and_fee_distinction": "Unlike the more generic elective add-on certifications described in academic_details_parul.json (which are optional, available from Semester 4 onward with a nominal fee), the GCF Programme appears to be a more structurally defined track — spread deliberately across all six semesters and tied to a minimum academic cutoff for participation, suggesting a more formal, curriculum-integrated certification pathway rather than a purely elective add-on.",
+      "caution": "As this is a relatively newly-described initiative in available research, students should confirm current GCF Programme details (partner list, fee, cutoff) directly with the Training & Placement Cell or their faculty."
+    },
+
+    "industry_certification_programs_general": {
+      "data_type": "verified_from_prior_data",
+      "cross_reference": "The broader list of elective add-on industry certifications (AWS, Microsoft Azure, Cisco, IBM, Oracle, Adobe, Autodesk) is already documented in academic_details_parul.json's 'addon_certification_programs'.",
+      "distinction_summary": "In short: academic_details_parul.json describes the general elective add-on version open to students broadly from Semester 4; this file's GCF Programme describes a more structured, cutoff-based, six-semester version — both draw from a similar/overlapping set of industry partners (AWS, Microsoft, Cisco, IBM, Adobe, Autodesk), which is internally consistent rather than contradictory."
+    },
+
+    "skill_india_tie_ups": {
+      "data_type": "verified_general_knowledge",
+      "nsdc_context": "The National Skill Development Corporation (NSDC), referenced in the Lakshya 2047 lab ecosystem above, is the implementation arm of India's national 'Skill India' mission under the Ministry of Skill Development and Entrepreneurship — a well-established fact about India's skilling ecosystem, not specific to Parul.",
+      "university_role": "By hosting an NSDC-aligned lab ecosystem, the university positions itself within this national skilling framework, giving students exposure to certification pathways recognized under the broader Skill India initiative alongside their core academic curriculum."
+    }
+  }
+}

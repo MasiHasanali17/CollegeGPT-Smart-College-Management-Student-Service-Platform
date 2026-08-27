@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Genius | Parul University</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/welcome.css') }}">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Hero Section -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <!-- Background Image -->
+
+        <div class="hero-overlay"></div>
+
+        <!-- Navbar -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img class="logo-img" src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="Parul University"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <a href="/" class="logo-fallback">
+                    <span class="logo-mark">CG</span>
+                    <span class="logo-text">Campus Genius<small>Parul University</small></span>
+                </a>
+
+            </div>
+
+            <ul>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="/visitor">Explore</a></li>
+
+                <li><a href="/login">Student Login</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Hero Content -->
+
+        <div class="hero-content">
+
+            <span class="tag">
+
+                AI Powered University Platform
+
+            </span>
+
+            <h1>
+
+                Welcome to
+
+                <br>
+
+                <span>
+
+                    Campus Genius
+
+                </span>
+
+            </h1>
+
+            <p>
+
+                One intelligent platform for every student journey.
+
+                Ask questions, explore courses, manage campus life,
+
+                and access student services with AI.
+
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+
+                <a href="/login" class="student-btn">
+
+                    Continue as Student
+
+                </a>
+
+                <a href="/visitor" class="visitor-btn">
+
+                    Explore University
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Student Visitor Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-5"/></svg>
+                </div>
+
+                <h3>
+
+                    Student Portal
+
+                </h3>
+
+                <p>
+
+                    Login to access attendance,
+                    results, notices,
+                    bookings and AI assistant.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.9 3.6 2.1 4.8 5.7 5.7-3.6.9-4.8 2.1-5.7 5.7-.9-3.6-2.1-4.8-5.7-5.7C9.9 6.8 11.1 5.6 12 2Z"/><path d="M19 14c.4 1.6.9 2.1 2.5 2.5-1.6.4-2.1.9-2.5 2.5-.4-1.6-.9-2.1-2.5-2.5 1.6-.4 2.1-.9 2.5-2.5Z"/></svg>
+                </div>
+
+                <h3>
+
+                    Campus Genius AI
+
+                </h3>
+
+                <p>
+
+                    Ask anything about admissions,
+                    fees, courses,
+                    placements and campus life.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                </div>
+
+                <h3>
+
+                    Visitor Portal
+
+                </h3>
+
+                <p>
+
+                    Explore courses,
+                    campus,
+                    placements,
+                    admissions and more.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Scroll Indicator -->
+
+        <div class="scroll-down">
+
+            <span></span>
+
+            <p>
+
+                Scroll Down
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ABOUT SECTION -->
+    <!-- ========================================= -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>ABOUT CAMPUS GENIUS</span>
+
+                <h2>
+                    One Platform.
+                    <br>
+                    Every Student Journey.
+                </h2>
+
+                <p>
+                    Campus Genius combines Artificial Intelligence with student
+                    services to simplify university life. Whether you're planning
+                    admission or already studying at Parul University, everything
+                    you need is available in one place.
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-image">
+
+                    <img src="httpsplash.com/photo-1523050854058-8df90110c9f0?auto=format&fit=crop&w=1400&q=80"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1400&q=80';"
+                        alt="Students at Parul University">
+
+                </div>
+
+                <div class="about-content">
+
+                    <h3>
+                        Designed for Students,
+                        Parents &amp; Visitors
+                    </h3>
+
+                    <p>
+
+                        Campus Genius is more than a chatbot.
+                        It is an AI-powered university platform
+                        helping students throughout their academic
+                        journey.
+
+                    </p>
+
+                    <ul>
+
+                        <li>AI Powered Chatbot</li>
+
+                        <li>Admission Guidance</li>
+
+                        <li>Placement Information</li>
+
+                        <li>Student Portal</li>
+
+                        <li>Campus Services</li>
+
+                        <li>Event &amp; Sports Booking</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================= -->
+    <!-- FEATURES -->
+    <!-- ========================================= -->
+
+    <section class="features" id="features">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>FEATURES</span>
+
+                <h2>
+
+                    Everything You Need
+
+                </h2>
+
+                <p>
+
+                    Powering the complete digital experience
+                    for Parul University students.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-grid">
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c.9 3.6 2.1 4.8 5.7 5.7-3.6.9-4.8 2.1-5.7 5.7-.9-3.6-2.1-4.8-5.7-5.7C9.9 6.8 11.1 5.6 12 2Z"/><path d="M19 14c.4 1.6.9 2.1 2.5 2.5-1.6.4-2.1.9-2.5 2.5-.4-1.6-.9-2.1-2.5-2.5 1.6-.4 2.1-.9 2.5-2.5Z"/></svg>
+                    </div>
+
+                    <h3>
+
+                        AI Chatbot
+
+                    </h3>
+
+                    <p>
+
+                        Ask anything about admissions,
+                        courses,
+                        fees,
+                        placements,
+                        hostels and more.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-5"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Student Portal
+
+                    </h3>
+
+                    <p>
+
+                        Attendance,
+                        results,
+                        profile,
+                        academic records,
+                        student dashboard.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Hostel Services
+
+                    </h3>
+
+                    <p>
+
+                        Hostel request,
+                        room transfer,
+                        facilities,
+                        complaints.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-9"/><path d="M15 7h5v5"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Placements
+
+                    </h3>
+
+                    <p>
+
+                        Placement statistics,
+                        recruiters,
+                        packages,
+                        career opportunities.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Campus Events
+
+                    </h3>
+
+                    <p>
+
+                        Book events,
+                        college fest,
+                        seminars,
+                        workshops.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12h10"/><path d="M6 9v6M18 9v6"/><rect x="2.3" y="9" width="3.7" height="6" rx="1"/><rect x="18" y="9" width="3.7" height="6" rx="1"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Sports &amp; Gym
+
+                    </h3>
+
+                    <p>
+
+                        Reserve sports facilities,
+                        gym slots,
+                        activities and competitions.
+
+                    </p>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================= -->
+    <!-- STATISTICS -->
+    <!-- ========================================= -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-box">
+
+                    <h2>63+</h2>
+
+                    <p>Courses</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2>A++</h2>
+
+                    <p>NAAC Accredited</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2>25000+</h2>
+
+                    <p>Students</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2>500+</h2>
+
+                    <p>Recruiters</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- CALL TO ACTION -->
+    <!-- ========================================= -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <h2>
+
+                    Ready to Experience
+                    <br>
+                    Campus Genius?
+
+                </h2>
+
+                <p>
+
+                    Whether you're a prospective student or already studying
+                    at Parul University, Campus Genius is designed to make
+                    your university journey smarter, faster and easier.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="/login" class="student-btn">
+
+                        Student Login
+
+                    </a>
+
+                    <a href="/visitor" class="visitor-btn">
+
+                        Explore University
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- JOURNEY -->
+    <!-- ========================================= -->
+
+    <section class="journey">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>YOUR JOURNEY</span>
+
+                <h2>
+
+                    Every Journey Starts Here
+
+                </h2>
+
+                <p>
+
+                    Choose your path and let Campus Genius guide
+                    you throughout your university experience.
+
+                </p>
+
+            </div>
+
+
+            <div class="journey-grid">
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-5"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Student
+
+                    </h3>
+
+                    <p>
+
+                        Login to your dashboard
+
+                    </p>
+
+                    <ul>
+
+                        <li>Attendance</li>
+
+                        <li>Results</li>
+
+                        <li>Hostel</li>
+
+                        <li>Events</li>
+
+                        <li>Sports Booking</li>
+
+                        <li>Complaints</li>
+
+                    </ul>
+
+                    <a href="/login">
+
+                        Continue &rarr;
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="journey-card">
+
+                    <div class="journey-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+                    </div>
+
+                    <h3>
+
+                        Visitor
+
+                    </h3>
+
+                    <p>
+
+                        Discover Parul University
+
+                    </p>
+
+                    <ul>
+
+                        <li>Courses</li>
+
+                        <li>Admissions</li>
+
+                        <li>Placements</li>
+
+                        <li>Campus Tour</li>
+
+                        <li>AI Chatbot</li>
+
+                        <li>Scholarships</li>
+
+                    </ul>
+
+                    <a href="/visitor">
+
+                        Explore &rarr;
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <div class="footer-brand">
+                        <span class="logo-mark">CG</span>
+                        <h3>Campus Genius</h3>
+                    </div>
+
+                    <p>
+
+                        An AI-powered university platform developed
+                        to simplify admissions, campus life,
+                        student services and academic support.
+
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="/visitor">Home</a></li>
+
+                        <li><a href="/courses">Courses</a></li>
+
+                        <li><a href="/placements">Placements</a></li>
+
+                        <li><a href="/chatbot">AI Chatbot</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+
+                        Student
+
+                    </h4>
+
+                    <ul>
+
+                        <li><a href="/login">Student Login</a></li>
+
+                        <li><a href="/register">Registration</a></li>
+
+                        <li><a href="/dashboard">Dashboard</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+
+                        Contact
+
+                    </h4>
+
+                    <p>
+
+                        Parul University
+
+                        <br>
+
+                        Vadodara
+
+                        <br>
+
+                        Gujarat
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="copyright">
+
+                &copy; 2026 <strong>Campus Genius</strong>. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="{{ url_for('static', filename='js/welcome.js') }}"></script>
+
+</body>
+
+</html>

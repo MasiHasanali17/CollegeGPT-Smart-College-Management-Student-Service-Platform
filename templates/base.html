@@ -1,0 +1,653 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+<title>Campus Genius | Parul University AI Assistant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+<style>
+:root {
+    --brand-primary: #7c3aed;
+    --brand-primary-dark: #6d28d9;
+    --brand-secondary: #4f46e5;
+    --brand-dark: #0f172a;
+    --brand-darker: #020617;
+    --text-light: #f1f5f9;
+    --text-muted: #94a3b8;
+    --font-display: 'Sora', system-ui, sans-serif;
+    --font-body: 'Manrope', system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background: linear-gradient(135deg, var(--brand-dark), var(--brand-darker));
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .navbar b {
+    font-family: var(--font-display);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar .brand {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.navbar a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 4px;
+    font-weight: 600;
+    font-size: 14.5px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.navbar a:hover {
+    color: white;
+    background: rgba(124, 58, 237, 0.15);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 8px;
+    min-width: 220px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    z-index: 200;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    margin: 2px 0;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .nav-dropdown-menu {
+        position: static;
+        display: block;
+        box-shadow: none;
+        border: none;
+        padding-left: 12px;
+        background: transparent;
+    }
+}
+
+.container {
+    padding: 0;
+}
+
+.ask-ai {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+    color: white;
+    border: none;
+    padding: 15px 26px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    z-index: 90;
+}
+
+.ask-ai:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(124, 58, 237, 0.55);
+}
+
+footer.site-footer {
+    padding: 40px 8%;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Mobile nav */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(15, 23, 42, 0.98);
+        flex-direction: column;
+        padding: 12px;
+        gap: 2px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .navbar a {
+        width: 100%;
+        padding: 12px 14px;
+    }
+    .ask-ai {
+        bottom: 20px;
+        right: 20px;
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ==========================================================
+   Global Toast Notifications (Phase 2)
+   Replaces every page's own inline flash-message box with one
+   consistent, animated, auto-dismissing toast system.
+   ========================================================== */
+
+#toast-container {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 380px;
+    width: calc(100% - 40px);
+}
+
+@media (max-width: 640px) {
+    #toast-container {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        max-width: none;
+        width: auto;
+    }
+}
+
+.toast {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #ffffff;
+    color: #0f172a;
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.2);
+    border-left: 4px solid #7c3aed;
+    font-size: 13.5px;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.toast.toast-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toast.toast-success { border-left-color: #22c55e; }
+.toast.toast-error { border-left-color: #ef4444; }
+.toast.toast-info { border-left-color: #7c3aed; }
+
+.toast .toast-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.toast .toast-msg {
+    flex: 1;
+}
+
+.toast .toast-close {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.toast .toast-close:hover {
+    color: #475569;
+}
+
+/* Global button loading spinner (Phase 2) */
+.btn-spinner {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: btn-spin 0.7s linear infinite;
+    vertical-align: -2px;
+    margin-right: 6px;
+}
+
+.btn-spinner.dark {
+    border: 2px solid rgba(15, 23, 42, 0.2);
+    border-top-color: #0f172a;
+}
+
+@keyframes btn-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Navbar search box (Phase 4) */
+.nav-search {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 6px 6px 6px 14px;
+    margin: 8px 0;
+}
+
+.nav-search input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 13.5px;
+    width: 130px;
+}
+
+.nav-search input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.nav-search button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+@media (max-width: 900px) {
+    .nav-search {
+        margin: 10px 14px;
+    }
+    .nav-search input {
+        width: 100%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="toast-container"></div>
+
+<script>
+// ------------------------------------------------------------
+// Auto-attach CSRF token to same-origin fetch() POST requests
+// (Phase 6). Runs first, before any other script on the page,
+// so AJAX calls anywhere (contact form, checkout, scholarship
+// checker, chatbot, etc.) are covered transparently without
+// editing each one individually. Safe no-op for GET requests
+// and cross-origin requests.
+// ------------------------------------------------------------
+(function () {
+    var originalFetch = window.fetch;
+    var tokenMeta = document.querySelector('meta[name="csrf-token"]');
+    var token = tokenMeta ? tokenMeta.getAttribute("content") : null;
+
+    if (!token) return;
+
+    window.fetch = function (input, init) {
+        init = init || {};
+        var method = (init.method || "GET").toUpperCase();
+
+        var url = typeof input === "string" ? input : (input && input.url) || "";
+        var isRelative = url.indexOf("http://") !== 0 && url.indexOf("https://") !== 0;
+
+        if (method === "POST" && isRelative) {
+            init.headers = init.headers || {};
+            if (init.headers instanceof Headers) {
+                if (!init.headers.has("X-CSRFToken")) {
+                    init.headers.set("X-CSRFToken", token);
+                }
+            } else if (!init.headers["X-CSRFToken"]) {
+                init.headers["X-CSRFToken"] = token;
+            }
+        }
+
+        return originalFetch(input, init);
+    };
+})();
+</script>
+
+<div class="navbar">
+
+<div class="brand">
+🎓 Campus Genius
+</div>
+
+<button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+
+<div class="nav-links">
+<a href="/visitor">Home</a>
+<a href="/chatbot">Chatbot</a>
+<a href="/courses">Courses</a>
+<a href="/placements">Placements</a>
+<a href="/achievements">Achievements</a>
+<a href="/why">Why Parul</a>
+<a href="/faq">FAQ</a>
+<a href="/compare">Compare Courses</a>
+
+<div class="nav-dropdown" tabindex="0">
+<a href="javascript:void(0)">More ▾</a>
+<div class="nav-dropdown-menu">
+<a href="/admission">Admission Process</a>
+<a href="/fee-calculator">Fee Calculator</a>
+<a href="/eligibility-checker">Eligibility Checker</a>
+<a href="/scholarship-checker">Scholarship Checker</a>
+<a href="/hostel-info">Hostel Information</a>
+<a href="/transport">Transport</a>
+<a href="/gallery">Gallery</a>
+<a href="/campus-tour">Campus Tour</a>
+<a href="/campus-life">Campus Life</a>
+</div>
+</div>
+
+<form class="nav-search" action="{{ url_for('search') }}" method="GET" role="search">
+<input type="text" name="q" placeholder="Search site..." aria-label="Search">
+<button type="submit" aria-label="Search">🔍</button>
+</form>
+
+<a href="/contact">Contact</a>
+{% if current_user.is_authenticated %}
+  <div class="nav-dropdown" tabindex="0">
+  <a href="javascript:void(0)">Portal ▾</a>
+  <div class="nav-dropdown-menu">
+  <a href="{{ url_for('portal_notices') }}">Notices</a>
+  <a href="{{ url_for('portal_events') }}">Event Tickets</a>
+  <a href="{{ url_for('portal_courses') }}">Extra Courses</a>
+  <a href="{{ url_for('portal_facilities') }}">Sports & Gym</a>
+  <a href="{{ url_for('portal_hostel_transfer') }}">Hostel Transfer</a>
+  <a href="{{ url_for('portal_grievance') }}">Grievance Desk</a>
+  <a href="{{ url_for('portal_academics') }}">Academic Records</a>
+  <a href="{{ url_for('portal_my_bookings') }}">My Bookings</a>
+  </div>
+  </div>
+  <a href="{{ url_for('portal_notifications') }}" style="position:relative;">
+    🔔<span id="notifBadge" style="display:none;position:absolute;top:0;right:-2px;background:#ef4444;color:white;border-radius:50%;font-size:10px;width:16px;height:16px;line-height:16px;text-align:center;">0</span>
+  </a>
+  <a href="{{ url_for('dashboard') }}">Dashboard ({{ current_user.name }})</a>
+{% else %}
+  <a href="{{ url_for('login') }}">Student Login</a>
+{% endif %}
+</div>
+
+</div>
+
+<div class="container">
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+<footer class="site-footer">
+    Campus Genius AI — built for Parul University students. Not an official university product.
+</footer>
+
+<button class="ask-ai" onclick="location.href='/chatbot'">
+💬 Ask AI
+</button>
+
+{% if request.path == '/' and not current_user.is_authenticated %}
+<div id="entryGateOverlay" style="display:none;position:fixed;inset:0;background:rgba(8,8,16,0.95);z-index:9999;align-items:center;justify-content:center;">
+  <div style="max-width:560px;width:90%;text-align:center;">
+
+    <h1 id="welcomeText" style="color:#fff;font-size:38px;font-weight:800;margin-bottom:10px;opacity:0;">
+      Welcome to Parul University
+    </h1>
+
+    <p id="welcomeSub" style="color:#999;font-size:16px;margin-bottom:36px;opacity:0;">
+      Powered by Campus Genius AI
+    </p>
+
+    <div id="entryGateChoices" style="opacity:0;transform:translateY(20px);transition:all 0.6s ease;">
+      <button onclick="entryGateChoose('student')"
+        style="width:100%;padding:16px;margin-bottom:14px;border:none;border-radius:10px;background:linear-gradient(90deg,#7b2ff7,#5b1de0);color:#fff;font-size:16px;font-weight:600;cursor:pointer;">
+        🎓 I'm Already a Student
+      </button>
+
+      <button onclick="entryGateChoose('prospective')"
+        style="width:100%;padding:16px;border:none;border-radius:10px;background:#fff;color:#12121f;font-size:16px;font-weight:600;cursor:pointer;">
+        📘 I'm a New Student (Not Admitted Yet)
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  #welcomeText { animation: fadeInUp 0.9s ease forwards; }
+  #welcomeSub  { animation: fadeInUp 0.9s ease 0.3s forwards; }
+</style>
+
+<script>
+  (function () {
+    var alreadyChosen = sessionStorage.getItem("campusGeniusEntryChoice");
+
+    if (!alreadyChosen) {
+      var overlay = document.getElementById("entryGateOverlay");
+      overlay.style.display = "flex";
+
+      // Reveal the choice buttons after the welcome text animation finishes
+      setTimeout(function () {
+        var choices = document.getElementById("entryGateChoices");
+        choices.style.opacity = "1";
+        choices.style.transform = "translateY(0)";
+      }, 1500);
+    }
+  })();
+
+  function entryGateChoose(choice) {
+    sessionStorage.setItem("campusGeniusEntryChoice", choice);
+    document.getElementById("entryGateOverlay").style.display = "none";
+
+    if (choice === "student") {
+      window.location.href = "{{ url_for('login') }}";
+    }
+  }
+</script>
+{% endif %}
+
+<script>
+(function () {
+    var messages = [
+        {% with messages = get_flashed_messages() %}
+            {% for m in messages %}
+                {{ m|tojson }}{{ "," if not loop.last else "" }}
+            {% endfor %}
+        {% endwith %}
+    ];
+
+    if (!messages.length) return;
+
+    var SUCCESS_HINTS = ["success", "confirmed", "submitted", "booked", "registered", "posted",
+                          "updated", "welcome", "cancelled", "sent", "thanks", "saved"];
+    var ERROR_HINTS = ["fail", "error", "incorrect", "already", "full", "not found",
+                        "invalid", "required", "sorry", "denied"];
+
+    function classify(text) {
+        var lower = text.toLowerCase();
+        if (ERROR_HINTS.some(function (w) { return lower.indexOf(w) !== -1; })) return "error";
+        if (SUCCESS_HINTS.some(function (w) { return lower.indexOf(w) !== -1; })) return "success";
+        return "info";
+    }
+
+    var ICONS = { success: "✓", error: "⚠️", info: "ℹ️" };
+    var container = document.getElementById("toast-container");
+
+    messages.forEach(function (text, i) {
+        var kind = classify(text);
+        var toast = document.createElement("div");
+        toast.className = "toast toast-" + kind;
+        toast.innerHTML =
+            '<span class="toast-icon">' + ICONS[kind] + '</span>' +
+            '<span class="toast-msg"></span>' +
+            '<button class="toast-close" aria-label="Dismiss">×</button>';
+        toast.querySelector(".toast-msg").textContent = text;
+
+        container.appendChild(toast);
+
+        setTimeout(function () { toast.classList.add("toast-show"); }, 50 + i * 120);
+
+        var dismissTimer = setTimeout(function () { dismiss(toast); }, 5000 + i * 400);
+
+        toast.querySelector(".toast-close").addEventListener("click", function () {
+            clearTimeout(dismissTimer);
+            dismiss(toast);
+        });
+    });
+
+    function dismiss(toast) {
+        toast.classList.remove("toast-show");
+        setTimeout(function () { toast.remove(); }, 350);
+    }
+})();
+
+// ----------------------------------------------------------
+// Global loading state on form submit (Phase 2).
+// Prevents double-submits and gives instant feedback. Safe for
+// AJAX forms too — auto re-enables after 8s as a safety net in
+// case a form's own JS handles the request without navigating.
+// Opt out with class="no-loading-state" on the <form>.
+// ----------------------------------------------------------
+document.addEventListener("submit", function (e) {
+    var form = e.target;
+    if (!form || form.classList.contains("no-loading-state")) return;
+
+    var btn = form.querySelector('button[type="submit"], button:not([type])');
+    if (!btn || btn.disabled) return;
+
+    var original = btn.innerHTML;
+    var isDark = getComputedStyle(btn).backgroundColor === "rgba(0, 0, 0, 0)";
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="btn-spinner' + (isDark ? ' dark' : '') + '"></span>Please wait...';
+
+    setTimeout(function () {
+        if (btn.disabled) {
+            btn.disabled = false;
+            btn.innerHTML = original;
+        }
+    }, 8000);
+}, true);
+
+// ----------------------------------------------------------
+// Notification bell badge (Phase 5) — only relevant when logged in,
+// the bell link itself is only rendered for authenticated students,
+// so we can safely no-op if it isn't on the page.
+// ----------------------------------------------------------
+(function () {
+    var badge = document.getElementById("notifBadge");
+    if (!badge) return;
+
+    fetch("/api/notifications/unread-count")
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+            if (data.count > 0) {
+                badge.textContent = data.count > 9 ? "9+" : data.count;
+                badge.style.display = "block";
+            }
+        })
+        .catch(function () { /* fail silently, not critical */ });
+})();
+</script>
+
+</body>
+</html>

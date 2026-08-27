@@ -1,0 +1,93 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "This file consolidates real research collected earlier in this project (Training & Placement process, IMPACT Training, recruiter list, PIERC) with editorial decisions made HERE to resolve previously conflicting numeric claims (average package, highest package, recruiter count, PIERC startup count) into single, clean, usable figures rather than restating a hedge. Each resolved figure explains which source/reasoning was chosen and why. Sections without any real basis (career counseling as distinct from placement prep, higher-studies support, alumni mentorship structure) are generated for this academic project. None of this should be treated as officially confirmed, current-year university data — for a live demo or report, cross-check current figures against the university's official placement brochure where possible.",
+    "data_types": {
+      "verified_from_prior_research": "Real facts collected earlier in this project with consistent sourcing",
+      "resolved_from_conflicting_sources": "A single figure deliberately chosen from among multiple conflicting numbers found in prior research, with reasoning given",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project, no real source"
+    }
+  },
+
+  "placements": {
+
+    "placement_process": {
+      "data_type": "verified_from_prior_research",
+      "overview": "Placements are managed by the Training & Placement (T&P) Cell. The general process includes student registration with the T&P Cell, structured pre-placement training (aptitude, coding/technical practice, resume building, group discussions, mock interviews), Pre-Placement Talks (PPTs) by visiting recruiters, and then formal selection rounds — aptitude tests, technical interviews, coding rounds for IT roles, group discussions, and HR interviews — followed by offer letters for selected candidates.",
+      "impact_training_program": "IMPACT Training is the university's structured placement-preparation program, generally conducted around Semester 6-7 for B.Tech students, covering aptitude preparation, coding practice (including DSA and web/app development), soft-skills development, resume building, mock interviews, and group discussions, often led by external trainers alongside T&P Cell staff."
+    },
+
+    "placement_statistics": {
+      "data_type": "resolved_from_conflicting_sources",
+      "highest_package": {
+        "figure": "Recent placement seasons have reported highest packages in the ₹45-60 LPA range, with the most recent editions trending toward the higher end.",
+        "reasoning": "Prior research found a recent figure of ~₹60 LPA (reportedly Microsoft, most recent season) alongside other high packages in the ₹40-45 LPA range from the same and prior seasons. Rather than presenting these as conflicting single numbers, they are combined into one honest range, which is also how most universities legitimately report this figure."
+      },
+      "average_package": {
+        "figure": "Average package is approximately ₹4.8-6.5 LPA for undergraduate programs and ₹6.5-7.5 LPA for postgraduate programs.",
+        "reasoning": "Prior research found this range cited in NIRF-linked (National Institutional Ranking Framework — an official government ranking framework) sources, alongside a vaguer, lower, less-attributed figure of ₹4-5 LPA from other summaries. The NIRF-linked figure is treated as more credible since NIRF submissions are an official, structured reporting mechanism, and is used here as the primary figure."
+      },
+      "recruiter_count": {
+        "figure": "2,200+ recruiters participate in placement drives.",
+        "reasoning": "This figure is used because it matches the number already published on the university's own website (also reflected elsewhere in this project's data), rather than the vaguer '2,000+' alternative found in other secondary sources."
+      },
+      "placement_percentage": {
+        "figure": "Not claimed as 100%, though outcomes are described as consistently strong for technical and professional programs, with actual placement percentage varying by department.",
+        "reasoning": "No credible specific percentage was found in prior research (only an independent, non-official observation that it isn't 100%). Rather than inventing a precise fabricated percentage, this is intentionally left as a qualitative statement — the one exception in this file where honesty was chosen over a clean-sounding fake number."
+      }
+    },
+
+    "recruiting_companies_by_sector": {
+      "data_type": "verified_from_prior_research",
+      "it_and_services": ["TCS", "Capgemini", "Cognizant", "Infosys", "Wipro", "Accenture", "Tech Mahindra"],
+      "global_technology": ["Microsoft", "Amazon", "IBM", "Google"],
+      "consulting_and_finance": ["Deloitte", "KPMG", "Goldman Sachs", "Bank of America"],
+      "manufacturing_fmcg_pharma_hospitality": ["Adani", "Aditya Birla Group", "Reliance", "L&T", "Hero MotoCorp", "Sun Pharma", "Nestle", "IndiGo", "Airtel"],
+      "note": "Recruiter presence and rotation varies each placement season; this list reflects companies that have recruited in recent seasons, not a guarantee for any specific year."
+    },
+
+    "non_engineering_placements": {
+      "data_type": "verified_from_prior_research",
+      "coverage": "Students from fields such as Hotel Management, Design, Pharmacy, and other disciplines also participate in campus placements, with sector-specific recruiters (for example, hospitality brands recruiting HMCT students).",
+      "package_note": "Package levels for these fields generally differ from headline engineering/management figures and should be evaluated by discipline rather than against the overall highest/average package figures above."
+    },
+
+    "pre_placement_training": {
+      "data_type": "verified_from_prior_research + generated_for_project",
+      "core_program": "The IMPACT Training program (see placement_process above) is the primary structured pre-placement training vehicle, covering aptitude, coding/DSA, soft skills, group discussion, and mock interview practice.",
+      "additional_support": "Beyond IMPACT Training, department-level faculty mentors and the T&P Cell conduct periodic mock interview and GD practice sessions in the lead-up to major recruitment drives. (generated)"
+    },
+
+    "career_counseling_support": {
+      "data_type": "generated_for_project",
+      "description": "Distinct from placement-specific training, career counseling — helping students think through career direction, higher studies vs. industry, or discipline-specific career paths — is generally available through the Dean of Student Affairs office and faculty mentors, complementing the more tactical, placement-round-focused preparation of IMPACT Training.",
+      "timing": "Career counseling conversations are encouraged from earlier in the program (not just pre-placement semesters), so students can make informed choices about internships, electives, and higher-studies preparation well before final placement season."
+    },
+
+    "higher_studies_support": {
+      "data_type": "verified_from_prior_research + generated_for_project",
+      "gate_and_government_exams": "Some university-linked sources mention support for students preparing for exams like GATE, citing a number of qualifiers in recent years, though a distinct, long-standing, formally-branded 'GATE Cell' was not confirmed in prior research. Support appears to be delivered through faculty mentorship and study-group encouragement rather than a dedicated separate department. (verified_from_prior_research, honestly caveated)",
+      "cat_gre_ielts_toefl": "For students pursuing MBA (via CAT/other management entrance exams) or international postgraduate study (GRE, IELTS, TOEFL), guidance is generally available through faculty mentors and the International Admissions/Exchange Cell, though this is more informally structured than the core placement process. (generated)"
+    },
+
+    "alumni_mentorship_programs": {
+      "data_type": "generated_for_project",
+      "structure": "Alumni mentorship is generally facilitated through periodic alumni meets (already documented in events_fests_cultural_calendar_parul_details.json) and informal faculty-brokered connections, particularly valuable given the university's notable alumni working at companies including Apple, Amazon, Google, Meta, Intel, and Tesla (already documented elsewhere in the knowledge base).",
+      "typical_format": "Mentorship typically takes the form of guest talks, Q&A sessions during alumni meets, and occasional one-on-one mentorship matching for students in the final year approaching placements or higher-studies decisions."
+    },
+
+    "entrepreneurship_and_startup_support": {
+      "data_type": "verified_from_prior_research + resolved_from_conflicting_sources",
+      "pierc_overview": "PIERC (Parul Innovation & Entrepreneurship Research Centre) is the university's startup incubator, registered in 2015 as a Section 8 (non-profit) company, evolving from the earlier Entrepreneurship Development Cell (EDC) established in 2013. PIERC provides mentorship, co-working space, FabLab/prototyping access, and connections to seed-funding schemes (including government schemes like SSIP) for student and alumni startups.",
+      "startups_incubated": {
+        "figure": "250+ startups incubated to date.",
+        "reasoning": "Prior research found two different figures (just over 100, and 250+) at different points in time; the higher, more recent figure is used here since the explanation for the discrepancy was organizational growth over time, not contradiction — the lower figure reflects an earlier snapshot."
+      },
+      "alternative_career_pathway": "PIERC offers students interested in building their own startups an alternative (or parallel) pathway to traditional placement, through incubation support, mentorship, and seed-funding schemes — already cross-referenced in internships_career_development_parul_details.json's live-project option."
+    }
+  }
+}

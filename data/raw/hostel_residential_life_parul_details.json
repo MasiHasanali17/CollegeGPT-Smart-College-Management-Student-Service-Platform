@@ -1,0 +1,221 @@
+{
+  "university": {
+    "name": "Parul University",
+    "academic_year": "2025-26"
+  },
+
+  "meta": {
+    "note": "The 'room_details' section (hostel names, sharing types, AC/Non-AC, washroom type, fees) is real data provided directly by the project owner and is preserved exactly as given. A few other facts in this file (marked verified_by_user) were also given as real data earlier in this project — AC/water supply timing, laundry allowance, veg-only mess, and first-come-first-serve allotment. All remaining sections are generated for this academic project to be realistic and internally consistent with the real data, and should not be treated as officially confirmed university policy.",
+    "data_types": {
+      "verified_by_user": "Real data provided directly by the project owner",
+      "generated_for_project": "Realistic, scale-consistent data created for this academic project"
+    }
+  },
+
+  "hostel_and_residential_life": {
+
+    "room_details": {
+      "data_type": "verified_by_user",
+      "campus_residence_information": {
+        "girls": [
+          { "sr_no": 1, "name": "Sarojini Bhawan - A", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 85,500" },
+          { "sr_no": 2, "name": "Sarojini Bhawan - B", "room_occupancy": "5 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 84,500" },
+          { "sr_no": 3, "name": "Sarojini Bhawan - C", "room_occupancy": "8 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 84,500" },
+          { "sr_no": 4, "name": "Indira Bhawan - A", "room_occupancy": "9 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 93,500" },
+          { "sr_no": 5, "name": "Indira Bhawan - B", "room_occupancy": "10 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 93,500" },
+          { "sr_no": 6, "name": "Indira Bhawan - C", "room_occupancy": "9 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 93,500" },
+          { "sr_no": 7, "name": "Teresa Bhawan - A|B|C", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,17,500" },
+          { "sr_no": 7, "name": "Teresa Bhawan - A|B|C", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,39,000" },
+          { "sr_no": 8, "name": "Teresa Bhawan - D", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,10,500" },
+          { "sr_no": 8, "name": "Teresa Bhawan - D", "room_occupancy": "4 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,31,000" },
+          { "sr_no": 9, "name": "Janki Bhavan", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,29,500" },
+          { "sr_no": 9, "name": "Janki Bhavan", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,54,000" },
+          { "sr_no": 9, "name": "Janki Bhavan", "room_occupancy": "5 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,28,000" },
+          { "sr_no": 9, "name": "Janki Bhavan", "room_occupancy": "5 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,03,500" },
+          { "sr_no": 10, "name": "Marie Curie", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "USD 2000" },
+          { "sr_no": 11, "name": "Kalpana Bhawan - A", "room_occupancy": "2/3 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,06,500" },
+          { "sr_no": 11, "name": "Kalpana Bhawan - A", "room_occupancy": "2/3 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,33,000" },
+          { "sr_no": 12, "name": "Kalpana Bhawan - B", "room_occupancy": "2/3 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,06,500" },
+          { "sr_no": 13, "name": "Shakuntala Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,17,500" },
+          { "sr_no": 13, "name": "Shakuntala Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,39,000" },
+          { "sr_no": 14, "name": "Shakuntala Bhawan - B", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,10,500" },
+          { "sr_no": 14, "name": "Shakuntala Bhawan - B", "room_occupancy": "4 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,31,000" },
+          { "sr_no": 15, "name": "Rani Laxmibai Bhavan - A|B*", "room_occupancy": "5 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,03,500" },
+          { "sr_no": 15, "name": "Rani Laxmibai Bhavan - A|B*", "room_occupancy": "5 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,28,000" }
+        ],
+        "boys": [
+          { "sr_no": 1, "name": "Shastri Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 95,500" },
+          { "sr_no": 2, "name": "Shastri Bhawan - B", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 90,500" },
+          { "sr_no": 3, "name": "Shastri Bhawan - C", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 95,500" },
+          { "sr_no": 4, "name": "Kalam Bhawan - A|B|C", "room_occupancy": "9 Students", "ac_non_ac": "Non AC", "facilities": "2 Attached Wash Room", "fees_per_annum": "₹ 97,500" },
+          { "sr_no": 5, "name": "Tagore Bhawan - A|B|C", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,23,500" },
+          { "sr_no": 5, "name": "Tagore Bhawan - A|B|C", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,46,000" },
+          { "sr_no": 6, "name": "Dhyan Bhawan", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,29,500" },
+          { "sr_no": 6, "name": "Dhyan Bhawan", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,54,000" },
+          { "sr_no": 6, "name": "Dhyan Bhawan", "room_occupancy": "5 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,28,000" },
+          { "sr_no": 6, "name": "Dhyan Bhawan", "room_occupancy": "5 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,03,500" },
+          { "sr_no": 7, "name": "Sardar Bhawan - A", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,04,500" },
+          { "sr_no": 7, "name": "Sardar Bhawan - A", "room_occupancy": "4 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,23,000" },
+          { "sr_no": 8, "name": "Sardar Bhawan - B", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,04,500" },
+          { "sr_no": 8, "name": "Sardar Bhawan - B", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,23,000" },
+          { "sr_no": 9, "name": "Sardar Bhawan - C", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,12,500" },
+          { "sr_no": 9, "name": "Sardar Bhawan - C", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,33,000" },
+          { "sr_no": 10, "name": "Milkha Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,29,500" },
+          { "sr_no": 10, "name": "Milkha Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,54,000" },
+          { "sr_no": 11, "name": "Atal Bhawan - A1", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,15,500" },
+          { "sr_no": 11, "name": "Atal Bhawan - A1", "room_occupancy": "4 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,37,000" },
+          { "sr_no": 12, "name": "Atal Bhawan - B", "room_occupancy": "8/10 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 84,500" },
+          { "sr_no": 12, "name": "Atal Bhawan - B", "room_occupancy": "8/10 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,13,000" },
+          { "sr_no": 13, "name": "Albert Einstein", "room_occupancy": "2/3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "USD 2000" },
+          { "sr_no": 14, "name": "Azad Bhavan - A", "room_occupancy": "8 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 90,500" },
+          { "sr_no": 14, "name": "Azad Bhavan - A", "room_occupancy": "8 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,21,000" },
+          { "sr_no": 15, "name": "Atal Bhavan A2", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,15,500" },
+          { "sr_no": 15, "name": "Atal Bhavan A2", "room_occupancy": "4 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,37,000" },
+          { "sr_no": 16, "name": "Tilak Bhawan - A", "room_occupancy": "2 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,59,500" },
+          { "sr_no": 16, "name": "Tilak Bhawan - A", "room_occupancy": "2 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,75,000" },
+          { "sr_no": 16, "name": "Tilak Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,29,500" },
+          { "sr_no": 16, "name": "Tilak Bhawan - A", "room_occupancy": "3 Students", "ac_non_ac": "AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,54,000" },
+          { "sr_no": 17, "name": "Abraham Lincoln*", "room_occupancy": "5 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "USD 1500" },
+          { "sr_no": 17, "name": "Abraham Lincoln*", "room_occupancy": "5 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "USD 1300" },
+          { "sr_no": 17, "name": "Abraham Lincoln*", "room_occupancy": "5 Students", "ac_non_ac": "AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,28,000" },
+          { "sr_no": 17, "name": "Abraham Lincoln*", "room_occupancy": "5 Students", "ac_non_ac": "Non AC", "facilities": "Common Wash Room", "fees_per_annum": "₹ 1,03,500" },
+          { "sr_no": 18, "name": "Saarthi Hostel", "room_occupancy": "4 Students", "ac_non_ac": "Non AC", "facilities": "Attached Wash Room", "fees_per_annum": "₹ 1,00,000" }
+        ],
+        "notes": "*Abraham Lincoln and Rani Laxmibai Bhavan - A | B - Occupancy will be available after September 2025. Until then, temporary accommodations will be given in other hostels according to availability."
+      }
+    },
+
+    "room_furnishing": {
+      "data_type": "verified_by_user + generated_for_project",
+      "one_time_kit": "Each hostel resident receives a one-time complimentary hostel kit including a bedsheet, pillow, bucket, tumbler, and other basic essentials. (verified)",
+      "standard_furniture": "Each room is additionally furnished with a bed/cot, study table and chair per student, and a personal wardrobe/cupboard for storage. (generated, standard for this room configuration)",
+      "shared_room_note": "In larger-occupancy rooms (8-10 students), furniture is arranged in bunk or row configuration to optimize space, with shared study areas in some blocks. (generated)"
+    },
+
+    "fee_payment_terms": {
+      "data_type": "verified_by_user",
+      "payment_frequency": "Hostel fees are paid annually.",
+      "hostel_term": "The hostel term is calculated from July (current year) to June (next year).",
+      "refund_policy": "Once hostel fees are paid, they are non-refundable and non-transferable in nature.",
+      "cross_reference": "This is distinct from the refundable caution deposit described in academic_details_parul.json, which is a separate one-time charge."
+    },
+
+    "mess_details": {
+      "food_type": "The hostel mess provides a pure vegetarian Indian meal plan. (verified)",
+      "meal_inclusion": "Meals include a limited breakfast, and unlimited lunch and dinner, included as part of the hostel fee. (verified)",
+      "meal_timings": {
+        "data_type": "generated_for_project",
+        "breakfast": "7:30 AM to 9:30 AM",
+        "lunch": "12:30 PM to 2:30 PM",
+        "dinner": "7:30 PM to 9:30 PM"
+      },
+      "weekly_menu_rotation": {
+        "data_type": "generated_for_project",
+        "pattern": "The mess follows a rotating weekly menu with fixed-day specials (e.g. a specific day for a special sweet dish or regional thali), varying across breakfast, lunch, and dinner, to provide variety across the week.",
+        "note": "Exact daily menu items are decided by the mess committee/contractor each semester and displayed on the hostel notice board."
+      }
+    },
+
+    "water_supply_timing": {
+      "data_type": "verified_by_user",
+      "cold_water": "Water supply is provided from 5 AM to 9 AM and from 5 PM to 9 PM.",
+      "hot_water": "Hot water supply is available in each room through a common tap throughout the day."
+    },
+
+    "electricity_and_ac_usage_timing": {
+      "data_type": "verified_by_user",
+      "ac_restriction": "AC supply is not provided from 9 AM to 6 PM.",
+      "generated_note": "This restriction generally aligns with daytime hours when most students are expected to be in classes; AC is available through the evening, night, and early morning hours."
+    },
+
+    "laundry_service": {
+      "data_type": "verified_by_user + generated_for_project",
+      "complimentary_allowance": "Complimentary laundry service is provided for up to seven pairs of clothes every week. (verified)",
+      "service_type": "Laundry is collected and returned by hostel housekeeping staff on a fixed weekly schedule per block; it is not self-service. (generated)",
+      "excess_clothes": "Additional clothes beyond the weekly complimentary allowance may be laundered at an extra per-item charge, payable directly to the laundry service point. (generated)"
+    },
+
+    "housekeeping_frequency": {
+      "data_type": "generated_for_project",
+      "room_cleaning": "Common areas (corridors, washrooms, staircases) are cleaned daily by housekeeping staff; individual room cleaning is generally the resident's own responsibility, with periodic deep-cleaning support available on request.",
+      "waste_collection": "Waste bins in common areas are collected daily."
+    },
+
+    "wifi_rules": {
+      "data_type": "verified_by_user + generated_for_project",
+      "usage_policy": "Wi-Fi usage is limited for educational purposes only. (verified)",
+      "speed_and_access": "Standard shared bandwidth is provided per hostel block, sufficient for browsing, research, and educational streaming; heavy non-educational usage (e.g. large file torrenting) may be throttled or restricted. (generated)",
+      "timing": "Wi-Fi is generally available 24/7, though usage monitoring and content filtering policies apply at all times. (generated)"
+    },
+
+    "curfew_and_late_entry": {
+      "data_type": "generated_for_project",
+      "general_curfew": "Hostel gates typically close by 9:30-10:00 PM for boys' hostels and 8:30-9:00 PM for girls' hostels, in line with common practice at most Indian residential universities.",
+      "late_entry_process": "Students expecting to return after curfew must inform the warden/rector in advance with a valid reason; repeated unauthorized late entries may lead to disciplinary action.",
+      "night_out_permission": "Overnight absence from the hostel (e.g. visiting family) requires prior written permission from the warden, often with parental confirmation for students under a certain age or in girls' hostels."
+    },
+
+    "visitor_policy": {
+      "data_type": "generated_for_project",
+      "who_can_visit": "Parents and immediate family members are generally permitted to visit during designated visiting hours; visits from friends/other students of the opposite gender inside hostel premises are typically restricted to common visiting areas only, not residential floors.",
+      "visiting_hours": "Typically between 10:00 AM and 6:00 PM on non-class days, subject to hostel-specific timing.",
+      "registration_process": "All visitors must register at the hostel security/reception desk with valid photo ID before entry, and are logged in a visitor register."
+    },
+
+    "room_allotment_process": {
+      "data_type": "verified_by_user + generated_for_project",
+      "general_basis": "Rooms are allotted on a first-come-first-serve basis. (verified)",
+      "priority_considerations": "Within this general policy, some priority may be given to differently-abled students, international students, and continuing students requesting the same room from the previous year, subject to availability. (generated)",
+      "application_process": "Room allotment requests are typically submitted through the student ERP portal at the time of admission/re-enrollment, along with hostel fee payment confirmation. (generated)"
+    },
+
+    "room_change_and_transfer_process": {
+      "data_type": "generated_for_project",
+      "process": "Students seeking a room or hostel change must submit a written request to the warden/hostel office, stating the reason (e.g. medical, interpersonal, preference for a different sharing type).",
+      "approval": "Room change requests are subject to availability and are typically processed at the start of a new semester rather than mid-semester, except in urgent/medical cases.",
+      "fee_adjustment": "If the change involves moving to a different fee bracket (e.g. Non-AC to AC), the fee difference must be settled at the time of transfer."
+    },
+
+    "warden_and_rector_contact": {
+      "data_type": "generated_for_project",
+      "role": "Each hostel block has an assigned warden/rector responsible for day-to-day discipline, student welfare, and first-point-of-contact for hostel-related issues.",
+      "escalation_process": "Unresolved issues can be escalated from the block warden to the Chief Warden/Dean of Student Welfare, and further to the hostel grievance committee if necessary.",
+      "contact_availability": "Wardens are generally available on-campus during evening and night hours when most student interactions occur; a duty mobile number is typically posted at each hostel's reception/notice board for emergencies."
+    },
+
+    "hostel_disciplinary_rules_and_penalties": {
+      "data_type": "generated_for_project",
+      "general_conduct": "Students are expected to maintain discipline, respect quiet hours (typically after 10:00-11:00 PM), and avoid prohibited items (alcohol, smoking, unauthorized electrical appliances) within hostel premises.",
+      "penalty_structure": "Violations are typically addressed in escalating stages: verbal warning, written warning to the student (and parents, for serious cases), fine, and in severe/repeated cases, suspension of hostel accommodation.",
+      "prohibited_items": "Commonly prohibited items include high-wattage heating appliances (due to fire safety), alcohol, and any items banned under general campus discipline policy."
+    },
+
+    "anti_ragging_measures_hostel": {
+      "data_type": "generated_for_project",
+      "policy_basis": "In compliance with UGC anti-ragging regulations, hostels maintain a zero-tolerance policy toward ragging, with anti-ragging committee representation extending to hostel wardens.",
+      "reporting_mechanism": "Students can report ragging incidents confidentially to the hostel warden, the university's anti-ragging committee, or via the UGC's national anti-ragging helpline.",
+      "preventive_measures": "New students are briefed on anti-ragging policy during orientation, and CCTV coverage is maintained in hostel common areas as a preventive measure."
+    },
+
+    "emergency_and_medical_support": {
+      "data_type": "generated_for_project",
+      "on_campus_hospital": "Parul Sevashram Hospital provides 24/7 emergency medical facilities on a chargeable basis, as already documented elsewhere in the knowledge base.",
+      "hostel_level_response": "Each hostel block maintains a basic first-aid kit and a designated emergency contact protocol; the warden or hostel security coordinates transport to the on-campus hospital in case of a medical emergency.",
+      "night_emergency_contact": "A 24-hour hostel security helpline is typically available for night-time emergencies, in addition to the campus-wide emergency contact."
+    },
+
+    "hostel_vacating_process": {
+      "data_type": "generated_for_project",
+      "notice_period": "Students planning to vacate the hostel (end of course, or mid-year withdrawal) are generally required to submit a written notice at least 30 days in advance to the hostel office.",
+      "clearance_process": "Vacating requires a hostel clearance form signed off by the warden confirming no pending dues, damages, or unreturned kit items.",
+      "refund_timeline": "Since hostel fees are non-refundable once paid (see fee_payment_terms), no fee refund applies for early vacating; only the caution deposit (if applicable) is processed for refund after clearance, typically within 4-6 weeks."
+    },
+
+    "day_scholar_vs_hosteler_facilities": {
+      "data_type": "generated_for_project",
+      "hosteler_exclusive_facilities": "Hostel residents have access to mess dining, in-room Wi-Fi, laundry service, and hostel common rooms/recreational areas.",
+      "day_scholar_facilities": "Day scholars typically have access to designated common rooms/rest areas near academic blocks, locker facilities for personal belongings, and campus food courts/canteens instead of hostel mess.",
+      "shared_facilities": "Both hosteler and day scholar students have equal access to the library, gym, sports facilities, medical center, and all academic infrastructure."
+    }
+  }
+}
